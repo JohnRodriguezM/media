@@ -1,8 +1,8 @@
 # Carrusel diario — La Dosis de Ciencia (TikTok)
 
-Rutina: cada día se genera un carrusel de 5-6 láminas, se sube a este repo y se envía a
-TikTok (@ladosisdeciencia) como **borrador** por Zernio, para que John lo revise, le ponga
-música y lo publique. Hora objetivo: 11:30 a. m. (America/Bogota).
+Rutina: cada día se genera un carrusel de 5-6 láminas, se sube a este repo y se programa en
+TikTok (@ladosisdeciencia) por Zernio como **publicación directa** a las 11:30 a. m. (America/Bogota),
+con descripción y música automática. John recibe el resumen a las ~7:45 y puede pedir cancelarlo.
 
 ## Archivos
 - `tools/carrusel/template.html`: diseño (fondo oscuro, dorado, célula procedural, ECG). No usa imágenes de IA.
@@ -36,8 +36,6 @@ Audiencia: 77% mayor de 35 años, Latinoamérica. Español neutro, frases cortas
 - Cuenta TikTok: `6a4179799d9472faae14cb5f`.
 - `posts_create_post` con `media_items` = URLs raw de GitHub de cada lámina (`https://raw.githubusercontent.com/JohnRodriguezM/media/main/tiktok/<carpeta>/01.jpg` …),
   `platforms=[{platform:"tiktok", accountId:"6a4179799d9472faae14cb5f"}]`, `content` = `caption_title`,
-  `tiktok_settings={draft:true, mediaType:"photo", photoCoverIndex:0, description:<description>, autoAddMusic:true, allowComment:true, privacyLevel:"PUBLIC_TO_EVERYONE", contentPreviewConfirmed:true, expressConsentGiven:true}`,
+  `tiktok_settings={mediaType:"photo", photoCoverIndex:0, description:<description>, autoAddMusic:true, allowComment:true, privacyLevel:"PUBLIC_TO_EVERYONE", contentPreviewConfirmed:true, expressConsentGiven:true}`,
   `scheduled_for` = hoy 11:30, `timezone`="America/Bogota".
-- TikTok NO pasa el caption a los borradores (el caption se completa en el editor de la app). Por eso la descripción completa
-  siempre se le envía a John en el resumen diario, lista para copiar y pegar.
-- TikTok permite máximo 5 borradores pendientes por cuenta en 24 h.
+- No usar `draft:true`: TikTok no pasa el caption a los borradores y John no los encuentra fácilmente (decisión 2026-11-03).
