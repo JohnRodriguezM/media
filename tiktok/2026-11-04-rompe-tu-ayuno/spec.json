@@ -1,0 +1,59 @@
+{
+  "slug": "rompe-tu-ayuno",
+  "date": "2026-11-04",
+  "serie": "Ayuno",
+  "seed": 11,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "¿Esto [[rompe]] tu ayuno?",
+      "subtitle": "Café, limón, edulcorantes y el famoso \"solo un poquito\" de leche.",
+      "serie": "Serie Ayuno · Lo que sí y lo que no"
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "No lo rompe",
+      "title": "Café negro",
+      "big": "≈2",
+      "bigUnit": "kcal por taza",
+      "body": "Sin azúcar ni leche, no dispara la **insulina** de forma relevante. Muchos lo usan para llegar más fácil a la hora 16.",
+      "note": "**Ojo:** con azúcar, panela o crema, sí lo rompe."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "No lo rompe",
+      "title": "Agua con limón o sal",
+      "big": "≈5",
+      "bigUnit": "kcal",
+      "body": "Medio limón en agua aporta casi nada. Una pizca de **sal** repone sodio y ayuda con el dolor de cabeza en ayunos largos.",
+      "note": "**Clave:** agua, sí. Jugo de naranja, no."
+    },
+    {
+      "type": "point",
+      "verdict": "gris",
+      "badge": "Zona gris",
+      "title": "Edulcorantes y chicle sin azúcar",
+      "body": "Casi no tienen calorías, pero la evidencia sobre su efecto en la **insulina** y el **apetito** es mixta: en algunas personas el sabor dulce despierta el hambre.",
+      "note": "**Si buscas autofagia:** mejor evitarlos durante la ventana de ayuno."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "Sí lo rompe",
+      "title": "\"Solo un poquito\" de leche o caldo",
+      "body": "Tienen **proteína** y calorías. La proteína reactiva **mTOR** y sube la insulina: la señal de limpieza celular se apaga.",
+      "note": "**Regla simple:** si tiene calorías que tu cuerpo nota, ya no es ayuno."
+    },
+    {
+      "type": "cta",
+      "title": "¿Cuántas horas [[deberías]] ayunar tú?",
+      "body": "Depende de tu horario, tu cronotipo y tu objetivo. Calcúlalo gratis en 30 segundos.",
+      "button": "Link en el perfil",
+      "small": "Guárdalo para tu próximo ayuno"
+    }
+  ],
+  "caption_title": "¿Esto rompe tu ayuno? Café, limón, edulcorantes y leche",
+  "description": "¿Café, limón, edulcorantes o \"un poquito\" de leche? Esto es lo que sí rompe tu ayuno y lo que no ☕🍋\n\n✅ Café negro: ~2 kcal, no lo rompe\n✅ Agua con limón o sal: no lo rompe\n⚠️ Edulcorantes: zona gris, evidencia mixta\n❌ Leche o caldo: sí lo rompen (proteína → mTOR)\n\n👇 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Qué tomas tú durante el ayuno? Te leo en comentarios 👇\n\n#ayunointermitente #ayuno #autofagia #biohacking #dosisdeciencia #cafe #salud #ciencia #aprendeentiktok #metabolismo"
+}
