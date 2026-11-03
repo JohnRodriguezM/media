@@ -38,3 +38,6 @@ Audiencia: 77% mayor de 35 años, Latinoamérica. Español neutro, frases cortas
   `platforms=[{platform:"tiktok", accountId:"6a4179799d9472faae14cb5f"}]`, `content` = `caption_title`,
   `tiktok_settings={draft:true, mediaType:"photo", photoCoverIndex:0, description:<description>, autoAddMusic:true, allowComment:true, privacyLevel:"PUBLIC_TO_EVERYONE", contentPreviewConfirmed:true, expressConsentGiven:true}`,
   `scheduled_for` = hoy 11:30, `timezone`="America/Bogota".
+- TikTok NO pasa el caption a los borradores (el caption se completa en el editor de la app). Por eso la descripción completa
+  siempre se le envía a John en el resumen diario, lista para copiar y pegar.
+- TikTok permite máximo 5 borradores pendientes por cuenta en 24 h.
