@@ -1,0 +1,62 @@
+name: canal-negocios · producir video
+
+# Se dispara cuando entra un guion nuevo o modificado, o a mano desde la pestaña Actions.
+on:
+  push:
+    branches: [main]
+    paths: ["canal-negocios/guiones/*.json"]
+  workflow_dispatch:
+    inputs:
+      guion:
+        description: "Ruta del guion (ej. canal-negocios/guiones/2026-11-04-crecer-sin-caja.json)"
+        required: true
+      publicar:
+        description: "borrador | programar | no"
+        default: "borrador"
+
+concurrency: { group: canal-negocios, cancel-in-progress: false }
+
+jobs:
+  producir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults: { run: { working-directory: canal-negocios } }
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: canal-negocios/package-lock.json }
+
+      - run: npm ci
+      - run: npx remotion browser ensure
+
+      - name: Guiones a producir
+        id: guiones
+        run: |
+          if [ -n "${{ inputs.guion }}" ]; then
+            echo "lista=${{ inputs.guion }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "lista=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- guiones/ | sed 's|^|canal-negocios/|' | tr '\n' ' ')" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Voz, render y Zernio
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+          ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+          ZERNIO_TIKTOK_ID: ${{ vars.ZERNIO_TIKTOK_ID }}
+          ZERNIO_INSTAGRAM_ID: ${{ vars.ZERNIO_INSTAGRAM_ID }}
+          MODO: ${{ inputs.publicar || vars.MODO_PUBLICACION || 'borrador' }}
+          HORA: ${{ vars.HORA_PUBLICACION || '19:30' }}
+        run: |
+          for g in ${{ steps.guiones.outputs.lista }}; do
+            npx tsx pipeline/producir.ts "../$g" --publicar="$MODO" --hora="$HORA"
+          done
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: videos
+          path: canal-negocios/out/*.mp4
+          retention-days: 14

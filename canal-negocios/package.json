@@ -1,0 +1,30 @@
+{
+  "name": "canal-negocios",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "studio": "remotion studio src/Root.tsx",
+    "producir": "tsx pipeline/producir.ts",
+    "typecheck": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/archivo": "^5.1.0",
+    "@remotion/bundler": "^4.0.300",
+    "@remotion/cli": "^4.0.300",
+    "@remotion/renderer": "^4.0.300",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.300",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "private": true
+}
