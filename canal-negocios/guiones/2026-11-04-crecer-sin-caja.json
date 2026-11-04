@@ -7,39 +7,75 @@
     {
       "bloque": "gancho",
       "narracion": "Una empresa puede vender el doble que el año pasado. Y aun así quebrar.",
-      "visual": { "tipo": "titulo", "texto": "Vender el doble y [[quebrar]]", "kicker": "Negocios por dentro" }
+      "visual": {
+        "tipo": "titulo",
+        "texto": "Vender el doble y [[quebrar]]",
+        "kicker": "Negocios por dentro"
+      }
     },
     {
       "bloque": "contexto",
       "narracion": "Imagina una fábrica de muebles. Compra madera, paga a su equipo y vende a tiendas grandes. Cada mueble le deja ganancia.",
-      "visual": { "tipo": "lista", "titulo": "La fábrica", "items": ["Compra madera", "Paga nómina", "Vende a tiendas", "Gana en cada mueble"] }
+      "visual": {
+        "tipo": "lista",
+        "titulo": "La fábrica",
+        "items": [
+          "Compra madera",
+          "Paga nómina",
+          "Vende a tiendas",
+          "Gana en cada mueble"
+        ]
+      }
     },
     {
       "bloque": "decision",
-      "narracion": "Un día, una cadena le ofrece un pedido enorme. La fábrica dice que sí. Pero hay una condición: la cadena paga a noventa días.",
-      "visual": { "tipo": "dato", "valor": "90 días", "etiqueta": "lo que tarda el cliente en pagar" }
+      "narracion": "Un día llega una cadena con un pedido enorme. Ponte en los zapatos del dueño. Es la venta del año. Dices que sí. Pero hay una condición: te pagan a noventa días.",
+      "visual": {
+        "tipo": "dato",
+        "valor": "90 días",
+        "etiqueta": "lo que tarda el cliente en pagar"
+      }
     },
     {
       "bloque": "consecuencia",
-      "narracion": "La madera y los sueldos se pagan hoy. El dinero del pedido llega en tres meses. En el papel, la empresa gana. En el banco, no tiene con qué pagar.",
+      "narracion": "Y aquí está el problema. La madera y los sueldos se pagan hoy. El dinero llega en tres meses. En el papel, la empresa gana. En el banco, no tiene con qué pagar. El error no fue vender. Fue no calcular cuánto costaba esperar.",
       "visual": {
         "tipo": "comparacion",
-        "izquierda": { "titulo": "En el papel", "texto": "Más ventas, más ganancia" },
-        "derecha": { "titulo": "En el banco", "texto": "Sin efectivo para pagar" }
+        "izquierda": {
+          "titulo": "En el papel",
+          "texto": "Más ventas, más ganancia"
+        },
+        "derecha": {
+          "titulo": "En el banco",
+          "texto": "Sin efectivo para pagar"
+        }
       }
     },
     {
       "bloque": "aprendizaje",
       "narracion": "La lección es esta. Antes de aceptar una venta grande, calcula cuánto efectivo necesitas para cumplirla. Si pagas hoy y te pagan en tres meses, crecer también te exige financiar esa diferencia.",
-      "visual": { "tipo": "titulo", "texto": "Ganancia no es [[efectivo]]" }
+      "visual": {
+        "tipo": "titulo",
+        "texto": "Ganancia no es [[efectivo]]"
+      }
     },
     {
       "bloque": "cierre",
       "narracion": "¿Tú habrías aceptado ese pedido? Te leo en los comentarios.",
-      "visual": { "tipo": "titulo", "texto": "¿Habrías aceptado el [[pedido]]?" }
+      "visual": {
+        "tipo": "titulo",
+        "texto": "¿Habrías aceptado el [[pedido]]?"
+      }
     }
   ],
   "caption": "Vender más no siempre es buena noticia. Si pagas hoy y te pagan en 90 días, cada venta nueva te exige más efectivo.\n\n→ Ganancia: lo que queda en el papel.\n→ Flujo de caja: el dinero que de verdad tienes hoy.\n\n¿Tú habrías aceptado ese pedido?",
-  "hashtags": ["#negocios", "#emprendimiento", "#flujodecaja", "#finanzas", "#pymes", "#empresas"],
+  "hashtags": [
+    "#negocios",
+    "#emprendimiento",
+    "#flujodecaja",
+    "#finanzas",
+    "#pymes",
+    "#empresas"
+  ],
   "fuentes": []
 }
