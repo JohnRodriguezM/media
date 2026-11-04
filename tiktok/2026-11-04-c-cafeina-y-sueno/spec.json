@@ -1,0 +1,56 @@
+{
+  "slug": "cafeina-y-sueno",
+  "date": "2026-11-04",
+  "franja": "c",
+  "serie": "Sueño y cerebro",
+  "seed": 91,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Tu café de la tarde te [[roba]] sueño",
+      "subtitle": "Aunque te duermas sin problema.",
+      "serie": "Serie Sueño y cerebro"
+    },
+    {
+      "type": "point",
+      "title": "Apaga la señal de sueño",
+      "body": "Durante el día se acumula **adenosina**, la molécula que te da sueño. La **cafeína** bloquea sus receptores y apaga esa señal.",
+      "note": "**Por eso:** no te da energía, te quita el cansancio."
+    },
+    {
+      "type": "point",
+      "title": "Dura más de lo que crees",
+      "big": "≈5 h",
+      "bigUnit": "vida media",
+      "body": "En promedio, 5 horas después aún tienes **la mitad** de la cafeína en la sangre. Y varía mucho entre personas.",
+      "note": "**Embarazo y anticonceptivos orales** la hacen durar más."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "El problema",
+      "title": "Duermes, pero peor",
+      "body": "Aunque te quedes dormido, la cafeína de la tarde puede reducir el **sueño profundo** y el **tiempo total** de sueño. Muchas veces sin que lo notes.",
+      "note": "**Señal:** despiertas cansado aunque dormiste \"bien\"."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Regla práctica",
+      "title": "Tu último café",
+      "big": "≈8 h",
+      "bigUnit": "antes de dormir",
+      "body": "Si te acuestas a las 10 p. m., tu último café debería ser cerca de las **2 p. m.** Si eres sensible, aún más temprano.",
+      "note": "**Cuenta todo:** té negro, té verde, colas y energizantes."
+    },
+    {
+      "type": "cta",
+      "title": "Tu horario [[importa]]",
+      "body": "Tu ventana de ayuno y tu hora de dormir se pueden alinear. Calcúlala gratis según tu rutina.",
+      "button": "Link en el perfil",
+      "small": "Guárdalo para tu próximo café"
+    }
+  ],
+  "caption_title": "¿Café en la tarde? Por qué te roba sueño aunque te duermas rápido",
+  "description": "Tu café de la tarde puede estar robándote sueño, aunque te duermas sin problema ☕😴\n\n→ La cafeína bloquea la adenosina, la señal natural de sueño\n→ Su vida media es de ≈5 h: a esa hora aún queda la mitad\n❌ Puede reducir el sueño profundo y el tiempo total de sueño\n✅ Regla práctica: último café ≈8 h antes de dormir\n⚠️ Té negro, té verde, colas y energizantes también cuentan\n\n👉 Calcula gratis tu ventana de ayuno ideal según tu rutina: link en el perfil.\n\n¿A qué hora tomas tu último café? Te leo en comentarios 👇\n\n#cafeina #sueño #dosisdeciencia #insomnio #cafe #cerebro #salud #ciencia #aprendeentiktok #dormirbien"
+}

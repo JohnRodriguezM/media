@@ -1,0 +1,58 @@
+{
+  "slug": "resistencia-insulina-senales",
+  "date": "2026-11-04",
+  "franja": "b",
+  "serie": "Hormonas y metabolismo",
+  "seed": 57,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "4 señales de resistencia a la [[insulina]]",
+      "subtitle": "Puede empezar años antes de la diabetes. Y casi nunca duele.",
+      "serie": "Serie Hormonas y metabolismo"
+    },
+    {
+      "type": "point",
+      "verdict": "gris",
+      "badge": "Señal 1",
+      "title": "Cintura que crece",
+      "big": "90/80",
+      "bigUnit": "cm",
+      "body": "Cintura de **90 cm o más en hombres** y **80 cm o más en mujeres**: la grasa abdominal se asocia con resistencia a la insulina, incluso con peso normal.",
+      "note": "**Cómo medir:** a la altura del ombligo, sin apretar."
+    },
+    {
+      "type": "point",
+      "verdict": "gris",
+      "badge": "Señal 2",
+      "title": "Manchas oscuras en el cuello",
+      "body": "Piel oscura y aterciopelada en cuello, axilas o ingles: se llama **acantosis nigricans** y es una señal clásica de insulina alta.",
+      "note": "**Ojo:** no es suciedad. Lavar no la quita."
+    },
+    {
+      "type": "point",
+      "verdict": "gris",
+      "badge": "Señal 3",
+      "title": "Exámenes que van juntos",
+      "body": "**Triglicéridos altos**, **HDL bajo** y glucosa en ayunas de **100 a 125 mg/dL** (prediabetes) suelen aparecer juntos.",
+      "note": "**Pregúntale a tu médico** por la hemoglobina glicada (HbA1c)."
+    },
+    {
+      "type": "point",
+      "verdict": "gris",
+      "badge": "Señal 4",
+      "title": "Hígado graso o presión alta",
+      "body": "Si una ecografía mostró **hígado graso** o tu presión está subiendo, ambos suelen formar parte del mismo cuadro: el **síndrome metabólico**.",
+      "note": "**Importante:** ninguna señal sola es un diagnóstico."
+    },
+    {
+      "type": "cta",
+      "title": "Se puede [[mejorar]]",
+      "body": "Movimiento, buen sueño y una alimentación ordenada ayudan. Empieza calculando gratis tu ventana de ayuno ideal.",
+      "button": "Link en el perfil",
+      "small": "Confirma cualquier señal con tu médico"
+    }
+  ],
+  "caption_title": "4 señales de resistencia a la insulina que tu cuerpo te muestra",
+  "description": "La resistencia a la insulina puede empezar años antes de la diabetes y casi nunca duele. Estas son 4 señales para tener en el radar 👇\n\n→ Cintura de 90 cm o más (hombres) u 80 cm o más (mujeres)\n→ Manchas oscuras y aterciopeladas en cuello o axilas (acantosis nigricans)\n→ Triglicéridos altos, HDL bajo y glucosa en ayunas de 100-125 mg/dL\n→ Hígado graso o presión arterial en aumento\n\n⚠️ Ninguna señal sola es un diagnóstico: confírmalo con tu médico (pregunta por la HbA1c).\n✅ Movimiento, buen sueño y alimentación ordenada ayudan a mejorarla.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Te has medido la cintura alguna vez? Cuéntame en comentarios 👇\n\n#resistenciaalainsulina #insulina #dosisdeciencia #prediabetes #metabolismo #salud #higadograso #ciencia #aprendeentiktok"
+}

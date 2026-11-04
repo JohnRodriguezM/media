@@ -1,0 +1,58 @@
+{
+  "slug": "errores-del-ayuno",
+  "date": "2026-11-04",
+  "franja": "a",
+  "serie": "Ayuno",
+  "seed": 23,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "4 errores que [[sabotean]] tu ayuno",
+      "subtitle": "No es solo cuántas horas ayunas. Es cómo lo haces.",
+      "serie": "Serie Ayuno · Errores comunes"
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Error 1",
+      "title": "Romperlo con un atracón",
+      "body": "Llegar con mucha hambre y comer harinas y dulces de golpe produce un **pico grande de glucosa**. Y es muy fácil comer de más.",
+      "note": "**Mejor:** empieza con proteína y verduras, luego lo demás."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Error 2",
+      "title": "Poca agua y nada de sal",
+      "body": "En ayuno el cuerpo elimina más **agua y sodio**. El dolor de cabeza y el mareo muchas veces vienen de ahí, no del hambre.",
+      "note": "**Ojo:** con hipertensión o problema renal, consulta antes de agregar sal."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Error 3",
+      "title": "Comer poca proteína",
+      "body": "Con menos comidas es fácil quedarse corto. Después de los 40, poca **proteína** facilita perder **músculo**. Incluye una buena porción en cada comida.",
+      "note": "**Con enfermedad renal:** ajusta la proteína con tu médico."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Error 4",
+      "title": "Empezar con ayunos largos",
+      "big": "12 h",
+      "bigUnit": "para empezar",
+      "body": "Saltar de golpe a 24 h aumenta el mareo, la irritabilidad y las ganas de abandonar. Sube poco a poco hasta **14 o 16 horas**.",
+      "note": "**Diabetes con medicación, embarazo o TCA:** solo con supervisión médica."
+    },
+    {
+      "type": "cta",
+      "title": "¿Cuál es [[tu]] ventana ideal?",
+      "body": "Depende de tu horario y tu objetivo. Calcula gratis tus horas de ayuno en 30 segundos.",
+      "button": "Link en el perfil",
+      "small": "Compártelo con quien está empezando"
+    }
+  ],
+  "caption_title": "4 errores que sabotean tu ayuno (el 3 es el más común después de los 40)",
+  "description": "¿Ayunas pero te sientes mareado, con dolor de cabeza o no ves resultados? Revisa estos 4 errores 👇\n\n❌ Romper el ayuno con un atracón de harinas y dulces\n❌ Tomar poca agua y nada de sal\n❌ Comer poca proteína en tu ventana (clave después de los 40)\n❌ Empezar directo con ayunos de 24 h\n\n✅ Empieza con 12 h y sube poco a poco a 14-16 h.\n⚠️ Diabetes con medicación, embarazo, TCA o enfermedad renal: solo con supervisión médica.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Cuál de estos errores cometiste al empezar? Te leo en comentarios 👇\n\n#ayunointermitente #ayuno #dosisdeciencia #salud #metabolismo #proteina #ciencia #aprendeentiktok #saludable"
+}
