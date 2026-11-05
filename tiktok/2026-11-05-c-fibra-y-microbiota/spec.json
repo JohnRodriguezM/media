@@ -1,0 +1,58 @@
+{
+  "slug": "fibra-y-microbiota",
+  "date": "2026-11-05",
+  "franja": "c",
+  "serie": "Intestino-cerebro",
+  "seed": 142,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Tus bacterias del intestino tienen [[hambre]]",
+      "subtitle": "Y lo que comen es fibra.",
+      "serie": "Serie Intestino-cerebro"
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "Dato 1",
+      "title": "Se alimentan de fibra",
+      "body": "Tú no digieres la **fibra**, pero tus bacterias del colon sí. La fermentan y producen **ácidos grasos de cadena corta**, como el **butirato**.",
+      "note": "**El butirato:** es combustible para las células del colon."
+    },
+    {
+      "type": "point",
+      "verdict": "gris",
+      "badge": "Dato 2",
+      "title": "Muchos comemos poca",
+      "big": "25-30",
+      "bigUnit": "g/día",
+      "body": "Es lo que suelen recomendar las guías para adultos. Muchas personas comen **bastante menos**.",
+      "note": "**Dónde está:** legumbres, verduras, frutas, avena, semillas."
+    },
+    {
+      "type": "point",
+      "verdict": "gris",
+      "badge": "Zona gris",
+      "title": "Intestino y cerebro conversan",
+      "body": "Se comunican por el **nervio vago** y otras vías. En animales, la microbiota influye en la conducta; en humanos la evidencia **aún está en estudio**.",
+      "note": "**Lo seguro:** más fibra le hace bien a tu intestino."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "Cómo hacerlo",
+      "title": "Súbela poco a poco",
+      "body": "Aumentar la fibra de golpe produce **gases e hinchazón**. Agrega una porción más cada pocos días y **toma suficiente agua**.",
+      "note": "**Con colon irritable o enfermedad intestinal:** consulta antes."
+    },
+    {
+      "type": "cta",
+      "title": "Alimenta a tus [[bacterias]]",
+      "body": "Y organiza mejor tus horarios de comida: calcula gratis tu ventana de ayuno ideal.",
+      "button": "Link en el perfil",
+      "small": "Guárdalo para tu próxima compra"
+    }
+  ],
+  "caption_title": "Tus bacterias del intestino tienen hambre: y lo que comen es fibra",
+  "description": "Tú no digieres la fibra, pero las bacterias de tu colon sí, y la convierten en sustancias que cuidan tu intestino 👇\n\n✅ Al fermentar la fibra producen ácidos grasos de cadena corta como el butirato, combustible para las células del colon\n→ Las guías suelen recomendar 25-30 g de fibra al día; muchas personas comen bastante menos\n⚠️ Intestino y cerebro se comunican por el nervio vago, pero en humanos el efecto de la microbiota sobre el ánimo aún está en estudio\n✅ Súbela poco a poco y con suficiente agua para evitar gases e hinchazón\n\nDónde encontrarla: legumbres, verduras, frutas, avena y semillas.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Cuál es tu fuente de fibra favorita? Te leo 👇\n\n#microbiota #fibra #dosisdeciencia #intestino #salud #digestion #nutricion #ciencia #aprendeentiktok"
+}

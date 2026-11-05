@@ -1,0 +1,58 @@
+{
+  "slug": "fuerza-despues-de-los-40",
+  "date": "2026-11-05",
+  "franja": "b",
+  "serie": "Ejercicio y músculo",
+  "seed": 68,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Después de los 40, el [[músculo]] se va si no lo usas",
+      "subtitle": "Se llama sarcopenia. Y se puede frenar.",
+      "serie": "Serie Ejercicio y músculo"
+    },
+    {
+      "type": "point",
+      "verdict": "gris",
+      "badge": "El problema",
+      "title": "Se pierde poco a poco",
+      "body": "Desde la mediana edad la **masa muscular** empieza a bajar de forma gradual. Después de los 60 se acelera si no hacemos nada.",
+      "note": "**Se llama:** sarcopenia."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "Por qué importa",
+      "title": "La fuerza te protege",
+      "body": "Más fuerza se asocia con **menos caídas**, mejor **control de la glucosa** y más **independencia** con los años.",
+      "note": "**El músculo:** es uno de los grandes consumidores de glucosa."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "La meta",
+      "title": "Fuerza 2 días por semana",
+      "big": "2",
+      "bigUnit": "días/semana",
+      "body": "La **OMS** recomienda a los adultos ejercicios de **fuerza al menos 2 días por semana**: pesas, bandas elásticas o tu propio peso.",
+      "note": "**Nunca es tarde:** se gana fuerza incluso después de los 70."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "El combustible",
+      "title": "Proteína en cada comida",
+      "body": "El músculo necesita material para repararse. **Repartir la proteína** entre las comidas ayuda: huevo, pescado, pollo, legumbres, lácteos.",
+      "note": "**Con enfermedad renal:** ajusta la proteína con tu médico."
+    },
+    {
+      "type": "cta",
+      "title": "Empieza [[hoy]]",
+      "body": "Sentadillas desde una silla, flexiones contra la pared, subir escaleras. Y si ayunas, calcula gratis tu ventana ideal.",
+      "button": "Link en el perfil",
+      "small": "Con dolor, lesión o enfermedad del corazón, consulta antes"
+    }
+  ],
+  "caption_title": "Después de los 40, el músculo se va si no lo usas: así lo frenas",
+  "description": "A partir de la mediana edad perdemos músculo poco a poco, y después de los 60 el proceso se acelera. Se llama sarcopenia, y se puede frenar 👇\n\n→ Más fuerza se asocia con menos caídas, mejor control de la glucosa y más independencia\n→ La OMS recomienda ejercicios de fuerza al menos 2 días por semana\n→ Reparte la proteína entre tus comidas: huevo, pescado, pollo, legumbres, lácteos\n\n✅ Nunca es tarde: se gana fuerza incluso después de los 70.\n⚠️ Con dolor, lesión, enfermedad del corazón o enfermedad renal, consulta con tu médico antes.\n\n👉 Si además ayunas, calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Cuántos días a la semana haces ejercicios de fuerza? Cuéntame 👇\n\n#sarcopenia #musculo #dosisdeciencia #ejercicio #fuerza #salud #envejecimiento #ciencia #aprendeentiktok"
+}

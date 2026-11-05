@@ -1,0 +1,56 @@
+{
+  "slug": "quien-no-debe-ayunar",
+  "date": "2026-11-05",
+  "franja": "a",
+  "serie": "Ayuno",
+  "seed": 37,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "¿Quién [[NO]] debe ayunar?",
+      "subtitle": "El ayuno no es para todos. Revisa si estás en esta lista.",
+      "serie": "Serie Ayuno · Seguridad"
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Caso 1",
+      "title": "Embarazo y lactancia",
+      "body": "Tu cuerpo necesita **energía y nutrientes constantes** para ti y para el bebé. No es momento de ayunar.",
+      "note": "**Si quieres ordenar horarios:** háblalo con tu médico."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Caso 2",
+      "title": "Diabetes con medicación",
+      "body": "Con **insulina** o algunos **medicamentos para la glucosa**, saltarse comidas puede causar **hipoglucemia**: azúcar peligrosamente baja.",
+      "note": "**Solo con supervisión médica:** puede requerir ajustar dosis."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Caso 3",
+      "title": "Trastornos alimentarios",
+      "body": "Si has tenido **anorexia, bulimia o atracones**, contar horas sin comer puede reactivar el problema.",
+      "note": "**Mejor:** busca acompañamiento profesional."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Caso 4",
+      "title": "Menores y bajo peso",
+      "body": "Los **menores de 18** están creciendo y las personas con **bajo peso** no tienen reservas de sobra. Ayunar puede hacer más daño que bien.",
+      "note": "**Consulta antes** si tomas medicamentos a diario."
+    },
+    {
+      "type": "cta",
+      "title": "¿No estás en la lista? [[Empieza]] bien",
+      "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.",
+      "button": "Link en el perfil",
+      "small": "Compártelo con alguien que quiera empezar a ayunar"
+    }
+  ],
+  "caption_title": "¿Quién NO debe ayunar? Revisa esta lista antes de empezar",
+  "description": "El ayuno intermitente puede ser una buena herramienta, pero no es para todos. Antes de empezar, revisa esta lista 👇\n\n❌ Embarazo y lactancia\n❌ Diabetes con insulina o medicamentos para la glucosa (riesgo de hipoglucemia), salvo con supervisión médica\n❌ Historia de anorexia, bulimia o atracones\n❌ Menores de 18 años y personas con bajo peso\n\n⚠️ Si tomas medicamentos a diario, consulta con tu médico antes de ayunar.\n✅ Si no estás en la lista, empieza con 12 h y sube poco a poco.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Conoces a alguien que debería ver esto antes de ayunar? Etiquétalo 👇\n\n#ayunointermitente #ayuno #dosisdeciencia #salud #diabetes #embarazo #ciencia #aprendeentiktok #saludable"
+}
