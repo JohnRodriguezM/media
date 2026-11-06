@@ -1,0 +1,58 @@
+{
+  "slug": "dormir-5-horas",
+  "date": "2026-11-06",
+  "franja": "c",
+  "serie": "Sueño y cerebro",
+  "seed": 211,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Si duermes [[5 horas]], esto le pasa a tu cuerpo",
+      "subtitle": "Aunque sientas que \"ya te acostumbraste\".",
+      "serie": "Serie Sueño y cerebro"
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Cerebro",
+      "title": "Menos atención y memoria",
+      "body": "Con poco sueño bajan la **concentración**, el **tiempo de reacción** y la capacidad de **guardar recuerdos**. Y uno suele no notarlo.",
+      "note": "**El truco:** te acostumbras al cansancio, no a dormir poco."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Apetito",
+      "title": "Más hambre al día siguiente",
+      "body": "Dormir poco se asocia con **más hambre** y más antojo de **dulces y harinas**. Las hormonas del apetito cambian, aunque no igual en todos.",
+      "note": "**Resultado:** comes más sin darte cuenta."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Glucosa",
+      "title": "Peor manejo del azúcar",
+      "body": "En estudios, unas pocas noches de sueño corto bastan para que el cuerpo maneje **peor la glucosa**. Mejora al recuperar el sueño.",
+      "note": "**A largo plazo:** se asocia con más diabetes e hipertensión."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "La meta",
+      "title": "Lo recomendado",
+      "big": "7+ h",
+      "bigUnit": "por noche",
+      "body": "Para adultos se recomiendan **al menos 7 horas**. Ayuda tener **horarios fijos**, poca luz de pantallas de noche y nada de cafeína en la tarde.",
+      "note": "**Ronquidos fuertes o pausas al respirar:** consulta al médico."
+    },
+    {
+      "type": "cta",
+      "title": "Ordena tu [[reloj]]",
+      "body": "Tu ventana de ayuno y tu hora de dormir se pueden alinear. Calcúlala gratis según tu rutina.",
+      "button": "Link en el perfil",
+      "small": "Compártelo con quien duerme 5 horas"
+    }
+  ],
+  "caption_title": "Si duermes 5 horas, esto le pasa a tu cuerpo",
+  "description": "Dormir poco no es solo estar cansado. Esto pasa en tu cuerpo 👇\n\n❌ Cerebro: bajan la concentración, el tiempo de reacción y la memoria.\n❌ Apetito: más hambre y más antojo de dulces y harinas.\n❌ Glucosa: unas pocas noches de sueño corto bastan para manejar peor el azúcar.\n⚠️ A largo plazo, dormir poco se asocia con más diabetes e hipertensión.\n✅ La meta para adultos: al menos 7 horas, con horarios fijos.\n⚠️ Si roncas fuerte o haces pausas al respirar, consulta a tu médico.\n\n👉 Alinea tu ventana de ayuno con tu sueño: calculadora gratis en el link del perfil.\n\n¿Cuántas horas dormiste anoche? Sé honesto 👇\n\n#sueño #dormir #dosisdeciencia #insomnio #cerebro #salud #ciencia #aprendeentiktok #saludmental"
+}

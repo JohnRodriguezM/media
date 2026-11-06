@@ -1,0 +1,59 @@
+{
+  "slug": "ayuno-hora-por-hora",
+  "date": "2026-11-06",
+  "franja": "a",
+  "serie": "Ayuno",
+  "seed": 53,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Qué pasa en tu cuerpo [[hora por hora]] de ayuno",
+      "subtitle": "De 12 a 24 horas, sin exagerar.",
+      "serie": "Serie Ayuno · Reloj del ayuno"
+    },
+    {
+      "type": "point",
+      "badge": "Hora 12",
+      "verdict": "gris",
+      "title": "Ya digeriste la cena",
+      "ring": 0.5,
+      "body": "La **insulina** ya bajó. El hígado usa sus reservas de **glucógeno** (azúcar guardada) para mantener tu glucosa estable.",
+      "note": "**Ejemplo:** cenas a las 7 p. m. → a las 7 a. m. ya llevas 12 h."
+    },
+    {
+      "type": "point",
+      "badge": "Hora 16",
+      "verdict": "gris",
+      "title": "Más grasa como combustible",
+      "ring": 0.67,
+      "body": "Con el glucógeno más bajo, el cuerpo usa **más grasa** como energía. Empiezan a subir un poco las **cetonas**.",
+      "note": "**Ojo:** el ritmo varía según lo que cenaste y tu actividad."
+    },
+    {
+      "type": "point",
+      "badge": "Hora 18-24",
+      "verdict": "gris",
+      "title": "Cetonas en aumento",
+      "ring": 1,
+      "body": "Las **cetonas** siguen subiendo y la **grasa** es el combustible principal. Muchos notan que el hambre llega en **oleadas**, no de forma constante.",
+      "note": "**Agua y algo de sal** ayudan con dolor de cabeza leve."
+    },
+    {
+      "type": "point",
+      "badge": "Zona gris",
+      "verdict": "gris",
+      "title": "¿Y la autofagia?",
+      "body": "La **autofagia** (reciclaje celular) está bien demostrada en animales. En humanos **aún no sabemos** a qué hora exacta se activa.",
+      "note": "**Desconfía** de quien te dé una hora exacta."
+    },
+    {
+      "type": "cta",
+      "title": "¿Cuántas horas te [[convienen]]?",
+      "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.",
+      "button": "Link en el perfil",
+      "small": "Más de 24 h: solo con supervisión médica"
+    }
+  ],
+  "caption_title": "Qué pasa en tu cuerpo a las 12, 16 y 24 horas de ayuno",
+  "description": "Tu cuerpo no cambia de golpe: el ayuno es un proceso gradual 👇\n\n→ Hora 12: baja la insulina y el hígado usa su glucógeno (azúcar guardada).\n→ Hora 16: el cuerpo usa más grasa como energía y suben un poco las cetonas.\n→ Hora 18-24: las cetonas siguen subiendo y la grasa es el combustible principal.\n⚠️ Autofagia: demostrada en animales; en humanos aún no se sabe a qué hora exacta se activa.\n❌ Ayunos de más de 24 h, embarazo, diabetes con medicación o historia de trastornos alimentarios: solo con supervisión médica.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Cuántas horas ayunas tú normalmente? Cuéntame en los comentarios 👇\n\n#ayunointermitente #ayuno #dosisdeciencia #cetosis #autofagia #metabolismo #salud #ciencia #aprendeentiktok"
+}

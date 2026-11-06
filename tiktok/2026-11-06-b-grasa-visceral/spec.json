@@ -1,0 +1,56 @@
+{
+  "slug": "grasa-visceral",
+  "date": "2026-11-06",
+  "franja": "b",
+  "serie": "Hormonas y metabolismo",
+  "seed": 128,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "La grasa que [[no se ve]] es la más peligrosa",
+      "subtitle": "Grasa visceral: qué es y cómo medirla en casa.",
+      "serie": "Serie Hormonas y metabolismo"
+    },
+    {
+      "type": "point",
+      "title": "Rodea tus órganos",
+      "body": "La **grasa visceral** está dentro del abdomen, alrededor del **hígado** y los **intestinos**. No es la que pellizcas: esa es la subcutánea.",
+      "note": "**Puede pasar:** peso normal, pero mucha grasa visceral."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "El riesgo",
+      "title": "Una grasa muy activa",
+      "body": "Libera sustancias **inflamatorias** y se asocia con **resistencia a la insulina**, **hígado graso**, diabetes tipo 2 y enfermedad del corazón.",
+      "note": "**Por eso** importa más la cintura que el peso."
+    },
+    {
+      "type": "point",
+      "verdict": "gris",
+      "badge": "Mídela en casa",
+      "title": "Cintura vs. estatura",
+      "big": "< 0,5",
+      "bigUnit": "cintura ÷ estatura",
+      "body": "Mide tu cintura a la altura del ombligo y divídela entre tu estatura (en cm). Si pasa de **0,5**, conviene revisarlo con tu médico.",
+      "note": "**Ejemplo:** 170 cm de estatura → cintura menor de 85 cm."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "Lo que ayuda",
+      "title": "Responde bien al cambio",
+      "body": "El **ejercicio regular** (caminar, trotar, fuerza), **dormir bien**, menos **alcohol** y menos **azúcar** ayudan a reducirla, incluso antes de ver cambios en la báscula.",
+      "note": "**Constancia** le gana a la intensidad."
+    },
+    {
+      "type": "cta",
+      "title": "Empieza [[hoy]]",
+      "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.",
+      "button": "Link en el perfil",
+      "small": "Guárdalo y mide tu cintura esta semana"
+    }
+  ],
+  "caption_title": "Grasa visceral: la que no se ve y cómo medirla en casa",
+  "description": "No toda la grasa es igual. La que rodea tus órganos es la que más se asocia con problemas de salud 👇\n\n→ La grasa visceral está dentro del abdomen, alrededor del hígado y los intestinos.\n❌ Se asocia con resistencia a la insulina, hígado graso, diabetes tipo 2 y enfermedad del corazón.\n⚠️ Puedes tener peso normal y aun así mucha grasa visceral.\n✅ Mídela en casa: cintura ÷ estatura. Lo ideal es menos de 0,5.\n✅ Ejercicio regular, buen sueño, menos alcohol y menos azúcar ayudan a reducirla.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Ya mediste tu cintura? ¿Te dio más o menos de 0,5? Cuéntame 👇\n\n#grasavisceral #metabolismo #dosisdeciencia #salud #higadograso #resistenciaalainsulina #ciencia #aprendeentiktok #saludable"
+}

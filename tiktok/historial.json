@@ -5,5 +5,8 @@
   {"fecha": "2026-11-04", "franja": "c", "slug": "cafeina-y-sueno", "serie": "Sueño y cerebro", "tema": "Cafeína y sueño: adenosina, vida media ≈5 h, menos sueño profundo, último café ≈8 h antes de dormir"},
   {"fecha": "2026-11-05", "franja": "a", "slug": "quien-no-debe-ayunar", "serie": "Ayuno", "tema": "Quién NO debe ayunar: embarazo/lactancia, diabetes con medicación (hipoglucemia), historia de TCA, menores de 18 y bajo peso"},
   {"fecha": "2026-11-05", "franja": "b", "slug": "fuerza-despues-de-los-40", "serie": "Ejercicio y músculo", "tema": "Fuerza después de los 40: sarcopenia gradual, fuerza protege (caídas, glucosa, independencia), OMS 2 días/semana, proteína repartida"},
-  {"fecha": "2026-11-05", "franja": "c", "slug": "fibra-y-microbiota", "serie": "Intestino-cerebro", "tema": "Fibra y microbiota: bacterias fermentan fibra→butirato, 25-30 g/día, eje intestino-cerebro (zona gris), subirla poco a poco"}
+  {"fecha": "2026-11-05", "franja": "c", "slug": "fibra-y-microbiota", "serie": "Intestino-cerebro", "tema": "Fibra y microbiota: bacterias fermentan fibra→butirato, 25-30 g/día, eje intestino-cerebro (zona gris), subirla poco a poco"},
+  {"fecha": "2026-11-06", "franja": "a", "slug": "ayuno-hora-por-hora", "serie": "Ayuno", "tema": "Ayuno hora por hora (12/16/18-24 h): insulina baja y glucógeno, más grasa y cetonas, autofagia en humanos = zona gris"},
+  {"fecha": "2026-11-06", "franja": "b", "slug": "grasa-visceral", "serie": "Hormonas y metabolismo", "tema": "Grasa visceral: qué es, riesgos asociados, índice cintura/estatura <0,5, ejercicio/sueño/menos alcohol y azúcar"},
+  {"fecha": "2026-11-06", "franja": "c", "slug": "dormir-5-horas", "serie": "Sueño y cerebro", "tema": "Dormir 5 h: atención y memoria, más hambre, peor manejo de glucosa, meta ≥7 h y horarios fijos"}
 ]
