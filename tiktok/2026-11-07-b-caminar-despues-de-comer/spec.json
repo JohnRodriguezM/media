@@ -1,0 +1,58 @@
+{
+  "slug": "caminar-despues-de-comer",
+  "date": "2026-11-07",
+  "franja": "b",
+  "serie": "Ejercicio y músculo",
+  "seed": 89,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Camina [[10 minutos]] después de comer",
+      "subtitle": "El hábito más sencillo para tu glucosa.",
+      "serie": "Serie Ejercicio y músculo"
+    },
+    {
+      "type": "point",
+      "badge": "Qué pasa",
+      "verdict": "gris",
+      "title": "Después de comer, sube la glucosa",
+      "body": "Es normal: tras una comida con carbohidratos, la **glucosa en sangre sube** y luego baja. Lo que importa es que los picos no sean tan altos ni tan frecuentes.",
+      "note": "**Sobre todo** si tienes resistencia a la insulina o prediabetes."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "Por qué funciona",
+      "title": "Tus músculos usan esa glucosa",
+      "body": "Al caminar, los **músculos de las piernas** toman glucosa de la sangre para moverse. Los estudios muestran que una caminata suave después de comer **reduce el pico de glucosa**.",
+      "note": "**Funciona** incluso a paso tranquilo."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "Cuándo y cuánto",
+      "title": "Poco, pero pronto",
+      "big": "10–15",
+      "bigUnit": "minutos",
+      "body": "Lo ideal es empezar **dentro de la primera media hora** después de comer. Caminar en casa, subir escaleras o ir a hacer un mandado cuenta.",
+      "note": "**Si no puedes caminar:** levántate y muévete unos minutos."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Ojo",
+      "title": "No reemplaza tu tratamiento",
+      "body": "Es un **complemento**, no un sustituto. Si tienes diabetes, **no cambies tus medicamentos** por tu cuenta: habla con tu médico.",
+      "note": "**Suma:** también ayuda a moverte más en el día."
+    },
+    {
+      "type": "cta",
+      "title": "Empieza [[hoy]]",
+      "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.",
+      "button": "Link en el perfil",
+      "small": "Guárdalo y pruébalo después del almuerzo"
+    }
+  ],
+  "caption_title": "Camina 10 minutos después de comer: lo que pasa con tu glucosa",
+  "description": "Un hábito sencillo que tu glucosa agradece 👇\n\n→ Después de comer carbohidratos, la glucosa sube. Es normal, pero conviene que los picos no sean tan altos.\n✅ Al caminar, tus músculos usan glucosa de la sangre. Una caminata suave después de comer reduce el pico.\n✅ 10-15 minutos, idealmente dentro de la primera media hora. A paso tranquilo también sirve.\n⚠️ Si no puedes salir, levántate y muévete unos minutos en casa.\n❌ No reemplaza el tratamiento: si tienes diabetes, no cambies tus medicamentos sin hablar con tu médico.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Tú caminas después de comer o te vas directo al sofá? Cuéntame 👇\n\n#caminar #glucosa #resistenciaalainsulina #prediabetes #dosisdeciencia #salud #ejercicio #ciencia #aprendeentiktok"
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "hambre-en-el-ayuno",
+  "date": "2026-11-07",
+  "franja": "a",
+  "serie": "Ayuno",
+  "seed": 173,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "El hambre del ayuno [[no sube sin parar]]",
+      "subtitle": "Llega en olas. Entender la grelina te ayuda a no rendirte.",
+      "serie": "Serie Ayuno"
+    },
+    {
+      "type": "point",
+      "badge": "La hormona",
+      "verdict": "gris",
+      "title": "Se llama grelina",
+      "body": "La **grelina** es la hormona que más se asocia con el hambre. Sube **antes de tus horas habituales de comer**, porque tu cuerpo se acostumbra a tu horario.",
+      "note": "**Por eso** a las 12 sientes hambre aunque no hayas gastado nada."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "Llega en olas",
+      "title": "Sube, y luego baja",
+      "body": "En muchas personas el hambre llega como una **ola**: aparece a la hora de siempre y **se calma** después de un rato, aunque no comas.",
+      "note": "**Truco:** un vaso de agua y espera unos minutos antes de decidir."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "Se adapta",
+      "title": "Los primeros días son los más duros",
+      "body": "Cuando mantienes un **horario estable**, muchas personas notan que el hambre **se hace más llevadera** con las semanas. Cambiar de horario cada día lo hace más difícil.",
+      "note": "**Clave:** misma ventana, todos los días."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Ojo",
+      "title": "Hambre no es lo mismo que malestar",
+      "body": "Mareo, temblor, sudor frío o confusión **no son hambre normal**. Rompe el ayuno. Si usas medicamentos para la diabetes, ayuna **solo con supervisión médica**.",
+      "note": "**Dormir poco** también aumenta el hambre al día siguiente."
+    },
+    {
+      "type": "cta",
+      "title": "Elige tu [[ventana]]",
+      "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.",
+      "button": "Link en el perfil",
+      "small": "Guárdalo para tu próximo ayuno"
+    }
+  ],
+  "caption_title": "El hambre del ayuno llega en olas: qué es la grelina y cómo manejarla",
+  "description": "Si el hambre te gana en el ayuno, esto te va a ayudar 👇\n\n→ La grelina es la hormona más asociada con el hambre. Sube antes de tus horas habituales de comer.\n✅ En muchas personas el hambre llega en olas: sube y después se calma, aunque no comas.\n✅ Con un horario estable, el hambre suele hacerse más llevadera con las semanas.\n⚠️ Dormir poco aumenta el hambre al día siguiente.\n❌ Mareo, temblor, sudor frío o confusión no son hambre normal: rompe el ayuno. Con medicamentos para la diabetes, ayuna solo con supervisión médica.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿A qué hora te da más hambre cuando ayunas? Cuéntame 👇\n\n#ayunointermitente #ayuno #grelina #hambre #dosisdeciencia #salud #metabolismo #ciencia #aprendeentiktok"
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "ultraprocesados-e-intestino",
+  "date": "2026-11-07",
+  "franja": "c",
+  "serie": "Intestino-cerebro",
+  "seed": 257,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Lo que la [[comida de paquete]] le hace a tu cuerpo",
+      "subtitle": "Ultraprocesados: cómo reconocerlos en 5 segundos.",
+      "serie": "Serie Intestino-cerebro"
+    },
+    {
+      "type": "point",
+      "badge": "Qué son",
+      "verdict": "gris",
+      "title": "No es lo mismo procesado que ultraprocesado",
+      "body": "Un queso o unos frijoles en lata son procesados. Los **ultraprocesados** son fórmulas industriales: galletas, gaseosas, embutidos, snacks de paquete, cereales azucarados.",
+      "note": "**Pista:** ingredientes que no usarías en tu cocina."
+    },
+    {
+      "type": "point",
+      "verdict": "no",
+      "badge": "Comes más",
+      "title": "Hacen que comas de más",
+      "body": "En un estudio controlado (pequeño, pero muy citado), las personas comieron **≈500 calorías más al día** con una dieta ultraprocesada que con una de alimentos naturales, sin darse cuenta.",
+      "note": "**Son** fáciles de comer rápido y poco saciantes."
+    },
+    {
+      "type": "point",
+      "verdict": "gris",
+      "badge": "Tu intestino",
+      "title": "Poca fibra para tus bacterias",
+      "body": "Suelen tener **poca fibra**, el alimento de tu **microbiota**. Algunos aditivos, como ciertos emulsionantes, podrían alterarla, pero en humanos aún es **zona gris**.",
+      "note": "**Lo que sí sabemos:** se asocian con más riesgo de varias enfermedades crónicas."
+    },
+    {
+      "type": "point",
+      "verdict": "si",
+      "badge": "Qué hacer",
+      "title": "No es todo o nada",
+      "body": "Cambia **uno a la vez**: la gaseosa por agua, el snack por fruta o nueces, el pan de paquete por arepa o tortilla casera. **Más comida real**, menos paquetes.",
+      "note": "**Regla fácil:** lista de ingredientes corta y que entiendas."
+    },
+    {
+      "type": "cta",
+      "title": "Come [[con estrategia]]",
+      "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.",
+      "button": "Link en el perfil",
+      "small": "Guárdalo para tu próxima compra"
+    }
+  ],
+  "caption_title": "Ultraprocesados: qué le hacen a tu cuerpo y cómo reconocerlos",
+  "description": "No todo lo procesado es igual. Los ultraprocesados son otra historia 👇\n\n→ Ultraprocesados: fórmulas industriales como gaseosas, galletas, embutidos y snacks de paquete.\n❌ En un estudio controlado pequeño, las personas comieron ≈500 calorías más al día con dieta ultraprocesada, sin darse cuenta.\n⚠️ Tienen poca fibra para tu microbiota. El efecto de algunos aditivos en humanos aún es zona gris.\n⚠️ Se asocian con más riesgo de varias enfermedades crónicas.\n✅ Cambia uno a la vez: gaseosa por agua, snack por fruta o nueces. Más comida real, menos paquetes.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Qué ultraprocesado te cuesta más dejar? Cuéntame 👇\n\n#ultraprocesados #microbiota #intestino #nutricion #dosisdeciencia #salud #comidareal #ciencia #aprendeentiktok"
+}

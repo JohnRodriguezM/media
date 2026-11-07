@@ -8,5 +8,8 @@
   {"fecha": "2026-11-05", "franja": "c", "slug": "fibra-y-microbiota", "serie": "Intestino-cerebro", "tema": "Fibra y microbiota: bacterias fermentan fibra→butirato, 25-30 g/día, eje intestino-cerebro (zona gris), subirla poco a poco"},
   {"fecha": "2026-11-06", "franja": "a", "slug": "ayuno-hora-por-hora", "serie": "Ayuno", "tema": "Ayuno hora por hora (12/16/18-24 h): insulina baja y glucógeno, más grasa y cetonas, autofagia en humanos = zona gris"},
   {"fecha": "2026-11-06", "franja": "b", "slug": "grasa-visceral", "serie": "Hormonas y metabolismo", "tema": "Grasa visceral: qué es, riesgos asociados, índice cintura/estatura <0,5, ejercicio/sueño/menos alcohol y azúcar"},
-  {"fecha": "2026-11-06", "franja": "c", "slug": "dormir-5-horas", "serie": "Sueño y cerebro", "tema": "Dormir 5 h: atención y memoria, más hambre, peor manejo de glucosa, meta ≥7 h y horarios fijos"}
+  {"fecha": "2026-11-06", "franja": "c", "slug": "dormir-5-horas", "serie": "Sueño y cerebro", "tema": "Dormir 5 h: atención y memoria, más hambre, peor manejo de glucosa, meta ≥7 h y horarios fijos"},
+  {"fecha": "2026-11-07", "franja": "a", "slug": "hambre-en-el-ayuno", "serie": "Ayuno", "tema": "Hambre en el ayuno: grelina anticipa horarios, hambre en olas, se adapta con horario estable, señales de alarma (no es hambre)"},
+  {"fecha": "2026-11-07", "franja": "b", "slug": "caminar-despues-de-comer", "serie": "Ejercicio y músculo", "tema": "Caminar 10-15 min después de comer: músculo capta glucosa, menor pico posprandial, dentro de 30 min, no reemplaza tratamiento"},
+  {"fecha": "2026-11-07", "franja": "c", "slug": "ultraprocesados-e-intestino", "serie": "Intestino-cerebro", "tema": "Ultraprocesados: qué son (NOVA), ≈500 kcal más/día (Hall 2019), poca fibra y aditivos (zona gris), cambiar uno a la vez"}
 ]
