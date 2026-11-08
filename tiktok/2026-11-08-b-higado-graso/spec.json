@@ -1,0 +1,60 @@
+{
+  "slug": "higado-graso",
+  "date": "2026-11-08",
+  "franja": "b",
+  "serie": "Hormonas y metabolismo",
+  "seed": 199,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Hígado graso: el problema [[silencioso]]",
+      "subtitle": "Muchas personas lo tienen y no lo saben.",
+      "serie": "Serie Hormonas y metabolismo"
+    },
+    {
+      "type": "point",
+      "badge": "Qué es",
+      "verdict": "gris",
+      "big": "≈1 de 3",
+      "bigUnit": "adultos",
+      "title": "Grasa acumulada en el hígado",
+      "body": "El hígado guarda **más grasa de la cuenta**. Hoy se le llama enfermedad hepática asociada a **disfunción metabólica**.",
+      "note": "**En el mundo:** ≈1 de cada 3 adultos lo tiene."
+    },
+    {
+      "type": "point",
+      "badge": "Por qué preocupa",
+      "verdict": "no",
+      "title": "Casi nunca da síntomas",
+      "body": "Suele **no doler**. Muchas veces aparece por casualidad en una **ecografía** o en exámenes de sangre. Con los años puede inflamar y cicatrizar el hígado.",
+      "note": "**Ojo:** exámenes del hígado normales no lo descartan."
+    },
+    {
+      "type": "point",
+      "badge": "Con qué se asocia",
+      "verdict": "gris",
+      "title": "Va de la mano con la insulina",
+      "body": "Es más común con **grasa abdominal**, resistencia a la insulina, **diabetes tipo 2**, triglicéridos altos y presión alta. El **alcohol** y las **bebidas azucaradas** lo empeoran.",
+      "note": "**Si tienes varios:** pregúntale a tu médico."
+    },
+    {
+      "type": "point",
+      "badge": "La buena noticia",
+      "verdict": "si",
+      "big": "5–10%",
+      "bigUnit": "del peso",
+      "title": "Puede mejorar",
+      "body": "Perder entre **5 y 10%** del peso reduce la grasa del hígado. El **ejercicio regular** ayuda incluso si bajas poco de peso.",
+      "note": "**Importante:** diagnóstico y seguimiento, con tu médico."
+    },
+    {
+      "type": "cta",
+      "title": "Empieza por [[tu horario]]",
+      "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.",
+      "button": "Link en el perfil",
+      "small": "Compártelo con quien se haga sus exámenes"
+    }
+  ],
+  "caption_title": "Hígado graso: el problema silencioso que muchos tienen sin saberlo",
+  "description": "Hígado graso: muchos lo tienen y no lo saben 👇\n\n→ Es grasa acumulada en el hígado. Hoy se llama enfermedad hepática asociada a disfunción metabólica, y afecta a cerca de 1 de cada 3 adultos en el mundo.\n⚠️ Casi nunca da síntomas. Muchas veces aparece por casualidad en una ecografía o en exámenes de sangre (y exámenes normales no lo descartan).\n⚠️ Es más común con grasa abdominal, resistencia a la insulina, diabetes tipo 2, triglicéridos altos y presión alta.\n❌ El alcohol y las bebidas azucaradas lo empeoran.\n✅ Perder entre 5 y 10% del peso reduce la grasa del hígado, y el ejercicio regular ayuda incluso si bajas poco.\n→ El diagnóstico y el seguimiento, siempre con tu médico.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Alguna vez te dijeron que tenías hígado graso? Cuéntame 👇\n\n#higadograso #higado #resistenciaalainsulina #metabolismo #dosisdeciencia #salud #ciencia #medicina #aprendeentiktok"
+}

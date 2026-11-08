@@ -1,0 +1,61 @@
+{
+  "slug": "16-8-vs-18-6-vs-omad",
+  "date": "2026-11-08",
+  "franja": "a",
+  "serie": "Ayuno",
+  "seed": 163,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "16:8, 18:6 u OMAD: ¿[[cuál]] te conviene?",
+      "subtitle": "Más horas no siempre es mejor.",
+      "serie": "Serie Ayuno"
+    },
+    {
+      "type": "point",
+      "badge": "16:8",
+      "verdict": "si",
+      "ring": 0.67,
+      "title": "El punto de partida más común",
+      "body": "**16 horas sin comer y 8 de ventana.** Es el esquema más estudiado y el más fácil de sostener: te deja 2 o 3 comidas para repartir bien la **proteína**.",
+      "note": "**Ideal:** si ya haces 12-14 h sin problema."
+    },
+    {
+      "type": "point",
+      "badge": "18:6",
+      "verdict": "gris",
+      "ring": 0.75,
+      "title": "Un paso más, no un premio",
+      "body": "En los estudios, el ayuno intermitente logra una pérdida de peso **parecida** a la de comer menos calorías. Alargar la ventana no garantiza más resultados: lo que más pesa es la **constancia**.",
+      "note": "**Zona gris:** la evidencia no muestra un ganador claro."
+    },
+    {
+      "type": "point",
+      "badge": "OMAD",
+      "verdict": "no",
+      "ring": 0.96,
+      "title": "Una comida al día: la más difícil",
+      "body": "Cuesta comer **suficiente proteína y nutrientes** en una sola comida. Puede dar más hambre y llevar a atracones. **No es para empezar.**",
+      "note": "**Con diabetes, medicamentos o embarazo:** solo con supervisión médica."
+    },
+    {
+      "type": "point",
+      "badge": "La regla",
+      "verdict": "si",
+      "big": "12–14",
+      "bigUnit": "horas",
+      "title": "La mejor es la que puedes sostener",
+      "body": "Empieza con **12 a 14 horas** y sube poco a poco solo si te sientes bien. Toma agua y come **comida real** en tu ventana.",
+      "note": "**Señal de alarma:** mareo o debilidad = rompe el ayuno."
+    },
+    {
+      "type": "cta",
+      "title": "Encuentra [[tu ventana]]",
+      "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.",
+      "button": "Link en el perfil",
+      "small": "Guárdalo para elegir tu esquema"
+    }
+  ],
+  "caption_title": "16:8, 18:6 u OMAD: cuál ayuno te conviene de verdad",
+  "description": "¿16:8, 18:6 u OMAD? Más horas no siempre es mejor 👇\n\n✅ 16:8: el esquema más estudiado y fácil de sostener. Te deja 2-3 comidas para repartir la proteína.\n⚠️ 18:6: en los estudios, el ayuno intermitente logra una pérdida de peso parecida a comer menos calorías. No hay un ganador claro: lo que más pesa es la constancia.\n❌ OMAD (una comida al día): cuesta comer suficiente proteína y nutrientes, y puede dar más hambre y atracones. No es para empezar.\n→ Empieza con 12-14 horas y sube poco a poco solo si te sientes bien.\n⚠️ Con diabetes, medicamentos o embarazo: solo con supervisión médica.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Cuál haces tú: 16:8, 18:6 u OMAD? Cuéntame 👇\n\n#ayunointermitente #ayuno #168 #omad #dosisdeciencia #salud #ciencia #perderpeso #aprendeentiktok"
+}

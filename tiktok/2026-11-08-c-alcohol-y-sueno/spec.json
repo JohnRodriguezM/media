@@ -1,0 +1,58 @@
+{
+  "slug": "alcohol-y-sueno",
+  "date": "2026-11-08",
+  "franja": "c",
+  "serie": "Sueño y cerebro",
+  "seed": 233,
+  "slides": [
+    {
+      "type": "cover",
+      "title": "Una copa para dormir: lo que [[no te cuentan]]",
+      "subtitle": "Te duermes antes… pero descansas peor.",
+      "serie": "Serie Sueño y cerebro"
+    },
+    {
+      "type": "point",
+      "badge": "Al principio",
+      "verdict": "gris",
+      "title": "Te duermes más rápido",
+      "body": "El alcohol es **sedante**: puede ayudarte a quedarte dormido antes. Pero **dormirte rápido** no es lo mismo que **dormir bien**.",
+      "note": "**La trampa:** se siente como si funcionara."
+    },
+    {
+      "type": "point",
+      "badge": "En la madrugada",
+      "verdict": "no",
+      "title": "La segunda mitad de la noche se rompe",
+      "body": "Mientras tu cuerpo lo procesa, el sueño se vuelve **más ligero**, hay **más despertares** y menos **sueño REM**, clave para la memoria y las emociones.",
+      "note": "**¿Te pasa?** Despertar de madrugada es típico."
+    },
+    {
+      "type": "point",
+      "badge": "Además",
+      "verdict": "no",
+      "title": "Más ronquidos y más baño",
+      "body": "Relaja los músculos de la garganta: **más ronquidos** y puede **empeorar la apnea del sueño**. También te hace levantarte a **orinar** en la noche.",
+      "note": "**Si roncas fuerte o haces pausas:** consulta."
+    },
+    {
+      "type": "point",
+      "badge": "Si vas a tomar",
+      "verdict": "si",
+      "big": "3–4",
+      "bigUnit": "horas antes de dormir",
+      "title": "Que sea poco y temprano",
+      "body": "Deja un margen de **3 a 4 horas** antes de acostarte y no lo uses como **somnífero**. Si el insomnio es frecuente, habla con tu médico.",
+      "note": "**Mejor opción:** horario fijo y luz baja en la noche."
+    },
+    {
+      "type": "cta",
+      "title": "Duerme y come [[con horario]]",
+      "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.",
+      "button": "Link en el perfil",
+      "small": "Guárdalo para el fin de semana"
+    }
+  ],
+  "caption_title": "Una copa para dormir: por qué te duermes antes pero descansas peor",
+  "description": "¿Una copa para dormir mejor? Esto es lo que pasa 👇\n\n⚠️ El alcohol es sedante: puede ayudarte a dormirte antes. Pero dormirte rápido no es lo mismo que dormir bien.\n❌ En la segunda mitad de la noche el sueño se vuelve más ligero, hay más despertares y menos sueño REM.\n❌ Relaja los músculos de la garganta: más ronquidos y puede empeorar la apnea del sueño. Además, más idas al baño.\n✅ Si vas a tomar, que sea poco y con 3-4 horas de margen antes de acostarte.\n→ No lo uses como somnífero. Si el insomnio es frecuente, habla con tu médico.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Te despiertas de madrugada después de tomar? Cuéntame 👇\n\n#sueño #alcohol #insomnio #dormirbien #dosisdeciencia #salud #ciencia #cerebro #aprendeentiktok"
+}
