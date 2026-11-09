@@ -1,0 +1,22 @@
+{
+  "slug": "sedentarismo",
+  "date": "2026-11-09",
+  "franja": "b",
+  "serie": "Ejercicio y músculo",
+  "seed": 331,
+  "slides": [
+    {"type": "cover", "title": "Pasar el día [[sentado]] también pesa", "subtitle": "Incluso si vas al gimnasio.", "serie": "Serie Ejercicio y músculo"},
+    {"type": "point", "badge": "El riesgo", "verdict": "gris", "title": "Muchas horas sentado, más riesgo",
+     "body": "Pasar **muchas horas al día sentado** se asocia con más riesgo de **diabetes tipo 2** y **enfermedad del corazón**.",
+     "note": "**Zona gris:** son estudios de asociación, no prueban una causa única."},
+    {"type": "point", "badge": "Las pausas", "verdict": "si", "big": "2–5", "bigUnit": "min", "title": "Levántate cada 30 minutos",
+     "body": "En estudios, pausas cortas de **caminar suave** mientras se está sentado mejoraron la **glucosa después de comer**. Una llamada de pie, ir por agua, subir escaleras.",
+     "note": "**Truco:** pon una alarma en el celular."},
+    {"type": "point", "badge": "Los pasos", "verdict": "si", "big": "≈7.000", "bigUnit": "pasos", "title": "No necesitas llegar a 10.000",
+     "body": "En grandes estudios, el beneficio aparece **antes de los 10.000**: alrededor de **7.000 pasos al día** ya se asocia con menor mortalidad. Si hoy das 3.000, suma de a poco.",
+     "note": "**Clave:** cualquier aumento cuenta."},
+    {"type": "cta", "title": "Organiza [[tu día]]", "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.", "button": "Link en el perfil", "small": "Compártelo con alguien que trabaja sentado"}
+  ],
+  "caption_title": "Pasar el día sentado también pesa: pausas y pasos que sí ayudan",
+  "description": "Pasar el día sentado también pesa, incluso si vas al gimnasio 👇\n\n⚠️ Muchas horas al día sentado se asocian con más riesgo de diabetes tipo 2 y enfermedad del corazón (son estudios de asociación).\n✅ Levántate cada 30 minutos: pausas de 2 a 5 minutos caminando suave mejoraron la glucosa después de comer en estudios.\n✅ No necesitas 10.000 pasos: alrededor de 7.000 al día ya se asocian con menor mortalidad.\n→ Si hoy das pocos pasos, suma de a poco. Cualquier aumento cuenta.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Cuántas horas pasas sentado al día? Cuéntame 👇\n\n#sedentarismo #caminar #pasos #ejercicio #dosisdeciencia #salud #ciencia #medicina #aprendeentiktok"
+}

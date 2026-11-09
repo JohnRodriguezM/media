@@ -1,0 +1,25 @@
+{
+  "slug": "ayuno-y-ejercicio",
+  "date": "2026-11-09",
+  "franja": "a",
+  "serie": "Ayuno",
+  "seed": 307,
+  "slides": [
+    {"type": "cover", "title": "¿Entrenar [[en ayunas]]?", "subtitle": "Se puede. Pero no cualquier entrenamiento, ni para todos.", "serie": "Serie Ayuno"},
+    {"type": "point", "badge": "Lo suave", "verdict": "si", "title": "Caminar o ejercicio suave: bien tolerado",
+     "body": "En personas sanas, **caminar o pedalear suave** en ayunas suele tolerarse bien. Durante la sesión el cuerpo usa **más grasa** como combustible.",
+     "note": "**Ojo:** quemar más grasa en la sesión no significa perder más grasa corporal."},
+    {"type": "point", "badge": "Lo intenso", "verdict": "gris", "title": "Fuerza o intervalos: puedes rendir menos",
+     "body": "En sesiones **intensas o largas**, algunas personas rinden menos o se marean en ayunas. Si te pasa, entrena **dentro de tu ventana** de comida.",
+     "note": "**Zona gris:** la respuesta varía mucho entre personas."},
+    {"type": "point", "badge": "Después", "verdict": "si", "title": "Rompe el ayuno con proteína",
+     "body": "Después de entrenar, una comida con **proteína** (huevos, pescado, pollo, legumbres, lácteos) ayuda a cuidar el **músculo**. Toma **agua** antes, durante y después.",
+     "note": "**Clave:** no lo compenses con un atracón."},
+    {"type": "point", "badge": "Precaución", "verdict": "no", "title": "Cuándo NO hacerlo por tu cuenta",
+     "body": "Con **insulina o medicamentos para la diabetes**, embarazo o historia de **trastornos alimentarios**: solo con supervisión médica. Si sientes **mareo, temblor o sudor frío**, detente y come.",
+     "note": "**Siempre:** escucha a tu cuerpo."},
+    {"type": "cta", "title": "Encuentra [[tu ventana]]", "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.", "button": "Link en el perfil", "small": "Guárdalo para tu próximo entrenamiento"}
+  ],
+  "caption_title": "¿Entrenar en ayunas? Qué sí, qué no y quién debe evitarlo",
+  "description": "¿Entrenar en ayunas? Se puede, pero no cualquier entrenamiento ni para todos 👇\n\n✅ Caminar o ejercicio suave en ayunas suele tolerarse bien en personas sanas. El cuerpo usa más grasa durante la sesión (aunque eso no significa perder más grasa corporal).\n⚠️ En sesiones intensas o largas (fuerza, intervalos) algunas personas rinden menos o se marean. Si te pasa, entrena dentro de tu ventana de comida.\n✅ Rompe el ayuno con una comida con proteína y toma agua antes, durante y después.\n❌ Con insulina o medicamentos para la diabetes, embarazo o historia de trastornos alimentarios: no lo hagas sin supervisión médica.\n⚠️ Mareo, temblor o sudor frío: detente y come.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Tú entrenas en ayunas o después de comer? Cuéntame 👇\n\n#ayunointermitente #ayuno #ejercicio #entrenamiento #dosisdeciencia #salud #ciencia #medicina #aprendeentiktok"
+}

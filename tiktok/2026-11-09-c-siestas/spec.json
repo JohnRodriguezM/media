@@ -1,0 +1,25 @@
+{
+  "slug": "siestas",
+  "date": "2026-11-09",
+  "franja": "c",
+  "serie": "Sueño y cerebro",
+  "seed": 347,
+  "slides": [
+    {"type": "cover", "title": "La siesta [[perfecta]] es más corta de lo que crees", "subtitle": "Ni muy larga, ni muy tarde.", "serie": "Serie Sueño y cerebro"},
+    {"type": "point", "badge": "Corta", "verdict": "si", "big": "10–20", "bigUnit": "min", "title": "La siesta corta despeja",
+     "body": "Una siesta de **10 a 20 minutos** mejora el **estado de alerta** y el ánimo, y te levantas sin sentirte pesado.",
+     "note": "**Truco:** acuéstate con alarma."},
+    {"type": "point", "badge": "Larga", "verdict": "no", "title": "Más de 30 min: despiertas aturdido",
+     "body": "Al pasar de **≈30 minutos** es más fácil entrar en **sueño profundo**. Si despiertas ahí, sientes pesadez y confusión un rato: se llama **inercia del sueño**.",
+     "note": "**Si te pasa:** acorta la siesta."},
+    {"type": "point", "badge": "La hora", "verdict": "gris", "title": "Muy tarde, te roba sueño de noche",
+     "body": "Lo mejor es **temprano en la tarde**, después del almuerzo. Una siesta al final de la tarde puede hacer que te cueste **dormirte en la noche**.",
+     "note": "**Si tienes insomnio:** mejor evítala."},
+    {"type": "point", "badge": "Señal", "verdict": "gris", "title": "Necesitarla todos los días puede ser una pista",
+     "body": "Tener **mucho sueño de día** aunque duermas suficientes horas puede indicar mal sueño nocturno: **ronquidos fuertes o pausas al respirar** (apnea), entre otras causas.",
+     "note": "**Consulta:** si te duermes sin querer o manejando."},
+    {"type": "cta", "title": "Ordena [[tus horarios]]", "body": "Calcula gratis tu ventana de ayuno ideal según tu horario y tu objetivo.", "button": "Link en el perfil", "small": "Compártelo con quien no perdona su siesta"}
+  ],
+  "caption_title": "La siesta perfecta: cuánto debe durar y a qué hora tomarla",
+  "description": "La siesta perfecta es más corta de lo que crees 👇\n\n✅ 10 a 20 minutos: mejora el estado de alerta y el ánimo, y te levantas sin sentirte pesado.\n❌ Más de 30 minutos: es más fácil entrar en sueño profundo y despertar aturdido (inercia del sueño).\n⚠️ Mejor temprano en la tarde. Una siesta al final de la tarde puede costarte el sueño de la noche. Si tienes insomnio, mejor evítala.\n⚠️ Tener mucho sueño de día aunque duermas suficiente puede ser señal de mal sueño nocturno, como ronquidos fuertes o pausas al respirar (apnea). Si te duermes sin querer o manejando, consulta.\n\n👉 Calcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Eres de siesta corta, larga o nada de siesta? Cuéntame 👇\n\n#siesta #sueño #dormirbien #cerebro #dosisdeciencia #salud #ciencia #medicina #aprendeentiktok"
+}
