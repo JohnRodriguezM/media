@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
-"""Apple Point - renderizador de carruseles, estilo editorial oficial (v3, nov 2026).
+"""Apple Point - renderizador oficial de carruseles (v5, nov 2026): blanco y negro + linea arcoiris de marca.
 Autocontenido: logo y tipografia Instrument Serif (SIL OFL) embebidos. No necesita internet.
 Uso: python3 carrusel.py spec.json carpeta_salida/
-spec.json = {"slug": "mi-tema", "slides": [ ... ]}   (5 a 7 laminas: cover, 3-5 point, cta)
-  {"type":"cover","ghost":"4","label":"Guia · Compra segura","title":"Cuatro alertas antes de comprar un iPhone <em>usado</em>","subtitle":"..."}
-  {"type":"point","num":"1","kicker":"Alerta 01","title":"Te pide la cuenta del <em>dueno anterior</em>","body":"...","wlabel":"Que hacer","tip":"..."}
-  {"type":"point","num":"3","kicker":"Paso 03","title":"...","body":"...","wlabel":"Donde mirarlo","path":["Configuracion","General","Informacion"]}
-  {"type":"cta","label":"Guardalo para cuando lo necesites","title":"Mejor <em>estrenar?</em>","body":"..."}
-Reglas: title con una sola parte en <em>cursiva</em> (2-3 palabras), title <= 8 palabras, body <= 20, tip <= 14,
-path de 2 a 3 pastillas. ghost = numero decorativo de la portada (opcional).
+spec.json = {"slug": "mi-tema", "slides": [ ... ]}   (5 a 7 laminas: cover, 3-5 point, cta). Ver ejemplo-spec.json.
+  cover: label, title (con <em>cursiva</em>), subtitle (admite <b>), ghost (numero decorativo, opcional), icon (opcional)
+  point: num, kicker ("Alerta 01", "Paso 02"...), title (con <em>), body (admite <b>), icon (opcional), wlabel + (tip | path)
+  cta:   label, title (con <em>), body. Los botones "Escribenos al DM" y "Comenta GUIA" los pone el script.
+Iconos: lock, home, gear, shield, battery, box, phone, camera, search, cloud, card, gift.
+Reglas: title <= 8 palabras con una sola parte en cursiva; body <= 20 palabras; tip <= 14; path de 2 a 3 pastillas.
 Salida: PNG 2160x2700 (4:5).
 """
 import sys, json, html, base64
@@ -21,75 +20,81 @@ FONTS = f"""
 @font-face{{font-family:IS;src:url(data:font/woff2;base64,{IS_N}) format('woff2');font-style:normal}}
 @font-face{{font-family:IS;src:url(data:font/woff2;base64,{IS_I}) format('woff2');font-style:italic}}
 """
-RAIN = ["#61BB46","#FDB827","#F5821F","#E03A3E","#963D97","#009DDC"]
-CSS = FONTS + """
-*{box-sizing:border-box}body{margin:0}
-.s{width:1080px;height:1350px;position:relative;overflow:hidden;padding:84px 92px 76px;display:flex;flex-direction:column;
-   font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}
-.ivory{background:#F3EFE7;color:#161513}.ink{background:#141312;color:#F3EFE7}
-.head{display:flex;justify-content:space-between;align-items:center}
-.logo{height:46px;display:block}.ivory .logo{mix-blend-mode:multiply}.chip{background:#F3EFE7;border-radius:14px;padding:9px 14px;display:flex}
-.rain{display:flex;gap:6px}.rain i{width:22px;height:4px;border-radius:2px}
-.label{font-size:22px;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
-.muted{color:#7A746A}.ink .muted{color:#9C968B}
-.rule{height:1.5px;background:currentColor;opacity:.16;margin:0}
-.serif{font-family:IS,serif;font-weight:400}
-.ghost{position:absolute;right:40px;bottom:-140px;font-family:IS,serif;font-style:italic;font-size:1100px;line-height:1;color:#E8E2D6;z-index:0}
-.ink .ghost{color:#1F1D1B}
-.z{position:relative;z-index:1}
-/* portada */
-.cv{margin-top:auto}
-.cv h1{font-size:150px;line-height:.92;letter-spacing:-3px;margin:30px 0 0}
-.cv h1 em{font-style:italic;color:#FDB827}
-.cv .sub{font-size:36px;line-height:1.4;margin:44px 0 0;max-width:760px}
-/* punto */
-.kicker{display:flex;align-items:center;gap:20px;margin-top:150px}
-.kicker .rule{flex:1}
-.pt h2{font-size:118px;line-height:.98;letter-spacing:-2px;margin:46px 0 0}
-.pt h2 em{font-style:italic}
-.pt .body{font-size:38px;line-height:1.45;margin:40px 0 0;max-width:780px;color:#4A463F}
-.where{margin-top:auto}
-.where .label{margin-bottom:22px}
-.path{display:flex;flex-wrap:wrap;align-items:center;gap:12px;font-size:30px;font-weight:600}
-.path span{border:1.5px solid rgba(22,21,19,.22);border-radius:999px;padding:12px 22px;background:#FBF9F5}
-.path i{font-style:normal;color:#A39C90}
-.tip{font-size:34px;line-height:1.45;font-weight:500}
-.foot{display:flex;justify-content:space-between;align-items:center;margin-top:52px;font-size:24px;font-weight:600;letter-spacing:.08em}
-.arrow{display:flex;align-items:center;gap:14px}
-/* cierre */
-.end h2{font-size:132px;line-height:.95;letter-spacing:-2.5px;margin:0}
-.end h2 em{font-style:italic;color:#FDB827}
-.end .body{font-size:36px;line-height:1.45;margin:40px 0 0;max-width:800px;color:#CFC9BE}
-.cta{margin-top:auto;display:flex;flex-direction:column;gap:20px}
-.btn{border-radius:999px;padding:34px 44px;font-size:36px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
-.solid{background:#F3EFE7;color:#141312}.line{border:1.5px solid rgba(243,239,231,.3)}
+RAIN = "linear-gradient(90deg,#61BB46 0 16.6%,#FDB827 0 33.3%,#F5821F 0 50%,#E03A3E 0 66.6%,#963D97 0 83.3%,#009DDC 0)"
+ICONS = {
+ "lock": '<rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/><path d="M12 15v2.5"/>',
+ "home": '<rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 8h2M14 8h2M8 12h2M14 12h2"/>',
+ "gear": '<circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/>',
+ "shield": '<path d="M12 3 4.5 6v6c0 4.7 3.2 7.8 7.5 9 4.3-1.2 7.5-4.3 7.5-9V6z"/><path d="m8.8 12 2.2 2.2 4.4-4.4"/>',
+ "battery": '<rect x="2.5" y="7" width="17" height="10" rx="2.5"/><path d="M21.5 10.5v3"/><path d="M11.5 9l-2 3.2h3l-2 3.3"/>',
+ "box": '<path d="M3.5 7.5 12 3.5l8.5 4v9L12 20.5l-8.5-4z"/><path d="M3.5 7.5 12 11.5l8.5-4M12 11.5v9"/><path d="M7.7 5.5l8.5 4v3"/>',
+ "phone": '<rect x="6.5" y="2.5" width="11" height="19" rx="3"/><path d="M10.5 5h3"/>',
+ "camera": '<rect x="3" y="6.5" width="18" height="13" rx="3"/><path d="M8.5 6.5 10 4h4l1.5 2.5"/><circle cx="12" cy="13" r="3.6"/>',
+ "search": '<circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/>',
+ "cloud": '<path d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.6 9.3 4.6 4.6 0 0 0 7 18.5z"/>',
+ "card": '<rect x="2.5" y="5.5" width="19" height="13" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/>',
+ "gift": '<rect x="3.5" y="9" width="17" height="11.5" rx="1.5"/><path d="M2.5 9h19M12 9v11.5M12 9C9 9 7 4 9.5 4S12 9 12 9zm0 0c3 0 5-5 2.5-5S12 9 12 9z"/>',
+}
+CSS = FONTS + f"""
+*{{box-sizing:border-box}}body{{margin:0}}
+.s{{width:1080px;height:1350px;background:#fff;color:#0E0E0E;position:relative;overflow:hidden;padding:72px 90px 70px;display:flex;flex-direction:column;
+   font-family:Inter,sans-serif;-webkit-font-smoothing:antialiased}}
+.prog{{height:6px;border-radius:3px;background:#EEEEEE;position:relative;overflow:hidden}}
+.prog i{{position:absolute;left:0;top:0;bottom:0;background:{RAIN};background-size:888px 100%}}
+.hdr{{display:flex;justify-content:space-between;align-items:center;margin-top:34px;position:relative;z-index:1}}
+.hdr img{{height:50px;display:block}}.hdr span{{font-size:24px;font-weight:600;color:#8A8A8A}}
+.mid{{flex:1;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1}}
+.kick{{display:flex;align-items:center;gap:22px;font-size:24px;font-weight:700;letter-spacing:.24em;text-transform:uppercase}}
+.kick b{{flex:1;height:2px;background:#0E0E0E}}
+.serif{{font-family:IS,serif;font-weight:400}}
+h1{{font-size:138px;line-height:.95;letter-spacing:-2.5px;margin:44px 0 0}}
+h2{{font-size:112px;line-height:.98;letter-spacing:-2px;margin:42px 0 0}}
+em{{font-style:italic}}
+.sub{{font-size:38px;line-height:1.42;color:#5C5C5C;margin:40px 0 0;max-width:860px}}
+.sub b{{color:#0E0E0E;font-weight:700}}
+.num{{position:absolute;right:30px;top:150px;font-family:IS,serif;font-style:italic;font-size:470px;line-height:1;color:#F2F2F2;z-index:0}}
+.ico{{margin-top:64px}}
+.wl{{margin-top:60px;font-size:22px;font-weight:700;letter-spacing:.22em;color:#8A8A8A;text-transform:uppercase}}
+.pills{{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:20px;font-size:30px;font-weight:600}}
+.pills span{{border:2px solid #E2E2E2;background:#F7F7F7;border-radius:999px;padding:13px 24px}}.pills i{{font-style:normal;color:#AAA}}
+.tip{{margin-top:20px;font-size:34px;line-height:1.4;font-weight:600;max-width:860px}}
+.bar{{width:200px;height:9px;border-radius:5px;background:{RAIN}}}
+.bigl{{height:104px;align-self:flex-start;margin-bottom:50px}}
+.btn{{margin-top:60px;align-self:flex-start;background:#0E0E0E;color:#fff;border-radius:999px;padding:34px 60px;font-size:40px;font-weight:700}}
+.btn2{{margin-top:18px;align-self:flex-start;border:2px solid #0E0E0E;border-radius:999px;padding:28px 52px;font-size:32px;font-weight:600}}
+.tags{{margin-top:30px;font-size:24px;font-weight:600;letter-spacing:.2em;color:#8A8A8A}}
+.foot{{display:flex;justify-content:space-between;align-items:center;font-size:24px;font-weight:600;letter-spacing:.08em;color:#8A8A8A;position:relative;z-index:1}}
+.foot .go{{color:#0E0E0E;display:flex;align-items:center;gap:14px}}
 """
-AR = lambda c: f'<svg width="56" height="20" viewBox="0 0 56 20" fill="none" stroke="{c}" stroke-width="2"><path d="M0 10h53M45 2l8 8-8 8"/></svg>'
-rain = '<div class="rain">' + "".join(f'<i style="background:{c}"></i>' for c in RAIN) + '</div>'
-def head(dark):
-    lg = f'<div class="chip"><img class="logo" src="{LOGO}"></div>' if dark else f'<img class="logo" src="{LOGO}">'
-    return f'<div class="head z">{lg}{rain}</div>'
-def foot(i, n, dark):
-    c = "#F3EFE7" if dark else "#161513"
-    right = f'<span class="arrow">DESLIZA {AR(c)}</span>' if i < n else '<span>@APPLEPOINT__</span>'
-    return f'<div class="foot z"><span class="muted">{i:02d} / {n:02d}</span>{right}</div>'
+AR = '<svg width="54" height="20" viewBox="0 0 54 20" fill="none" stroke="#0E0E0E" stroke-width="2"><path d="M0 10h51M43 2l8 8-8 8"/></svg>'
+def icon(name, size=150):
+    return f'<svg width="{size}" height="{size}" viewBox="0 0 24 24" fill="none" stroke="#0E0E0E" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">{ICONS[name]}</svg>'
 def slide(s, i, n):
+    prog = f'<div class="prog"><i style="width:{i/n*100:.2f}%"></i></div>'
+    hdr = f'<div class="hdr"><img src="{LOGO}"><span>@applepoint__</span></div>'
+    foot = f'<div class="foot"><span>{i:02d} / {n:02d}</span>' + (f'<span class="go">DESLIZA {AR}</span>' if i < n else '<span>NUEVOS · SELLADOS · ORIGINALES</span>') + '</div>'
     t = s["type"]
     if t == "cover":
-        return f'''<div class="s ink"><div class="ghost">{s.get("ghost","")}</div>{head(True)}
-        <div class="cv z"><div class="label muted">{s["label"]}</div><h1 class="serif">{s["title"]}</h1><p class="sub muted">{html.escape(s["subtitle"])}</p></div>{foot(i,n,True)}</div>'''
+        ghost = f'<div class="num">{html.escape(s["ghost"])}</div>' if s.get("ghost") else ""
+        mid = f'''<div class="kick">{html.escape(s["label"])}<b></b></div><h1 class="serif">{s["title"]}</h1><p class="sub">{s["subtitle"]}</p>'''
+        if s.get("icon"): mid += f'<div class="ico">{icon(s["icon"],170)}</div>'
+        return f'<div class="s">{ghost}{prog}{hdr}<div class="mid">{mid}</div>{foot}</div>'
     if t == "point":
+        w = ""
         if s.get("path"):
-            w = '<div class="path">' + '<i>›</i>'.join(f"<span>{html.escape(p)}</span>" for p in s["path"]) + '</div>'
-        else:
-            w = f'<div class="tip">{html.escape(s["tip"])}</div>'
-        return f'''<div class="s ivory pt"><div class="ghost">{s["num"]}</div>{head(False)}
-        <div class="kicker z"><span class="label">{s["kicker"]}</span><div class="rule"></div></div>
-        <h2 class="serif z">{s["title"]}</h2><p class="body z">{html.escape(s["body"])}</p>
-        <div class="where z"><div class="rule" style="margin-bottom:34px"></div><div class="label muted">{s["wlabel"]}</div>{w}</div>{foot(i,n,False)}</div>'''
-    return f'''<div class="s ink end">{head(True)}
-    <div class="z" style="margin-top:150px"><div class="label muted" style="margin-bottom:34px">{s["label"]}</div><h2 class="serif">{s["title"]}</h2><p class="body">{html.escape(s["body"])}</p></div>
-    <div class="cta z"><div class="btn solid">Escríbenos al DM {AR("#141312")}</div><div class="btn line">Comenta “GUÍA” <span class="muted" style="font-size:28px">y te la enviamos</span></div></div>{foot(i,n,True)}</div>'''
+            w = '<div class="pills">' + '<i>›</i>'.join(f"<span>{html.escape(p)}</span>" for p in s["path"]) + '</div>'
+        elif s.get("tip"):
+            w = f'<div class="tip">{s["tip"]}</div>'
+        wl = f'<div class="wl">{html.escape(s.get("wlabel",""))}</div>' if w and s.get("wlabel") else ""
+        ic = f'<div class="ico">{icon(s["icon"])}</div>' if s.get("icon") else ""
+        mid = f'''<div class="kick">{html.escape(s["kicker"])}<b></b></div><h2 class="serif">{s["title"]}</h2><p class="sub">{s["body"]}</p>{wl}{w}{ic}'''
+        return f'<div class="s"><div class="num">{html.escape(s["num"])}</div>{prog}{hdr}<div class="mid">{mid}</div>{foot}</div>'
+    mid = f'''<img class="bigl" src="{LOGO}"><div class="bar"></div>
+    {f'<div class="kick" style="margin-top:44px">{html.escape(s["label"])}<b></b></div>' if s.get("label") else ""}
+    <h1 class="serif">{s["title"]}</h1><p class="sub">{s["body"]}</p>
+    <div class="btn">Escríbenos al DM</div><div class="btn2">Comenta “GUÍA”</div>'''
+    hdr2 = '<div class="hdr"><span></span><span>@applepoint__</span></div>'
+    return f'<div class="s">{prog}{hdr2}<div class="mid">{mid}</div>{foot}</div>'
 def main(spec, out):
     import os; os.makedirs(out, exist_ok=True); sp = json.load(open(spec)); sl = sp["slides"]
     with sync_playwright() as p:
