@@ -1,5 +1,26 @@
 # Carrusel diario — La Dosis de Ciencia (TikTok)
 
+## FORMATO VIGENTE (desde 2026-11-10): 1 carrusel al día, "El reto de Andrés", 10:30 Bogotá
+Un solo carrusel diario, de alto impacto: una historia por episodios con un personaje **ficticio y avisado**
+(Andrés, 47 años, reto de 90 días para volver a sentirse como el de su foto de perfil). La biblia del personaje,
+sus reglas y el registro de episodios están en `tiktok/historia/andres.json`: leerlo completo antes de escribir.
+Las secciones de abajo sobre franjas/series quedan como referencia del formato anterior; las reglas científicas siguen vigentes.
+
+Estructura de cada episodio (6 láminas, `template_v2.html`, `theme` "noche", `serie` "El reto de Andrés", `ring` = día del reto / 90 en todas las láminas):
+1. `cover`: `kicker` "Historia ficticia · Episodio N", título-gancho ≤7 palabras (cuando el tema sea ayuno, usar el gancho de horas: "Hora 16: lo que sintió Andrés"), subtítulo de una línea que retome la decisión del episodio anterior.
+2. Escena: `chat` (`name`, `status`, `messages` [{from: them|me|note, text, time}], `caption`) o `diario` (`day` "Día N", `daySub`, `text`, `sign`). Variar entre episodios.
+3. La otra escena (diario o chat) o un `point` que muestre qué hizo Andrés con la opción ganadora.
+4-5. `point` con la ciencia del día (1-2 datos conservadores, ligados a lo que vive Andrés).
+6. `poll`: `title` (pregunta), `a`, `b` (dos opciones razonables y seguras), `comment` "Comenta [[A]] o [[B]]", `small` "Lo que gane pasa en el episodio N+1.\nCalcula tu ventana de ayuno: link en el perfil."
+
+Bucle de comentarios: antes de escribir el episodio N+1, leer los comentarios del episodio N con Zernio
+(`comments_get_inbox_post_comments`, post_id = `zernio_post_id` del episodio, account_id `6a4179799d9472faae14cb5f`),
+contar votos A/B (un voto por usuario; contar comentarios que digan claramente A o B o describan la opción). Gana la mayoría;
+si hay empate o 0 votos, decide la opción más prudente y el episodio lo dice ("Empate: Andrés eligió…").
+Guardar `ganador` y los votos en el episodio N, y el resumen del N+1 en `andres.json`.
+Descripción del post: empieza con "Episodio N · El reto de Andrés (historia ficticia basada en situaciones reales de consulta)", resume la escena, lista ✅⚠️❌ con la ciencia, la encuesta con A y B explicadas, CTA a la calculadora y 8-10 hashtags (#elretodeandres y #dosisdeciencia siempre).
+
+
 Rutina: cada día se generan 2 carruseles de 5-6 láminas (ver Ritmo), se sube a este repo y se programa en
 TikTok (@ladosisdeciencia) por Zernio como **publicación directa** a las 10:30 y 19:00 (America/Bogota),
 con descripción y música automática. John recibe el resumen a las ~7:45 y puede pedir cancelarlo.
