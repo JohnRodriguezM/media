@@ -1,0 +1,43 @@
+{
+  "personaje": {
+    "nombre": "Andrés",
+    "edad": 47,
+    "aviso": "Historia ficticia basada en situaciones reales de consulta",
+    "bio": "Contador, casado, dos hijos adolescentes, vive en una ciudad latinoamericana. Trabaja sentado 9 h, cena tarde, duerme ~6 h, toma café en la tarde, no hace ejercicio desde los 30. Jugaba fútbol en el colegio.",
+    "detonante": "Mariana, compañera del colegio, lo ve en el supermercado y no lo reconoce. Le escribe: su foto de perfil es de hace 20 años, de cuando jugaba fútbol.",
+    "reto": "90 días para volver a sentirse como el de la foto: energía, subir escaleras sin ahogarse, dormir bien. No es un reto de kilos.",
+    "otros": {
+      "Mariana": "compañera del colegio, le escribe de vez en cuando y lo anima",
+      "Laura": "su esposa",
+      "Dra. Ruiz": "su médica"
+    }
+  },
+  "reglas": [
+    "Siempre ficción avisada: portada (kicker) y descripción dicen 'Historia ficticia'.",
+    "Nunca cifras de resultados del personaje (kilos, análisis, medidas). Lo que cambia es cómo se siente y qué hace.",
+    "Nunca fotos de antes/después ni imágenes de personas.",
+    "Cada episodio enseña 1-2 datos científicos conservadores (reglas de la GUIA) ligados a lo que vive Andrés ese día.",
+    "La encuesta final siempre tiene dos opciones razonables y seguras (ninguna peligrosa ni absurda). Lo que gane en comentarios pasa en el siguiente episodio; si hay empate o no hay votos, decide la opción más prudente y se dice en el episodio.",
+    "Andrés consulta a su médica antes de cambios grandes; ayunos >24 h nunca.",
+    "Continuidad: leer los episodios anteriores antes de escribir el siguiente."
+  ],
+  "episodios": [
+    {
+      "n": 1,
+      "fecha": "2026-11-10",
+      "carpeta": "2026-11-10-andres-ep01",
+      "dia_reto": 0,
+      "resumen": "Mariana (colegio) no lo reconoce en el súper y le escribe que su foto de perfil es de hace 20 años. Andrés escribe en su diario: no es el peso, es que se ahoga al subir dos pisos y se duerme en el sofá a las 8. Decide 90 días para volver a sentirse como el de la foto. Pide cita con la Dra. Ruiz.",
+      "ciencia": [
+        "chequeo médico antes de cambiar hábitos después de los 40",
+        "hábitos: ≈66 días en promedio (un estudio), cambios pequeños"
+      ],
+      "encuesta": {
+        "A": "Cenar más temprano y hacer 12 horas sin comer hasta el desayuno",
+        "B": "Salir a caminar 20 minutos después de cenar"
+      },
+      "zernio_post_id": null,
+      "ganador": null
+    }
+  ]
+}

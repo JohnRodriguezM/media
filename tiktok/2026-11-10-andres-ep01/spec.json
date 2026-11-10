@@ -1,0 +1,37 @@
+{
+  "slug": "andres-ep01",
+  "date": "2026-11-10",
+  "franja": "a",
+  "serie": "El reto de Andrés",
+  "episodio": 1,
+  "template": "template_v2.html",
+  "theme": "noche",
+  "seed": 401,
+  "slides": [
+    {"type": "cover", "kicker": "Historia ficticia · Episodio 1", "title": "El día que no me [[reconocieron]]", "subtitle": "Andrés, 47 años. 90 días para volver a ser él.", "ring": 0},
+    {"type": "chat", "name": "Mariana (colegio)", "status": "en línea",
+     "messages": [
+       {"from": "them", "text": "¿Andrés? Te vi hoy en el súper y no te reconocí", "time": "9:12 p. m."},
+       {"from": "them", "text": "Tu foto de perfil es de cuando jugábamos fútbol", "time": "9:12 p. m."},
+       {"from": "me", "text": "Jaja… esa foto tiene 20 años", "time": "9:40 p. m."},
+       {"from": "note", "text": "Andrés escribió y borró la respuesta tres veces."}
+     ],
+     "caption": "No le dolió el comentario. Le dolió que tenía razón.", "ring": 0},
+    {"type": "diario", "day": "Día 0", "daySub": "el diario de Andrés",
+     "text": "No es el peso. Es que subo **dos pisos** y me ahogo. Me duermo en el sofá a las 8. Hoy decidí algo: **90 días** para volver a sentirme como el de la foto.",
+     "sign": "Andrés", "ring": 0},
+    {"type": "point", "badge": "Lo primero", "verdict": "si", "title": "Antes de cambiar, un chequeo",
+     "body": "Después de los 40, antes de cambiar la alimentación o empezar a entrenar, conviene revisar **presión, glucosa y colesterol** con tu médico. Más aún si tomas medicamentos o tienes síntomas.",
+     "note": "**Andrés** ya pidió cita con la Dra. Ruiz.", "ring": 0},
+    {"type": "point", "badge": "La ciencia", "verdict": "gris", "big": "≈66", "bigUnit": "días en promedio", "title": "Un hábito tarda más de 21 días",
+     "body": "En un estudio, volver automático un hábito tomó **unos 66 días** en promedio, con mucha variación. Por eso funcionan los **cambios pequeños**.",
+     "note": "**Clave:** fallar un día no arruina el proceso.", "ring": 0},
+    {"type": "poll", "title": "¿Con qué empieza Andrés [[mañana]]?",
+     "a": "Cenar más temprano y hacer **12 horas** sin comer hasta el desayuno",
+     "b": "Salir a **caminar 20 minutos** después de cenar",
+     "comment": "Comenta [[A]] o [[B]]",
+     "small": "Lo que gane pasa en el episodio 2.\nCalcula tu ventana de ayuno: link en el perfil.", "ring": 0}
+  ],
+  "caption_title": "El día que no me reconocieron: el reto de Andrés, episodio 1",
+  "description": "Episodio 1 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nAndrés tiene 47 años. Una amiga del colegio no lo reconoció en el supermercado y le escribió: su foto de perfil es de hace 20 años. Esa noche decidió algo: 90 días para volver a sentirse como el de la foto.\n\n✅ Lo primero: después de los 40, antes de cambiar la alimentación o empezar a entrenar, revisa presión, glucosa y colesterol con tu médico.\n⚠️ Un hábito no tarda 21 días: en un estudio tomó en promedio unos 66, con mucha variación. Por eso funcionan los cambios pequeños.\n→ Fallar un día no arruina el proceso.\n\n👉 ¿Con qué empieza Andrés mañana? Comenta A (12 horas sin comer, cenando más temprano) o B (caminar 20 minutos después de cenar). Lo que gane pasa en el episodio 2.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #ayunointermitente #salud #habitos #dosisdeciencia #despuesdelos40 #ciencia #medicina #aprendeentiktok"
+}

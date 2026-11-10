@@ -86,17 +86,53 @@
     background:var(--accent);font:800 50px In,sans-serif;color:#fff;letter-spacing:.5px}
   .cta-small{position:absolute;left:150px;right:150px;bottom:520px;text-align:center;font:italic 40px Is,serif;color:var(--paper);opacity:.75}
   body.noche .cta-small{color:#0f1424}
+
+  /* ---------- historia: chat ---------- */
+  .chat{position:absolute;left:70px;right:110px;top:300px;border-radius:48px;background:var(--card);border:2px solid var(--cardline);
+    box-shadow:0 30px 70px -36px rgba(40,20,10,.45);overflow:hidden}
+  body.noche .chat{backdrop-filter:blur(24px)}
+  .chat .hd{display:flex;align-items:center;gap:24px;padding:30px 36px;border-bottom:2px solid var(--cardline)}
+  .chat .av{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,var(--accent2),var(--accent));color:#fff;
+    display:flex;align-items:center;justify-content:center;font:600 44px Fr,serif;flex:none}
+  .chat .nm{font:700 40px In,sans-serif;color:var(--ink)} .chat .st{font:500 28px In,sans-serif;color:var(--muted);margin-top:4px}
+  .chat .bd{padding:34px 32px 40px;display:flex;flex-direction:column;gap:22px}
+  .msg{max-width:80%;padding:24px 30px;border-radius:34px;font:500 42px/1.32 In,sans-serif}
+  .msg.them{align-self:flex-start;background:var(--paper2);color:var(--ink);border-bottom-left-radius:10px}
+  body.noche .msg.them{background:rgba(255,255,255,.12)}
+  .msg.me{align-self:flex-end;background:var(--accent);color:#fff;border-bottom-right-radius:10px}
+  .msg .t{display:block;text-align:right;font:500 24px In,sans-serif;opacity:.6;margin-top:6px}
+  .msg.note{align-self:center;background:transparent;color:var(--muted);font:italic 36px Is,serif;padding:6px}
+  .caption{position:absolute;left:90px;right:150px;font:italic 50px/1.3 Fr,serif;color:var(--ink)}
+  /* ---------- historia: diario ---------- */
+  .day{position:absolute;left:84px;top:290px;font:600 210px/1 Fr,serif;letter-spacing:-6px;color:var(--accent);font-variation-settings:"opsz" 144}
+  .day small{font:italic 54px Is,serif;letter-spacing:0;color:var(--ink2);margin-left:18px}
+  .diary{position:absolute;left:80px;right:120px;padding:52px 56px;border-radius:40px;background:var(--card);border:2px solid var(--cardline);
+    background-image:repeating-linear-gradient(transparent 0 78px,var(--cardline) 78px 80px);background-position:0 40px;
+    font:italic 400 54px/80px Fr,serif;color:var(--ink);box-shadow:0 30px 70px -36px rgba(40,20,10,.45)}
+  .diary b{font-weight:700}
+  .sign{position:absolute;right:130px;font:italic 46px Is,serif;color:var(--ink2)}
+  /* ---------- historia: poll ---------- */
+  .q{position:absolute;left:90px;right:140px;top:330px;font:600 104px/1.04 Fr,serif;letter-spacing:-1.5px;color:var(--ink);font-variation-settings:"opsz" 144,"SOFT" 50}
+  .opt{position:absolute;left:80px;right:120px;display:flex;align-items:center;gap:34px;padding:38px 44px;border-radius:40px;
+    background:var(--card);border:3px solid var(--cardline);box-shadow:0 26px 60px -34px rgba(40,20,10,.45)}
+  .opt .k{width:120px;height:120px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font:600 72px Fr,serif;color:#fff}
+  .opt .k.a{background:var(--accent)} .opt .k.b{background:var(--ink);color:var(--paper)}
+  .opt .tx{font:600 46px/1.28 In,sans-serif;color:var(--ink)}
+  .vs{position:absolute;left:0;right:40px;text-align:center;font:italic 48px Is,serif;color:var(--muted)}
+  .cm{position:absolute;left:80px;right:120px;padding:34px 40px;border-radius:999px;background:var(--ink);color:var(--paper);text-align:center;font:800 46px In,sans-serif}
+  .cm .acc{font-family:In;font-style:normal;font-weight:800;color:var(--accent2)}
+  .cm-small{position:absolute;left:80px;right:120px;text-align:center;font:600 34px/1.4 In,sans-serif;color:var(--ink2)}
 </style></head>
 <body><div id="stage"></div>
 <script>
 const W=1080,H=1920;
 let seed=1;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647;};
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
-const md=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\[\[(.+?)\]\]/g,'<span class="acc">$1</span>').replace(/\{\{(.+?)\}\}/g,'<span class="acc">$1</span>');
+const md=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\[\[(.+?)\]\]/g,'<span class="acc">$1</span>').replace(/\{\{(.+?)\}\}/g,'<span class="acc">$1</span>').replace(/\n/g,'<br>');
 
 // ---------- series motifs (thin-line scientific illustrations) ----------
 function serieKey(s){s=(s||'').toLowerCase();
-  if(s.includes('ayuno'))return'ayuno'; if(s.includes('sueño')||s.includes('sueno'))return'sueno';
+  if(s.includes('historia')||s.includes('reto'))return'historia'; if(s.includes('ayuno'))return'ayuno'; if(s.includes('sueño')||s.includes('sueno'))return'sueno';
   if(s.includes('intestino'))return'intestino'; if(s.includes('ejercicio')||s.includes('músculo'))return'ejercicio'; return'hormonas';}
 function motif(key,cx,cy,sc,op,frac){
   const c='var(--motif)', a='var(--accent)'; let g='';
@@ -135,6 +171,14 @@ function motif(key,cx,cy,sc,op,frac){
     g+=L(d,6*sc,a);
     for(let k=0;k<12;k++){const bh=(60+((k*37)%7)*40+k*14)*sc,x=x0+k*w/12;g+=`<rect x="${x}" y="${cy+330*sc-bh}" width="${w/12-18*sc}" height="${bh}" rx="${10*sc}" fill="none" stroke="${c}" stroke-width="2.5"/>`;}
     g+=L(`M${x0} ${cy+330*sc} L${x0+w} ${cy+330*sc}`,2.5);
+  } else if(key==='historia'){ // 90-day path
+    const w=820*sc,x0=cx-w/2,f=frac==null?0:frac; let d='';
+    for(let x=0;x<=w;x+=6){const y=cy+Math.sin(x/w*Math.PI*2.2)*70*sc;d+=(x?'L':'M')+(x0+x)+' '+y+' ';}
+    g+=L(d,2.5,c,.8);
+    [0,30,60,90].forEach(dd=>{const x=x0+dd/90*w,y=cy+Math.sin(dd/90*Math.PI*2.2)*70*sc;
+      g+=`<circle cx="${x}" cy="${y}" r="${10*sc}" fill="var(--paper)" stroke="${c}" stroke-width="2.5"/><text x="${x}" y="${y+60*sc}" text-anchor="middle" font-family="Fr" font-size="${34*sc}" fill="${c}">Día ${dd}</text>`;});
+    const xf=x0+f*w,yf=cy+Math.sin(f*Math.PI*2.2)*70*sc;
+    g+=`<circle cx="${xf}" cy="${yf}" r="${22*sc}" fill="${a}"/><circle cx="${xf}" cy="${yf}" r="${40*sc}" fill="none" stroke="${a}" stroke-width="3" opacity=".5"/>`;
   } else { // hormonas: molecule (hexagon chain)
     const r=78*sc, hex=(x,y)=>{let d='';for(let k=0;k<6;k++){const an=Math.PI/6+k*Math.PI/3;d+=(k?'L':'M')+(x+r*Math.cos(an))+' '+(y+r*Math.sin(an))+' ';}return d+'Z';};
     const pts=[[0,0],[1,0],[.5,1],[1.5,1],[2,0],[2.5,1],[-.5,1]];
@@ -182,6 +226,21 @@ window.render=function(spec,i){
       <div class="cta-body" id="ctb">${md(s.body||'')}</div>
       <div class="cta-btn">${esc(s.button||'Link en el perfil')} ↗</div>
       <div class="cta-small">${esc(s.small||'Guárdalo para tu próximo ayuno')}</div>`;
+  } else if(s.type==='chat'){
+    const ini=(s.name||'?').replace(/\(.*?\)/g,'').trim().split(/\s+/).map(w=>w[0]).slice(0,2).join('').toUpperCase();
+    html+=`<div class="chat" id="chat"><div class="hd"><div class="av">${esc(ini)}</div><div><div class="nm">${esc(s.name||'')}</div><div class="st">${esc(s.status||'en línea')}</div></div></div>
+      <div class="bd">${(s.messages||[]).map(m=>m.from==='note'?`<div class="msg note">${md(m.text)}</div>`:`<div class="msg ${m.from==='me'?'me':'them'}">${md(m.text)}${m.time?`<span class="t">${esc(m.time)}</span>`:''}</div>`).join('')}</div></div>`+
+      (s.caption?`<div class="caption" id="cap">${md(s.caption)}</div>`:'');
+  } else if(s.type==='diario'){
+    html+=`<div class="day" id="dy">${esc(s.day||'Día 1')}${s.daySub?`<small>${esc(s.daySub)}</small>`:''}</div>
+      <div class="diary" id="di">${md(s.text||'')}</div>`+(s.sign?`<div class="sign" id="sg">— ${esc(s.sign)}</div>`:'');
+  } else if(s.type==='poll'){
+    html+=`<div class="q" id="q">${md(s.title)}</div>
+      <div class="opt" id="oa"><div class="k a">A</div><div class="tx">${md(s.a)}</div></div>
+      <div class="vs" id="vs">o</div>
+      <div class="opt" id="ob"><div class="k b">B</div><div class="tx">${md(s.b)}</div></div>
+      <div class="cm" id="cm">${md(s.comment||'Comenta [[A]] o [[B]]')}</div>
+      <div class="cm-small" id="cms">${md(s.small||'Lo que gane pasa en el próximo episodio.<br>')}</div>`;
   }
   html+=`<div class="foot"><span>@ladosisdeciencia</span><span>${i+1} / ${n}</span></div>`;
   st.innerHTML=html;
@@ -189,11 +248,14 @@ window.render=function(spec,i){
   const place=(el,after,gap)=>{if(el&&after)el.style.top=(after.offsetTop+after.offsetHeight+gap)+'px';};
   if(s.type==='cover'){ place($('cs'),$('ct'),56);
     const top=$('cs').offsetTop+$('cs').offsetHeight+70, bot=1480, avail=bot-top;
-    const span={ayuno:800,sueno:680,intestino:700,ejercicio:720,hormonas:640}[key];
-    let sc=Math.max(.5,Math.min(1.15,avail/span));
+    const span={historia:300,ayuno:800,sueno:680,intestino:700,ejercicio:720,hormonas:640}[key];
+    let sc=Math.max(.5,Math.min(key==='historia'?.72:1.15,avail/span));
     let cy=top+avail/2; if(key==='sueno'){ sc=Math.max(.45,Math.min(1.1,(1380-top)/640)); cy=top+(310+160)*sc+10; } if(key==='hormonas') cy=top+avail/2-120*sc;
-    document.querySelector('svg.motif').innerHTML=motif(key,key==='ayuno'?470:key==='sueno'?400:500,cy,sc,.92,s.ring); }
+    document.querySelector('svg.motif').innerHTML=motif(key,key==='ayuno'?470:key==='sueno'?400:key==='historia'?440:500,cy,sc,.92,s.ring); }
   if(s.type==='point'){ if($('pb')){place($('pb'),$('pt'),48);place($('pbody'),$('pb'),48);} else place($('pbody'),$('pt'),56); place($('pn'),$('pbody'),48); }
   if(s.type==='cta') place($('ctb'),$('ctt'),50);
+  if(s.type==='chat') place($('cap'),$('chat'),56);
+  if(s.type==='diario'){ place($('di'),$('dy'),50); place($('sg'),$('di'),30); }
+  if(s.type==='poll'){ place($('oa'),$('q'),60); place($('vs'),$('oa'),14); place($('ob'),$('vs'),14); place($('cm'),$('ob'),56); place($('cms'),$('cm'),28); }
 };
 </script></body></html>
