@@ -16,7 +16,7 @@ async def main(spec_path, out_dir):
     async with async_playwright() as p:
         b = await p.chromium.launch()
         pg = await b.new_page(viewport={"width": 1080, "height": 1920})
-        await pg.goto((HERE / "template.html").as_uri())
+        await pg.goto((HERE / spec.get("template", "template.html")).as_uri())
         await pg.evaluate("document.fonts.ready")
         for i in range(len(spec["slides"])):
             await pg.evaluate("([s,i])=>render(s,i)", [spec, i])
