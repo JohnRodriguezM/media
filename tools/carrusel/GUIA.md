@@ -1,7 +1,7 @@
 # Carrusel diario — La Dosis de Ciencia (TikTok)
 
 Rutina: cada día se generan 2 carruseles de 5-6 láminas (ver Ritmo), se sube a este repo y se programa en
-TikTok (@ladosisdeciencia) por Zernio como **publicación directa** a las 11:30 y 17:30 (America/Bogota),
+TikTok (@ladosisdeciencia) por Zernio como **publicación directa** a las 10:30 y 19:00 (America/Bogota),
 con descripción y música automática. John recibe el resumen a las ~7:45 y puede pedir cancelarlo.
 
 ## Archivos
@@ -23,9 +23,9 @@ con descripción y música automática. John recibe el resumen a las ~7:45 y pue
 ## Ritmo: 2 carruseles al día (desde 2026-11-10; antes 3/día)
 | Franja | Hora (Bogotá) | Series | Tema de color |
 |---|---|---|---|
-| A | 11:30 | Ayuno | `claro` |
-| B | 17:30 | Rotan: Hormonas y metabolismo → Ejercicio y músculo → Intestino-cerebro → Sueño y cerebro (la que lleve más días sin salir según el historial) | `noche` |
-Los dos del día deben ser de temas distintos entre sí (`seed` diferente). Se quitó la franja de 20:30: históricamente era la de menor alcance.
+| A | 10:30 | Ayuno | `claro` |
+| B | 19:00 | Rotan: Hormonas y metabolismo → Ejercicio y músculo → Intestino-cerebro → Sueño y cerebro (la que lleve más días sin salir según el historial) | `noche` |
+Los dos del día deben ser de temas distintos entre sí (`seed` diferente). Horarios (análisis 2026-11-10 de 217 videos, vistas relativas a la mediana de su mes): 9-11 h ≈1,9× y 19 h ≈1,6× fueron las mejores franjas; 17-18 h ≈0,8× y desde las 20 h ≈0,8× las más flojas. Revisar de nuevo el 2026-11-24.
 
 ## Por qué (análisis 2026-11-10)
 Con 3 carruseles/día la mediana cayó a ≈160 vistas; en agosto, con ~1 video/día, era ≈25.800. Lo que más funcionó en la cuenta: ayuno "hora por hora" (12/16/24 h) con un número en el gancho y continuidad tipo "parte 2". Priorizar portadas con número y serie ("Hora 16: …", "Parte 2").
@@ -50,5 +50,5 @@ Audiencia: 77% mayor de 35 años, Latinoamérica. Español neutro, frases cortas
 - `posts_create_post` con `media_items` = URLs raw de GitHub de cada lámina (`https://raw.githubusercontent.com/JohnRodriguezM/media/main/tiktok/<carpeta>/01.jpg` …),
   `platforms=[{platform:"tiktok", accountId:"6a4179799d9472faae14cb5f"}]`, `content` = `caption_title`,
   `tiktok_settings={mediaType:"photo", photoCoverIndex:0, description:<description>, autoAddMusic:true, allowComment:true, privacyLevel:"PUBLIC_TO_EVERYONE", contentPreviewConfirmed:true, expressConsentGiven:true}`,
-  `scheduled_for` = hoy a la hora de su franja (11:30 o 17:30), `timezone`="America/Bogota".
+  `scheduled_for` = hoy a la hora de su franja (10:30 o 19:00), `timezone`="America/Bogota".
 - No usar `draft:true`: TikTok no pasa el caption a los borradores y John no los encuentra fácilmente (decisión 2026-11-03).
