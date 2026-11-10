@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-"""Apple Point - renderizador oficial de carruseles (v5, nov 2026): blanco y negro + linea arcoiris de marca.
+"""Apple Point - renderizador oficial de carruseles (v5, nov 2026). Dos formatos con la misma identidad:
+  "theme": "blanco" (fondo blanco, texto negro)  |  "theme": "negro" (fondo negro, texto blanco). Arcoiris solo como linea fina.
 Autocontenido: logo y tipografia Instrument Serif (SIL OFL) embebidos. No necesita internet.
 Uso: python3 carrusel.py spec.json carpeta_salida/
-spec.json = {"slug": "mi-tema", "slides": [ ... ]}   (5 a 7 laminas: cover, 3-5 point, cta). Ver ejemplo-spec.json.
+spec.json = {"slug": "mi-tema", "theme": "blanco", "slides": [ ... ]}  (5 a 7 laminas: cover, 3-5 point/list, cta).
+Ver ejemplo-spec.json (blanco) y ejemplo-negro.json (negro).
   cover: label, title (con <em>cursiva</em>), subtitle (admite <b>), ghost (numero decorativo, opcional), icon (opcional)
   point: num, kicker ("Alerta 01", "Paso 02"...), title (con <em>), body (admite <b>), icon (opcional), wlabel + (tip | path)
+  list:  kicker, title (con <em>), items [[titulo, detalle], ...] (2 a 4; ideal como resumen antes del cierre)
   cta:   label, title (con <em>), body. Los botones "Escribenos al DM" y "Comenta GUIA" los pone el script.
 Iconos: lock, home, gear, shield, battery, box, phone, camera, search, cloud, card, gift.
 Reglas: title <= 8 palabras con una sola parte en cursiva; body <= 20 palabras; tip <= 14; path de 2 a 3 pastillas.
@@ -65,6 +68,23 @@ em{{font-style:italic}}
 .tags{{margin-top:30px;font-size:24px;font-weight:600;letter-spacing:.2em;color:#8A8A8A}}
 .foot{{display:flex;justify-content:space-between;align-items:center;font-size:24px;font-weight:600;letter-spacing:.08em;color:#8A8A8A;position:relative;z-index:1}}
 .foot .go{{color:#0E0E0E;display:flex;align-items:center;gap:14px}}
+.negro .s{{background:#0B0B0B;color:#F5F5F5}}
+.negro .prog{{background:#262626}}
+.negro .hdr img{{background:#fff;border-radius:12px;padding:7px 12px;height:58px}}
+.negro .kick b{{background:#F5F5F5}}
+.negro .sub{{color:#A3A3A3}}.negro .sub b{{color:#fff}}
+.negro .num{{color:#181818}}
+.negro .pills span{{border-color:#333;background:#161616}}.negro .pills i{{color:#666}}
+.negro .ico svg{{stroke:#F5F5F5}}
+.negro .btn{{background:#fff;color:#0B0B0B}}.negro .btn2{{border-color:#fff}}
+.negro .bigl{{background:#fff;border-radius:22px;padding:14px 22px;height:128px}}
+.negro .foot .go{{color:#F5F5F5}}.negro .foot .go svg{{stroke:#F5F5F5}}
+.rows{{margin-top:46px;display:flex;flex-direction:column}}
+.row{{display:flex;gap:34px;align-items:baseline;padding:30px 0;border-top:1.5px solid rgba(128,128,128,.28)}}
+.row:last-child{{border-bottom:1.5px solid rgba(128,128,128,.28)}}
+.row .n{{font-family:IS,serif;font-style:italic;font-size:64px;line-height:1;width:64px;flex:none}}
+.row b{{display:block;font-size:38px;line-height:1.2;font-weight:700}}
+.row span{{display:block;font-size:30px;line-height:1.4;color:#7A7A7A;margin-top:6px}}
 """
 AR = '<svg width="54" height="20" viewBox="0 0 54 20" fill="none" stroke="#0E0E0E" stroke-width="2"><path d="M0 10h51M43 2l8 8-8 8"/></svg>'
 def icon(name, size=150):
@@ -89,6 +109,10 @@ def slide(s, i, n):
         ic = f'<div class="ico">{icon(s["icon"])}</div>' if s.get("icon") else ""
         mid = f'''<div class="kick">{html.escape(s["kicker"])}<b></b></div><h2 class="serif">{s["title"]}</h2><p class="sub">{s["body"]}</p>{wl}{w}{ic}'''
         return f'<div class="s"><div class="num">{html.escape(s["num"])}</div>{prog}{hdr}<div class="mid">{mid}</div>{foot}</div>'
+    if t == "list":
+        rows = "".join(f'<div class="row"><div class="n">{k}</div><div><b>{html.escape(a)}</b><span>{html.escape(b)}</span></div></div>' for k,(a,b) in enumerate(s["items"][:4],1))
+        mid = f'''<div class="kick">{html.escape(s["kicker"])}<b></b></div><h2 class="serif">{s["title"]}</h2><div class="rows">{rows}</div>'''
+        return f'<div class="s">{prog}{hdr}<div class="mid">{mid}</div>{foot}</div>'
     mid = f'''<img class="bigl" src="{LOGO}"><div class="bar"></div>
     {f'<div class="kick" style="margin-top:44px">{html.escape(s["label"])}<b></b></div>' if s.get("label") else ""}
     <h1 class="serif">{s["title"]}</h1><p class="sub">{s["body"]}</p>
@@ -100,7 +124,7 @@ def main(spec, out):
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={"width":1080,"height":1350}, device_scale_factor=2)
         for i, s in enumerate(sl, 1):
-            pg.set_content(f"<html><head><style>{CSS}</style></head><body>{slide(s,i,len(sl))}</body></html>")
+            pg.set_content(f"<html><head><style>{CSS}</style></head><body class='{sp.get("theme","blanco")}'>{slide(s,i,len(sl))}</body></html>")
             pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(250)
             pg.screenshot(path=f'{out}/{sp["slug"]}-{i:02d}.png')
         b.close()

@@ -1,0 +1,77 @@
+{
+ "slug": "negro",
+ "theme": "negro",
+ "slides": [
+  {
+   "type": "cover",
+   "label": "Conoce tu iPhone",
+   "ghost": "3",
+   "title": "Tres pantallas de tu iPhone que <em>debes conocer</em>",
+   "subtitle": "Están en Configuración y te sacan de dudas en segundos.",
+   "icon": "search"
+  },
+  {
+   "type": "point",
+   "num": "1",
+   "kicker": "Pantalla 01",
+   "icon": "phone",
+   "title": "<em>Información</em>",
+   "body": "Aquí están el <b>número de serie</b> y el <b>IMEI</b>. Si no ves el IMEI, desliza hacia abajo.",
+   "wlabel": "Dónde está",
+   "path": [
+    "Configuración",
+    "General",
+    "Información"
+   ]
+  },
+  {
+   "type": "point",
+   "num": "2",
+   "kicker": "Pantalla 02",
+   "icon": "shield",
+   "title": "AppleCare <em>y garantía</em>",
+   "body": "Toca tu dispositivo y ves <b>qué cobertura tiene</b>.",
+   "wlabel": "Dónde está",
+   "path": [
+    "Configuración",
+    "General",
+    "AppleCare y garantía"
+   ]
+  },
+  {
+   "type": "point",
+   "num": "3",
+   "kicker": "Pantalla 03",
+   "icon": "gear",
+   "title": "Historial de <em>piezas y servicios</em>",
+   "body": "Aparece en Información <b>solo si el iPhone fue reparado</b>. Requiere iOS 15.2 o posterior.",
+   "wlabel": "Ojo",
+   "tip": "Si una pieza dice “Desconocida”, puede no ser original."
+  },
+  {
+   "type": "list",
+   "kicker": "Resumen",
+   "title": "Guárdalo y <em>revísalo hoy</em>",
+   "items": [
+    [
+     "Información",
+     "Número de serie e IMEI"
+    ],
+    [
+     "AppleCare y garantía",
+     "La cobertura de tu equipo"
+    ],
+    [
+     "Historial de piezas",
+     "Solo aparece si hubo reparación"
+    ]
+   ]
+  },
+  {
+   "type": "cta",
+   "label": "Compártelo con quien acaba de estrenar",
+   "title": "Estrénalo con <em>todo en orden</em>",
+   "body": "Nuevos, sellados y originales, con 365 días de garantía directamente con Apple."
+  }
+ ]
+}
