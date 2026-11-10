@@ -1,0 +1,8 @@
+{"slug":"ejemplo-v3","slides":[
+ {"type":"cover","ghost":"4","label":"Guía · Compra segura","title":"Cuatro alertas antes de comprar un iPhone <em>usado</em>","subtitle":"Revísalas antes de pagar. La tercera casi nadie la mira."},
+ {"type":"point","num":"1","kicker":"Alerta 01","title":"Te pide la cuenta del <em>dueño anterior</em>","body":"Tiene Bloqueo de activación. Apple recomienda no aceptar un iPhone usado en ese estado.","wlabel":"Qué hacer","tip":"Si el vendedor no lo quita de su cuenta, no pagues."},
+ {"type":"point","num":"2","kicker":"Alerta 02","title":"Enciende en la <em>pantalla de inicio</em>","body":"Eso significa que el contenido no se borró.","wlabel":"Qué hacer","tip":"Pide que lo borre frente a ti antes de pagar."},
+ {"type":"point","num":"3","kicker":"Alerta 03","title":"Una pieza aparece como <em>desconocida</em>","body":"Puede ser una pieza no original o que no funciona como se espera.","wlabel":"Dónde mirarlo","path":["Configuración","General","Información"]},
+ {"type":"point","num":"4","kicker":"Alerta 04","title":"Nadie te confirma <em>la garantía</em>","body":"No te quedes con la palabra del vendedor: compruébalo tú mismo.","wlabel":"Dónde mirarlo","path":["Configuración","General","AppleCare y garantía"]},
+ {"type":"cta","label":"Guárdalo para cuando lo necesites","title":"¿Mejor <em>estrenar?</em>","body":"Nuevos, sellados y originales, con 365 días de garantía directamente con Apple. Envíos a toda Colombia."}
+]}
