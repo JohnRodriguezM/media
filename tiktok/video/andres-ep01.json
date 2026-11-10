@@ -5,7 +5,6 @@
   "scenes": [
     {
       "type": "title",
-      "dur": 3,
       "kicker": "LA DOSIS DE CIENCIA PRESENTA",
       "title": "EL RETO DE ANDRÉS",
       "ep": "EPISODIO 1 DE 15",
@@ -14,18 +13,17 @@
     },
     {
       "type": "place",
-      "dur": 5.6,
       "bg": "super",
       "actors": [
         {
           "id": "andres",
           "from": [
-            -20,
-            120
+            -40,
+            262
           ],
           "to": [
-            16,
-            120
+            24,
+            262
           ],
           "t0": 0,
           "t1": 2.6,
@@ -34,124 +32,100 @@
         {
           "id": "mariana",
           "from": [
-            100,
-            120
+            200,
+            262
           ],
           "to": [
-            60,
-            120
+            124,
+            262
           ],
-          "t0": 1.2,
-          "t1": 3.6,
+          "t0": 1.0,
+          "t1": 3.4,
           "flip": true
         }
       ],
       "bubbles": [
         {
           "actor": "mariana",
-          "at": 3.9,
+          "at": 3.6,
           "text": "?"
         }
       ],
       "captions": [
         {
-          "at": 0.3,
-          "text": "Andrés, 47 años. Un martes cualquiera en el súper.",
-          "top": 230
+          "text": "Andrés, 47 años. Un martes cualquiera en el súper."
         },
         {
-          "at": 3.9,
           "text": "Alguien lo mira dos veces…",
-          "top": 480,
-          "cls": "o"
+          "top": 470,
+          "cls": "o",
+          "at": 3.6
         }
       ]
     },
     {
       "type": "place",
-      "dur": 2.2,
       "bg": "sala",
       "sofa": true,
       "phone": [
-        44,
-        95
+        80,
+        188
       ],
       "actors": [
         {
           "id": "andres",
           "from": [
-            34,
-            108
+            68,
+            214
           ],
           "to": [
-            34,
-            108
+            68,
+            214
           ],
           "t0": 0,
-          "t1": 1
+          "t1": 0.1,
+          "seated": true
         }
       ],
       "captions": [
         {
-          "at": 0.2,
-          "text": "Esa noche, 9:12 p. m.",
-          "top": 230
+          "text": "Esa noche, 9:12 p. m."
         }
       ]
     },
     {
       "type": "chat",
-      "dur": 8.2,
       "name": "Mariana (colegio)",
       "avatar": "mariana",
-      "status": "últ. vez hace 1 min",
-      "typingThem": [
-        0.1,
-        0.6
-      ],
-      "msgs": [
+      "status": "en línea",
+      "seq": [
         {
-          "at": 0.6,
           "from": "them",
-          "text": "¿Andrés? Te vi hoy en el súper y no te reconocí",
+          "text": "¿Andrés? Te vi en el súper y no te reconocí",
           "time": "9:12 p. m."
         },
         {
-          "at": 1.9,
           "from": "them",
           "text": "Tu foto de perfil es de cuando jugábamos fútbol",
           "time": "9:12 p. m."
         },
         {
-          "at": 6.0,
+          "draft": "Sí, he cambiado un poco"
+        },
+        {
           "from": "me",
           "text": "Jaja… esa foto tiene 20 años",
           "time": "9:40 p. m."
         }
       ],
-      "drafts": [
-        {
-          "at": 3.0,
-          "dur": 1.4,
-          "text": "Sí, he cambiado un poco"
-        },
-        {
-          "at": 4.4,
-          "dur": 1.4,
-          "text": "Es que el trabajo"
-        }
-      ],
       "captions": [
         {
-          "at": 6.8,
-          "text": "No le dolió el comentario. Le dolió que tenía razón.",
-          "top": 1180
+          "text": "No le dolió el comentario. Le dolió que tenía razón."
         }
       ]
     },
     {
       "type": "place",
-      "dur": 4.6,
       "bg": "escaleras",
       "hud": {
         "label": "ENERGÍA",
@@ -162,54 +136,45 @@
         {
           "id": "andres",
           "from": [
-            2,
-            150
+            -4,
+            290
           ],
           "to": [
-            54,
-            90
+            104,
+            192
           ],
           "t0": 0,
-          "t1": 4.0,
+          "t1": 5.0,
           "sweat": true
         }
       ],
       "captions": [
         {
-          "at": 0.2,
-          "text": "No era el peso. Era subir **dos pisos** y quedarse sin aire.",
-          "top": 230
+          "text": "No era el peso. Era subir **dos pisos** y quedarse sin aire."
         }
       ]
     },
     {
       "type": "quest",
-      "dur": 4,
       "label": "NUEVA MISIÓN",
       "text": "15 días para volver a ser el de la foto",
       "sub": "DÍA 0 DE 15"
     },
     {
       "type": "tip",
-      "dur": 6.6,
       "speaker": "doctora",
       "name": "DRA. RUIZ · CONSEJO",
-      "text": "Después de los 40, antes de cambiar tu alimentación o empezar a entrenar: revisa **presión, glucosa y colesterol** con tu médico.",
-      "cps": 48
+      "text": "Después de los 40, antes de cambiar tu alimentación o entrenar: revisa **presión, glucosa y colesterol**."
     },
     {
       "type": "tip",
-      "dur": 6.2,
       "speaker": "doctora",
       "name": "DRA. RUIZ · DATO",
-      "text": "¿21 días para crear un hábito? En un estudio fueron **unos 66** en promedio.",
-      "note": "Por eso: cambios pequeños. Fallar un día no arruina nada.",
-      "noteAt": 2.4,
-      "cps": 48
+      "text": "¿21 días para un hábito? En un estudio fueron **unos 66**.",
+      "note": "Cambios pequeños. Fallar un día no arruina nada."
     },
     {
       "type": "choice",
-      "dur": 6,
       "q": "¿Con qué empieza Andrés mañana?",
       "a": "Cenar temprano y 12 horas sin comer",
       "b": "Caminar 20 minutos después de cenar",

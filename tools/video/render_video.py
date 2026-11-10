@@ -109,15 +109,15 @@ async def frames(spec, outdir, fps):
         for i in range(n):
             await pg.evaluate("t=>renderAt(t)", i / fps)
             await pg.screenshot(path=str(outdir / f"{i:05d}.jpg"), type="jpeg", quality=90)
+        events = await pg.evaluate("()=>window.EVENTS||[]")
         await b.close()
-    return total
+    return total, events
 
 
 def main(spec_path, out_path, fps=24):
     spec = json.loads(Path(spec_path).read_text(encoding="utf-8"))
     tmp = Path(tempfile.mkdtemp())
-    total = asyncio.run(frames(spec, tmp, fps))
-    ev, _ = sfx_events(spec)
+    total, ev = asyncio.run(frames(spec, tmp, fps))
     audio = music(total, ev, spec.get("seed", 0))
     wav = tmp / "music.wav"
     with wave.open(str(wav), "wb") as w:
