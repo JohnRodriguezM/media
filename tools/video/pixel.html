@@ -71,24 +71,24 @@ const esc0=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 const esc=s=>esc0(s).replace(/(\d+)/g,'<span class="num">$1</span>');
 const md=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<span class="y-t">$1</span>');
 const plain=s=>String(s||'').replace(/\*\*/g,'');
-const TYPE_CPS=38;
+const TYPE_CPS=44;
 const tw=(text,t)=>{const pl=plain(text);const n=Math.max(0,Math.floor(t*TYPE_CPS));return n>=pl.length?md(text):esc(pl.slice(0,n))+'<span class="cur"></span>';};
 
 // ---------- TIMING: on-screen reading time ----------
-// ~14 characters/second (comfortable for a 35+ audience reading a pixel font) + 0.7 s to find the text, min 1.8 s.
-const READ_CPS=14, typeT=s=>plain(s).length/TYPE_CPS, readT=s=>Math.max(1.6,plain(s).length/READ_CPS+0.6), showT=s=>Math.max(typeT(s)+0.9,readT(s));
+// ~16.8 characters/second + 0.5 s to find the text, min 1.5 s (tuned with John: episode 1 ≈ 58 s).
+const READ_CPS=16.8, typeT=s=>plain(s).length/TYPE_CPS, readT=s=>Math.max(1.5,plain(s).length/READ_CPS+0.5), showT=s=>Math.max(typeT(s)+0.8,readT(s));
 function plan(ep){const EV=[];let A=0;
  ep.scenes.forEach(s=>{
-  if(s.type==='title'){s.dur=s.dur||Math.max(3.8,readT((s.kicker||'')+(s.title||'')+(s.ep||''))*0.8);}
+  if(s.type==='title'){s.dur=s.dur||Math.max(3.2,readT((s.kicker||'')+(s.title||'')+(s.ep||''))*0.7);}
   if(s.type==='place'){let t=s.lead??0.5;(s.captions||[]).forEach(cp=>{cp.at=cp.at??t;t=cp.at+showT(cp.text);});
     const anim=Math.max(0,...(s.actors||[]).map(a=>(a.t1||0)+0.5),...(s.bubbles||[]).map(b=>b.at+1.2));s.dur=Math.max(s.minDur||0,t+0.2,anim);}
   if(s.type==='chat'){let t=0.7;s.msgs=[];s.drafts=[];
-    (s.seq||[]).forEach((m,k)=>{if(m.draft){s.drafts.push({at:t,dur:Math.max(1.4,m.draft.length/12),text:m.draft});t+=Math.max(1.4,m.draft.length/12)+0.15;}
-      else{if(k===0&&m.from!=='me')s.typingThem=[0.1,t];s.msgs.push({...m,at:t});EV.push({k:'blip',t:A+t});t+=readT(m.text)+(m.from==='me'?0.3:0.1);}});
+    (s.seq||[]).forEach((m,k)=>{if(m.draft){const dd=Math.max(1.2,m.draft.length/15);s.drafts.push({at:t,dur:dd,text:m.draft});t+=dd+0.1;}
+      else{if(k===0&&m.from!=='me')s.typingThem=[0.1,t];s.msgs.push({...m,at:t});EV.push({k:'blip',t:A+t});t+=readT(m.text)+(m.from==='me'?0.2:0);}});
     (s.captions||[]).forEach(cp=>{cp.at=t;t+=showT(cp.text);});s.dur=t+0.2;}
   if(s.type==='quest'){s.textAt=0.5;s.subAt=0.5+typeT(s.text)+0.2;s.dur=0.5+showT(s.label+' '+s.text+' '+(s.sub||''));EV.push({k:'quest',t:A+0.1});}
   if(s.type==='tip'){let t=0.3;s.textAt=t;t+=showT(s.text);if(s.note){s.noteAt=t;t+=showT(s.note);}s.dur=t+0.2;}
-  if(s.type==='choice'){s.aAt=typeT(s.q)+0.4;s.bAt=s.aAt+0.7;s.ctaAt=s.bAt+0.7;s.dur=Math.max(s.bAt+readT(s.a+s.b)+1.5,readT(s.q+s.a+s.b)+1.5);
+  if(s.type==='choice'){s.aAt=typeT(s.q)+0.4;s.bAt=s.aAt+0.7;s.ctaAt=s.bAt+0.7;s.dur=Math.max(s.bAt+readT(s.a+s.b)+1.2,readT(s.q+s.a+s.b)+1.2);
     EV.push({k:'select',t:A+s.aAt},{k:'select',t:A+s.bAt});}
   A+=s.dur;});
  window.EVENTS=EV;return A;}
