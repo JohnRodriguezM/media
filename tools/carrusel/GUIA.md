@@ -1,6 +1,21 @@
 # Carrusel diario — La Dosis de Ciencia (TikTok)
 
-## FORMATO VIGENTE (desde 2026-11-10): 1 carrusel al día, historias por temporadas, 10:30 Bogotá
+## FORMATO VIGENTE (desde 2026-11-10): 1 VIDEO pixel art al día, historias por temporadas, 10:30 Bogotá
+Cada episodio es un **video pixel art de ~55-60 s** (estilo aprobado por John: el episodio 1 dura 58 s). Motor: `tools/video/pixel.html`
++ `tools/video/render_video.py` (frames con Playwright, música chiptune original generada, sonidos; sin voz por ahora).
+- Spec: `tiktok/video/<slug>-epNN.json`; render: `python3 tools/video/render_video.py tiktok/video/<slug>-epNN.json tiktok/video/<slug>-epNN.mp4` (~3-4 min; usa timeout largo). Ejemplo completo: `tiktok/video/andres-ep01.json`.
+- **Los tiempos de lectura son automáticos** (≈16,8 caracteres/s + margen): no pongas `dur` ni `at` salvo para sincronizar animaciones. Si el video pasa de ~62 s, acorta textos (no los aceleres). Apunta a 52-60 s.
+- Raíz del spec: `seed`, `hudLeft` ("HISTORIA FICTICIA"), `hudRight` ("DÍA N/15"), `scenes` [...].
+- Escenas (en este orden típico): `title` (kicker, title, ep "EPISODIO N DE 15", day, actor) → 2-4 escenas de historia (`place` y/o `chat`) → `quest` o un `place` de transición → 1-2 `tip` (Dra. Ruiz u otro personaje: ciencia del día, texto ≤110 caracteres, `note` opcional ≤60) → `choice` (q, a, b ≤40 caracteres cada una, cta "COMENTA A O B", small "Lo que gane pasa en el episodio N+1").
+- `place`: `bg` ∈ super, sala (+`sofa`:true, `phone`:[x,y]), escaleras (+`hud` {label, from, to}), consultorio, cocina (+`hora`: hora del reloj, ideal para "Hora 12/16"), oficina, parque, camino, noche. `actors`: [{id: andres|mariana|doctora, from:[x,y], to:[x,y], t0, t1, flip, cart, sweat, seated}] en coordenadas 180×320 (y = pies; suelo ≈ 262 en super/oficina/cocina, 222 sentado en sala). `captions`: [{text, top(px, por defecto 230), cls: o|y|c|l}] (≤60 caracteres), `bubbles`: [{actor, at, text:"?"|"!"}].
+- `chat`: `name`, `avatar` (id de personaje), `status`, `seq`: [{from: them|me, text, time} | {draft: "texto que escribe y borra"}], `captions` (1 frase final).
+- Personajes disponibles: andres, mariana, doctora. Para un personaje nuevo, agrega su sprite 16×24 en `SP` de pixel.html (mismo formato, paleta P) antes de usarlo.
+- Revisión obligatoria: saca fotogramas (ffmpeg -ss) del final de cada escena y ábrelos con Read; nada debe cortarse ni taparse.
+- Publicación en Zernio como video: `media_items` [{type:"video", url raw del .mp4}], `content` = descripción completa (el caption del video), `tiktok_settings` {privacy_level:"PUBLIC_TO_EVERYONE", allow_comment:true, allow_duet:true, allow_stitch:true, content_preview_confirmed:true, express_consent_given:true}.
+- Los carruseles (`template_v2.html`) quedan como respaldo si el render de video falla.
+
+## Formato de historia (temporadas) — aplica igual al video
+(Antes: 1 carrusel al día.)
 Un solo carrusel diario, de alto impacto: una historia por episodios con un personaje **ficticio y avisado**.
 Cada temporada es un reto de **15 días = 15 episodios**; el episodio 15 presenta al siguiente protagonista.
 `tiktok/historia/temporadas.json` dice cuál es la temporada activa y el plan de las siguientes; el archivo de la

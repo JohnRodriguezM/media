@@ -38,8 +38,10 @@
         "A": "Cenar más temprano y hacer 12 horas sin comer hasta el desayuno",
         "B": "Salir a caminar 20 minutos después de cenar"
       },
-      "zernio_post_id": "6af2818cc0a37cdb7ee01803",
-      "ganador": null
+      "zernio_post_id": "6af28bd1587acee687ae1aac",
+      "ganador": null,
+      "formato": "video",
+      "video": "tiktok/video/andres-ep01.json"
     }
   ],
   "temporada": 1,
