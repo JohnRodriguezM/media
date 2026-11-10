@@ -1,0 +1,57 @@
+{
+  "activa": "tiktok/historia/andres.json",
+  "reglas": [
+    "Cada temporada = un personaje ficticio y avisado, 15 episodios (uno por día, 10:30).",
+    "El episodio 15 presenta al protagonista de la siguiente temporada (continuidad entre temporadas).",
+    "Al día siguiente del episodio 15: crea tiktok/historia/<slug>.json para la nueva temporada (mismo formato que andres.json: personaje, reglas, plan de 15 hitos, episodios []), apunta 'activa' a ese archivo y publica su episodio 1 (kicker 'Historia ficticia · Temporada N · Episodio 1 de 15'). Usa el resultado de la encuesta del episodio 15 para orientar el reto.",
+    "Cada temporada cubre una serie científica de la GUIA; varía edad, sexo y situación del personaje."
+  ],
+  "temporadas": [
+    {
+      "n": 1,
+      "slug": "andres",
+      "personaje": "Andrés, 47, contador",
+      "tema": "volver a tener energía: ayuno, caminar, sueño",
+      "series": [
+        "Ayuno",
+        "Ejercicio y músculo"
+      ],
+      "estado": "en curso",
+      "inicio": "2026-11-10"
+    },
+    {
+      "n": 2,
+      "slug": "mariana",
+      "personaje": "Mariana, 46, compañera de colegio de Andrés; la perimenopausia/menopausia le quitó el sueño",
+      "tema": "sueño, hormonas y ayuno en mujeres",
+      "series": [
+        "Sueño y cerebro",
+        "Hormonas y metabolismo",
+        "Ayuno"
+      ],
+      "estado": "pendiente"
+    },
+    {
+      "n": 3,
+      "slug": "raul",
+      "personaje": "Don Raúl, 63, papá de Andrés, con prediabetes",
+      "tema": "caminar, glucosa y no perder músculo (siempre con su médico)",
+      "series": [
+        "Hormonas y metabolismo",
+        "Ejercicio y músculo"
+      ],
+      "estado": "pendiente"
+    },
+    {
+      "n": 4,
+      "slug": "carolina",
+      "personaje": "Carolina, 38, estrés laboral y estómago inflamado",
+      "tema": "eje intestino-cerebro, fibra, respiración",
+      "series": [
+        "Intestino-cerebro",
+        "Sueño y cerebro"
+      ],
+      "estado": "pendiente"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     "aviso": "Historia ficticia basada en situaciones reales de consulta",
     "bio": "Contador, casado, dos hijos adolescentes, vive en una ciudad latinoamericana. Trabaja sentado 9 h, cena tarde, duerme ~6 h, toma café en la tarde, no hace ejercicio desde los 30. Jugaba fútbol en el colegio.",
     "detonante": "Mariana, compañera del colegio, lo ve en el supermercado y no lo reconoce. Le escribe: su foto de perfil es de hace 20 años, de cuando jugaba fútbol.",
-    "reto": "90 días para volver a sentirse como el de la foto: energía, subir escaleras sin ahogarse, dormir bien. No es un reto de kilos.",
+    "reto": "15 días para empezar a volver a sentirse como el de la foto: energía, subir escaleras sin ahogarse, dormir bien. No es un reto de kilos.",
     "otros": {
       "Mariana": "compañera del colegio, le escribe de vez en cuando y lo anima",
       "Laura": "su esposa",
@@ -19,7 +19,9 @@
     "Cada episodio enseña 1-2 datos científicos conservadores (reglas de la GUIA) ligados a lo que vive Andrés ese día.",
     "La encuesta final siempre tiene dos opciones razonables y seguras (ninguna peligrosa ni absurda). Lo que gane en comentarios pasa en el siguiente episodio; si hay empate o no hay votos, decide la opción más prudente y se dice en el episodio.",
     "Andrés consulta a su médica antes de cambios grandes; ayunos >24 h nunca.",
-    "Continuidad: leer los episodios anteriores antes de escribir el siguiente."
+    "Continuidad: leer los episodios anteriores antes de escribir el siguiente.",
+    "Temporada de 15 episodios. Portada: kicker 'Historia ficticia · Episodio N de 15'. En 15 días solo se cuentan cambios creíbles en cómo se siente (energía, sueño, escaleras, hambre), nunca resultados medibles.",
+    "El plan de abajo marca los hitos fijos; los votos deciden los detalles. Si un voto cambia el rumbo, adapta el episodio siguiente manteniendo el hito."
   ],
   "episodios": [
     {
@@ -38,6 +40,115 @@
       },
       "zernio_post_id": "6af27f71adaa22aa7f114b9b",
       "ganador": null
+    }
+  ],
+  "temporada": 1,
+  "retoDias": 15,
+  "plan": [
+    {
+      "ep": 1,
+      "dia": 0,
+      "escena": "Mariana no lo reconoce en el súper; Día 0",
+      "ciencia": "chequeo médico antes de cambiar; hábito ≈66 días",
+      "encuesta": "¿12 h de ayuno o caminar 20 min?"
+    },
+    {
+      "ep": 2,
+      "dia": 1,
+      "escena": "Hora 12: primera noche sin picar (o primera caminata, según el voto)",
+      "ciencia": "qué pasa a las 12 h: insulina baja, glucógeno",
+      "encuesta": "¿café negro al despertar o esperar al desayuno?"
+    },
+    {
+      "ep": 3,
+      "dia": 2,
+      "escena": "cita con la Dra. Ruiz (le pide exámenes; sin cifras)",
+      "ciencia": "por qué medir presión, glucosa, colesterol",
+      "encuesta": "¿empieza en semana o el fin de semana?"
+    },
+    {
+      "ep": 4,
+      "dia": 3,
+      "escena": "el hambre de las 10 a. m.",
+      "ciencia": "grelina en olas, se adapta al horario",
+      "encuesta": "¿agua (con una pizca de sal) o esperar la ola?"
+    },
+    {
+      "ep": 5,
+      "dia": 4,
+      "escena": "torta de cumpleaños en la oficina",
+      "ciencia": "flexibilidad, un día no arruina el proceso",
+      "encuesta": "¿un pedazo o decir que no?"
+    },
+    {
+      "ep": 6,
+      "dia": 5,
+      "escena": "duerme mal sin entender por qué",
+      "ciencia": "cafeína: vida media ≈5 h",
+      "encuesta": "¿último café a las 12 o a las 2?"
+    },
+    {
+      "ep": 7,
+      "dia": 7,
+      "escena": "Hora 16: su primer 16:8",
+      "ciencia": "qué cambia entre 12 y 16 h (autofagia = zona gris)",
+      "encuesta": "¿sigue 16:8 o vuelve a 14 h?"
+    },
+    {
+      "ep": 8,
+      "dia": 8,
+      "escena": "sube los dos pisos y algo cambió",
+      "ciencia": "caminar y el músculo captan glucosa",
+      "encuesta": "¿escaleras o pesas en casa?"
+    },
+    {
+      "ep": 9,
+      "dia": 9,
+      "escena": "recaída: asado y cerveza el sábado",
+      "ciencia": "alcohol y sueño; fallar un día",
+      "encuesta": "¿retoma el domingo o el lunes?"
+    },
+    {
+      "ep": 10,
+      "dia": 10,
+      "escena": "primeras sentadillas",
+      "ciencia": "fuerza después de los 40, sarcopenia",
+      "encuesta": "¿proteína en el desayuno o en la cena?"
+    },
+    {
+      "ep": 11,
+      "dia": 11,
+      "escena": "duerme 7 h por primera vez",
+      "ciencia": "qué repara el sueño",
+      "encuesta": "¿pantalla fuera del cuarto o modo nocturno?"
+    },
+    {
+      "ep": 12,
+      "dia": 12,
+      "escena": "Laura, su esposa, se suma",
+      "ciencia": "el apoyo social ayuda a sostener hábitos",
+      "encuesta": "¿cenan juntos más temprano o caminan juntos?"
+    },
+    {
+      "ep": 13,
+      "dia": 13,
+      "escena": "Mariana le pregunta cómo va",
+      "ciencia": "qué cambia en 2 semanas y qué no",
+      "encuesta": "¿le cuenta todo o le guarda la sorpresa?"
+    },
+    {
+      "ep": 14,
+      "dia": 14,
+      "escena": "partido de exalumnos",
+      "ciencia": "constancia > intensidad",
+      "encuesta": "¿juega completo o medio tiempo?"
+    },
+    {
+      "ep": 15,
+      "dia": 15,
+      "escena": "FINAL: no es el de la foto, pero va en camino; cambia su foto de perfil. Gancho: Mariana le confiesa que ella también necesita un reto",
+      "ciencia": "repaso de lo aprendido",
+      "encuesta": "¿qué reto debería hacer Mariana? (A sueño / B energía) — abre la temporada 2"
     }
   ]
 }

@@ -175,7 +175,7 @@ function motif(key,cx,cy,sc,op,frac){
     const w=820*sc,x0=cx-w/2,f=frac==null?0:frac; let d='';
     for(let x=0;x<=w;x+=6){const y=cy+Math.sin(x/w*Math.PI*2.2)*70*sc;d+=(x?'L':'M')+(x0+x)+' '+y+' ';}
     g+=L(d,2.5,c,.8);
-    [0,30,60,90].forEach(dd=>{const x=x0+dd/90*w,y=cy+Math.sin(dd/90*Math.PI*2.2)*70*sc;
+    const T=window.RETO||15,marks=[0,Math.round(T/3),Math.round(2*T/3),T];marks.forEach(dd=>{const x=x0+dd/T*w,y=cy+Math.sin(dd/T*Math.PI*2.2)*70*sc;
       g+=`<circle cx="${x}" cy="${y}" r="${10*sc}" fill="var(--paper)" stroke="${c}" stroke-width="2.5"/><text x="${x}" y="${y+60*sc}" text-anchor="middle" font-family="Fr" font-size="${34*sc}" fill="${c}">Día ${dd}</text>`;});
     const xf=x0+f*w,yf=cy+Math.sin(f*Math.PI*2.2)*70*sc;
     g+=`<circle cx="${xf}" cy="${yf}" r="${22*sc}" fill="${a}"/><circle cx="${xf}" cy="${yf}" r="${40*sc}" fill="none" stroke="${a}" stroke-width="3" opacity=".5"/>`;
@@ -193,6 +193,7 @@ function motif(key,cx,cy,sc,op,frac){
 window.render=function(spec,i){
   const s=spec.slides[i], n=spec.slides.length, st=document.getElementById('stage');
   document.body.className=spec.theme==='noche'?'noche':'';
+  window.RETO=spec.retoDias||15;
   seed=(spec.seed||7)+i*97; rnd();rnd();
   const key=serieKey(spec.serie||(spec.slides[0]||{}).serie);
   const serie=(spec.serie||'').replace(/^Serie\s+/i,'');
