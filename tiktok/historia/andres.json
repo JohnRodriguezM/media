@@ -39,9 +39,32 @@
         "B": "Salir a caminar 20 minutos después de cenar"
       },
       "zernio_post_id": "6af28bd1587acee687ae1aac",
-      "ganador": null,
+      "ganador": "B",
       "formato": "video",
-      "video": "tiktok/video/andres-ep01.json"
+      "video": "tiktok/video/andres-ep01.json",
+      "votos": {
+        "A": 0,
+        "B": 0
+      },
+      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: caminar)"
+    },
+    {
+      "n": 2,
+      "fecha": "2026-11-11",
+      "formato": "video",
+      "video": "tiktok/video/andres-ep02.json",
+      "dia_reto": 1,
+      "resumen": "Día 1. Empieza por lo más prudente: caminar 20 min después de cenar (8:15 p. m.). En el minuto 12 le cuesta, baja el ritmo pero no se detiene. Le escribe a Mariana: 'Mañana otra vez. Sin correr todavía'. Esa noche no se duerme en el sofá.",
+      "ciencia": [
+        "caminar después de comer: los músculos usan glucosa, pico posprandial menor (10-15 min sirven)",
+        "ritmo inicial: hablar pero no cantar; dolor de pecho o mucho ahogo = parar y consultar"
+      ],
+      "encuesta": {
+        "A": "Cenar temprano y hacer 12 horas sin comer (además de caminar)",
+        "B": "Seguir solo con la caminata, sin cambiar la comida todavía"
+      },
+      "zernio_post_id": null,
+      "ganador": null
     }
   ],
   "temporada": 1,

@@ -1,0 +1,138 @@
+{
+  "seed": 4,
+  "hudLeft": "HISTORIA FICTICIA",
+  "hudRight": "DÍA 1/15",
+  "scenes": [
+    {
+      "type": "title",
+      "kicker": "LA DOSIS DE CIENCIA PRESENTA",
+      "title": "EL RETO DE ANDRÉS",
+      "ep": "EPISODIO 2 DE 15",
+      "day": "DÍA 1",
+      "actor": "andres"
+    },
+    {
+      "type": "place",
+      "bg": "cocina",
+      "hora": 8,
+      "actors": [
+        {
+          "id": "andres",
+          "from": [
+            60,
+            262
+          ],
+          "to": [
+            60,
+            262
+          ],
+          "t0": 0,
+          "t1": 0.1
+        }
+      ],
+      "bubbles": [
+        {
+          "actor": "andres",
+          "at": 3.0,
+          "text": "!"
+        }
+      ],
+      "captions": [
+        {
+          "text": "Día 1. 8:00 p. m. Andrés termina de cenar.",
+          "top": 380
+        },
+        {
+          "text": "¿Ayuno o caminar? Empezó por lo más prudente: caminar.",
+          "top": 640,
+          "cls": "o",
+          "at": 3.0
+        }
+      ]
+    },
+    {
+      "type": "place",
+      "bg": "noche",
+      "actors": [
+        {
+          "id": "andres",
+          "from": [
+            -30,
+            262
+          ],
+          "to": [
+            120,
+            262
+          ],
+          "t0": 0,
+          "t1": 6.0
+        }
+      ],
+      "captions": [
+        {
+          "text": "8:15 p. m. Su primera caminata en años."
+        },
+        {
+          "text": "Minuto 12: le cuesta. Baja el ritmo, pero no se detiene.",
+          "top": 520,
+          "cls": "y",
+          "at": 3.4
+        }
+      ]
+    },
+    {
+      "type": "chat",
+      "name": "Mariana (colegio)",
+      "avatar": "mariana",
+      "status": "en línea",
+      "seq": [
+        {
+          "from": "me",
+          "text": "Hoy caminé 20 minutos. Poquito, pero salí",
+          "time": "8:41 p. m."
+        },
+        {
+          "from": "them",
+          "text": "Poquito no. Es el día 1",
+          "time": "8:43 p. m."
+        },
+        {
+          "draft": "Mañana empiezo a correr"
+        },
+        {
+          "from": "me",
+          "text": "Mañana otra vez. Sin correr todavía",
+          "time": "8:45 p. m."
+        }
+      ],
+      "captions": [
+        {
+          "text": "Esa noche no se quedó dormido en el sofá."
+        }
+      ]
+    },
+    {
+      "type": "tip",
+      "speaker": "doctora",
+      "name": "DRA. RUIZ · DATO",
+      "text": "Caminar después de comer ayuda: los músculos usan **glucosa** y el pico de azúcar suele ser menor.",
+      "note": "Sirve aunque sean 10-15 minutos."
+    },
+    {
+      "type": "tip",
+      "speaker": "doctora",
+      "name": "DRA. RUIZ · CONSEJO",
+      "text": "Para empezar, un ritmo en el que puedas **hablar, pero no cantar**.",
+      "note": "Dolor de pecho o mucho ahogo: para y consulta."
+    },
+    {
+      "type": "choice",
+      "q": "¿Qué suma Andrés mañana?",
+      "a": "Cenar temprano: 12 h sin comer",
+      "b": "Seguir solo con la caminata",
+      "cta": "COMENTA A O B",
+      "small": "Lo que gane pasa en el episodio 3"
+    }
+  ],
+  "description": "Episodio 2 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 1. En el episodio 1 la pregunta era: ¿empezar con 12 horas sin comer o con una caminata? Andrés empezó por lo más prudente: caminar 20 minutos después de cenar. Le costó en el minuto 12, bajó el ritmo… pero no se detuvo. Y esa noche no se quedó dormido en el sofá.\n\nLo que dice la ciencia:\n✅ Caminar después de comer ayuda: los músculos usan glucosa y el pico de azúcar después de la comida suele ser menor. Incluso 10-15 minutos suman.\n✅ Para empezar, busca un ritmo en el que puedas hablar, pero no cantar.\n⚠️ Si tienes más de 40 años o alguna enfermedad, consulta a tu médico antes de cambiar tu rutina.\n❌ Dolor de pecho, mareo o mucho ahogo al caminar no es \"falta de costumbre\": detente y consulta.\n\n📊 ENCUESTA – ¿Qué suma Andrés mañana?\nA) Cenar más temprano y hacer 12 horas sin comer hasta el desayuno (además de caminar).\nB) Seguir solo con la caminata esta semana, sin cambiar todavía lo que come.\nComenta A o B: lo que gane pasa en el episodio 3.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #caminar #salud #habitossaludables #glucosa #ayunointermitente #medicina"
+}
