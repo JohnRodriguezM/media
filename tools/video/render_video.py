@@ -82,6 +82,30 @@ def music(total, events, seed=0):
     return (out * 32767).astype(np.int16)
 
 
+def indie_sfx(base, total, ev):
+    """Estilo indie: música más baja + "voces" RPG (bips por personaje) y efectos."""
+    pitch = {"doctora": 79, "mariana": 76, "laura": 74, "andres": 64, "raul": 60}
+    out = base.astype(np.float32) / 32767 * 0.6
+    def put(x, t):
+        i = int(t * SR)
+        if i >= len(out): return
+        x = x[: len(out) - i]; out[i:i + len(x)] += x
+    for e in ev:
+        k = e["k"]
+        if k == "voice":
+            n = pitch.get(e.get("who"), 70) + [0, 2, 4, 7][int(e.get("ch", 0)) % 4]
+            put(square(note_hz(n), 0.045, 0.5, 0.09), e["t"])
+        elif k == "stamp":
+            put(noise(0.25, 0.25, 18), e["t"]); put(square(note_hz(43), 0.18, 0.5, 0.18), e["t"])
+        elif k == "cut":
+            put(noise(0.08, 0.12, 60), e["t"])
+        elif k == "whoosh":
+            put(noise(0.35, 0.10, 8), e["t"])
+        elif k == "pop":
+            put(square(note_hz(88), 0.05, 0.5, 0.10), e["t"])
+    return (np.tanh(out * 1.3) * 0.85 * 32767).astype(np.int16)
+
+
 def sfx_events(spec):
     ev, a = [], 0.0
     for s in spec["scenes"]:
@@ -99,7 +123,8 @@ async def frames(spec, outdir, fps):
     async with async_playwright() as p:
         b = await p.chromium.launch()
         pg = await b.new_page(viewport={"width": 1080, "height": 1920})
-        await pg.goto((HERE / "pixel.html").as_uri())
+        page = "indie.html" if spec.get("engine") == "indie" else "pixel.html"
+        await pg.goto((HERE / page).as_uri())
         await pg.evaluate("document.fonts.load('40px Px')")
         await pg.evaluate("document.fonts.load('40px Sk')")
         await pg.evaluate("document.fonts.load('40px Vt')")
@@ -119,6 +144,8 @@ def main(spec_path, out_path, fps=24):
     tmp = Path(tempfile.mkdtemp())
     total, ev = asyncio.run(frames(spec, tmp, fps))
     audio = music(total, ev, spec.get("seed", 0))
+    if spec.get("engine") == "indie":
+        audio = indie_sfx(audio, total, ev)
     wav = tmp / "music.wav"
     with wave.open(str(wav), "wb") as w:
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR); w.writeframes(audio.tobytes())

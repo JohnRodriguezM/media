@@ -1,0 +1,40 @@
+{
+  "engine": "indie",
+  "seed": 5,
+  "hudLeft": "HISTORIA FICTICIA",
+  "hudRight": "DÍA 2/15",
+  "title": {"title": "EL RETO DE ANDRÉS", "sub": "EPISODIO 3 DE 15 · DÍA 2", "at": 3.6},
+  "scenes": [
+    {"type": "scene", "bg": "consultorio",
+     "beats": [
+       {"cam": "close:andres", "expr": {"andres": "surprised", "doctora": "firm"}, "sweat": ["andres"],
+        "say": {"who": "doctora", "text": "Andrés, ¿cuándo te mediste la presión por última vez?"}},
+       {"cam": "two", "expr": {"andres": "worried"}, "sweat": ["andres"],
+        "say": {"who": "andres", "text": "Eh… ¿en el colegio?"}},
+       {"cam": "wide", "expr": {"andres": "neutral", "doctora": "happy"},
+        "say": {"who": "doctora", "text": "Entonces hoy medimos todo: presión y exámenes."}}
+     ]},
+    {"type": "data", "title": "PRESIÓN · AZÚCAR\nCOLESTEROL",
+     "icons": [{"icon": "presion", "label": "PRESIÓN"}, {"icon": "gota", "label": "AZÚCAR"}, {"icon": "arteria", "label": "COLESTEROL"}],
+     "stamp": "CASI NUNCA DUELEN",
+     "say": {"who": "doctora", "text": "Al principio casi nunca dan síntomas. Por eso **se miden** aunque te sientas bien."}},
+    {"type": "scene", "bg": "calle",
+     "beats": [
+       {"cam": "wide", "move": {"andres": [250, 410], "dur": 4}, "narr": "8:15 p. m. Otra vez 20 minutos de caminata.", "expr": {"andres": "neutral"}},
+       {"cam": "mid:andres", "expr": {"andres": "happy"}, "say": {"who": "andres", "text": "Día 2. Sin correr todavía."}}
+     ],
+     "actors": [{"id": "andres", "x": 80, "y": 410, "pose": "stand"}]},
+    {"type": "chat", "name": "Mariana (colegio)", "avatar": "mariana", "status": "en línea",
+     "seq": [
+       {"from": "me", "text": "Fui al médico. Me mandó exámenes de sangre", "time": "8:41 p. m."},
+       {"from": "them", "text": "¿Y te sientes enfermo?", "time": "8:43 p. m."},
+       {"draft": "No, entonces para qué"},
+       {"from": "me", "text": "No. Por eso mismo hay que medir", "time": "8:45 p. m."}
+     ]},
+    {"type": "data", "title": "SI TOMAS MEDICINA\nPARA LA DIABETES",
+     "icons": [{"icon": "reloj", "arg": 12}], "stampOk": false, "stamp": "HABLA CON TU MÉDICO",
+     "say": {"who": "doctora", "text": "No cambies tus horarios de comida sin tu médico: algunos bajan demasiado el azúcar."}},
+    {"type": "choice", "q": "¿Cuándo prueba las 12 h sin comer?", "a": "Empezar mañana mismo", "b": "Esperar los resultados primero",
+     "cta": "COMENTA A O B", "small": "Lo que gane pasa en el episodio 4"}
+  ]
+}

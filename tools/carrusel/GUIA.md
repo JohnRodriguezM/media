@@ -1,18 +1,23 @@
 # Carrusel diario — La Dosis de Ciencia (TikTok)
 
-## FORMATO VIGENTE (desde 2026-11-10): 1 VIDEO pixel art al día, historias por temporadas, 10:30 Bogotá
-Cada episodio es un **video pixel art de ~55-60 s** (estilo aprobado por John: el episodio 1 dura 58 s). Motor: `tools/video/pixel.html`
-+ `tools/video/render_video.py` (frames con Playwright, música chiptune original generada, sonidos; sin voz por ahora).
-- Spec: `tiktok/video/<slug>-epNN.json`; render: `python3 tools/video/render_video.py tiktok/video/<slug>-epNN.json tiktok/video/<slug>-epNN.mp4` (~3-4 min; usa timeout largo). Ejemplo completo: `tiktok/video/andres-ep01.json`.
-- **Los tiempos de lectura son automáticos** (≈16,8 caracteres/s + margen): no pongas `dur` ni `at` salvo para sincronizar animaciones. Si el video pasa de ~62 s, acorta textos (no los aceleres). Apunta a 52-60 s.
-- Raíz del spec: `seed`, `hudLeft` ("HISTORIA FICTICIA"), `hudRight` ("DÍA N/15"), `scenes` [...].
-- Escenas (en este orden típico): `title` (kicker, title, ep "EPISODIO N DE 15", day, actor) → 2-4 escenas de historia (`place` y/o `chat`) → `quest` o un `place` de transición → 1-2 `tip` (Dra. Ruiz u otro personaje: ciencia del día, texto ≤110 caracteres, `note` opcional ≤60) → `choice` (q, a, b ≤40 caracteres cada una, cta "COMENTA A O B", small "Lo que gane pasa en el episodio N+1").
-- `place`: `bg` ∈ super, sala (+`sofa`:true, `phone`:[x,y]), escaleras (+`hud` {label, from, to}), consultorio, cocina (+`hora`: hora del reloj, ideal para "Hora 12/16"), oficina, parque, camino, noche. `actors`: [{id: andres|mariana|doctora, from:[x,y], to:[x,y], t0, t1, flip, cart, sweat, seated}] en coordenadas 180×320 (y = pies; suelo ≈ 262 en super/oficina/cocina, 222 sentado en sala). `captions`: [{text, top(px, por defecto 230), cls: o|y|c|l}] (≤60 caracteres), `bubbles`: [{actor, at, text:"?"|"!"}].
-- `chat`: `name`, `avatar` (id de personaje), `status`, `seq`: [{from: them|me, text, time} | {draft: "texto que escribe y borra"}], `captions` (1 frase final).
-- Personajes disponibles: andres, mariana, doctora. Para un personaje nuevo, agrega su sprite 16×24 en `SP` de pixel.html (mismo formato, paleta P) antes de usarlo.
-- Revisión obligatoria: saca fotogramas (ffmpeg -ss) del final de cada escena y ábrelos con Read; nada debe cortarse ni taparse.
-- Publicación en Zernio como video: `media_items` [{type:"video", url raw del .mp4}], `content` = descripción completa (el caption del video), `tiktok_settings` {privacy_level:"PUBLIC_TO_EVERYONE", allow_comment:true, allow_duet:true, allow_stitch:true, content_preview_confirmed:true, express_consent_given:true}.
-- Los carruseles (`template_v2.html`) quedan como respaldo si el render de video falla.
+## FORMATO VIGENTE (desde 2026-11-13, episodio 4): VIDEO "pixel indie" (estilo v2), 10:30 Bogotá
+John aprobó el 2026-11-12 el estilo v2: pixel art más detallado (personajes con expresiones, luz, escenarios con profundidad),
+cámara con cortes, diálogos tipo RPG con "voces" de bips y arranque en plena acción (sin portada al inicio). Seguiremos iterándolo.
+Motor: `tools/video/indie.html` (spec con `"engine": "indie"`) + el mismo `tools/video/render_video.py`.
+- Render: `python3 tools/video/render_video.py tiktok/video/<slug>-epNN.json tiktok/video/<slug>-epNN.mp4` (~2 min). **Ejemplo completo: `tiktok/video/andres-ep03-indie.json`** (copia su estructura).
+- Tiempos automáticos (escritura 36 car/s, lectura ≈16,8 car/s + margen): no pongas duraciones salvo `min` o `move.dur`. Total 52-62 s; si se pasa, acorta textos.
+- Raíz: `engine:"indie"`, `seed`, `hudLeft` "HISTORIA FICTICIA", `hudRight` "DÍA N/15", `title` {title "EL RETO DE <NOMBRE>", sub "EPISODIO N DE 15 · DÍA N", at ≈3.5} (banner que entra sobre la primera escena), `scenes`, `description`.
+- **Gancho:** la PRIMERA escena es un `scene` que arranca en plena acción con `cam:"close:<id>"` (expresión fuerte, sudor, una pregunta o un problema). Nunca abrir con portada.
+- `scene`: `bg` ∈ consultorio, cocina (+`hora` 0-24: el reloj de pared la marca y la ventana cambia día/noche; ideal para "HORA 16"), sala (sofá, noche, TV), cuarto (cama, noche), escaleras (`move` sube por los escalones con `[x,null]`), oficina (escritorio), parque (+`hora`), calle (noche, faroles), super, camino.
+  `actors` opcional (si falta, usa el reparto por defecto del escenario): [{id, x, y (pies), pose "stand"|"sit", prop "phone"|"coffee", chair false, legs false, z "back"}]. Personajes: andres, doctora, mariana, laura, raul (Don Raúl). En el consultorio el reparto por defecto ya sienta a Andrés y a la doctora.
+  `beats` (en orden): {cam "close:<id>"|"mid:<id>"|"two"|"wide", say {who, text ≤90 car., expr}, narr (caja superior, ≤60 car.), expr {id: neutral|happy|worried|surprised|firm}, sweat [ids], move {id:[x,y], dur}, fx ["lluvia"]}. Cambia de cámara entre beats (corte = ritmo). 2-4 beats por escena.
+- `chat`: name, avatar (id), status, seq [{from them|me, text, time} | {draft}], narr opcional (frase final).
+- `data` (el dato científico, reemplaza a `tip`): title (usa \n para salto), icons [{icon, label, arg}] (1-3; iconos: corazon, presion, gota, arteria, reloj (arg = horas), luna, cafe, cerebro, musculo, intestino, plato, pasos, agua, celular, cama, escaleras, apoyo), big opcional ("16 H", con 1 icono), stamp (≤20 car.; rojo = alerta, `stampOk:true` = verde), say {who:"doctora", text ≤100 car.}. 1-2 por episodio.
+- `choice`: q, a, b (≤34 car. cada una), cta "COMENTA A O B", small "Lo que gane pasa en el episodio N+1".
+- Estructura típica: scene (gancho, close) → scene o chat (qué pasó con la opción ganadora) → data → scene/chat corto → data opcional → choice.
+- Revisión obligatoria: fotogramas del final de cada beat/escena (ffmpeg -ss) en hoja de contacto, abrir con Read; nada cortado ni tapado (el cuadro de diálogo ocupa la franja 1250-1600 px).
+- Publicación en Zernio como video: igual que antes (`media_items` [{type:"video", url raw}], `tiktok_settings` {privacy_level:"PUBLIC_TO_EVERYONE", allow_comment, allow_duet, allow_stitch, content_preview_confirmed, express_consent_given}).
+- Respaldo: si el motor indie falla dos veces, usar el motor anterior (`tools/video/pixel.html`, spec sin `engine`, ejemplo `tiktok/video/andres-ep02.json`) y, si también falla, el carrusel (`template_v2.html`). Avisar a John.
 
 ## Formato de historia (temporadas) — aplica igual al video
 (Antes: 1 carrusel al día.)
