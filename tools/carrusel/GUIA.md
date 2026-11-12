@@ -1,5 +1,7 @@
 # Carrusel diario — La Dosis de Ciencia (TikTok)
 
+> **Nota para la tarea programada del video diario:** si tus instrucciones mencionan el ejemplo `andres-ep01.json`, escenas `place`/`tip`, `title` como primera escena o sprites 16×24 de `pixel.html`, eso corresponde al formato anterior. Desde el episodio 4 (2026-11-13) John pidió el estilo v2: sigue la sección "FORMATO VIGENTE" de abajo (motor indie, ejemplo `tiktok/video/andres-ep03-indie.json`; los personajes nuevos se agregan en `PEOPLE` de `tools/video/indie.html`). Todo lo demás de tus instrucciones (votos, registro, Zernio, cierre) sigue igual; agrega la etiqueta "estilo-indie" a los tags del post.
+
 ## FORMATO VIGENTE (desde 2026-11-13, episodio 4): VIDEO "pixel indie" (estilo v2), 10:30 Bogotá
 John aprobó el 2026-11-12 el estilo v2: pixel art más detallado (personajes con expresiones, luz, escenarios con profundidad),
 cámara con cortes, diálogos tipo RPG con "voces" de bips y arranque en plena acción (sin portada al inicio). Seguiremos iterándolo.
