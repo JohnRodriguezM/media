@@ -64,6 +64,29 @@
         "B": "Seguir solo con la caminata, sin cambiar la comida todavía"
       },
       "zernio_post_id": "6af46412ae75f3e6431fc3ca",
+      "ganador": "B",
+      "votos": {
+        "A": 0,
+        "B": 0
+      },
+      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: seguir solo con la caminata)"
+    },
+    {
+      "n": 3,
+      "fecha": "2026-11-12",
+      "formato": "video",
+      "video": "tiktok/video/andres-ep03.json",
+      "dia_reto": 2,
+      "resumen": "Día 2. Eligió lo más prudente: seguir solo caminando. Cita con la Dra. Ruiz: le pregunta por 12 h sin comer de noche; ella dice que es razonable, pero primero le toma la presión y le pide exámenes (sin cifras). A Mariana: 'No me siento enfermo. Por eso mismo hay que medir'. Esa noche, otra caminata de 20 min.",
+      "ciencia": [
+        "presión, glucosa y colesterol altos casi nunca dan síntomas al principio: se miden aunque te sientas bien",
+        "con medicamentos para la diabetes no cambiar horarios de comida sin el médico (riesgo de hipoglucemia)"
+      ],
+      "encuesta": {
+        "A": "Empezar mañana mismo las 12 h sin comer (8 p. m. a 8 a. m.), sin dejar la caminata",
+        "B": "Esperar los resultados de los exámenes primero"
+      },
+      "zernio_post_id": null,
       "ganador": null
     }
   ],

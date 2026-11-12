@@ -1,0 +1,173 @@
+{
+  "seed": 5,
+  "hudLeft": "HISTORIA FICTICIA",
+  "hudRight": "DÍA 2/15",
+  "scenes": [
+    {
+      "type": "title",
+      "kicker": "LA DOSIS DE CIENCIA PRESENTA",
+      "title": "EL RETO DE ANDRÉS",
+      "ep": "EPISODIO 3 DE 15",
+      "day": "DÍA 2",
+      "actor": "andres"
+    },
+    {
+      "type": "place",
+      "bg": "consultorio",
+      "actors": [
+        {
+          "id": "doctora",
+          "from": [
+            84,
+            214
+          ],
+          "to": [
+            84,
+            214
+          ],
+          "t0": 0,
+          "t1": 0.1,
+          "flip": true
+        },
+        {
+          "id": "andres",
+          "from": [
+            -30,
+            272
+          ],
+          "to": [
+            34,
+            272
+          ],
+          "t0": 0,
+          "t1": 2.5
+        }
+      ],
+      "bubbles": [
+        {
+          "actor": "andres",
+          "at": 3.2,
+          "text": "?"
+        }
+      ],
+      "captions": [
+        {
+          "text": "Día 2. Eligió lo más prudente: seguir solo caminando.",
+          "top": 230
+        },
+        {
+          "text": "Y llega a su cita con la Dra. Ruiz.",
+          "top": 520,
+          "cls": "o",
+          "at": 3.0
+        }
+      ]
+    },
+    {
+      "type": "place",
+      "bg": "consultorio",
+      "actors": [
+        {
+          "id": "doctora",
+          "from": [
+            84,
+            214
+          ],
+          "to": [
+            84,
+            214
+          ],
+          "t0": 0,
+          "t1": 0.1,
+          "flip": true
+        },
+        {
+          "id": "andres",
+          "from": [
+            34,
+            272
+          ],
+          "to": [
+            34,
+            272
+          ],
+          "t0": 0,
+          "t1": 0.1
+        }
+      ],
+      "bubbles": [
+        {
+          "actor": "doctora",
+          "at": 2.6,
+          "text": "!"
+        }
+      ],
+      "captions": [
+        {
+          "text": "—Doctora, ¿y si hago 12 horas sin comer de noche?",
+          "top": 230
+        },
+        {
+          "text": "—12 h de noche es razonable. Pero antes: presión y exámenes.",
+          "top": 520,
+          "cls": "y",
+          "at": 3.4
+        }
+      ]
+    },
+    {
+      "type": "chat",
+      "name": "Mariana (colegio)",
+      "avatar": "mariana",
+      "status": "en línea",
+      "seq": [
+        {
+          "from": "me",
+          "text": "Fui al médico. Me mandó exámenes de sangre",
+          "time": "6:10 p. m."
+        },
+        {
+          "from": "them",
+          "text": "¿Y te sientes enfermo?",
+          "time": "6:12 p. m."
+        },
+        {
+          "draft": "No, entonces para qué"
+        },
+        {
+          "from": "me",
+          "text": "No. Por eso mismo hay que medir",
+          "time": "6:14 p. m."
+        }
+      ],
+      "captions": [
+        {
+          "text": "Esa noche: otra vez 20 minutos de caminata."
+        }
+      ]
+    },
+    {
+      "type": "tip",
+      "speaker": "doctora",
+      "name": "DRA. RUIZ · DATO",
+      "text": "La **presión alta**, el **azúcar alto** y el **colesterol alto** casi nunca duelen al principio.",
+      "note": "Por eso se miden aunque te sientas bien."
+    },
+    {
+      "type": "tip",
+      "speaker": "doctora",
+      "name": "DRA. RUIZ · CUIDADO",
+      "text": "Si tomas medicamentos para la **diabetes**, no cambies tus horarios de comida sin tu médico.",
+      "note": "Algunos pueden bajar demasiado el azúcar."
+    },
+    {
+      "type": "choice",
+      "q": "¿Cuándo prueba las 12 h sin comer?",
+      "a": "Empezar mañana mismo",
+      "b": "Esperar los resultados primero",
+      "cta": "COMENTA A O B",
+      "small": "Lo que gane pasa en el episodio 4"
+    }
+  ],
+  "description": "Episodio 3 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 2. En el episodio 2 la pregunta era: ¿sumar 12 horas sin comer o seguir solo con la caminata? Andrés eligió lo más prudente: seguir caminando sin cambiar todavía lo que come. Y fue a su cita con la Dra. Ruiz. Le preguntó por las 12 horas sin comer de noche; ella le dijo que es razonable, pero que primero le toma la presión y le pide exámenes. Mariana le preguntó si se sentía enfermo. Él respondió: \"No. Por eso mismo hay que medir\".\n\nLo que dice la ciencia:\n✅ La presión alta, el azúcar alto y el colesterol alto casi nunca dan síntomas al principio. Por eso se miden aunque te sientas bien.\n✅ Un chequeo antes de cambiar tus hábitos te da un punto de partida y tranquilidad.\n⚠️ Si tomas medicamentos para la diabetes (o la presión), no cambies tus horarios de comida sin hablarlo con tu médico: algunos pueden bajar demasiado el azúcar.\n❌ \"No me duele nada\" no significa que no haya que revisar.\n\n📊 ENCUESTA – ¿Cuándo prueba Andrés las 12 horas sin comer (de 8 p. m. a 8 a. m.)?\nA) Empezar mañana mismo, sin dejar la caminata.\nB) Esperar a tener los resultados de los exámenes primero.\nComenta A o B: lo que gane pasa en el episodio 4.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #chequeomedico #presionarterial #salud #ayunointermitente #habitossaludables #medicina"
+}
