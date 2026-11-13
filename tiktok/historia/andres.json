@@ -87,6 +87,29 @@
         "B": "Esperar los resultados de los exámenes primero"
       },
       "zernio_post_id": "6af5b5abb68bf3241a6131e2",
+      "ganador": "B",
+      "votos": {
+        "A": 0,
+        "B": 0
+      },
+      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: esperar los resultados)"
+    },
+    {
+      "n": 4,
+      "fecha": "2026-11-13",
+      "formato": "video",
+      "video": "tiktok/video/andres-ep04.json",
+      "dia_reto": 3,
+      "resumen": "Día 3. Ganó lo prudente: esperar los exámenes antes de las 12 h. A las 10 p. m., dos horas después de cenar, Andrés vuelve a la nevera; Laura le pregunta '¿hambre o costumbre?'. A Mariana le cuenta que a las 10 le ataca el hambre y que duerme unas seis horas.",
+      "ciencia": [
+        "el hambre sube cerca de las horas habituales de comer y luego baja aunque no comas",
+        "dormir poco se asocia con más hambre y antojos al día siguiente"
+      ],
+      "encuesta": {
+        "A": "Un vaso de agua y esperar a que pase la ola",
+        "B": "Una fruta pequeña, sin culpa"
+      },
+      "zernio_post_id": null,
       "ganador": null
     }
   ],

@@ -1,0 +1,155 @@
+{
+ "engine": "indie",
+ "seed": 6,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 3/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 4 DE 15 · DÍA 3",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "cocina",
+   "hora": 22,
+   "actors": [
+    {
+     "id": "andres",
+     "x": 100,
+     "y": 372,
+     "pose": "stand"
+    },
+    {
+     "id": "laura",
+     "x": 260,
+     "y": 372,
+     "pose": "stand",
+     "prop": "coffee"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "worried"
+     },
+     "sweat": [
+      "andres"
+     ],
+     "narr": "10 p. m. Ya cenó hace dos horas.",
+     "say": {
+      "who": "andres",
+      "text": "Ya cené… ¿por qué tengo hambre otra vez?"
+     }
+    },
+    {
+     "cam": "two",
+     "expr": {
+      "laura": "happy",
+      "andres": "surprised"
+     },
+     "say": {
+      "who": "laura",
+      "text": "¿Hambre o costumbre? Todas las noches abres la nevera a esta hora."
+     }
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "firm"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Las 12 horas sin comer esperan a los exámenes. Pero esto sí lo puedo mirar."
+     }
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "EL HAMBRE\nLLEGA EN OLAS",
+   "icons": [
+    {
+     "icon": "reloj",
+     "label": "TU HORARIO"
+    },
+    {
+     "icon": "plato",
+     "label": "COMIDA"
+    }
+   ],
+   "stamp": "SUBE Y BAJA",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "El hambre suele subir a las horas en que **acostumbras comer**, y luego baja aunque no comas."
+   }
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {
+     "from": "them",
+     "text": "¿Ya empezaste las 12 horas sin comer?",
+     "time": "10:14 p. m."
+    },
+    {
+     "from": "me",
+     "text": "No. Gané la prudencia: primero los exámenes",
+     "time": "10:15 p. m."
+    },
+    {
+     "from": "me",
+     "text": "Pero descubrí algo: a las 10 me ataca el hambre",
+     "time": "10:15 p. m."
+    },
+    {
+     "draft": "Debe ser porque duermo poco"
+    },
+    {
+     "from": "them",
+     "text": "¿Cuántas horas duermes?",
+     "time": "10:16 p. m."
+    },
+    {
+     "from": "me",
+     "text": "Unas seis…",
+     "time": "10:17 p. m."
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "DORMIR POCO\nDA MÁS HAMBRE",
+   "icons": [
+    {
+     "icon": "luna",
+     "label": "SUEÑO CORTO"
+    },
+    {
+     "icon": "plato",
+     "label": "MÁS ANTOJOS"
+    }
+   ],
+   "stamp": "EL SUEÑO CUENTA",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "Dormir poco se asocia con **más hambre** y más antojos al día siguiente."
+   }
+  },
+  {
+   "type": "choice",
+   "q": "¿Qué hace con el hambre de las 10?",
+   "a": "Un vaso de agua y esperar",
+   "b": "Una fruta pequeña, sin culpa",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 5"
+  }
+ ],
+ "description": "Episodio 4 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 3. En el episodio 3 la pregunta era: ¿empezar ya las 12 horas sin comer o esperar los resultados de los exámenes? Sin votos contables, Andrés eligió lo más prudente: esperar los exámenes y seguir caminando. Pero a las 10 de la noche, dos horas después de cenar, otra vez está frente a la nevera. Laura, su esposa, le pregunta: \"¿Hambre o costumbre?\". Y a Mariana le confiesa que duerme unas seis horas.\n\nLo que dice la ciencia:\n✅ El hambre no sube sin parar: suele aparecer cerca de las horas en que acostumbras comer y luego baja, aunque no comas.\n✅ Dormir poco se asocia con más hambre y más antojos al día siguiente. El sueño también cuenta.\n⚠️ Si tienes diabetes con medicamentos, estás embarazada o tienes antecedente de trastornos de la conducta alimentaria, no cambies tus horarios de comida sin tu médico.\n❌ Comer a una hora no es fallar: se trata de entender tu hambre, no de pelear contra ella.\n\n📊 ENCUESTA – ¿Qué hace Andrés con el hambre de las 10 p. m.?\nA) Tomar un vaso de agua y esperar a ver si la ola pasa.\nB) Comer una fruta pequeña, sin culpa.\nComenta A o B: lo que gane pasa en el episodio 5.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #hambre #sueño #ayunointermitente #habitossaludables #salud #medicina"
+}
