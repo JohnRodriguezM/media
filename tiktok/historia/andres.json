@@ -110,6 +110,29 @@
         "B": "Una fruta pequeña, sin culpa"
       },
       "zernio_post_id": "6af706de919df95687f6b5fb",
+      "ganador": "B",
+      "votos": {
+        "A": 0,
+        "B": 0
+      },
+      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más suave y prudente (B: fruta pequeña, sin culpa, sin restringir mientras llegan los exámenes)"
+    },
+    {
+      "n": 5,
+      "fecha": "2026-11-14",
+      "formato": "video",
+      "video": "tiktok/video/andres-ep05.json",
+      "dia_reto": 4,
+      "resumen": "Día 4. Ganó lo más suave: una mandarina a las 10 p. m., sin culpa; se le pasó el hambre y no siguió picando. En la oficina es cumpleaños y le dejan torta de chocolate en el escritorio. Teme dañar el reto y le escribe a Mariana: 'Un pedazo de torta no borra cuatro días'.",
+      "ciencia": [
+        "la fruta entera trae fibra y suele saciar más que un jugo de la misma fruta",
+        "pesa lo que repites casi todos los días, no una comida aislada"
+      ],
+      "encuesta": {
+        "A": "Comer un pedazo pequeño y disfrutarlo",
+        "B": "Decir 'no, gracias' esta vez"
+      },
+      "zernio_post_id": null,
       "ganador": null
     }
   ],

@@ -1,0 +1,148 @@
+{
+ "engine": "indie",
+ "seed": 7,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 4/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 5 DE 15 · DÍA 4",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "oficina",
+   "actors": [
+    {
+     "id": "andres",
+     "x": 110,
+     "y": 368,
+     "pose": "sit",
+     "prop": "phone"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "worried"
+     },
+     "sweat": [
+      "andres"
+     ],
+     "narr": "Día 4. Cumpleaños en la oficina.",
+     "say": {
+      "who": "andres",
+      "text": "Me dejaron un pedazo de torta de chocolate en el escritorio…"
+     }
+    },
+    {
+     "cam": "wide",
+     "expr": {
+      "andres": "surprised"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Si me la como, ¿se me daña todo el reto?"
+     },
+     "narr": "Al fondo, sus compañeros cantan el cumpleaños."
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "firm"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Antes de decidir, le escribo a alguien que no me va a regañar."
+     }
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {
+     "from": "me",
+     "text": "Anoche elegí lo más suave: una mandarina a las 10",
+     "time": "12:40 p. m."
+    },
+    {
+     "from": "them",
+     "text": "¿Y qué tal?",
+     "time": "12:41 p. m."
+    },
+    {
+     "from": "me",
+     "text": "Se me pasó el hambre y no seguí picando",
+     "time": "12:41 p. m."
+    },
+    {
+     "draft": "Ahora hay torta. ¿Me la como?"
+    },
+    {
+     "from": "them",
+     "text": "Un pedazo de torta no borra cuatro días",
+     "time": "12:42 p. m."
+    },
+    {
+     "from": "me",
+     "text": "Entonces que decida la gente: ¿A o B?",
+     "time": "12:43 p. m."
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "MEJOR LA FRUTA\nENTERA",
+   "icons": [
+    {
+     "icon": "plato",
+     "label": "FRUTA ENTERA"
+    },
+    {
+     "icon": "intestino",
+     "label": "FIBRA"
+    }
+   ],
+   "stamp": "MÁS QUE UN JUGO",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "La fruta entera trae **fibra**: suele saciar más que un jugo de la misma fruta."
+   }
+  },
+  {
+   "type": "data",
+   "title": "UN DÍA NO\nDAÑA EL PROCESO",
+   "icons": [
+    {
+     "icon": "pasos",
+     "label": "CONSTANCIA"
+    },
+    {
+     "icon": "reloj",
+     "label": "SEMANAS"
+    }
+   ],
+   "stamp": "LO QUE REPITES",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "Pesa lo que **repites casi todos los días**, no una comida aislada."
+   }
+  },
+  {
+   "type": "choice",
+   "q": "¿Qué hace Andrés con la torta?",
+   "a": "Un pedazo pequeño y disfrutarlo",
+   "b": "Decir \"no, gracias\" esta vez",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 6"
+  }
+ ],
+ "description": "Episodio 5 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 4. En el episodio 4 la pregunta era: ¿agua y esperar, o una fruta pequeña para el hambre de las 10 p. m.? Sin votos contables, Andrés eligió lo más suave: una mandarina, sin culpa. Se le pasó el hambre y no siguió picando. Pero al día siguiente es cumpleaños en la oficina y le dejan un pedazo de torta de chocolate en el escritorio. ¿Se le daña todo el reto? Le escribe a Mariana.\n\nLo que dice la ciencia:\n✅ La fruta entera trae fibra: suele saciar más que un jugo hecho con la misma fruta.\n✅ Lo que más pesa en tu salud es lo que repites casi todos los días, no una comida aislada.\n⚠️ Si tienes diabetes, sobre todo con medicamentos, habla con tu médico sobre cómo manejar los postres y los horarios de comida.\n❌ Un pedazo de torta no es \"fallar el reto\". Pensar en todo o nada es lo que suele hacer que la gente abandone.\n\n📊 ENCUESTA – ¿Qué hace Andrés con la torta?\nA) Comer un pedazo pequeño y disfrutarlo con sus compañeros.\nB) Decir \"no, gracias\" esta vez, sin drama.\nComenta A o B: lo que gane pasa en el episodio 6.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #habitossaludables #fruta #constancia #ayunointermitente #salud #medicina"
+}
