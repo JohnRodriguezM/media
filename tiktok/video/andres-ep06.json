@@ -1,0 +1,192 @@
+{
+ "engine": "indie",
+ "seed": 8,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 5/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 6 DE 15 · DÍA 5",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "cuarto",
+   "actors": [
+    {
+     "id": "andres",
+     "x": 150,
+     "y": 330,
+     "pose": "sit",
+     "chair": false,
+     "legs": false,
+     "prop": "phone"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "worried"
+     },
+     "sweat": [
+      "andres"
+     ],
+     "narr": "Día 5. Es la 1 de la mañana.",
+     "say": {
+      "who": "andres",
+      "text": "Estoy cansado… y no me puedo dormir."
+     }
+    },
+    {
+     "cam": "wide",
+     "expr": {
+      "andres": "surprised"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Caminé, comí como siempre. ¿Qué hice distinto?"
+     }
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "firm"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Mañana le pregunto a alguien que sepa."
+     }
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {
+     "from": "me",
+     "text": "Al final me comí un pedacito de torta. Y lo disfruté",
+     "time": "7:10 a. m."
+    },
+    {
+     "from": "them",
+     "text": "¡Bien! ¿Y la caminata?",
+     "time": "7:11 a. m."
+    },
+    {
+     "from": "me",
+     "text": "Sí. Pero anoche no pegué el ojo",
+     "time": "7:11 a. m."
+    },
+    {
+     "from": "them",
+     "text": "¿A qué hora te tomas el último café?",
+     "time": "7:12 a. m."
+    },
+    {
+     "draft": "A las 4, todos los días…"
+    },
+    {
+     "from": "me",
+     "text": "A las 4. ¿Eso tiene que ver?",
+     "time": "7:13 a. m."
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "LA CAFEÍNA\nDURA HORAS",
+   "icons": [
+    {
+     "icon": "cafe",
+     "label": "CAFEÍNA"
+    },
+    {
+     "icon": "reloj",
+     "label": "≈5 HORAS",
+     "arg": 5
+    }
+   ],
+   "stamp": "VIDA MEDIA ≈5 H",
+   "say": {
+    "who": "doctora",
+    "text": "La mitad de la cafeína sigue en tu cuerpo **unas 5 horas** después. En algunas personas, más."
+   }
+  },
+  {
+   "type": "scene",
+   "bg": "cocina",
+   "hora": 16,
+   "actors": [
+    {
+     "id": "andres",
+     "x": 100,
+     "y": 372,
+     "pose": "stand"
+    },
+    {
+     "id": "laura",
+     "x": 260,
+     "y": 372,
+     "pose": "stand",
+     "prop": "coffee"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "two",
+     "expr": {
+      "laura": "happy",
+      "andres": "neutral"
+     },
+     "narr": "Domingo, 4 p. m.",
+     "say": {
+      "who": "laura",
+      "text": "¿Te sirvo el tinto de las 4?"
+     }
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "firm"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Hoy no. Creo que ese café me está robando el sueño."
+     }
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "CAFÉ DE LA TARDE,\nSUEÑO MÁS LIGERO",
+   "icons": [
+    {
+     "icon": "cafe",
+     "label": "TARDE"
+    },
+    {
+     "icon": "luna",
+     "label": "SUEÑO"
+    }
+   ],
+   "stamp": "AUNQUE NO LO NOTES",
+   "say": {
+    "who": "doctora",
+    "text": "Aunque te duermas, el café de la tarde puede hacer tu sueño **más corto y ligero**."
+   }
+  },
+  {
+   "type": "choice",
+   "q": "¿Hasta qué hora el café de Andrés?",
+   "a": "Hasta las 12 del mediodía",
+   "b": "Hasta las 2 de la tarde",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 7"
+  }
+ ],
+ "description": "Episodio 6 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 5. En el episodio 5 la pregunta era: ¿un pedazo pequeño de torta o decir \"no, gracias\"? Sin votos contables, Andrés eligió lo más flexible: un pedacito, disfrutado con sus compañeros, y siguió caminando. Pero esa noche, a la 1 de la mañana, está cansado y no se puede dormir. Mariana le hace la pregunta clave: ¿a qué hora es tu último café? A las 4 de la tarde, todos los días. El domingo, cuando Laura le ofrece el tinto de las 4, Andrés dice que hoy no.\n\nLo que dice la ciencia:\n✅ La cafeína tiene una vida media de unas 5 horas en promedio: a esa hora, la mitad todavía sigue en tu cuerpo. Varía mucho entre personas.\n✅ El café de la tarde puede hacer el sueño más corto y más ligero, aunque logres dormirte y no lo notes.\n⚠️ Si duermes mal casi todas las noches, roncas fuerte o te despiertas sin aire, coméntalo con tu médico: no siempre es el café.\n❌ \"A mí el café no me afecta porque me duermo igual\" no siempre es cierto: dormirse no es lo mismo que dormir profundo.\n\n📊 ENCUESTA – ¿Hasta qué hora se toma el café Andrés?\nA) Hasta las 12 del mediodía.\nB) Hasta las 2 de la tarde.\nComenta A o B: lo que gane pasa en el episodio 7.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #cafeina #sueño #dormirbien #habitossaludables #salud #medicina"
+}

@@ -133,6 +133,29 @@
         "B": "Decir 'no, gracias' esta vez"
       },
       "zernio_post_id": "6af85876fe1ca6f9cac24c4e",
+      "ganador": "A",
+      "votos": {
+        "A": 0,
+        "B": 0
+      },
+      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más flexible y prudente (A: un pedazo pequeño, sin mentalidad de todo o nada)"
+    },
+    {
+      "n": 6,
+      "fecha": "2026-11-15",
+      "formato": "video",
+      "video": "tiktok/video/andres-ep06.json",
+      "dia_reto": 5,
+      "resumen": "Día 5. Ganó lo flexible: comió un pedacito de torta y lo disfrutó; siguió caminando. A la 1 a. m. está cansado y no se duerme. Mariana le pregunta por su último café: a las 4 p. m., todos los días. El domingo a las 4, Laura le ofrece el tinto y él dice 'hoy no'.",
+      "ciencia": [
+        "cafeína: vida media ≈5 h en promedio, varía entre personas",
+        "café de la tarde puede hacer el sueño más corto y ligero aunque te duermas"
+      ],
+      "encuesta": {
+        "A": "Café hasta las 12 del mediodía",
+        "B": "Café hasta las 2 de la tarde"
+      },
+      "zernio_post_id": null,
       "ganador": null
     }
   ],
