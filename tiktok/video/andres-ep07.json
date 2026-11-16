@@ -1,0 +1,178 @@
+{
+ "engine": "indie",
+ "seed": 9,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 6/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 7 DE 15 · DÍA 6",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "consultorio",
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "worried",
+      "doctora": "neutral"
+     },
+     "sweat": [
+      "andres"
+     ],
+     "narr": "Día 6. ¿Hoy empiezan las 12 horas?",
+     "say": {
+      "who": "andres",
+      "text": "Doctora, ¿salieron mal los exámenes?"
+     }
+    },
+    {
+     "cam": "close:doctora",
+     "expr": {
+      "doctora": "happy"
+     },
+     "say": {
+      "who": "doctora",
+      "text": "Nada que te impida empezar. Puedes probar las 12 horas."
+     }
+    },
+    {
+     "cam": "two",
+     "expr": {
+      "andres": "happy",
+      "doctora": "firm"
+     },
+     "say": {
+      "who": "doctora",
+      "text": "Si te mareas o te sientes mal, comes y me cuentas."
+     }
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {
+     "from": "them",
+     "text": "¿Y el café? ¿Hasta qué hora?",
+     "time": "12:40 p. m."
+    },
+    {
+     "from": "me",
+     "text": "Lo más prudente: hasta las 12. Ya fue el último",
+     "time": "12:41 p. m."
+    },
+    {
+     "from": "me",
+     "text": "Y la doctora me dio luz verde para las 12 h",
+     "time": "12:41 p. m."
+    },
+    {
+     "draft": "Hoy empiezo"
+    },
+    {
+     "from": "me",
+     "text": "Esta noche empiezo. Cena a las 8",
+     "time": "12:42 p. m."
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "HORA 12\nSIN COMER",
+   "icons": [
+    {
+     "icon": "reloj",
+     "arg": 12
+    }
+   ],
+   "big": "12 H",
+   "stamp": "NOCHE + SUEÑO",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "Hacia las 12 h la insulina ya está baja y el cuerpo usa **reservas de azúcar del hígado**."
+   }
+  },
+  {
+   "type": "scene",
+   "bg": "cocina",
+   "hora": 20,
+   "actors": [
+    {
+     "id": "andres",
+     "x": 100,
+     "y": 372,
+     "pose": "stand"
+    },
+    {
+     "id": "laura",
+     "x": 260,
+     "y": 372,
+     "pose": "stand"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "two",
+     "expr": {
+      "laura": "surprised",
+      "andres": "firm"
+     },
+     "narr": "8 p. m. Hora 0.",
+     "say": {
+      "who": "laura",
+      "text": "¿Y si a las 10 te vuelve el hambre?"
+     }
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "happy"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Agua. Y si no se pasa, una fruta. No es un castigo."
+     }
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "QUIÉN DEBE\nPREGUNTAR ANTES",
+   "icons": [
+    {
+     "icon": "gota",
+     "label": "DIABETES"
+    },
+    {
+     "icon": "corazon",
+     "label": "EMBARAZO"
+    },
+    {
+     "icon": "plato",
+     "label": "TCA"
+    }
+   ],
+   "stamp": "HABLA CON TU MÉDICO",
+   "say": {
+    "who": "doctora",
+    "text": "Con diabetes en tratamiento, embarazo o trastornos de la alimentación: **primero tu médico**."
+   }
+  },
+  {
+   "type": "choice",
+   "q": "Hora 11: ¿qué hace al despertar?",
+   "a": "Café negro, sin azúcar",
+   "b": "Esperar y tomarlo al desayunar",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 8"
+  }
+ ],
+ "description": "Episodio 7 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 6. En el episodio 6 la pregunta era: ¿café hasta las 12 del mediodía o hasta las 2 de la tarde? Sin votos contables, Andrés eligió lo más prudente para su sueño: café solo hasta las 12. Hoy llegan los exámenes y la Dra. Ruiz le da luz verde: nada le impide empezar a probar 12 horas sin comer, y si se marea o se siente mal, come y le cuenta. Esa noche cena a las 8: hora 0. Laura le pregunta qué hará si a las 10 vuelve el hambre. Andrés: agua, y si no se pasa, una fruta. No es un castigo.\n\nLo que dice la ciencia:\n✅ Hacia las 12 horas sin comer, la insulina ya está baja y el cuerpo usa sus reservas de azúcar del hígado (glucógeno). Buena parte de esas horas pasan durmiendo.\n✅ Empezar con 12 horas nocturnas es una forma suave de probar el ayuno.\n⚠️ Si tienes diabetes en tratamiento, estás embarazada o has tenido un trastorno de la alimentación, habla primero con tu médico antes de hacer ayuno.\n❌ Ayunar no es castigarse: si te sientes mal, comes. Mareo o malestar no son algo que haya que \"aguantar\".\n\n📊 ENCUESTA – Hora 11, Andrés se despierta. ¿Qué hace?\nA) Toma un café negro, sin azúcar.\nB) Espera y se toma el café con el desayuno.\nComenta A o B: lo que gane pasa en el episodio 8.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #ayuno #ayunointermitente #hora12 #habitossaludables #salud #medicina"
+}

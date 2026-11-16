@@ -156,6 +156,29 @@
         "B": "Café hasta las 2 de la tarde"
       },
       "zernio_post_id": "6af9a99402b047955ba8f14a",
+      "ganador": "A",
+      "votos": {
+        "A": 0,
+        "B": 0
+      },
+      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente para el sueño (A: café hasta las 12)"
+    },
+    {
+      "n": 7,
+      "fecha": "2026-11-16",
+      "formato": "video",
+      "video": "tiktok/video/andres-ep07.json",
+      "dia_reto": 6,
+      "resumen": "Día 6. Ganó lo más prudente: café solo hasta las 12. Llegan los exámenes (sin cifras) y la Dra. Ruiz le da luz verde para probar 12 h sin comer; si se marea o se siente mal, come. Le cuenta a Mariana. A las 8 p. m. cena: hora 0. Laura pregunta por el hambre de las 10; él: agua y, si no se pasa, una fruta. No es un castigo.",
+      "ciencia": [
+        "hacia las 12 h sin comer la insulina está baja y el cuerpo usa glucógeno hepático",
+        "diabetes en tratamiento, embarazo o TCA: consultar antes de ayunar"
+      ],
+      "encuesta": {
+        "A": "Café negro sin azúcar al despertar (hora 11)",
+        "B": "Esperar y tomar el café con el desayuno"
+      },
+      "zernio_post_id": null,
       "ganador": null
     }
   ],
