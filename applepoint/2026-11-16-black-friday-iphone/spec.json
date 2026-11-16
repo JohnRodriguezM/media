@@ -1,0 +1,9 @@
+{"slug":"black-friday-iphone","theme":"blanco","slides":[
+ {"type":"cover","label":"Black Friday","ghost":"5","icon":"gift","title":"Antes de Black Friday, <em>revisa esto</em>","subtitle":"Cinco pasos para escoger bien tu iPhone. El cuarto casi nadie lo hace."},
+ {"type":"point","num":"1","kicker":"Paso 01","icon":"search","title":"Mira cuánto espacio <em>usas hoy</em>","body":"Ahí ves qué ocupa más: <b>apps, fotos y mensajes</b>. Elige capacidad con margen.","wlabel":"Dónde mirarlo","path":["Configuración","General","Almacenamiento del iPhone"]},
+ {"type":"point","num":"2","kicker":"Paso 02","icon":"camera","title":"Elige el modelo por <em>cómo lo usas</em>","body":"Cámara, batería y tamaño cambian entre modelos. <b>Compáralos lado a lado</b> antes de decidir.","wlabel":"Dónde compararlos","tip":"En apple.com/iphone/compare"},
+ {"type":"point","num":"3","kicker":"Paso 03","icon":"card","title":"Los de EE. UU. son <em>solo eSIM</em>","body":"Los iPhone comprados en Estados Unidos <b>no usan SIM física</b>.","wlabel":"Qué hacer","tip":"Confirma con tu operador que te activa la eSIM."},
+ {"type":"point","num":"4","kicker":"Paso 04","icon":"cloud","title":"Haz un respaldo <em>antes de cambiar</em>","body":"Con el respaldo pasas <b>tus datos y ajustes</b> al iPhone nuevo.","wlabel":"Dónde hacerlo","path":["Tu nombre","iCloud","Respaldo en iCloud"]},
+ {"type":"point","num":"5","kicker":"Paso 05","icon":"shield","title":"Al recibirlo, <em>revisa la garantía</em>","body":"Debe tener <b>365 días directamente con Apple</b>. Servicio técnico autorizado: Mac Center e iShop.","wlabel":"Dónde mirarlo","path":["Configuración","General","AppleCare y garantía"]},
+ {"type":"cta","label":"Compártelo con quien va a cambiar de iPhone","title":"¿Listo para <em>estrenar?</em>","body":"Nuevos, sellados y originales, con 365 días de garantía directamente con Apple. Envíos a toda Colombia."}
+]}
