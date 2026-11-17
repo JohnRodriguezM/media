@@ -179,6 +179,29 @@
         "B": "Esperar y tomar el café con el desayuno"
       },
       "zernio_post_id": "6afafb5f9e5ae6eb0c112344",
+      "ganador": "B",
+      "votos": {
+        "A": 0,
+        "B": 0
+      },
+      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: café con el desayuno)"
+    },
+    {
+      "n": 8,
+      "fecha": "2026-11-17",
+      "formato": "video",
+      "video": "tiktok/video/andres-ep08.json",
+      "dia_reto": 7,
+      "resumen": "Día 7. Ganó lo prudente: café con el desayuno. Cumple sus primeras 12 h sin comer, con poca hambre al despertar. En la oficina sube los dos pisos paso a paso y llega todavía pudiendo hablar; se lo cuenta a Mariana. En la noche, tras caminar, Laura nota que no se durmió en el sofá; Andrés quiere sumar algo de fuerza.",
+      "ciencia": [
+        "cuando el músculo trabaja saca glucosa de la sangre para usarla",
+        "dolor o presión en el pecho, mareo o ahogo fuera de lo normal al hacer ejercicio: detenerse y consultar"
+      ],
+      "encuesta": {
+        "A": "Subir escaleras cada día, a su ritmo",
+        "B": "Sentadillas suaves en casa, con su propio peso"
+      },
+      "zernio_post_id": null,
       "ganador": null
     }
   ],

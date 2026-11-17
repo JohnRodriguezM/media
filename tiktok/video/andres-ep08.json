@@ -1,0 +1,196 @@
+{
+ "engine": "indie",
+ "seed": 10,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 7/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 8 DE 15 · DÍA 7",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "escaleras",
+   "actors": [
+    {
+     "id": "andres",
+     "x": 40,
+     "y": 476,
+     "pose": "stand"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "worried"
+     },
+     "sweat": [
+      "andres"
+     ],
+     "narr": "Día 7. Los dos pisos de la oficina.",
+     "say": {
+      "who": "andres",
+      "text": "Aquí es donde siempre me quedo sin aire…"
+     }
+    },
+    {
+     "cam": "wide",
+     "expr": {
+      "andres": "neutral"
+     },
+     "move": {
+      "andres": [
+       236,
+       null
+      ],
+      "dur": 4
+     },
+     "narr": "Paso a paso. Sin correr."
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "surprised"
+     },
+     "say": {
+      "who": "andres",
+      "text": "¿Ya llegué? Y todavía puedo hablar."
+     }
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {
+     "from": "me",
+     "text": "Primeras 12 horas sin comer: listas",
+     "time": "8:52 a. m."
+    },
+    {
+     "from": "me",
+     "text": "Sin votos, fui por lo prudente: café con el desayuno",
+     "time": "8:52 a. m."
+    },
+    {
+     "from": "them",
+     "text": "¿Y el hambre?",
+     "time": "8:54 a. m."
+    },
+    {
+     "draft": "Horrible"
+    },
+    {
+     "from": "me",
+     "text": "Poca. Y subí los dos pisos sin ahogarme",
+     "time": "8:55 a. m."
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "MÚSCULO EN\nMOVIMIENTO",
+   "icons": [
+    {
+     "icon": "musculo",
+     "label": "MÚSCULO"
+    },
+    {
+     "icon": "gota",
+     "label": "GLUCOSA"
+    },
+    {
+     "icon": "pasos",
+     "label": "CAMINAR"
+    }
+   ],
+   "stamp": "SE MUEVE, LA USA",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "Cuando el músculo trabaja, **saca glucosa de la sangre** para usarla. Por eso moverse ayuda."
+   }
+  },
+  {
+   "type": "scene",
+   "bg": "sala",
+   "actors": [
+    {
+     "id": "andres",
+     "x": 130,
+     "y": 356,
+     "pose": "sit",
+     "chair": false,
+     "legs": false,
+     "z": "mid"
+    },
+    {
+     "id": "laura",
+     "x": 230,
+     "y": 356,
+     "pose": "sit",
+     "chair": false,
+     "legs": false,
+     "z": "mid"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "two",
+     "expr": {
+      "laura": "surprised",
+      "andres": "happy"
+     },
+     "narr": "9 p. m. Ya volvió de caminar.",
+     "say": {
+      "who": "laura",
+      "text": "¿Y no te dormiste en el sofá?"
+     }
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "firm"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Una semana caminando. Ahora quiero sumar algo de fuerza."
+     }
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "SEÑALES PARA\nDETENERTE",
+   "icons": [
+    {
+     "icon": "corazon",
+     "label": "DOLOR DE PECHO"
+    },
+    {
+     "icon": "cerebro",
+     "label": "MAREO"
+    }
+   ],
+   "stamp": "PARA Y CONSULTA",
+   "say": {
+    "who": "doctora",
+    "text": "Dolor o presión en el pecho, mareo o ahogo fuera de lo normal: **detente y consulta**."
+   }
+  },
+  {
+   "type": "choice",
+   "q": "¿Cómo suma fuerza esta semana?",
+   "a": "Subir escaleras cada día",
+   "b": "Sentadillas suaves en casa",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 9"
+  }
+ ],
+ "description": "Episodio 8 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 7. En el episodio 7 la pregunta era: hora 11, ¿café negro al despertar o esperar al desayuno? Sin votos contables, Andrés eligió lo más prudente: tomarse el café con el desayuno. Cumplió sus primeras 12 horas sin comer, con algo de hambre al despertar que se le pasó desayunando. Y en la oficina pasó algo: subió los mismos dos pisos de siempre, paso a paso, y llegó arriba todavía pudiendo hablar. Esa noche, después de caminar, no se durmió en el sofá. Ahora quiere sumar algo de fuerza.\n\nLo que dice la ciencia:\n✅ Cuando el músculo trabaja, saca glucosa de la sangre para usarla. Por eso caminar y moverse ayudan a manejar el azúcar.\n✅ La constancia hace que el esfuerzo de todos los días se sienta más fácil con el tiempo; los cambios grandes toman semanas.\n⚠️ Dolor o presión en el pecho, mareo o un ahogo fuera de lo normal al hacer ejercicio: detente y consulta.\n❌ No hace falta correr ni comprar nada para empezar: caminar ya cuenta.\n\n📊 ENCUESTA – ¿Cómo suma Andrés algo de fuerza esta semana?\nA) Subir escaleras cada día, a su ritmo.\nB) Sentadillas suaves en casa, con su propio peso.\nComenta A o B: lo que gane pasa en el episodio 9.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #caminar #ejercicio #ayunointermitente #habitossaludables #salud #medicina"
+}
