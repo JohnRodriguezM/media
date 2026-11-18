@@ -202,6 +202,29 @@
         "B": "Sentadillas suaves en casa, con su propio peso"
       },
       "zernio_post_id": "6afc4d437bd7f3dc501f5692",
+      "ganador": "A",
+      "votos": {
+        "A": 0,
+        "B": 0
+      },
+      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (A: escaleras a su ritmo, lo que ya venía haciendo)"
+    },
+    {
+      "n": 9,
+      "fecha": "2026-11-18",
+      "formato": "video",
+      "video": "tiktok/video/andres-ep09.json",
+      "dia_reto": 8,
+      "resumen": "Día 8. Ganó lo prudente: escaleras a su ritmo; sube los dos pisos tres veces. En la noche, despedida de un compañero con asado y cervezas; volviendo a casa le pregunta a Mariana si empieza de cero ('De cero no. Mañana sigues'). Se duerme rapidísimo y se despierta a las 3 a. m.; agua y a la cama.",
+      "ciencia": [
+        "alcohol: ayuda a dormirse pero la segunda mitad de la noche es más liviana y con más despertares",
+        "fallar un día no borra el hábito; lo que pesa es volver al día siguiente"
+      ],
+      "encuesta": {
+        "A": "Su caminata de siempre (20 min después de cenar)",
+        "B": "Caminata suave y acostarse temprano"
+      },
+      "zernio_post_id": null,
       "ganador": null
     }
   ],

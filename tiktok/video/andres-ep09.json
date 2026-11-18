@@ -1,0 +1,171 @@
+{
+ "engine": "indie",
+ "seed": 11,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 8/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 9 DE 15 · DÍA 8",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "calle",
+   "actors": [
+    {
+     "id": "andres",
+     "x": 80,
+     "y": 410,
+     "pose": "stand"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "worried"
+     },
+     "sweat": [
+      "andres"
+     ],
+     "narr": "Día 8. 11 p. m. Sale de una despedida.",
+     "say": {
+      "who": "andres",
+      "text": "Asado, cervezas… ¿y si dañé todo el reto?"
+     }
+    },
+    {
+     "cam": "wide",
+     "move": {
+      "andres": [
+       250,
+       410
+      ],
+      "dur": 3.5
+     },
+     "expr": {
+      "andres": "neutral"
+     },
+     "narr": "Camina despacio a casa."
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {
+     "from": "me",
+     "text": "Sin votos fui por lo prudente: escaleras cada día",
+     "time": "11:12 p. m."
+    },
+    {
+     "from": "me",
+     "text": "Hoy subí los dos pisos tres veces. Y esta noche: asado y cerveza",
+     "time": "11:12 p. m."
+    },
+    {
+     "draft": "Ya dañé todo"
+    },
+    {
+     "from": "me",
+     "text": "¿Mañana empiezo de cero?",
+     "time": "11:13 p. m."
+    },
+    {
+     "from": "them",
+     "text": "De cero no. Mañana sigues",
+     "time": "11:15 p. m."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "bg": "cuarto",
+   "actors": [
+    {
+     "id": "andres",
+     "x": 150,
+     "y": 330,
+     "pose": "sit",
+     "chair": false,
+     "legs": false
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "surprised"
+     },
+     "narr": "3 a. m.",
+     "say": {
+      "who": "andres",
+      "text": "Me dormí rapidísimo… y ahora estoy despierto."
+     }
+    },
+    {
+     "cam": "wide",
+     "expr": {
+      "andres": "firm"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Un vaso de agua y a la cama. Mañana sigo."
+     }
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "ALCOHOL\nY SUEÑO",
+   "icons": [
+    {
+     "icon": "luna",
+     "label": "DORMIRSE"
+    },
+    {
+     "icon": "cama",
+     "label": "DESPERTARES"
+    }
+   ],
+   "stamp": "SUEÑO MÁS LIGERO",
+   "say": {
+    "who": "doctora",
+    "text": "El alcohol ayuda a dormirse, pero la **segunda mitad de la noche** es más liviana y con más despertares."
+   }
+  },
+  {
+   "type": "data",
+   "title": "UN DÍA NO\nBORRA EL HÁBITO",
+   "icons": [
+    {
+     "icon": "pasos",
+     "label": "VOLVER"
+    },
+    {
+     "icon": "apoyo",
+     "label": "SIN CULPA"
+    }
+   ],
+   "stamp": "VUELVE MAÑANA",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "Fallar un día no borra el hábito. Lo que pesa es **volver al día siguiente**."
+   }
+  },
+  {
+   "type": "choice",
+   "q": "¿Cómo retoma Andrés mañana?",
+   "a": "Su caminata de siempre",
+   "b": "Caminata suave y a dormir temprano",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 10"
+  }
+ ],
+ "description": "Episodio 9 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 8. En el episodio 8 la pregunta era: ¿cómo suma fuerza Andrés, escaleras cada día o sentadillas suaves en casa? Sin votos contables, eligió lo más prudente y que ya venía haciendo: subir escaleras a su ritmo. Hoy subió los dos pisos de la oficina tres veces. Pero en la noche hubo despedida de un compañero: asado y cervezas. Volviendo a casa le escribe a Mariana: \"¿Mañana empiezo de cero?\". Ella: \"De cero no. Mañana sigues\". Se durmió rapidísimo… y a las 3 a. m. estaba despierto.\n\nLo que dice la ciencia:\n✅ El alcohol puede ayudar a dormirse más rápido, pero la segunda mitad de la noche suele ser más liviana y con más despertares.\n✅ Fallar un día no borra un hábito: lo que más pesa es volver al día siguiente.\n⚠️ Si después de tomar te despiertas en la madrugada, no es \"insomnio nuevo\": es uno de los efectos del alcohol en el sueño.\n❌ \"Ya dañé todo, empiezo el lunes\": esa mentalidad de todo o nada es la que más tumba los retos.\n\n📊 ENCUESTA – ¿Cómo retoma Andrés mañana?\nA) Su caminata de siempre, 20 minutos después de cenar.\nB) Una caminata suave y acostarse temprano para recuperar sueño.\nComenta A o B: lo que gane pasa en el episodio 10.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #sueño #alcohol #habitossaludables #caminar #salud #medicina"
+}
