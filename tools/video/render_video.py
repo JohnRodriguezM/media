@@ -106,6 +106,52 @@ def indie_sfx(base, total, ev):
     return (np.tanh(out * 1.3) * 0.85 * 32767).astype(np.int16)
 
 
+def soft_music(total, events, seed=0):
+    """Estilo sketch: lo-fi suave original (pads + kalimba + pulso) y sonidos de lápiz."""
+    from scipy.signal import butter, lfilter
+    n = int(SR * (total + 1)); out = np.zeros(n)
+    def put(sig, at):
+        i = int(at * SR)
+        if i >= n: return
+        sig = sig[: n - i]; out[i:i + len(sig)] += sig
+    def tone(f, dur, vol, dec, harm=(1, .35, .12)):
+        t = np.arange(int(SR * dur)) / SR
+        w = sum(a * np.sin(2 * np.pi * f * (k + 1) * t) for k, a in enumerate(harm))
+        return w * vol * np.exp(-t * dec) * np.minimum(1, t * 200)
+    bpm = 84; beat = 60 / bpm
+    prog = [(57, [0, 3, 7, 10]), (53, [0, 4, 7, 11]), (48, [0, 4, 7, 11]), (55, [0, 4, 7, 10])]
+    rng = np.random.default_rng(seed)
+    t = 0.0; bar = 0
+    while t < total + 1:
+        root, ch = prog[bar % 4]
+        for c in ch:  # pad
+            put(tone(note_hz(root + c), 4 * beat * 1.05, 0.035, 0.35, (1, .2)), t)
+        put(tone(note_hz(root - 12), 4 * beat, 0.16, 0.9, (1, .1)), t)
+        for b in range(4):  # pulso suave + shaker
+            put(tone(55, 0.25, 0.22 if b % 2 == 0 else 0.0, 14, (1,)), t + b * beat)
+            sh = rng.uniform(-1, 1, int(SR * 0.05)) * 0.018 * np.exp(-np.arange(int(SR * 0.05)) / SR * 60)
+            put(sh, t + b * beat + beat / 2)
+        for k in range(8):  # kalimba
+            if rng.random() < 0.55:
+                put(tone(note_hz(root + 24 + ch[rng.integers(0, 4)]), 0.9, 0.05, 5.5, (1, .5, .2)), t + k * beat / 2)
+        t += 4 * beat; bar += 1
+    b, a = butter(2, 3200 / (SR / 2)); out = lfilter(b, a, out)
+    bb, ba = butter(2, [2500 / (SR / 2), 7000 / (SR / 2)], btype="band")
+    for e in events:
+        k = e["k"]
+        if k == "scratch":  # lápiz sobre papel
+            m = int(SR * 0.45); s = rng.uniform(-1, 1, m)
+            env = (0.5 + 0.5 * np.sin(np.arange(m) / SR * 2 * np.pi * 9)) * np.minimum(1, np.arange(m)[::-1] / (SR * .15))
+            put(lfilter(bb, ba, s) * env * 0.16, e["t"])
+        elif k == "whoosh":
+            m = int(SR * 0.35); s = lfilter(b, a, rng.uniform(-1, 1, m)); put(s * np.hanning(m) * 0.12, e["t"] - 0.1)
+        elif k == "pop":
+            put(tone(880, 0.18, 0.12, 22, (1, .3)), e["t"])
+    out = out[: int(SR * total)]
+    fade = int(SR * 1.0); out[-fade:] *= np.linspace(1, 0, fade)
+    return (np.tanh(out * 1.6) * 0.8 * 32767).astype(np.int16)
+
+
 def sfx_events(spec):
     ev, a = [], 0.0
     for s in spec["scenes"]:
@@ -123,11 +169,13 @@ async def frames(spec, outdir, fps):
     async with async_playwright() as p:
         b = await p.chromium.launch()
         pg = await b.new_page(viewport={"width": 1080, "height": 1920})
-        page = "indie.html" if spec.get("engine") == "indie" else "pixel.html"
+        page = {"indie": "indie.html", "sketch": "sketch.html"}.get(spec.get("engine"), "pixel.html")
         await pg.goto((HERE / page).as_uri())
         await pg.evaluate("document.fonts.load('40px Px')")
         await pg.evaluate("document.fonts.load('40px Sk')")
         await pg.evaluate("document.fonts.load('40px Vt')")
+        await pg.evaluate("document.fonts.load('40px Hand')")
+        await pg.evaluate("document.fonts.load('40px Body')")
         total = await pg.evaluate("ep=>load(ep)", spec)
         await pg.evaluate("document.fonts.ready")
         n = int(math.ceil(total * fps))
@@ -143,7 +191,10 @@ def main(spec_path, out_path, fps=24):
     spec = json.loads(Path(spec_path).read_text(encoding="utf-8"))
     tmp = Path(tempfile.mkdtemp())
     total, ev = asyncio.run(frames(spec, tmp, fps))
-    audio = music(total, ev, spec.get("seed", 0))
+    if spec.get("engine") == "sketch":
+        audio = soft_music(total, ev, spec.get("seed", 0))
+    else:
+        audio = music(total, ev, spec.get("seed", 0))
     if spec.get("engine") == "indie":
         audio = indie_sfx(audio, total, ev)
     wav = tmp / "music.wav"

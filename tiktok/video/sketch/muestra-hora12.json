@@ -1,0 +1,70 @@
+{
+ "engine": "sketch",
+ "seed": 3,
+ "badge": "AYUNO · HORA 12",
+ "scenes": [
+  {
+   "type": "hook",
+   "kicker": "HORA 12",
+   "to": 12,
+   "max": 16,
+   "lines": [
+    "Cenaste a las 8 p. m.",
+    "Desayunas a las 8 a. m."
+   ],
+   "punch": "Ya hiciste **12 horas** de ayuno… durmiendo."
+  },
+  {
+   "type": "step",
+   "tag": "HORA 0-4",
+   "ring": [
+    0,
+    4
+   ],
+   "icon": "plato",
+   "title": "Digieres la cena",
+   "text": "La **insulina** sube para guardar la energía que comiste."
+  },
+  {
+   "type": "step",
+   "tag": "HORA 4-8",
+   "ring": [
+    4,
+    8
+   ],
+   "icon": "higado",
+   "title": "Tu hígado toma el control",
+   "text": "Suelta **glucosa** de sus reservas para mantener tu azúcar estable."
+  },
+  {
+   "type": "step",
+   "tag": "HORA 8-12",
+   "ring": [
+    8,
+    12
+   ],
+   "icon": "llama",
+   "title": "Más grasa como combustible",
+   "text": "Con la insulina baja, tu cuerpo usa **cada vez más grasa**."
+  },
+  {
+   "type": "note",
+   "icon": "alerta",
+   "stamp": "OJO",
+   "text": "¿Diabetes con medicación, embarazo o un trastorno alimentario? Consulta antes de alargar ayunos."
+  },
+  {
+   "type": "end",
+   "q": "¿A qué hora cenaste anoche?",
+   "sub": "Comenta tu hora",
+   "ring": [
+    0,
+    12
+   ],
+   "dashTo": 16,
+   "nextBig": "16",
+   "next": "Parte 2: **HORA 16**",
+   "cta": "Calcula tu ventana de ayuno: link en el perfil"
+  }
+ ]
+}
