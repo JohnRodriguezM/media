@@ -225,6 +225,29 @@
         "B": "Caminata suave y acostarse temprano"
       },
       "zernio_post_id": "6afd9ea8a7132762cf8cf2ce",
+      "ganador": "B",
+      "votos": {
+        "A": 0,
+        "B": 0
+      },
+      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: caminata suave y acostarse temprano tras dormir mal)"
+    },
+    {
+      "n": 10,
+      "fecha": "2026-11-19",
+      "formato": "video",
+      "video": "tiktok/video/andres-ep10.json",
+      "dia_reto": 9,
+      "resumen": "Día 9. Ganó lo prudente: caminata suave y a la cama a las 10. Molido tras dormir mal, pensó en saltarse la caminata pero salió sin forzar. Durmió de corrido. Le cuenta a Mariana que hoy toca fuerza; en la cocina Laura le propone sentarse y pararse de la silla, despacio, y si duele parar. Hace diez.",
+      "ciencia": [
+        "con los años se pierde músculo si no se usa; el ejercicio de fuerza lo frena a cualquier edad",
+        "sentadilla a la silla: despacio; dolor en rodilla o pecho = parar y consultar"
+      ],
+      "encuesta": {
+        "A": "Más proteína en el desayuno",
+        "B": "Más proteína en la cena"
+      },
+      "zernio_post_id": null,
       "ganador": null
     }
   ],

@@ -1,0 +1,199 @@
+{
+ "engine": "indie",
+ "seed": 12,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 9/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 10 DE 15 · DÍA 9",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "parque",
+   "hora": 19,
+   "actors": [
+    {
+     "id": "andres",
+     "x": 80,
+     "y": 400,
+     "pose": "stand"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "worried"
+     },
+     "sweat": [
+      "andres"
+     ],
+     "narr": "Día 9. Durmió mal tras la despedida.",
+     "say": {
+      "who": "andres",
+      "text": "Estoy molido. ¿Hoy me salto la caminata?"
+     }
+    },
+    {
+     "cam": "wide",
+     "move": {
+      "andres": [
+       250,
+       400
+      ],
+      "dur": 3.5
+     },
+     "expr": {
+      "andres": "neutral"
+     },
+     "narr": "Sin votos, lo prudente: caminata suave."
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "firm"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Suave también cuenta. Y hoy, a la cama a las 10."
+     }
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {
+     "from": "me",
+     "text": "Anoche: caminata suave y a la cama a las 10. Dormí de corrido",
+     "time": "6:40 a. m."
+    },
+    {
+     "from": "them",
+     "text": "¡Eso! ¿Y hoy qué toca?",
+     "time": "6:42 a. m."
+    },
+    {
+     "draft": "Pesas"
+    },
+    {
+     "from": "me",
+     "text": "Sumar fuerza: mis primeras sentadillas",
+     "time": "6:43 a. m."
+    },
+    {
+     "from": "them",
+     "text": "Despacio. Que mande la técnica",
+     "time": "6:44 a. m."
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "bg": "cocina",
+   "hora": 7,
+   "actors": [
+    {
+     "id": "andres",
+     "x": 100,
+     "y": 372,
+     "pose": "stand"
+    },
+    {
+     "id": "laura",
+     "x": 260,
+     "y": 372,
+     "pose": "stand",
+     "prop": "coffee"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "two",
+     "expr": {
+      "andres": "worried",
+      "laura": "neutral"
+     },
+     "say": {
+      "who": "andres",
+      "text": "¿Y si me duelen las rodillas?"
+     }
+    },
+    {
+     "cam": "close:laura",
+     "expr": {
+      "laura": "firm"
+     },
+     "say": {
+      "who": "laura",
+      "text": "Sentarte y pararte de la silla, despacio. Si duele, paras."
+     }
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "happy"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Diez. Y mañana, otra vez."
+     },
+     "narr": "Diez sentadillas a la silla."
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "FUERZA DESPUÉS\nDE LOS 40",
+   "icons": [
+    {
+     "icon": "musculo",
+     "label": "MÚSCULO"
+    },
+    {
+     "icon": "escaleras",
+     "label": "ESCALERAS"
+    }
+   ],
+   "stamp": "NUNCA ES TARDE",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "Con los años se pierde músculo si no se usa. El **ejercicio de fuerza** lo frena, a cualquier edad."
+   }
+  },
+  {
+   "type": "data",
+   "title": "SENTADILLA\nA LA SILLA",
+   "icons": [
+    {
+     "icon": "musculo",
+     "label": "DESPACIO"
+    },
+    {
+     "icon": "corazon",
+     "label": "SI DUELE, PARA"
+    }
+   ],
+   "stamp": "DOLOR = PARAR",
+   "say": {
+    "who": "doctora",
+    "text": "Baja despacio hasta rozar la silla y sube. Si duele la rodilla o el pecho, paras y consultas."
+   }
+  },
+  {
+   "type": "choice",
+   "q": "¿Cuándo suma proteína Andrés?",
+   "a": "Más proteína en el desayuno",
+   "b": "Más proteína en la cena",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 11"
+  }
+ ],
+ "description": "Episodio 10 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 9. En el episodio 9 la pregunta era: después de la despedida con asado y cerveza, ¿cómo retoma Andrés? Sin votos contables, eligió lo más prudente: caminata suave y a la cama temprano. Estaba molido y pensó en saltarse la caminata, pero salió igual, sin forzar, y a las 10 se acostó. Durmió de corrido. En la mañana le cuenta a Mariana que hoy toca sumar fuerza: sus primeras sentadillas. Laura le propone empezar fácil: sentarse y pararse de la silla, despacio. Hizo diez.\n\nLo que dice la ciencia:\n✅ Con los años se va perdiendo músculo si no se usa. El ejercicio de fuerza ayuda a frenarlo, a cualquier edad.\n✅ Empezar fácil sirve: sentarse y pararse de una silla, despacio, ya es ejercicio de fuerza con tu propio peso.\n⚠️ Dolor en la rodilla, o dolor o presión en el pecho, mareo o ahogo fuera de lo normal: para y consulta.\n❌ \"Si no voy al gimnasio no sirve\": lo que cuenta es empezar y repetir, no la intensidad del primer día.\n\n📊 ENCUESTA – Andrés quiere repartir mejor la proteína del día. ¿Dónde suma más?\nA) Más proteína en el desayuno (huevo, yogur, queso, frijoles…).\nB) Más proteína en la cena.\nComenta A o B: lo que gane pasa en el episodio 11.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #fuerza #sentadillas #musculo #despuesdelos40 #habitossaludables #salud #medicina"
+}
