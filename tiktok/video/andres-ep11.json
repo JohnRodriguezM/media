@@ -1,0 +1,179 @@
+{
+ "engine": "indie",
+ "seed": 13,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 10/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 11 DE 15 · DÍA 10",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "oficina",
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "surprised"
+     },
+     "narr": "Día 10. Anoche durmió 7 horas seguidas.",
+     "say": {
+      "who": "andres",
+      "text": "Las 11 y no estoy cabeceando en el escritorio. ¿Qué me pasó?"
+     }
+    },
+    {
+     "cam": "wide",
+     "expr": {
+      "andres": "neutral"
+     },
+     "narr": "Sin votos: proteína al desayuno, donde más faltaba."
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "happy"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Huevos con arepa en vez de solo pan. Ni he pensado en comer."
+     }
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {
+     "from": "me",
+     "text": "Dormí 7 horas de corrido. Ya no me acordaba",
+     "time": "12:10 p. m."
+    },
+    {
+     "from": "them",
+     "text": "¡Por fin! ¿Qué cambiaste?",
+     "time": "12:12 p. m."
+    },
+    {
+     "from": "me",
+     "text": "Café hasta las 12, caminar y nada de sofá",
+     "time": "12:13 p. m."
+    },
+    {
+     "draft": "El celular sí"
+    },
+    {
+     "from": "me",
+     "text": "Bueno… el celular sigue en la cama",
+     "time": "12:14 p. m."
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "DORMIR\n7 HORAS",
+   "icons": [
+    {
+     "icon": "luna",
+     "label": "7 H O MÁS"
+    },
+    {
+     "icon": "cerebro",
+     "label": "MEMORIA"
+    }
+   ],
+   "stamp": "NO ES UN LUJO",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "En adultos se recomiendan **7 horas o más**. Al dormir, el cerebro fija lo aprendido en el día."
+   }
+  },
+  {
+   "type": "scene",
+   "bg": "cuarto",
+   "actors": [
+    {
+     "id": "laura",
+     "x": 80,
+     "y": 330,
+     "pose": "sit",
+     "chair": false,
+     "legs": false
+    },
+    {
+     "id": "andres",
+     "x": 175,
+     "y": 330,
+     "pose": "sit",
+     "chair": false,
+     "legs": false,
+     "prop": "phone"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "neutral"
+     },
+     "narr": "10:30 p. m. Ya en la cama."
+    },
+    {
+     "cam": "close:laura",
+     "expr": {
+      "laura": "firm"
+     },
+     "say": {
+      "who": "laura",
+      "text": "¿Y ese celular? Llevas media hora ahí."
+     }
+    },
+    {
+     "cam": "two",
+     "expr": {
+      "andres": "worried",
+      "laura": "neutral"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Lo reviso y ya… ¿o lo saco del cuarto?"
+     }
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "EL CELULAR\nEN LA CAMA",
+   "icons": [
+    {
+     "icon": "celular",
+     "label": "DE NOCHE"
+    },
+    {
+     "icon": "cama",
+     "label": "SUEÑO"
+    }
+   ],
+   "stamp": "TE ACTIVA",
+   "say": {
+    "who": "doctora",
+    "text": "El celular en la cama se asocia con **dormirse más tarde**: la luz y lo que ves pueden desvelarte."
+   }
+  },
+  {
+   "type": "choice",
+   "q": "¿Qué hace Andrés con el celular?",
+   "a": "Cargarlo fuera del cuarto",
+   "b": "Modo nocturno y soltarlo a las 10",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 12"
+  }
+ ],
+ "description": "Episodio 11 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 10. En el episodio 10 la pregunta era: ¿dónde suma Andrés más proteína? Sin votos contables, eligió el desayuno, la comida que más se le quedaba corta: huevos con arepa en vez de solo pan. Y la gran noticia: durmió 7 horas de corrido por primera vez en mucho tiempo. A las 11 de la mañana no está cabeceando en el escritorio. Se lo cuenta a Mariana: café solo hasta las 12, caminar, nada de sofá… pero el celular sigue en la cama. Esa noche, Laura lo pilla media hora con el celular.\n\nLo que dice la ciencia:\n✅ En adultos se recomiendan 7 horas de sueño o más por noche.\n✅ Dormir ayuda al cerebro a fijar lo que aprendiste durante el día.\n✅ Sumar proteína al desayuno (huevo, queso, yogur, frijoles) suele dar más saciedad que un desayuno de solo pan.\n⚠️ Usar el celular en la cama se asocia con dormirse más tarde: influyen la luz y lo que ves. Si el \"modo nocturno\" ayuda por sí solo es zona gris.\n❌ \"Dormir poco es de gente productiva\": el sueño no es un lujo.\n\n📊 ENCUESTA – ¿Qué hace Andrés con el celular por la noche?\nA) Cargarlo fuera del cuarto.\nB) Modo nocturno y soltarlo a las 10 p. m.\nComenta A o B: lo que gane pasa en el episodio 12.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #sueño #dormirbien #celular #proteina #habitossaludables #salud #medicina"
+}

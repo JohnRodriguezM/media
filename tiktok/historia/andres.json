@@ -248,6 +248,29 @@
         "B": "Más proteína en la cena"
       },
       "zernio_post_id": "6afef138ee57be3a924cc904",
+      "ganador": "A",
+      "votos": {
+        "A": 0,
+        "B": 0
+      },
+      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (A: proteína en el desayuno, la comida que más se quedaba corta)"
+    },
+    {
+      "n": 11,
+      "fecha": "2026-11-20",
+      "formato": "video",
+      "video": "tiktok/video/andres-ep11.json",
+      "dia_reto": 10,
+      "resumen": "Día 10. Sin votos contables: proteína en el desayuno (huevos con arepa en vez de solo pan). Durmió 7 h de corrido por primera vez; a las 11 no cabecea en el escritorio. Le cuenta a Mariana qué cambió (café hasta las 12, caminar), pero el celular sigue en la cama. En la noche Laura lo pilla media hora con el celular.",
+      "ciencia": [
+        "en adultos se recomiendan 7 h de sueño o más; dormir ayuda a fijar la memoria",
+        "celular en la cama se asocia con dormirse más tarde (luz y contenido); modo nocturno = zona gris"
+      ],
+      "encuesta": {
+        "A": "Cargar el celular fuera del cuarto",
+        "B": "Modo nocturno y soltarlo a las 10"
+      },
+      "zernio_post_id": null,
       "ganador": null
     }
   ],
