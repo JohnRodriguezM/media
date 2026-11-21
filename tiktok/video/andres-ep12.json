@@ -1,0 +1,196 @@
+{
+ "engine": "indie",
+ "seed": 14,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 11/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 12 DE 15 · DÍA 11",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "cocina",
+   "hora": 6,
+   "actors": [
+    {
+     "id": "andres",
+     "x": 160,
+     "y": 372,
+     "pose": "stand"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "surprised"
+     },
+     "narr": "Día 11. 6 a. m. Sin votos: ganó lo prudente.",
+     "say": {
+      "who": "andres",
+      "text": "¿Me desperté antes que la alarma? ¡Si la alarma está aquí en la cocina!"
+     }
+    },
+    {
+     "cam": "wide",
+     "expr": {
+      "andres": "neutral"
+     },
+     "narr": "Anoche el celular durmió fuera del cuarto."
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "happy"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Sin pantalla me dormí en un rato. Quién lo diría."
+     }
+    }
+   ]
+  },
+  {
+   "type": "scene",
+   "bg": "parque",
+   "hora": 19,
+   "actors": [
+    {
+     "id": "andres",
+     "x": 110,
+     "y": 400,
+     "pose": "stand"
+    },
+    {
+     "id": "laura",
+     "x": 230,
+     "y": 400,
+     "pose": "stand"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:laura",
+     "expr": {
+      "laura": "happy"
+     },
+     "narr": "7 p. m. Sorpresa a la hora de caminar.",
+     "say": {
+      "who": "laura",
+      "text": "Hoy voy contigo. Si tú pudiste estos días, yo también."
+     }
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "surprised"
+     },
+     "say": {
+      "who": "andres",
+      "text": "¿En serio? Pero a mi ritmo, ¿eh? Que todavía me canso."
+     }
+    },
+    {
+     "cam": "two",
+     "expr": {
+      "andres": "happy",
+      "laura": "happy"
+     },
+     "narr": "Veinte minutos. Conversando, sin correr."
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "HACERLO\nACOMPAÑADO",
+   "icons": [
+    {
+     "icon": "apoyo",
+     "label": "APOYO"
+    },
+    {
+     "icon": "pasos",
+     "label": "CONSTANCIA"
+    }
+   ],
+   "stamp": "AYUDA A SEGUIR",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "Tener **apoyo de la familia o amigos** ayuda a sostener hábitos como caminar."
+   }
+  },
+  {
+   "type": "scene",
+   "bg": "calle",
+   "actors": [
+    {
+     "id": "andres",
+     "x": 110,
+     "y": 410,
+     "pose": "stand"
+    },
+    {
+     "id": "laura",
+     "x": 220,
+     "y": 410,
+     "pose": "stand"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:laura",
+     "expr": {
+      "laura": "neutral"
+     },
+     "narr": "De regreso a casa.",
+     "say": {
+      "who": "laura",
+      "text": "¿Y si mañana cenamos más temprano, los dos juntos?"
+     }
+    },
+    {
+     "cam": "two",
+     "expr": {
+      "andres": "worried",
+      "laura": "neutral"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Me gusta… pero tampoco quiero perder esta caminata contigo."
+     }
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "CENAR TARDE\nY PESADO",
+   "icons": [
+    {
+     "icon": "plato",
+     "label": "CENA"
+    },
+    {
+     "icon": "cama",
+     "label": "SUEÑO"
+    }
+   ],
+   "stamp": "OJO CON LA HORA",
+   "say": {
+    "who": "doctora",
+    "text": "Una cena **abundante justo antes de acostarse** puede dar acidez y dificultar el sueño."
+   }
+  },
+  {
+   "type": "choice",
+   "q": "¿Qué hacen mañana Andrés y Laura?",
+   "a": "Cenar juntos más temprano",
+   "b": "Caminar juntos otra vez",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 13"
+  }
+ ],
+ "description": "Episodio 12 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 11. En el episodio 11 la pregunta era: ¿qué hace Andrés con el celular por la noche? Sin votos contables, ganó lo más prudente: cargarlo fuera del cuarto. Resultado: se durmió en un rato y a las 6 a. m. se despertó antes que la alarma… que estaba en la cocina. Y a las 7 p. m., la sorpresa: Laura, su esposa, decide caminar con él. Veinte minutos, conversando y sin correr. De regreso, Laura propone cenar más temprano, juntos.\n\nLo que dice la ciencia:\n✅ Tener apoyo de la familia o de amigos ayuda a sostener hábitos como caminar.\n✅ Caminar a un ritmo en el que todavía puedes conversar es un buen punto de partida.\n⚠️ Una cena abundante justo antes de acostarse puede dar acidez y dificultar el sueño en algunas personas.\n❌ \"Los hábitos se hacen solo con fuerza de voluntad\": hacerlo acompañado ayuda.\n\n📊 ENCUESTA – ¿Qué hacen mañana Andrés y Laura?\nA) Cenar juntos más temprano.\nB) Caminar juntos otra vez.\nComenta A o B: lo que gane pasa en el episodio 13.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #caminar #habitossaludables #pareja #dormirbien #salud #medicina"
+}

@@ -1,386 +1,409 @@
 {
-  "personaje": {
-    "nombre": "Andrés",
-    "edad": 47,
-    "aviso": "Historia ficticia basada en situaciones reales de consulta",
-    "bio": "Contador, casado, dos hijos adolescentes, vive en una ciudad latinoamericana. Trabaja sentado 9 h, cena tarde, duerme ~6 h, toma café en la tarde, no hace ejercicio desde los 30. Jugaba fútbol en el colegio.",
-    "detonante": "Mariana, compañera del colegio, lo ve en el supermercado y no lo reconoce. Le escribe: su foto de perfil es de hace 20 años, de cuando jugaba fútbol.",
-    "reto": "15 días para empezar a volver a sentirse como el de la foto: energía, subir escaleras sin ahogarse, dormir bien. No es un reto de kilos.",
-    "otros": {
-      "Mariana": "compañera del colegio, le escribe de vez en cuando y lo anima",
-      "Laura": "su esposa",
-      "Dra. Ruiz": "su médica"
-    }
+ "personaje": {
+  "nombre": "Andrés",
+  "edad": 47,
+  "aviso": "Historia ficticia basada en situaciones reales de consulta",
+  "bio": "Contador, casado, dos hijos adolescentes, vive en una ciudad latinoamericana. Trabaja sentado 9 h, cena tarde, duerme ~6 h, toma café en la tarde, no hace ejercicio desde los 30. Jugaba fútbol en el colegio.",
+  "detonante": "Mariana, compañera del colegio, lo ve en el supermercado y no lo reconoce. Le escribe: su foto de perfil es de hace 20 años, de cuando jugaba fútbol.",
+  "reto": "15 días para empezar a volver a sentirse como el de la foto: energía, subir escaleras sin ahogarse, dormir bien. No es un reto de kilos.",
+  "otros": {
+   "Mariana": "compañera del colegio, le escribe de vez en cuando y lo anima",
+   "Laura": "su esposa",
+   "Dra. Ruiz": "su médica"
+  }
+ },
+ "reglas": [
+  "Siempre ficción avisada: portada (kicker) y descripción dicen 'Historia ficticia'.",
+  "Nunca cifras de resultados del personaje (kilos, análisis, medidas). Lo que cambia es cómo se siente y qué hace.",
+  "Nunca fotos de antes/después ni imágenes de personas.",
+  "Cada episodio enseña 1-2 datos científicos conservadores (reglas de la GUIA) ligados a lo que vive Andrés ese día.",
+  "La encuesta final siempre tiene dos opciones razonables y seguras (ninguna peligrosa ni absurda). Lo que gane en comentarios pasa en el siguiente episodio; si hay empate o no hay votos, decide la opción más prudente y se dice en el episodio.",
+  "Andrés consulta a su médica antes de cambios grandes; ayunos >24 h nunca.",
+  "Continuidad: leer los episodios anteriores antes de escribir el siguiente.",
+  "Temporada de 15 episodios. Portada: kicker 'Historia ficticia · Episodio N de 15'. En 15 días solo se cuentan cambios creíbles en cómo se siente (energía, sueño, escaleras, hambre), nunca resultados medibles.",
+  "El plan de abajo marca los hitos fijos; los votos deciden los detalles. Si un voto cambia el rumbo, adapta el episodio siguiente manteniendo el hito."
+ ],
+ "episodios": [
+  {
+   "n": 1,
+   "fecha": "2026-11-10",
+   "carpeta": "2026-11-10-andres-ep01",
+   "dia_reto": 0,
+   "resumen": "Mariana (colegio) no lo reconoce en el súper y le escribe que su foto de perfil es de hace 20 años. Andrés escribe en su diario: no es el peso, es que se ahoga al subir dos pisos y se duerme en el sofá a las 8. Decide 90 días para volver a sentirse como el de la foto. Pide cita con la Dra. Ruiz.",
+   "ciencia": [
+    "chequeo médico antes de cambiar hábitos después de los 40",
+    "hábitos: ≈66 días en promedio (un estudio), cambios pequeños"
+   ],
+   "encuesta": {
+    "A": "Cenar más temprano y hacer 12 horas sin comer hasta el desayuno",
+    "B": "Salir a caminar 20 minutos después de cenar"
+   },
+   "zernio_post_id": "6af28bd1587acee687ae1aac",
+   "ganador": "B",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep01.json",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: caminar)"
   },
-  "reglas": [
-    "Siempre ficción avisada: portada (kicker) y descripción dicen 'Historia ficticia'.",
-    "Nunca cifras de resultados del personaje (kilos, análisis, medidas). Lo que cambia es cómo se siente y qué hace.",
-    "Nunca fotos de antes/después ni imágenes de personas.",
-    "Cada episodio enseña 1-2 datos científicos conservadores (reglas de la GUIA) ligados a lo que vive Andrés ese día.",
-    "La encuesta final siempre tiene dos opciones razonables y seguras (ninguna peligrosa ni absurda). Lo que gane en comentarios pasa en el siguiente episodio; si hay empate o no hay votos, decide la opción más prudente y se dice en el episodio.",
-    "Andrés consulta a su médica antes de cambios grandes; ayunos >24 h nunca.",
-    "Continuidad: leer los episodios anteriores antes de escribir el siguiente.",
-    "Temporada de 15 episodios. Portada: kicker 'Historia ficticia · Episodio N de 15'. En 15 días solo se cuentan cambios creíbles en cómo se siente (energía, sueño, escaleras, hambre), nunca resultados medibles.",
-    "El plan de abajo marca los hitos fijos; los votos deciden los detalles. Si un voto cambia el rumbo, adapta el episodio siguiente manteniendo el hito."
-  ],
-  "episodios": [
-    {
-      "n": 1,
-      "fecha": "2026-11-10",
-      "carpeta": "2026-11-10-andres-ep01",
-      "dia_reto": 0,
-      "resumen": "Mariana (colegio) no lo reconoce en el súper y le escribe que su foto de perfil es de hace 20 años. Andrés escribe en su diario: no es el peso, es que se ahoga al subir dos pisos y se duerme en el sofá a las 8. Decide 90 días para volver a sentirse como el de la foto. Pide cita con la Dra. Ruiz.",
-      "ciencia": [
-        "chequeo médico antes de cambiar hábitos después de los 40",
-        "hábitos: ≈66 días en promedio (un estudio), cambios pequeños"
-      ],
-      "encuesta": {
-        "A": "Cenar más temprano y hacer 12 horas sin comer hasta el desayuno",
-        "B": "Salir a caminar 20 minutos después de cenar"
-      },
-      "zernio_post_id": "6af28bd1587acee687ae1aac",
-      "ganador": "B",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep01.json",
-      "votos": {
-        "A": 0,
-        "B": 0
-      },
-      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: caminar)"
-    },
-    {
-      "n": 2,
-      "fecha": "2026-11-11",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep02.json",
-      "dia_reto": 1,
-      "resumen": "Día 1. Empieza por lo más prudente: caminar 20 min después de cenar (8:15 p. m.). En el minuto 12 le cuesta, baja el ritmo pero no se detiene. Le escribe a Mariana: 'Mañana otra vez. Sin correr todavía'. Esa noche no se duerme en el sofá.",
-      "ciencia": [
-        "caminar después de comer: los músculos usan glucosa, pico posprandial menor (10-15 min sirven)",
-        "ritmo inicial: hablar pero no cantar; dolor de pecho o mucho ahogo = parar y consultar"
-      ],
-      "encuesta": {
-        "A": "Cenar temprano y hacer 12 horas sin comer (además de caminar)",
-        "B": "Seguir solo con la caminata, sin cambiar la comida todavía"
-      },
-      "zernio_post_id": "6af46412ae75f3e6431fc3ca",
-      "ganador": "B",
-      "votos": {
-        "A": 0,
-        "B": 0
-      },
-      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: seguir solo con la caminata)"
-    },
-    {
-      "n": 3,
-      "fecha": "2026-11-12",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep03.json",
-      "dia_reto": 2,
-      "resumen": "Día 2. Eligió lo más prudente: seguir solo caminando. Cita con la Dra. Ruiz: le pregunta por 12 h sin comer de noche; ella dice que es razonable, pero primero le toma la presión y le pide exámenes (sin cifras). A Mariana: 'No me siento enfermo. Por eso mismo hay que medir'. Esa noche, otra caminata de 20 min.",
-      "ciencia": [
-        "presión, glucosa y colesterol altos casi nunca dan síntomas al principio: se miden aunque te sientas bien",
-        "con medicamentos para la diabetes no cambiar horarios de comida sin el médico (riesgo de hipoglucemia)"
-      ],
-      "encuesta": {
-        "A": "Empezar mañana mismo las 12 h sin comer (8 p. m. a 8 a. m.), sin dejar la caminata",
-        "B": "Esperar los resultados de los exámenes primero"
-      },
-      "zernio_post_id": "6af5b5abb68bf3241a6131e2",
-      "ganador": "B",
-      "votos": {
-        "A": 0,
-        "B": 0
-      },
-      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: esperar los resultados)"
-    },
-    {
-      "n": 4,
-      "fecha": "2026-11-13",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep04.json",
-      "dia_reto": 3,
-      "resumen": "Día 3. Ganó lo prudente: esperar los exámenes antes de las 12 h. A las 10 p. m., dos horas después de cenar, Andrés vuelve a la nevera; Laura le pregunta '¿hambre o costumbre?'. A Mariana le cuenta que a las 10 le ataca el hambre y que duerme unas seis horas.",
-      "ciencia": [
-        "el hambre sube cerca de las horas habituales de comer y luego baja aunque no comas",
-        "dormir poco se asocia con más hambre y antojos al día siguiente"
-      ],
-      "encuesta": {
-        "A": "Un vaso de agua y esperar a que pase la ola",
-        "B": "Una fruta pequeña, sin culpa"
-      },
-      "zernio_post_id": "6af706de919df95687f6b5fb",
-      "ganador": "B",
-      "votos": {
-        "A": 0,
-        "B": 0
-      },
-      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más suave y prudente (B: fruta pequeña, sin culpa, sin restringir mientras llegan los exámenes)"
-    },
-    {
-      "n": 5,
-      "fecha": "2026-11-14",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep05.json",
-      "dia_reto": 4,
-      "resumen": "Día 4. Ganó lo más suave: una mandarina a las 10 p. m., sin culpa; se le pasó el hambre y no siguió picando. En la oficina es cumpleaños y le dejan torta de chocolate en el escritorio. Teme dañar el reto y le escribe a Mariana: 'Un pedazo de torta no borra cuatro días'.",
-      "ciencia": [
-        "la fruta entera trae fibra y suele saciar más que un jugo de la misma fruta",
-        "pesa lo que repites casi todos los días, no una comida aislada"
-      ],
-      "encuesta": {
-        "A": "Comer un pedazo pequeño y disfrutarlo",
-        "B": "Decir 'no, gracias' esta vez"
-      },
-      "zernio_post_id": "6af85876fe1ca6f9cac24c4e",
-      "ganador": "A",
-      "votos": {
-        "A": 0,
-        "B": 0
-      },
-      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más flexible y prudente (A: un pedazo pequeño, sin mentalidad de todo o nada)"
-    },
-    {
-      "n": 6,
-      "fecha": "2026-11-15",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep06.json",
-      "dia_reto": 5,
-      "resumen": "Día 5. Ganó lo flexible: comió un pedacito de torta y lo disfrutó; siguió caminando. A la 1 a. m. está cansado y no se duerme. Mariana le pregunta por su último café: a las 4 p. m., todos los días. El domingo a las 4, Laura le ofrece el tinto y él dice 'hoy no'.",
-      "ciencia": [
-        "cafeína: vida media ≈5 h en promedio, varía entre personas",
-        "café de la tarde puede hacer el sueño más corto y ligero aunque te duermas"
-      ],
-      "encuesta": {
-        "A": "Café hasta las 12 del mediodía",
-        "B": "Café hasta las 2 de la tarde"
-      },
-      "zernio_post_id": "6af9a99402b047955ba8f14a",
-      "ganador": "A",
-      "votos": {
-        "A": 0,
-        "B": 0
-      },
-      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente para el sueño (A: café hasta las 12)"
-    },
-    {
-      "n": 7,
-      "fecha": "2026-11-16",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep07.json",
-      "dia_reto": 6,
-      "resumen": "Día 6. Ganó lo más prudente: café solo hasta las 12. Llegan los exámenes (sin cifras) y la Dra. Ruiz le da luz verde para probar 12 h sin comer; si se marea o se siente mal, come. Le cuenta a Mariana. A las 8 p. m. cena: hora 0. Laura pregunta por el hambre de las 10; él: agua y, si no se pasa, una fruta. No es un castigo.",
-      "ciencia": [
-        "hacia las 12 h sin comer la insulina está baja y el cuerpo usa glucógeno hepático",
-        "diabetes en tratamiento, embarazo o TCA: consultar antes de ayunar"
-      ],
-      "encuesta": {
-        "A": "Café negro sin azúcar al despertar (hora 11)",
-        "B": "Esperar y tomar el café con el desayuno"
-      },
-      "zernio_post_id": "6afafb5f9e5ae6eb0c112344",
-      "ganador": "B",
-      "votos": {
-        "A": 0,
-        "B": 0
-      },
-      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: café con el desayuno)"
-    },
-    {
-      "n": 8,
-      "fecha": "2026-11-17",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep08.json",
-      "dia_reto": 7,
-      "resumen": "Día 7. Ganó lo prudente: café con el desayuno. Cumple sus primeras 12 h sin comer, con poca hambre al despertar. En la oficina sube los dos pisos paso a paso y llega todavía pudiendo hablar; se lo cuenta a Mariana. En la noche, tras caminar, Laura nota que no se durmió en el sofá; Andrés quiere sumar algo de fuerza.",
-      "ciencia": [
-        "cuando el músculo trabaja saca glucosa de la sangre para usarla",
-        "dolor o presión en el pecho, mareo o ahogo fuera de lo normal al hacer ejercicio: detenerse y consultar"
-      ],
-      "encuesta": {
-        "A": "Subir escaleras cada día, a su ritmo",
-        "B": "Sentadillas suaves en casa, con su propio peso"
-      },
-      "zernio_post_id": "6afc4d437bd7f3dc501f5692",
-      "ganador": "A",
-      "votos": {
-        "A": 0,
-        "B": 0
-      },
-      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (A: escaleras a su ritmo, lo que ya venía haciendo)"
-    },
-    {
-      "n": 9,
-      "fecha": "2026-11-18",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep09.json",
-      "dia_reto": 8,
-      "resumen": "Día 8. Ganó lo prudente: escaleras a su ritmo; sube los dos pisos tres veces. En la noche, despedida de un compañero con asado y cervezas; volviendo a casa le pregunta a Mariana si empieza de cero ('De cero no. Mañana sigues'). Se duerme rapidísimo y se despierta a las 3 a. m.; agua y a la cama.",
-      "ciencia": [
-        "alcohol: ayuda a dormirse pero la segunda mitad de la noche es más liviana y con más despertares",
-        "fallar un día no borra el hábito; lo que pesa es volver al día siguiente"
-      ],
-      "encuesta": {
-        "A": "Su caminata de siempre (20 min después de cenar)",
-        "B": "Caminata suave y acostarse temprano"
-      },
-      "zernio_post_id": "6afd9ea8a7132762cf8cf2ce",
-      "ganador": "B",
-      "votos": {
-        "A": 0,
-        "B": 0
-      },
-      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: caminata suave y acostarse temprano tras dormir mal)"
-    },
-    {
-      "n": 10,
-      "fecha": "2026-11-19",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep10.json",
-      "dia_reto": 9,
-      "resumen": "Día 9. Ganó lo prudente: caminata suave y a la cama a las 10. Molido tras dormir mal, pensó en saltarse la caminata pero salió sin forzar. Durmió de corrido. Le cuenta a Mariana que hoy toca fuerza; en la cocina Laura le propone sentarse y pararse de la silla, despacio, y si duele parar. Hace diez.",
-      "ciencia": [
-        "con los años se pierde músculo si no se usa; el ejercicio de fuerza lo frena a cualquier edad",
-        "sentadilla a la silla: despacio; dolor en rodilla o pecho = parar y consultar"
-      ],
-      "encuesta": {
-        "A": "Más proteína en el desayuno",
-        "B": "Más proteína en la cena"
-      },
-      "zernio_post_id": "6afef138ee57be3a924cc904",
-      "ganador": "A",
-      "votos": {
-        "A": 0,
-        "B": 0
-      },
-      "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (A: proteína en el desayuno, la comida que más se quedaba corta)"
-    },
-    {
-      "n": 11,
-      "fecha": "2026-11-20",
-      "formato": "video",
-      "video": "tiktok/video/andres-ep11.json",
-      "dia_reto": 10,
-      "resumen": "Día 10. Sin votos contables: proteína en el desayuno (huevos con arepa en vez de solo pan). Durmió 7 h de corrido por primera vez; a las 11 no cabecea en el escritorio. Le cuenta a Mariana qué cambió (café hasta las 12, caminar), pero el celular sigue en la cama. En la noche Laura lo pilla media hora con el celular.",
-      "ciencia": [
-        "en adultos se recomiendan 7 h de sueño o más; dormir ayuda a fijar la memoria",
-        "celular en la cama se asocia con dormirse más tarde (luz y contenido); modo nocturno = zona gris"
-      ],
-      "encuesta": {
-        "A": "Cargar el celular fuera del cuarto",
-        "B": "Modo nocturno y soltarlo a las 10"
-      },
-      "zernio_post_id": "6b0041751f614b0b0821d713",
-      "ganador": null
-    }
-  ],
-  "temporada": 1,
-  "retoDias": 15,
-  "plan": [
-    {
-      "ep": 1,
-      "dia": 0,
-      "escena": "Mariana no lo reconoce en el súper; Día 0",
-      "ciencia": "chequeo médico antes de cambiar; hábito ≈66 días",
-      "encuesta": "¿12 h de ayuno o caminar 20 min?"
-    },
-    {
-      "ep": 2,
-      "dia": 1,
-      "escena": "Hora 12: primera noche sin picar (o primera caminata, según el voto)",
-      "ciencia": "qué pasa a las 12 h: insulina baja, glucógeno",
-      "encuesta": "¿café negro al despertar o esperar al desayuno?"
-    },
-    {
-      "ep": 3,
-      "dia": 2,
-      "escena": "cita con la Dra. Ruiz (le pide exámenes; sin cifras)",
-      "ciencia": "por qué medir presión, glucosa, colesterol",
-      "encuesta": "¿empieza en semana o el fin de semana?"
-    },
-    {
-      "ep": 4,
-      "dia": 3,
-      "escena": "el hambre de las 10 a. m.",
-      "ciencia": "grelina en olas, se adapta al horario",
-      "encuesta": "¿agua (con una pizca de sal) o esperar la ola?"
-    },
-    {
-      "ep": 5,
-      "dia": 4,
-      "escena": "torta de cumpleaños en la oficina",
-      "ciencia": "flexibilidad, un día no arruina el proceso",
-      "encuesta": "¿un pedazo o decir que no?"
-    },
-    {
-      "ep": 6,
-      "dia": 5,
-      "escena": "duerme mal sin entender por qué",
-      "ciencia": "cafeína: vida media ≈5 h",
-      "encuesta": "¿último café a las 12 o a las 2?"
-    },
-    {
-      "ep": 7,
-      "dia": 7,
-      "escena": "Hora 16: su primer 16:8",
-      "ciencia": "qué cambia entre 12 y 16 h (autofagia = zona gris)",
-      "encuesta": "¿sigue 16:8 o vuelve a 14 h?"
-    },
-    {
-      "ep": 8,
-      "dia": 8,
-      "escena": "sube los dos pisos y algo cambió",
-      "ciencia": "caminar y el músculo captan glucosa",
-      "encuesta": "¿escaleras o pesas en casa?"
-    },
-    {
-      "ep": 9,
-      "dia": 9,
-      "escena": "recaída: asado y cerveza el sábado",
-      "ciencia": "alcohol y sueño; fallar un día",
-      "encuesta": "¿retoma el domingo o el lunes?"
-    },
-    {
-      "ep": 10,
-      "dia": 10,
-      "escena": "primeras sentadillas",
-      "ciencia": "fuerza después de los 40, sarcopenia",
-      "encuesta": "¿proteína en el desayuno o en la cena?"
-    },
-    {
-      "ep": 11,
-      "dia": 11,
-      "escena": "duerme 7 h por primera vez",
-      "ciencia": "qué repara el sueño",
-      "encuesta": "¿pantalla fuera del cuarto o modo nocturno?"
-    },
-    {
-      "ep": 12,
-      "dia": 12,
-      "escena": "Laura, su esposa, se suma",
-      "ciencia": "el apoyo social ayuda a sostener hábitos",
-      "encuesta": "¿cenan juntos más temprano o caminan juntos?"
-    },
-    {
-      "ep": 13,
-      "dia": 13,
-      "escena": "Mariana le pregunta cómo va",
-      "ciencia": "qué cambia en 2 semanas y qué no",
-      "encuesta": "¿le cuenta todo o le guarda la sorpresa?"
-    },
-    {
-      "ep": 14,
-      "dia": 14,
-      "escena": "partido de exalumnos",
-      "ciencia": "constancia > intensidad",
-      "encuesta": "¿juega completo o medio tiempo?"
-    },
-    {
-      "ep": 15,
-      "dia": 15,
-      "escena": "FINAL: no es el de la foto, pero va en camino; cambia su foto de perfil. Gancho: Mariana le confiesa que ella también necesita un reto",
-      "ciencia": "repaso de lo aprendido",
-      "encuesta": "¿qué reto debería hacer Mariana? (A sueño / B energía) — abre la temporada 2"
-    }
-  ]
+  {
+   "n": 2,
+   "fecha": "2026-11-11",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep02.json",
+   "dia_reto": 1,
+   "resumen": "Día 1. Empieza por lo más prudente: caminar 20 min después de cenar (8:15 p. m.). En el minuto 12 le cuesta, baja el ritmo pero no se detiene. Le escribe a Mariana: 'Mañana otra vez. Sin correr todavía'. Esa noche no se duerme en el sofá.",
+   "ciencia": [
+    "caminar después de comer: los músculos usan glucosa, pico posprandial menor (10-15 min sirven)",
+    "ritmo inicial: hablar pero no cantar; dolor de pecho o mucho ahogo = parar y consultar"
+   ],
+   "encuesta": {
+    "A": "Cenar temprano y hacer 12 horas sin comer (además de caminar)",
+    "B": "Seguir solo con la caminata, sin cambiar la comida todavía"
+   },
+   "zernio_post_id": "6af46412ae75f3e6431fc3ca",
+   "ganador": "B",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: seguir solo con la caminata)"
+  },
+  {
+   "n": 3,
+   "fecha": "2026-11-12",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep03.json",
+   "dia_reto": 2,
+   "resumen": "Día 2. Eligió lo más prudente: seguir solo caminando. Cita con la Dra. Ruiz: le pregunta por 12 h sin comer de noche; ella dice que es razonable, pero primero le toma la presión y le pide exámenes (sin cifras). A Mariana: 'No me siento enfermo. Por eso mismo hay que medir'. Esa noche, otra caminata de 20 min.",
+   "ciencia": [
+    "presión, glucosa y colesterol altos casi nunca dan síntomas al principio: se miden aunque te sientas bien",
+    "con medicamentos para la diabetes no cambiar horarios de comida sin el médico (riesgo de hipoglucemia)"
+   ],
+   "encuesta": {
+    "A": "Empezar mañana mismo las 12 h sin comer (8 p. m. a 8 a. m.), sin dejar la caminata",
+    "B": "Esperar los resultados de los exámenes primero"
+   },
+   "zernio_post_id": "6af5b5abb68bf3241a6131e2",
+   "ganador": "B",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: esperar los resultados)"
+  },
+  {
+   "n": 4,
+   "fecha": "2026-11-13",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep04.json",
+   "dia_reto": 3,
+   "resumen": "Día 3. Ganó lo prudente: esperar los exámenes antes de las 12 h. A las 10 p. m., dos horas después de cenar, Andrés vuelve a la nevera; Laura le pregunta '¿hambre o costumbre?'. A Mariana le cuenta que a las 10 le ataca el hambre y que duerme unas seis horas.",
+   "ciencia": [
+    "el hambre sube cerca de las horas habituales de comer y luego baja aunque no comas",
+    "dormir poco se asocia con más hambre y antojos al día siguiente"
+   ],
+   "encuesta": {
+    "A": "Un vaso de agua y esperar a que pase la ola",
+    "B": "Una fruta pequeña, sin culpa"
+   },
+   "zernio_post_id": "6af706de919df95687f6b5fb",
+   "ganador": "B",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más suave y prudente (B: fruta pequeña, sin culpa, sin restringir mientras llegan los exámenes)"
+  },
+  {
+   "n": 5,
+   "fecha": "2026-11-14",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep05.json",
+   "dia_reto": 4,
+   "resumen": "Día 4. Ganó lo más suave: una mandarina a las 10 p. m., sin culpa; se le pasó el hambre y no siguió picando. En la oficina es cumpleaños y le dejan torta de chocolate en el escritorio. Teme dañar el reto y le escribe a Mariana: 'Un pedazo de torta no borra cuatro días'.",
+   "ciencia": [
+    "la fruta entera trae fibra y suele saciar más que un jugo de la misma fruta",
+    "pesa lo que repites casi todos los días, no una comida aislada"
+   ],
+   "encuesta": {
+    "A": "Comer un pedazo pequeño y disfrutarlo",
+    "B": "Decir 'no, gracias' esta vez"
+   },
+   "zernio_post_id": "6af85876fe1ca6f9cac24c4e",
+   "ganador": "A",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más flexible y prudente (A: un pedazo pequeño, sin mentalidad de todo o nada)"
+  },
+  {
+   "n": 6,
+   "fecha": "2026-11-15",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep06.json",
+   "dia_reto": 5,
+   "resumen": "Día 5. Ganó lo flexible: comió un pedacito de torta y lo disfrutó; siguió caminando. A la 1 a. m. está cansado y no se duerme. Mariana le pregunta por su último café: a las 4 p. m., todos los días. El domingo a las 4, Laura le ofrece el tinto y él dice 'hoy no'.",
+   "ciencia": [
+    "cafeína: vida media ≈5 h en promedio, varía entre personas",
+    "café de la tarde puede hacer el sueño más corto y ligero aunque te duermas"
+   ],
+   "encuesta": {
+    "A": "Café hasta las 12 del mediodía",
+    "B": "Café hasta las 2 de la tarde"
+   },
+   "zernio_post_id": "6af9a99402b047955ba8f14a",
+   "ganador": "A",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente para el sueño (A: café hasta las 12)"
+  },
+  {
+   "n": 7,
+   "fecha": "2026-11-16",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep07.json",
+   "dia_reto": 6,
+   "resumen": "Día 6. Ganó lo más prudente: café solo hasta las 12. Llegan los exámenes (sin cifras) y la Dra. Ruiz le da luz verde para probar 12 h sin comer; si se marea o se siente mal, come. Le cuenta a Mariana. A las 8 p. m. cena: hora 0. Laura pregunta por el hambre de las 10; él: agua y, si no se pasa, una fruta. No es un castigo.",
+   "ciencia": [
+    "hacia las 12 h sin comer la insulina está baja y el cuerpo usa glucógeno hepático",
+    "diabetes en tratamiento, embarazo o TCA: consultar antes de ayunar"
+   ],
+   "encuesta": {
+    "A": "Café negro sin azúcar al despertar (hora 11)",
+    "B": "Esperar y tomar el café con el desayuno"
+   },
+   "zernio_post_id": "6afafb5f9e5ae6eb0c112344",
+   "ganador": "B",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: café con el desayuno)"
+  },
+  {
+   "n": 8,
+   "fecha": "2026-11-17",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep08.json",
+   "dia_reto": 7,
+   "resumen": "Día 7. Ganó lo prudente: café con el desayuno. Cumple sus primeras 12 h sin comer, con poca hambre al despertar. En la oficina sube los dos pisos paso a paso y llega todavía pudiendo hablar; se lo cuenta a Mariana. En la noche, tras caminar, Laura nota que no se durmió en el sofá; Andrés quiere sumar algo de fuerza.",
+   "ciencia": [
+    "cuando el músculo trabaja saca glucosa de la sangre para usarla",
+    "dolor o presión en el pecho, mareo o ahogo fuera de lo normal al hacer ejercicio: detenerse y consultar"
+   ],
+   "encuesta": {
+    "A": "Subir escaleras cada día, a su ritmo",
+    "B": "Sentadillas suaves en casa, con su propio peso"
+   },
+   "zernio_post_id": "6afc4d437bd7f3dc501f5692",
+   "ganador": "A",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (A: escaleras a su ritmo, lo que ya venía haciendo)"
+  },
+  {
+   "n": 9,
+   "fecha": "2026-11-18",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep09.json",
+   "dia_reto": 8,
+   "resumen": "Día 8. Ganó lo prudente: escaleras a su ritmo; sube los dos pisos tres veces. En la noche, despedida de un compañero con asado y cervezas; volviendo a casa le pregunta a Mariana si empieza de cero ('De cero no. Mañana sigues'). Se duerme rapidísimo y se despierta a las 3 a. m.; agua y a la cama.",
+   "ciencia": [
+    "alcohol: ayuda a dormirse pero la segunda mitad de la noche es más liviana y con más despertares",
+    "fallar un día no borra el hábito; lo que pesa es volver al día siguiente"
+   ],
+   "encuesta": {
+    "A": "Su caminata de siempre (20 min después de cenar)",
+    "B": "Caminata suave y acostarse temprano"
+   },
+   "zernio_post_id": "6afd9ea8a7132762cf8cf2ce",
+   "ganador": "B",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: caminata suave y acostarse temprano tras dormir mal)"
+  },
+  {
+   "n": 10,
+   "fecha": "2026-11-19",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep10.json",
+   "dia_reto": 9,
+   "resumen": "Día 9. Ganó lo prudente: caminata suave y a la cama a las 10. Molido tras dormir mal, pensó en saltarse la caminata pero salió sin forzar. Durmió de corrido. Le cuenta a Mariana que hoy toca fuerza; en la cocina Laura le propone sentarse y pararse de la silla, despacio, y si duele parar. Hace diez.",
+   "ciencia": [
+    "con los años se pierde músculo si no se usa; el ejercicio de fuerza lo frena a cualquier edad",
+    "sentadilla a la silla: despacio; dolor en rodilla o pecho = parar y consultar"
+   ],
+   "encuesta": {
+    "A": "Más proteína en el desayuno",
+    "B": "Más proteína en la cena"
+   },
+   "zernio_post_id": "6afef138ee57be3a924cc904",
+   "ganador": "A",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (A: proteína en el desayuno, la comida que más se quedaba corta)"
+  },
+  {
+   "n": 11,
+   "fecha": "2026-11-20",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep11.json",
+   "dia_reto": 10,
+   "resumen": "Día 10. Sin votos contables: proteína en el desayuno (huevos con arepa en vez de solo pan). Durmió 7 h de corrido por primera vez; a las 11 no cabecea en el escritorio. Le cuenta a Mariana qué cambió (café hasta las 12, caminar), pero el celular sigue en la cama. En la noche Laura lo pilla media hora con el celular.",
+   "ciencia": [
+    "en adultos se recomiendan 7 h de sueño o más; dormir ayuda a fijar la memoria",
+    "celular en la cama se asocia con dormirse más tarde (luz y contenido); modo nocturno = zona gris"
+   ],
+   "encuesta": {
+    "A": "Cargar el celular fuera del cuarto",
+    "B": "Modo nocturno y soltarlo a las 10"
+   },
+   "zernio_post_id": "6b0041751f614b0b0821d713",
+   "ganador": "A",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (A: cargar el celular fuera del cuarto)"
+  },
+  {
+   "n": 12,
+   "fecha": "2026-11-21",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep12.json",
+   "dia_reto": 11,
+   "resumen": "Día 11. Sin votos: ganó lo prudente, el celular durmió en la cocina. Se durmió rápido y a las 6 a. m. se despierta antes que la alarma. A las 7 p. m. Laura se suma a la caminata: 20 min conversando, sin correr. De regreso, Laura propone cenar más temprano juntos; Andrés no quiere perder la caminata con ella.",
+   "ciencia": [
+    "el apoyo de familia o amigos ayuda a sostener hábitos como caminar",
+    "una cena abundante justo antes de acostarse puede dar acidez y dificultar el sueño"
+   ],
+   "encuesta": {
+    "A": "Cenar juntos más temprano",
+    "B": "Caminar juntos otra vez"
+   },
+   "zernio_post_id": null,
+   "ganador": null
+  }
+ ],
+ "temporada": 1,
+ "retoDias": 15,
+ "plan": [
+  {
+   "ep": 1,
+   "dia": 0,
+   "escena": "Mariana no lo reconoce en el súper; Día 0",
+   "ciencia": "chequeo médico antes de cambiar; hábito ≈66 días",
+   "encuesta": "¿12 h de ayuno o caminar 20 min?"
+  },
+  {
+   "ep": 2,
+   "dia": 1,
+   "escena": "Hora 12: primera noche sin picar (o primera caminata, según el voto)",
+   "ciencia": "qué pasa a las 12 h: insulina baja, glucógeno",
+   "encuesta": "¿café negro al despertar o esperar al desayuno?"
+  },
+  {
+   "ep": 3,
+   "dia": 2,
+   "escena": "cita con la Dra. Ruiz (le pide exámenes; sin cifras)",
+   "ciencia": "por qué medir presión, glucosa, colesterol",
+   "encuesta": "¿empieza en semana o el fin de semana?"
+  },
+  {
+   "ep": 4,
+   "dia": 3,
+   "escena": "el hambre de las 10 a. m.",
+   "ciencia": "grelina en olas, se adapta al horario",
+   "encuesta": "¿agua (con una pizca de sal) o esperar la ola?"
+  },
+  {
+   "ep": 5,
+   "dia": 4,
+   "escena": "torta de cumpleaños en la oficina",
+   "ciencia": "flexibilidad, un día no arruina el proceso",
+   "encuesta": "¿un pedazo o decir que no?"
+  },
+  {
+   "ep": 6,
+   "dia": 5,
+   "escena": "duerme mal sin entender por qué",
+   "ciencia": "cafeína: vida media ≈5 h",
+   "encuesta": "¿último café a las 12 o a las 2?"
+  },
+  {
+   "ep": 7,
+   "dia": 7,
+   "escena": "Hora 16: su primer 16:8",
+   "ciencia": "qué cambia entre 12 y 16 h (autofagia = zona gris)",
+   "encuesta": "¿sigue 16:8 o vuelve a 14 h?"
+  },
+  {
+   "ep": 8,
+   "dia": 8,
+   "escena": "sube los dos pisos y algo cambió",
+   "ciencia": "caminar y el músculo captan glucosa",
+   "encuesta": "¿escaleras o pesas en casa?"
+  },
+  {
+   "ep": 9,
+   "dia": 9,
+   "escena": "recaída: asado y cerveza el sábado",
+   "ciencia": "alcohol y sueño; fallar un día",
+   "encuesta": "¿retoma el domingo o el lunes?"
+  },
+  {
+   "ep": 10,
+   "dia": 10,
+   "escena": "primeras sentadillas",
+   "ciencia": "fuerza después de los 40, sarcopenia",
+   "encuesta": "¿proteína en el desayuno o en la cena?"
+  },
+  {
+   "ep": 11,
+   "dia": 11,
+   "escena": "duerme 7 h por primera vez",
+   "ciencia": "qué repara el sueño",
+   "encuesta": "¿pantalla fuera del cuarto o modo nocturno?"
+  },
+  {
+   "ep": 12,
+   "dia": 12,
+   "escena": "Laura, su esposa, se suma",
+   "ciencia": "el apoyo social ayuda a sostener hábitos",
+   "encuesta": "¿cenan juntos más temprano o caminan juntos?"
+  },
+  {
+   "ep": 13,
+   "dia": 13,
+   "escena": "Mariana le pregunta cómo va",
+   "ciencia": "qué cambia en 2 semanas y qué no",
+   "encuesta": "¿le cuenta todo o le guarda la sorpresa?"
+  },
+  {
+   "ep": 14,
+   "dia": 14,
+   "escena": "partido de exalumnos",
+   "ciencia": "constancia > intensidad",
+   "encuesta": "¿juega completo o medio tiempo?"
+  },
+  {
+   "ep": 15,
+   "dia": 15,
+   "escena": "FINAL: no es el de la foto, pero va en camino; cambia su foto de perfil. Gancho: Mariana le confiesa que ella también necesita un reto",
+   "ciencia": "repaso de lo aprendido",
+   "encuesta": "¿qué reto debería hacer Mariana? (A sueño / B energía) — abre la temporada 2"
+  }
+ ]
 }
