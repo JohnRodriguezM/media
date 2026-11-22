@@ -1,0 +1,179 @@
+{
+ "engine": "indie",
+ "seed": 15,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 12/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 13 DE 15 · DÍA 12",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "parque",
+   "hora": 18,
+   "actors": [
+    {
+     "id": "andres",
+     "x": 110,
+     "y": 400,
+     "pose": "stand"
+    },
+    {
+     "id": "laura",
+     "x": 230,
+     "y": 400,
+     "pose": "stand"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:laura",
+     "expr": {
+      "laura": "surprised"
+     },
+     "narr": "Día 12. Sin votos: ganó lo prudente.",
+     "say": {
+      "who": "laura",
+      "text": "¿Te diste cuenta? Hablaste todo el camino y no te quedaste sin aire."
+     }
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "surprised"
+     },
+     "say": {
+      "who": "andres",
+      "text": "¡Es verdad! Hace dos semanas no podía con dos pisos."
+     }
+    },
+    {
+     "cam": "two",
+     "expr": {
+      "andres": "happy",
+      "laura": "happy"
+     },
+     "narr": "Caminaron juntos otra vez. La cena, otro día."
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {
+     "from": "them",
+     "text": "¿Cómo vas con el reto?",
+     "time": "8:40 p. m."
+    },
+    {
+     "from": "me",
+     "text": "Ya no me ahogo en las escaleras. Y duermo mejor",
+     "time": "8:42 p. m."
+    },
+    {
+     "from": "me",
+     "text": "No soy el de la foto, pero voy en camino",
+     "time": "8:42 p. m."
+    },
+    {
+     "from": "them",
+     "text": "El sábado es el partido de exalumnos. ¿Vienes?",
+     "time": "8:44 p. m."
+    },
+    {
+     "draft": "No sé si aguanto"
+    },
+    {
+     "from": "me",
+     "text": "Ahí estaré",
+     "time": "8:45 p. m."
+    }
+   ]
+  },
+  {
+   "type": "data",
+   "title": "DOS SEMANAS:\nQUÉ CAMBIA",
+   "icons": [
+    {
+     "icon": "pasos",
+     "label": "ESFUERZO"
+    },
+    {
+     "icon": "cama",
+     "label": "SUEÑO"
+    },
+    {
+     "icon": "musculo",
+     "label": "MESES"
+    }
+   ],
+   "stamp": "PACIENCIA",
+   "say": {
+    "who": "doctora",
+    "text": "En dos semanas caminar **puede costar menos**. Músculo y análisis tardan **meses** en cambiar."
+   }
+  },
+  {
+   "type": "scene",
+   "bg": "sala",
+   "actors": [
+    {
+     "id": "andres",
+     "x": 130,
+     "y": 356,
+     "pose": "sit",
+     "chair": false,
+     "legs": false,
+     "z": "mid",
+     "prop": "phone"
+    },
+    {
+     "id": "laura",
+     "x": 230,
+     "y": 356,
+     "pose": "sit",
+     "chair": false,
+     "legs": false,
+     "z": "mid"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:laura",
+     "expr": {
+      "laura": "happy"
+     },
+     "narr": "9 p. m. En la sala.",
+     "say": {
+      "who": "laura",
+      "text": "¿Le vas a contar a Mariana todo lo que cambiaste?"
+     }
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "worried"
+     },
+     "say": {
+      "who": "andres",
+      "text": "No sé… o le guardo la sorpresa para el partido."
+     }
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "¿Qué hace Andrés con Mariana?",
+   "a": "Contarle todo por chat",
+   "b": "Sorprenderla en el partido",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 14"
+  }
+ ],
+ "description": "Episodio 13 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 12. En el episodio 12 la pregunta era: ¿cenan juntos más temprano o caminan juntos otra vez? Sin votos contables, ganó lo más prudente: sostener lo que ya funciona y caminar juntos otra vez. Laura nota algo: Andrés habló todo el camino y no se quedó sin aire. Hace dos semanas no podía con dos pisos. Esa noche Mariana le escribe: ¿cómo va el reto? ¿Ya es el de la foto? Todavía no, pero va en camino. Y el sábado es el partido de exalumnos.\n\nLo que dice la ciencia:\n✅ En las primeras semanas de caminar con constancia, el mismo esfuerzo puede empezar a sentirse más fácil.\n✅ Dormir lo suficiente y con horarios regulares se asocia con más energía durante el día.\n⚠️ Ganar músculo y ver cambios en los análisis toma semanas a meses, no días.\n❌ \"Si en dos semanas no veo resultados, no sirve\": los cambios grandes son lentos y se construyen con constancia.\n\n📊 ENCUESTA – ¿Qué hace Andrés con Mariana?\nA) Contarle todo por chat, cómo le ha ido.\nB) Guardarle la sorpresa para el partido de exalumnos.\nComenta A o B: lo que gane pasa en el episodio 14.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #caminar #habitossaludables #dormirbien #constancia #salud #medicina"
+}

@@ -294,6 +294,29 @@
     "B": "Caminar juntos otra vez"
    },
    "zernio_post_id": "6b01929c47c0c0cbaffc3e19",
+   "ganador": "B",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: caminar juntos otra vez, sostener lo que ya funciona)"
+  },
+  {
+   "n": 13,
+   "fecha": "2026-11-22",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep13.json",
+   "dia_reto": 12,
+   "resumen": "Día 12. Sin votos: ganó lo prudente, caminar juntos otra vez (la cena, otro día). Laura nota que habló todo el camino sin quedarse sin aire. Mariana le escribe cómo va: 'No soy el de la foto, pero voy en camino'; lo invita al partido de exalumnos del sábado y él dice 'Ahí estaré'. En la sala, Laura le pregunta si le contará todo a Mariana o le guardará la sorpresa.",
+   "ciencia": [
+    "en dos semanas de caminar con constancia el mismo esfuerzo puede costar menos",
+    "músculo y análisis tardan semanas a meses en cambiar"
+   ],
+   "encuesta": {
+    "A": "Contarle todo por chat",
+    "B": "Sorprenderla en el partido"
+   },
+   "zernio_post_id": null,
    "ganador": null
   }
  ],
