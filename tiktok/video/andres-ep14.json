@@ -1,0 +1,96 @@
+{
+ "engine": "indie",
+ "seed": 16,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 13/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 14 DE 15 · DÍA 13",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "parque",
+   "hora": 19,
+   "actors": [
+    {"id": "andres", "x": 120, "y": 400, "pose": "stand"},
+    {"id": "mariana", "x": 235, "y": 400, "pose": "stand"}
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {"andres": "worried"},
+     "sweat": ["andres"],
+     "narr": "Día 13. Partido de exalumnos.",
+     "say": {"who": "andres", "text": "Diez minutos y ya me arden las piernas…"}
+    },
+    {
+     "cam": "close:mariana",
+     "expr": {"mariana": "firm"},
+     "say": {"who": "mariana", "text": "Sal un rato, respira y vuelves. Aquí nadie te está midiendo."}
+    },
+    {
+     "cam": "two",
+     "expr": {"andres": "happy", "mariana": "happy"},
+     "narr": "Sale, recupera el aire y vuelve a entrar."
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {"from": "me", "text": "Te cuento todo: café hasta las 12, caminar y el celular fuera del cuarto", "time": "7:10 a. m."},
+    {"from": "them", "text": "¡Qué orgullo! Ven sin presión", "time": "7:15 a. m."},
+    {"from": "them", "text": "Cambio de planes: el partido se adelantó. Hoy 7 p. m.", "time": "7:16 a. m."},
+    {"from": "me", "text": "Voy. Juego a mi ritmo", "time": "7:18 a. m."}
+   ],
+   "narr": "Sin votos contables: ganó lo prudente, contarle todo."
+  },
+  {
+   "type": "data",
+   "title": "AÑOS SIN DEPORTE:\nDE MENOS A MÁS",
+   "icons": [
+    {"icon": "corazon", "label": "CALENTAR"},
+    {"icon": "pasos", "label": "A TU RITMO"},
+    {"icon": "reloj", "label": "PAUSAS"}
+   ],
+   "stamp": "CONSTANCIA",
+   "stampOk": true,
+   "say": {"who": "doctora", "text": "Tras años quieto, **calienta** y ve **de menos a más**. Dolor de pecho o mareo: **para** y consulta."}
+  },
+  {
+   "type": "scene",
+   "bg": "camino",
+   "actors": [
+    {"id": "andres", "x": 130, "y": 560, "pose": "stand"},
+    {"id": "mariana", "x": 245, "y": 560, "pose": "stand"}
+   ],
+   "beats": [
+    {
+     "cam": "close:mariana",
+     "expr": {"mariana": "happy"},
+     "narr": "Después del partido.",
+     "say": {"who": "mariana", "text": "Hace dos semanas no subías dos pisos. Hoy jugaste."}
+    },
+    {
+     "cam": "close:andres",
+     "expr": {"andres": "happy"},
+     "say": {"who": "andres", "text": "Poco, pero volví a entrar. Mañana cambio la foto de perfil."}
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "¿Qué foto pone Andrés de perfil?",
+   "a": "Una del partido de hoy",
+   "b": "Una caminando con Laura",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane pasa en el episodio 15"
+  }
+ ],
+ "description": "Episodio 14 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 13. En el episodio 13 la pregunta era: ¿le cuenta todo a Mariana o le guarda la sorpresa para el partido? Sin votos contables, ganó lo más prudente: contarle todo, para llegar sin la presión de demostrar nada. Mariana le avisa que el partido de exalumnos se adelantó para hoy. A los diez minutos a Andrés le arden las piernas; sale, respira y vuelve a entrar. No jugó mucho, pero volvió a la cancha después de casi 20 años. Y mañana… cambia la foto de perfil.\n\nLo que dice la ciencia:\n✅ Si llevas años sin hacer deporte, calentar y subir la intensidad de a poco es lo más seguro.\n✅ Salir a descansar y volver es válido: lo que suma es la constancia, no un solo día intenso.\n⚠️ Es común que los músculos duelan uno a tres días después de un ejercicio nuevo; si el dolor es fuerte o no mejora, consulta.\n❌ Dolor o presión en el pecho, mareo o ahogo fuera de lo normal no se \"aguantan\": detente y consulta.\n\n📊 ENCUESTA – ¿Qué foto pone Andrés de perfil?\nA) Una foto del partido de hoy, con sus compañeros del colegio.\nB) Una foto caminando con Laura, el hábito que lo trajo hasta aquí.\nComenta A o B: lo que gane pasa en el episodio 15, el final de la temporada.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #dosisdeciencia #pixelart #futbol #ejercicio #habitossaludables #constancia #salud #medicina"
+}

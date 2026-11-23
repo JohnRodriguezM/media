@@ -317,6 +317,29 @@
     "B": "Sorprenderla en el partido"
    },
    "zernio_post_id": "6b02e48aa5210fc7034b67fe",
+   "ganador": "A",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (A: contarle todo, para ir al partido sin presión de demostrar nada)"
+  },
+  {
+   "n": 14,
+   "fecha": "2026-11-23",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep14.json",
+   "dia_reto": 13,
+   "resumen": "Día 13. Sin votos: ganó lo prudente, le contó todo a Mariana por chat (café hasta las 12, caminar, celular fuera del cuarto). Mariana avisa que el partido de exalumnos se adelantó para hoy a las 7 p. m. A los diez minutos le arden las piernas; Mariana le dice que salga, respire y vuelva. Juega poco, pero vuelve a entrar. Después del partido: 'Mañana cambio la foto de perfil'.",
+   "ciencia": [
+    "tras años sin deporte: calentar e ir de menos a más; salir a descansar y volver es válido",
+    "dolor o presión en el pecho, mareo o ahogo fuera de lo normal: detenerse y consultar; dolor muscular 1-3 días tras ejercicio nuevo es común"
+   ],
+   "encuesta": {
+    "A": "Una foto del partido de hoy",
+    "B": "Una foto caminando con Laura"
+   },
+   "zernio_post_id": null,
    "ganador": null
   }
  ],
