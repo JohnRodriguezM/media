@@ -59,6 +59,16 @@ function pts(n,color,size){const g=new THREE.BufferGeometry(),p=new Float32Array
   for(let i=0;i<n;i++){const a=r()*6.28,b=Math.acos(2*r()-1),d=2.6+r()*1.6;p[i*3]=d*Math.sin(b)*Math.cos(a);p[i*3+1]=d*Math.cos(b)*1.4;p[i*3+2]=d*Math.sin(b)*Math.sin(a);}
   g.setAttribute('position',new THREE.BufferAttribute(p,3));return new THREE.Points(g,new THREE.PointsMaterial({color,size,transparent:true,opacity:1,sizeAttenuation:true}));}
 const glucose=pts(260,0x73eff7,.07),ketones=pts(260,0xff7a59,.09);scene.add(glucose,ketones);
+// molecule (ball-and-stick), used when spec.scene3d === 'molecule' (hormones, metabolism)
+const mol=new THREE.Group();scene.add(mol);mol.visible=false;mol.scale.setScalar(.68);
+{const atoms=[[0,0,0],[1.2,.7,0],[2.4,0,0],[2.4,-1.4,0],[1.2,-2.1,0],[0,-1.4,0],[-1.2,.7,.3],[3.6,.7,-.2],[1.2,2.1,.2],[-2.3,0,.6]];
+ const cols=[0x7b5cff,0xff7a59,0x73eff7,0xffc46b,0x7b5cff,0xff7a59,0xffffff,0x73eff7,0xffffff,0xffc46b];
+ atoms.forEach((p,i)=>{const m=new THREE.Mesh(new THREE.SphereGeometry(i%3===0?.42:.32,32,32),new THREE.MeshStandardMaterial({color:cols[i],emissive:cols[i],emissiveIntensity:.25,roughness:.35}));m.position.set(p[0]-.6,p[1]+.7,p[2]);mol.add(m);});
+ const bonds=[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0],[0,6],[2,7],[1,8],[6,9]];
+ bonds.forEach(([x,y])=>{const A=new THREE.Vector3(...atoms[x]).add(new THREE.Vector3(-.6,.7,0)),B=new THREE.Vector3(...atoms[y]).add(new THREE.Vector3(-.6,.7,0));
+  const L=A.distanceTo(B),c=new THREE.Mesh(new THREE.CylinderGeometry(.08,.08,L,12),new THREE.MeshStandardMaterial({color:0xdad6ff,roughness:.5}));
+  c.position.copy(A.clone().add(B).multiplyScalar(.5));c.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),B.clone().sub(A).normalize());mol.add(c);});}
+
 
 function deform(t,amp){const a=mGeo.attributes.position.array;for(let i=0;i<a.length;i+=3){const x=base[i],y=base[i+1],z=base[i+2];
   const n=1+amp*(Math.sin(x*2.1+t*1.3)*Math.cos(y*1.7+t)+.5*Math.sin(z*2.9-t*1.6));a[i]=x*n;a[i+1]=y*n*1.04;a[i+2]=z*n;}
@@ -69,7 +79,8 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 // 3D state per visual
 // [x, y, z, lookAtY]: lookAtY>0 pushes the cell down the frame so top graphics stay clear
 const CAM={hook:[0,0,13,0],cell:[0,0,8.2,0],insulina:[0,0,16,4.2],glucogeno:[0,0,16,4.2],grasa:[0,0,13,3.2],autofagia:[0,0,12,2.6],desconfia:[0,0,12,2.6],aviso:[0,0,17,4.6],cta:[0,0,17,4.6]};
-let D=null;window.load=d=>{D=d;return d.total;};
+Object.assign(CAM,{gancho:[0,0,13,0],texto:[0,0,11,2.4],linea:[0,0,16,4.2],barras:[0,0,16,4.2],nivel:[0,0,16,4.2],dato:[0,0,15,3.8],lista:[0,0,17,4.6],sello:[0,0,12,2.6],mito:[0,0,12,2.6],compara:[0,0,17,4.8],cierre:[0,0,17,4.6]});
+let D=null;window.load=d=>{D=d;mol.visible=d.scene3d==='molecule';cell.visible=!mol.visible;return d.total;};
 
 function captions(T){const b=D.beats.find(b=>T>=b.start-0.05&&T<=b.end+0.25);if(!b)return'';
   // chunk words: max 3 words / 16 chars
@@ -104,7 +115,36 @@ const VIS={
    it.map((x,i)=>`<div style="opacity:${ease((t-.3-i*.35)/.3)};margin:10px 0">• ${x}</div>`).join('')+`<div style="margin-top:20px;color:#73eff7;opacity:${ease((t-1.5)/.4)}">→ Habla con tu médico</div></div>`;},
  cta(t){return `<div class="card" style="top:360px;text-align:center;border-color:#ff7a59"><div style="font:900 44px In;color:#ffc46b;letter-spacing:4px">CALCULA TU VENTANA</div>
    <div style="margin:26px auto 0;display:inline-block;padding:26px 50px;border-radius:999px;background:#ff7a59;font:900 50px In">Link en el perfil ↗</div></div>
-   <div class="lab" style="top:820px;font-size:40px;color:#fff;opacity:${ease((t-1)/.4)}">PRÓXIMO: <span style="color:#ff7a59">HORA 24</span></div>`;}
+   <div class="lab" style="top:820px;font-size:40px;color:#fff;opacity:${ease((t-1)/.4)}">PRÓXIMO: <span style="color:#ff7a59">HORA 24</span></div>`;},
+
+ // ---------- generic visuals (params come from the beat) ----------
+ gancho(t,b){const v=String(b.big||'');const m=v.match(/^(\d+)(.*)$/);let txt=v;if(m&&b.count!==false){const n=Math.round(ease(t/1.3)*parseInt(m[1]));txt=n+m[2];}
+  return `<div class="lab" style="top:420px">${esc(b.kicker||'')}</div><div class="big" style="top:480px;font-size:${b.size||300}px">${esc(txt)}</div>`+
+   (b.sub?`<div class="lab" style="top:${b.size&&b.size<240?760:830}px;font-size:36px;color:#8e88a6;letter-spacing:6px">${esc(b.sub)}</div>`:'');},
+ texto(t,b){return `<div class="lab" style="top:330px;font-size:40px;color:#73eff7">${esc(b.label||'')}</div>`;},
+ linea(t,b){return timeline(b.h||0,ease(t/1.2))+(b.label?`<div class="lab" style="top:470px;font-size:54px;color:${b.color||'#ffc46b'};opacity:${ease((t-.5)/.5)}">${esc(b.label)}</div>`:'')+(b.label2?`<div class="lab" style="top:560px;font-size:54px;color:#ff7a59;opacity:${ease((t-1.4)/.5)}">${esc(b.label2)}</div>`:'');},
+ barras(t,b){const H0=520,f=b.from??1,to=b.to??.3,h1=H0*f,h2=lerp(H0*f,H0*to,ease((t-.6)/1.4));
+  return (b.h!=null?timeline(b.h,ease(t/1.2)):'')+`<div style="position:absolute;left:300px;top:470px;width:480px;height:560px">
+    <div class="bar" style="left:40px;height:${h1}px;background:rgba(255,255,255,.14)"></div>
+    <div class="bar" style="left:290px;height:${h2}px;background:linear-gradient(${b.color||'#73eff7'},#3b5dc9)"></div></div>
+    <div class="lab" style="top:1050px;font-size:36px;color:${b.color||'#73eff7'};letter-spacing:6px">${esc(b.label||'')}</div>`;},
+ nivel(t,b){const lvl=lerp(b.from??.9,b.to??.3,ease((t-.5)/1.8));
+  return (b.h!=null?timeline(b.h,ease(t/1.2)):'')+`<div style="position:absolute;left:380px;top:430px;width:320px;height:560px;border:8px solid #fff;border-radius:40px;overflow:hidden">
+    <div style="position:absolute;left:0;right:0;bottom:0;height:${lvl*100}%;background:linear-gradient(#ffc46b,#ff7a59)"></div></div>
+    <div style="position:absolute;left:500px;top:404px;width:80px;height:30px;background:#fff;border-radius:8px"></div>
+    <div class="lab" style="top:1020px;font-size:34px;color:#ffc46b;letter-spacing:5px">${esc(b.label||'')}</div>`;},
+ dato(t,b){const k=ease(t/.5);return `<div class="lab" style="top:360px;font-size:40px;color:#73eff7">${esc(b.label||'')}</div>
+   <div class="big" style="top:430px;font-size:${b.size||230}px;opacity:${k};transform:scale(${lerp(1.3,1,k)})">${esc(b.value||'')}</div>
+   <div class="lab" style="top:700px;font-size:46px;color:#ffc46b;letter-spacing:4px">${esc(b.unit||'')}</div>`;},
+ lista(t,b){const it=b.items||[];return `<div class="card" style="top:330px;border-color:${b.color||'#ffc46b'}"><div class="chip" style="background:${b.color||'#ffc46b'};color:#0b1022;margin-bottom:24px">${esc(b.title||'')}</div>`+
+   it.map((x,i)=>`<div style="opacity:${ease((t-.3-i*.35)/.3)};margin:10px 0">${b.icon||'•'} ${esc(x)}</div>`).join('')+(b.foot?`<div style="margin-top:20px;color:#73eff7;opacity:${ease((t-.4-it.length*.35)/.4)}">→ ${esc(b.foot)}</div>`:'')+`</div>`;},
+ sello(t,b){return (b.mark?`<div class="big" style="top:330px;font-size:260px;color:#ffc46b">${esc(b.mark)}</div>`:'')+(t>.9?`<div class="stamp" style="border-color:${b.color||'#ffc46b'};color:${b.color||'#ffc46b'};opacity:${ease((t-.9)/.25)};transform:rotate(-8deg) scale(${lerp(1.6,1,ease((t-.9)/.25))})">${esc(b.text||'ZONA GRIS')}</div>`:'');},
+ mito(t,b){return `<div class="card" style="top:480px;text-align:center;font-size:60px"><div class="chip" style="background:#ff6b57;color:#0b1022;margin-bottom:20px">MITO</div><br><span style="text-decoration:${t>1?'line-through':'none'};text-decoration-thickness:8px;text-decoration-color:#ff6b57">${esc(b.text||'')}</span></div>`;},
+ compara(t,b){const A=b.a||{},B=b.b||{};const col=(o,c,d)=>`<div style="flex:1;opacity:${ease((t-d)/.4)};padding:30px;border-radius:30px;background:rgba(15,21,48,.8);border:3px solid ${c}"><div style="font:900 40px In;color:${c};letter-spacing:2px">${esc(o.title||'')}</div><div style="font:700 40px/1.25 In;color:#fff;margin-top:14px">${esc(o.text||'')}</div></div>`;
+   return `<div style="position:absolute;left:70px;right:110px;top:360px;display:flex;gap:26px">${col(A,'#73eff7',.2)}${col(B,'#ff7a59',.8)}</div>`;},
+ cierre(t,b){return `<div class="card" style="top:360px;text-align:center;border-color:#ff7a59"><div style="font:900 44px In;color:#ffc46b;letter-spacing:4px">CALCULA TU VENTANA</div>
+   <div style="margin:26px auto 0;display:inline-block;padding:26px 50px;border-radius:999px;background:#ff7a59;font:900 50px In">Link en el perfil ↗</div></div>`+
+   (b.next?`<div class="lab" style="top:820px;font-size:40px;color:#fff;opacity:${ease((t-1)/.4)}">PRÓXIMO: <span style="color:#ff7a59">${esc(b.next)}</span></div>`:'');},
 };
 
 window.renderAt=T=>{let i=D.beats.findIndex((b,k)=>T>=b.start-0.25&&(k===D.beats.length-1||T<D.beats[k+1].start-0.25));if(i<0)i=0;
@@ -112,11 +152,13 @@ window.renderAt=T=>{let i=D.beats.findIndex((b,k)=>T>=b.start-0.25&&(k===D.beats
   // camera blend between previous and current visual
   const prev=i>0?CAM[D.beats[i-1].vis]||CAM.cell:CAM[vis]||CAM.cell,cur=CAM[vis]||CAM.cell,u=ease(t/0.8);
   cam.position.set(lerp(prev[0],cur[0],u),lerp(prev[3],cur[3],u),lerp(prev[2],cur[2],u));cam.lookAt(0,lerp(prev[3],cur[3],u),0);
+  mol.rotation.y=T*0.5;mol.rotation.x=Math.sin(T*.5)*.3;
   cell.rotation.y=T*0.35;cell.rotation.x=Math.sin(T*.4)*.25;deform(T,.06);
   mitos.forEach((m,k)=>{m.rotation.z=T*.8+k;});
-  const keto=['grasa','autofagia','desconfia'].includes(vis)?ease(t/1.5):(['aviso','cta'].includes(vis)?1:0);
+  let keto=['grasa','autofagia','desconfia'].includes(vis)?ease(t/1.5):(['aviso','cta'].includes(vis)?1:0);
+  if(b.particles==='cetonas')keto=ease(t/1.5);if(b.particles==='glucosa')keto=0;
   glucose.material.opacity=1-keto;ketones.material.opacity=keto;glucose.rotation.y=-T*.15;ketones.rotation.y=T*.2;
-  const grey=['autofagia','desconfia'].includes(vis);membrane.material.color.set(grey?0x9a9ab8:0xff8a66);
+  const grey=['autofagia','desconfia'].includes(vis)||b.grey===true;membrane.material.color.set(grey?0x9a9ab8:0xff8a66);
   R.render(scene,cam);
   let h=`<div class="handle">@LADOSISDECIENCIA</div>`+(VIS[vis]?VIS[vis](t,b):'')+captions(T);
   document.getElementById('ui').innerHTML=h;};

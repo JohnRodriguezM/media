@@ -16,7 +16,7 @@
         "Ayuno",
         "Ejercicio y músculo"
       ],
-      "estado": "en curso",
+      "estado": "terminada",
       "inicio": "2026-11-10"
     },
     {
@@ -53,5 +53,6 @@
       ],
       "estado": "pendiente"
     }
-  ]
+  ],
+  "pausa": "2026-11-24: historias en pausa; el formato vigente es video narrado (ver GUIA). Temporada 1 terminada."
 }
