@@ -1,0 +1,15 @@
+{
+  "voice": "em_alex",
+  "speed": 1.08,
+  "beats": [
+    {"vis": "hook", "say": "Llevas dieciséis horas sin comer.", "show": "Llevas 16 horas sin comer.", "pause": 0.2},
+    {"vis": "cell", "say": "Esto es lo que está pasando dentro de tu cuerpo.", "show": "Esto es lo que está pasando dentro de tu cuerpo."},
+    {"vis": "insulina", "say": "Hacia la hora cuatro, tu insulina baja a su nivel de reposo.", "show": "Hacia la hora 4, tu insulina baja a su nivel de reposo."},
+    {"vis": "glucogeno", "say": "Hacia la hora doce, tu hígado ya usó buena parte de su reserva de azúcar: el glucógeno.", "show": "Hacia la hora 12, tu hígado ya usó buena parte de su reserva de azúcar: el glucógeno."},
+    {"vis": "grasa", "say": "Y hacia la hora dieciséis, tu cuerpo usa más grasa como energía, y empiezan a subir las cetonas.", "show": "Y hacia la hora 16, tu cuerpo usa más grasa como energía, y empiezan a subir las cetonas."},
+    {"vis": "autofagia", "say": "¿Y la autofagia? En humanos, todavía no sabemos a qué hora exacta se activa.", "show": "¿Y la autofagia? En humanos, todavía no sabemos a qué hora exacta se activa."},
+    {"vis": "desconfia", "say": "Desconfía de quien te dé una hora exacta.", "show": "Desconfía de quien te dé una hora exacta."},
+    {"vis": "aviso", "say": "Si tienes diabetes, tomas medicamentos o estás embarazada, habla con tu médico antes de ayunar.", "show": "Si tienes diabetes, tomas medicamentos o estás embarazada, habla con tu médico antes de ayunar."},
+    {"vis": "cta", "say": "Calcula tu ventana de ayuno con el link de mi perfil. Y sígueme para la hora veinticuatro.", "show": "Calcula tu ventana de ayuno con el link de mi perfil. Y sígueme para la hora 24.", "pause": 0.6}
+  ]
+}
