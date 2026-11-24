@@ -1,0 +1,167 @@
+{
+ "engine": "indie",
+ "seed": 17,
+ "hudLeft": "HISTORIA FICTICIA",
+ "hudRight": "DÍA 14/15",
+ "title": {
+  "title": "EL RETO DE ANDRÉS",
+  "sub": "EPISODIO 15 DE 15 · FINAL",
+  "at": 3.6
+ },
+ "scenes": [
+  {
+   "type": "scene",
+   "bg": "cocina",
+   "hora": 7,
+   "actors": [
+    {
+     "id": "andres",
+     "x": 100,
+     "y": 372,
+     "pose": "stand",
+     "prop": "phone"
+    },
+    {
+     "id": "laura",
+     "x": 260,
+     "y": 372,
+     "pose": "stand",
+     "prop": "coffee"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "worried"
+     },
+     "narr": "Día 14. El final.",
+     "say": {
+      "who": "andres",
+      "text": "Veinte años con la misma foto… ¿y si la cambio y nadie lo nota?"
+     }
+    },
+    {
+     "cam": "close:laura",
+     "expr": {
+      "laura": "happy"
+     },
+     "narr": "Sin votos contables: ganó lo prudente.",
+     "say": {
+      "who": "laura",
+      "text": "Pon la de caminar juntos. Eso fue lo que te trajo hasta aquí."
+     }
+    },
+    {
+     "cam": "two",
+     "expr": {
+      "andres": "happy",
+      "laura": "happy"
+     },
+     "narr": "Nueva foto: caminando con Laura."
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "name": "Mariana (colegio)",
+   "avatar": "mariana",
+   "status": "en línea",
+   "seq": [
+    {
+     "from": "them",
+     "text": "¡Cambiaste la foto! Ese sí eres tú",
+     "time": "7:40 a. m."
+    },
+    {
+     "from": "me",
+     "text": "No soy el de la foto vieja. Pero voy en camino",
+     "time": "7:42 a. m."
+    },
+    {
+     "from": "them",
+     "text": "Te confieso algo: yo también necesito un reto",
+     "time": "7:45 a. m."
+    },
+    {
+     "from": "them",
+     "text": "Desde hace meses me despierto a las 3 a. m. y no vuelvo a dormir",
+     "time": "7:46 a. m."
+    }
+   ],
+   "narr": "Mariana también necesita un reto. ¿Cuál le toca?"
+  },
+  {
+   "type": "data",
+   "title": "15 DÍAS:\nLO QUE SÍ CAMBIÓ",
+   "icons": [
+    {
+     "icon": "pasos",
+     "label": "CAMINAR"
+    },
+    {
+     "icon": "cafe",
+     "label": "CAFÉ HASTA 12"
+    },
+    {
+     "icon": "celular",
+     "label": "FUERA DEL CUARTO"
+    }
+   ],
+   "stamp": "PASOS PEQUEÑOS",
+   "stampOk": true,
+   "say": {
+    "who": "doctora",
+    "text": "En 15 días cambia **cómo te sientes**, no tus análisis. Un hábito tarda **≈2 meses**."
+   }
+  },
+  {
+   "type": "scene",
+   "bg": "escaleras",
+   "actors": [
+    {
+     "id": "andres",
+     "x": 40,
+     "y": 476,
+     "pose": "stand"
+    }
+   ],
+   "beats": [
+    {
+     "cam": "wide",
+     "expr": {
+      "andres": "neutral"
+     },
+     "move": {
+      "andres": [
+       236,
+       null
+      ],
+      "dur": 4
+     },
+     "narr": "Los dos pisos de la oficina. Otra vez."
+    },
+    {
+     "cam": "close:andres",
+     "expr": {
+      "andres": "happy"
+     },
+     "say": {
+      "who": "andres",
+      "text": "Esto no se acaba hoy. Apenas empieza."
+     },
+     "narr": "Ya no se queda sin aire a mitad de camino."
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "q": "¿Qué reto debería hacer Mariana?",
+   "a": "Volver a dormir bien",
+   "b": "Recuperar la energía",
+   "cta": "COMENTA A O B",
+   "small": "Lo que gane abre la temporada 2"
+  }
+ ],
+ "description": "Episodio 15 de 15 · El reto de Andrés (historia ficticia basada en situaciones reales de consulta) 👇\n\nDía 14, el final. En el episodio 14 la pregunta era: ¿qué foto pone Andrés de perfil? Sin votos contables, ganó lo más prudente: la foto caminando con Laura, el hábito que lo trajo hasta aquí. Después de 20 años, cambia la foto. Mariana le escribe: \"Ese sí eres tú\". Él responde: \"No soy el de la foto vieja. Pero voy en camino\". Y entonces Mariana le confiesa que ella también necesita un reto: hace meses se despierta a las 3 a. m. y no vuelve a dormir. Andrés vuelve a subir los dos pisos de la oficina: esto no se acaba hoy.\n\nLo que dice la ciencia:\n✅ En dos semanas lo primero que suele cambiar es cómo te sientes: energía, sueño, el esfuerzo de subir escaleras.\n✅ Músculo y análisis tardan semanas a meses en cambiar; por eso este reto nunca fue de kilos.\n⚠️ Un hábito tarda en promedio unos 2 meses en volverse automático (un estudio; varía mucho entre personas). Fallar un día no lo borra.\n❌ Los retos extremos de pocos días: lo que se sostiene es lo pequeño que repites (caminar, café hasta las 12, celular fuera del cuarto).\n\n📊 ENCUESTA – ¿Qué reto debería hacer Mariana en la temporada 2?\nA) Volver a dormir bien: despertarse a las 3 a. m. le está quitando todo.\nB) Recuperar la energía: llegar a la tarde sin estar agotada.\nComenta A o B: lo que gane abre la temporada 2.\n\nGracias por acompañar a Andrés estos 15 días.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n#elretodeandres #elretodemariana #dosisdeciencia #pixelart #habitossaludables #constancia #caminar #sueño #salud #medicina"
+}

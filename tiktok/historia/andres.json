@@ -340,6 +340,29 @@
     "B": "Una foto caminando con Laura"
    },
    "zernio_post_id": "6b043573f29eb8edc88aece8",
+   "ganador": "B",
+   "votos": {
+    "A": 0,
+    "B": 0
+   },
+   "votos_nota": "Zernio no permite leer comentarios de TikTok (PLATFORM_LIMITATION); se eligió la opción más prudente (B: foto caminando con Laura, el hábito sostenible y no el rendimiento de un día)"
+  },
+  {
+   "n": 15,
+   "fecha": "2026-11-24",
+   "formato": "video",
+   "video": "tiktok/video/andres-ep15.json",
+   "dia_reto": 14,
+   "resumen": "Día 14, final. Sin votos: ganó lo prudente, la foto caminando con Laura. Cambia la foto de perfil tras 20 años. A Mariana: 'No soy el de la foto vieja. Pero voy en camino'. Mariana confiesa que también necesita un reto: hace meses se despierta a las 3 a. m. y no vuelve a dormir. Andrés sube los dos pisos de la oficina: 'Esto no se acaba hoy'.",
+   "ciencia": [
+    "en dos semanas cambia primero cómo te sientes (energía, sueño, esfuerzo); músculo y análisis tardan semanas a meses",
+    "un hábito tarda en promedio ≈2 meses en volverse automático (un estudio, mucha variación)"
+   ],
+   "encuesta": {
+    "A": "Volver a dormir bien",
+    "B": "Recuperar la energía"
+   },
+   "zernio_post_id": null,
    "ganador": null
   }
  ],
