@@ -1,0 +1,668 @@
+{
+ "beats": [
+  {
+   "vis": "hook",
+   "say": "Llevas dieciséis horas sin comer.",
+   "show": "Llevas 16 horas sin comer.",
+   "pause": 0.2,
+   "start": 0.45,
+   "end": 2.393,
+   "words": [
+    {
+     "w": "Llevas",
+     "s": 0.45,
+     "e": 0.839
+    },
+    {
+     "w": "16",
+     "s": 0.839,
+     "e": 1.408
+    },
+    {
+     "w": "horas",
+     "s": 1.408,
+     "e": 1.797
+    },
+    {
+     "w": "sin",
+     "s": 1.797,
+     "e": 2.004
+    },
+    {
+     "w": "comer.",
+     "s": 2.004,
+     "e": 2.393
+    }
+   ]
+  },
+  {
+   "vis": "cell",
+   "say": "Esto es lo que está pasando dentro de tu cuerpo.",
+   "show": "Esto es lo que está pasando dentro de tu cuerpo.",
+   "start": 2.593,
+   "end": 5.178,
+   "words": [
+    {
+     "w": "Esto",
+     "s": 2.593,
+     "e": 2.911
+    },
+    {
+     "w": "es",
+     "s": 2.911,
+     "e": 3.081
+    },
+    {
+     "w": "lo",
+     "s": 3.081,
+     "e": 3.251
+    },
+    {
+     "w": "que",
+     "s": 3.251,
+     "e": 3.42
+    },
+    {
+     "w": "está",
+     "s": 3.42,
+     "e": 3.738
+    },
+    {
+     "w": "pasando",
+     "s": 3.738,
+     "e": 4.203
+    },
+    {
+     "w": "dentro",
+     "s": 4.203,
+     "e": 4.521
+    },
+    {
+     "w": "de",
+     "s": 4.521,
+     "e": 4.691
+    },
+    {
+     "w": "tu",
+     "s": 4.691,
+     "e": 4.861
+    },
+    {
+     "w": "cuerpo.",
+     "s": 4.861,
+     "e": 5.178
+    }
+   ]
+  },
+  {
+   "vis": "insulina",
+   "say": "Hacia la hora cuatro, tu insulina baja a su nivel de reposo.",
+   "show": "Hacia la hora 4, tu insulina baja a su nivel de reposo.",
+   "start": 5.458,
+   "end": 8.748,
+   "words": [
+    {
+     "w": "Hacia",
+     "s": 5.458,
+     "e": 5.756
+    },
+    {
+     "w": "la",
+     "s": 5.756,
+     "e": 5.915
+    },
+    {
+     "w": "hora",
+     "s": 5.915,
+     "e": 6.212
+    },
+    {
+     "w": "4,",
+     "s": 6.212,
+     "e": 6.509
+    },
+    {
+     "w": "tu",
+     "s": 6.509,
+     "e": 6.668
+    },
+    {
+     "w": "insulina",
+     "s": 6.668,
+     "e": 7.241
+    },
+    {
+     "w": "baja",
+     "s": 7.241,
+     "e": 7.539
+    },
+    {
+     "w": "a",
+     "s": 7.539,
+     "e": 7.697
+    },
+    {
+     "w": "su",
+     "s": 7.697,
+     "e": 7.856
+    },
+    {
+     "w": "nivel",
+     "s": 7.856,
+     "e": 8.154
+    },
+    {
+     "w": "de",
+     "s": 8.154,
+     "e": 8.312
+    },
+    {
+     "w": "reposo.",
+     "s": 8.312,
+     "e": 8.748
+    }
+   ]
+  },
+  {
+   "vis": "glucogeno",
+   "say": "Hacia la hora doce, tu hígado ya usó buena parte de su reserva de azúcar: el glucógeno.",
+   "show": "Hacia la hora 12, tu hígado ya usó buena parte de su reserva de azúcar: el glucógeno.",
+   "start": 9.028,
+   "end": 13.661,
+   "words": [
+    {
+     "w": "Hacia",
+     "s": 9.028,
+     "e": 9.308
+    },
+    {
+     "w": "la",
+     "s": 9.308,
+     "e": 9.458
+    },
+    {
+     "w": "hora",
+     "s": 9.458,
+     "e": 9.738
+    },
+    {
+     "w": "12,",
+     "s": 9.738,
+     "e": 10.149
+    },
+    {
+     "w": "tu",
+     "s": 10.149,
+     "e": 10.299
+    },
+    {
+     "w": "hígado",
+     "s": 10.299,
+     "e": 10.709
+    },
+    {
+     "w": "ya",
+     "s": 10.709,
+     "e": 10.859
+    },
+    {
+     "w": "usó",
+     "s": 10.859,
+     "e": 11.139
+    },
+    {
+     "w": "buena",
+     "s": 11.139,
+     "e": 11.419
+    },
+    {
+     "w": "parte",
+     "s": 11.419,
+     "e": 11.7
+    },
+    {
+     "w": "de",
+     "s": 11.7,
+     "e": 11.85
+    },
+    {
+     "w": "su",
+     "s": 11.85,
+     "e": 11.999
+    },
+    {
+     "w": "reserva",
+     "s": 11.999,
+     "e": 12.41
+    },
+    {
+     "w": "de",
+     "s": 12.41,
+     "e": 12.56
+    },
+    {
+     "w": "azúcar:",
+     "s": 12.56,
+     "e": 12.97
+    },
+    {
+     "w": "el",
+     "s": 12.97,
+     "e": 13.12
+    },
+    {
+     "w": "glucógeno.",
+     "s": 13.12,
+     "e": 13.661
+    }
+   ]
+  },
+  {
+   "vis": "grasa",
+   "say": "Y hacia la hora dieciséis, tu cuerpo usa más grasa como energía, y empiezan a subir las cetonas.",
+   "show": "Y hacia la hora 16, tu cuerpo usa más grasa como energía, y empiezan a subir las cetonas.",
+   "start": 13.941,
+   "end": 19.193,
+   "words": [
+    {
+     "w": "Y",
+     "s": 13.941,
+     "e": 14.11
+    },
+    {
+     "w": "hacia",
+     "s": 14.11,
+     "e": 14.427
+    },
+    {
+     "w": "la",
+     "s": 14.427,
+     "e": 14.596
+    },
+    {
+     "w": "hora",
+     "s": 14.596,
+     "e": 14.912
+    },
+    {
+     "w": "16,",
+     "s": 14.912,
+     "e": 15.375
+    },
+    {
+     "w": "tu",
+     "s": 15.375,
+     "e": 15.545
+    },
+    {
+     "w": "cuerpo",
+     "s": 15.545,
+     "e": 15.861
+    },
+    {
+     "w": "usa",
+     "s": 15.861,
+     "e": 16.177
+    },
+    {
+     "w": "más",
+     "s": 16.177,
+     "e": 16.346
+    },
+    {
+     "w": "grasa",
+     "s": 16.346,
+     "e": 16.663
+    },
+    {
+     "w": "como",
+     "s": 16.663,
+     "e": 16.979
+    },
+    {
+     "w": "energía,",
+     "s": 16.979,
+     "e": 17.442
+    },
+    {
+     "w": "y",
+     "s": 17.442,
+     "e": 17.611
+    },
+    {
+     "w": "empiezan",
+     "s": 17.611,
+     "e": 18.075
+    },
+    {
+     "w": "a",
+     "s": 18.075,
+     "e": 18.244
+    },
+    {
+     "w": "subir",
+     "s": 18.244,
+     "e": 18.56
+    },
+    {
+     "w": "las",
+     "s": 18.56,
+     "e": 18.729
+    },
+    {
+     "w": "cetonas.",
+     "s": 18.729,
+     "e": 19.193
+    }
+   ]
+  },
+  {
+   "vis": "autofagia",
+   "say": "¿Y la autofagia? En humanos, todavía no sabemos a qué hora exacta se activa.",
+   "show": "¿Y la autofagia? En humanos, todavía no sabemos a qué hora exacta se activa.",
+   "start": 19.473,
+   "end": 23.488,
+   "words": [
+    {
+     "w": "¿Y",
+     "s": 19.473,
+     "e": 19.626
+    },
+    {
+     "w": "la",
+     "s": 19.626,
+     "e": 19.78
+    },
+    {
+     "w": "autofagia?",
+     "s": 19.78,
+     "e": 20.333
+    },
+    {
+     "w": "En",
+     "s": 20.333,
+     "e": 20.487
+    },
+    {
+     "w": "humanos,",
+     "s": 20.487,
+     "e": 20.907
+    },
+    {
+     "w": "todavía",
+     "s": 20.907,
+     "e": 21.327
+    },
+    {
+     "w": "no",
+     "s": 21.327,
+     "e": 21.48
+    },
+    {
+     "w": "sabemos",
+     "s": 21.48,
+     "e": 21.9
+    },
+    {
+     "w": "a",
+     "s": 21.9,
+     "e": 22.054
+    },
+    {
+     "w": "qué",
+     "s": 22.054,
+     "e": 22.207
+    },
+    {
+     "w": "hora",
+     "s": 22.207,
+     "e": 22.494
+    },
+    {
+     "w": "exacta",
+     "s": 22.494,
+     "e": 22.914
+    },
+    {
+     "w": "se",
+     "s": 22.914,
+     "e": 23.067
+    },
+    {
+     "w": "activa.",
+     "s": 23.067,
+     "e": 23.488
+    }
+   ]
+  },
+  {
+   "vis": "desconfia",
+   "say": "Desconfía de quien te dé una hora exacta.",
+   "show": "Desconfía de quien te dé una hora exacta.",
+   "start": 23.768,
+   "end": 26.012,
+   "words": [
+    {
+     "w": "Desconfía",
+     "s": 23.768,
+     "e": 24.233
+    },
+    {
+     "w": "de",
+     "s": 24.233,
+     "e": 24.402
+    },
+    {
+     "w": "quien",
+     "s": 24.402,
+     "e": 24.572
+    },
+    {
+     "w": "te",
+     "s": 24.572,
+     "e": 24.742
+    },
+    {
+     "w": "dé",
+     "s": 24.742,
+     "e": 24.912
+    },
+    {
+     "w": "una",
+     "s": 24.912,
+     "e": 25.229
+    },
+    {
+     "w": "hora",
+     "s": 25.229,
+     "e": 25.547
+    },
+    {
+     "w": "exacta.",
+     "s": 25.547,
+     "e": 26.012
+    }
+   ]
+  },
+  {
+   "vis": "aviso",
+   "say": "Si tienes diabetes, tomas medicamentos o estás embarazada, habla con tu médico antes de ayunar.",
+   "show": "Si tienes diabetes, tomas medicamentos o estás embarazada, habla con tu médico antes de ayunar.",
+   "start": 26.292,
+   "end": 31.8,
+   "words": [
+    {
+     "w": "Si",
+     "s": 26.292,
+     "e": 26.467
+    },
+    {
+     "w": "tienes",
+     "s": 26.467,
+     "e": 26.793
+    },
+    {
+     "w": "diabetes,",
+     "s": 26.793,
+     "e": 27.272
+    },
+    {
+     "w": "tomas",
+     "s": 27.272,
+     "e": 27.599
+    },
+    {
+     "w": "medicamentos",
+     "s": 27.599,
+     "e": 28.381
+    },
+    {
+     "w": "o",
+     "s": 28.381,
+     "e": 28.556
+    },
+    {
+     "w": "estás",
+     "s": 28.556,
+     "e": 28.882
+    },
+    {
+     "w": "embarazada,",
+     "s": 28.882,
+     "e": 29.665
+    },
+    {
+     "w": "habla",
+     "s": 29.665,
+     "e": 29.992
+    },
+    {
+     "w": "con",
+     "s": 29.992,
+     "e": 30.166
+    },
+    {
+     "w": "tu",
+     "s": 30.166,
+     "e": 30.341
+    },
+    {
+     "w": "médico",
+     "s": 30.341,
+     "e": 30.82
+    },
+    {
+     "w": "antes",
+     "s": 30.82,
+     "e": 31.146
+    },
+    {
+     "w": "de",
+     "s": 31.146,
+     "e": 31.321
+    },
+    {
+     "w": "ayunar.",
+     "s": 31.321,
+     "e": 31.8
+    }
+   ]
+  },
+  {
+   "vis": "cta",
+   "say": "Calcula tu ventana de ayuno con el link de mi perfil. Y sígueme para la hora veinticuatro.",
+   "show": "Calcula tu ventana de ayuno con el link de mi perfil. Y sígueme para la hora 24.",
+   "pause": 0.6,
+   "start": 32.08,
+   "end": 36.819,
+   "words": [
+    {
+     "w": "Calcula",
+     "s": 32.08,
+     "e": 32.538
+    },
+    {
+     "w": "tu",
+     "s": 32.538,
+     "e": 32.706
+    },
+    {
+     "w": "ventana",
+     "s": 32.706,
+     "e": 33.164
+    },
+    {
+     "w": "de",
+     "s": 33.164,
+     "e": 33.332
+    },
+    {
+     "w": "ayuno",
+     "s": 33.332,
+     "e": 33.79
+    },
+    {
+     "w": "con",
+     "s": 33.79,
+     "e": 33.958
+    },
+    {
+     "w": "el",
+     "s": 33.958,
+     "e": 34.125
+    },
+    {
+     "w": "link",
+     "s": 34.125,
+     "e": 34.293
+    },
+    {
+     "w": "de",
+     "s": 34.293,
+     "e": 34.46
+    },
+    {
+     "w": "mi",
+     "s": 34.46,
+     "e": 34.628
+    },
+    {
+     "w": "perfil.",
+     "s": 34.628,
+     "e": 34.941
+    },
+    {
+     "w": "Y",
+     "s": 34.941,
+     "e": 35.108
+    },
+    {
+     "w": "sígueme",
+     "s": 35.108,
+     "e": 35.567
+    },
+    {
+     "w": "para",
+     "s": 35.567,
+     "e": 35.88
+    },
+    {
+     "w": "la",
+     "s": 35.88,
+     "e": 36.047
+    },
+    {
+     "w": "hora",
+     "s": 36.047,
+     "e": 36.36
+    },
+    {
+     "w": "24.",
+     "s": 36.36,
+     "e": 36.819
+    }
+   ]
+  }
+ ],
+ "total": 38.219
+}

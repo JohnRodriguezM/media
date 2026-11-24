@@ -11,7 +11,12 @@
   #bg{position:absolute;inset:0;background:radial-gradient(ellipse 90% 60% at 50% 40%,#22184d 0%,#0f1530 55%,#080b18 100%)}
   #grid{position:absolute;inset:0;opacity:.10;background-image:linear-gradient(#73eff7 1px,transparent 1px),linear-gradient(90deg,#73eff7 1px,transparent 1px);background-size:90px 90px;
         -webkit-mask-image:radial-gradient(ellipse 70% 50% at 50% 45%,#000 30%,transparent 80%)}
-  #gl{position:absolute;inset:0;width:1080px;height:1920px}
+  #gl{position:absolute;inset:0;width:1080px;height:1920px;filter:contrast(1.08) saturate(1.12)}
+  #bloom{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.5;pointer-events:none}
+  #vig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 75% 60% at 50% 45%,transparent 55%,rgba(3,4,12,.72) 100%)}
+  #grain{position:absolute;inset:-200px;pointer-events:none;opacity:.10;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+  .card{background:linear-gradient(160deg,rgba(40,44,90,.72),rgba(12,16,38,.86))!important;box-shadow:0 40px 90px -30px #000,inset 0 1px 0 rgba(255,255,255,.18)!important}
   #ui{position:absolute;inset:0}
   .handle{position:absolute;top:120px;left:0;right:0;text-align:center;font:800 30px In;letter-spacing:6px;color:#ffc46b;opacity:.9}
   .cap{position:absolute;left:70px;right:110px;top:1180px;text-align:center;font:900 92px/1.08 In;color:#fff;letter-spacing:-1px;
@@ -33,40 +38,57 @@
   .stamp{position:absolute;left:200px;right:240px;top:640px;text-align:center;padding:26px;border:10px solid #ffc46b;border-radius:28px;
          font:900 96px In;color:#ffc46b;letter-spacing:6px;transform:rotate(-8deg)}
 </style></head>
-<body><div id="bg"></div><div id="grid"></div><canvas id="gl" width="1080" height="1920"></canvas><div id="ui"></div>
+<body><div id="bg"></div><div id="grid"></div><canvas id="gl" width="540" height="960"></canvas><canvas id="bloom" width="270" height="480"></canvas><div id="ui"></div><div id="vig"></div><div id="grain"></div>
 <script src="vendor/three.min.js"></script>
 <script>
 const W=1080,H=1920;
+if(THREE.ColorManagement)THREE.ColorManagement.legacyMode=false;
 const R=new THREE.WebGLRenderer({canvas:document.getElementById('gl'),antialias:true,alpha:true,preserveDrawingBuffer:true});
-R.setPixelRatio(1);R.setSize(W,H,false);R.setClearColor(0x000000,0);
+R.setPixelRatio(1);R.setSize(540,960,false);R.setClearColor(0x000000,0);R.outputEncoding=THREE.sRGBEncoding;R.toneMapping=THREE.ACESFilmicToneMapping;R.toneMappingExposure=0.9;R.physicallyCorrectLights=false;
 const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(38,W/H,0.1,100);
-scene.add(new THREE.AmbientLight(0x8a7cff,0.55));
+scene.add(new THREE.AmbientLight(0x8a7cff,0.35));
 const key=new THREE.DirectionalLight(0xffffff,1.1);key.position.set(3,4,6);scene.add(key);
 const rim=new THREE.PointLight(0xff7a59,2.2,30);rim.position.set(-4,-2,3);scene.add(rim);
+// studio environment for realistic reflections (generated, no external HDRI)
+{const es=new THREE.Scene();const box=new THREE.Mesh(new THREE.BoxGeometry(20,20,20),new THREE.MeshBasicMaterial({color:0x14122e,side:THREE.BackSide}));es.add(box);
+ const L=(c,x,y,z,w,h)=>{const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({color:c,side:THREE.DoubleSide}));m.position.set(x,y,z);m.lookAt(0,0,0);es.add(m);};
+ L(0x9a9a9a,0,8,4,8,2.5);L(0x7a3a24,-9,1,2,2.5,9);L(0x2a7d84,9,-1,2,2.5,9);L(0x3a2a7a,0,-8,-4,8,2);
+ if(window.ENVMAP){const pm=new THREE.PMREMGenerator(R);scene.environment=pm.fromScene(es,0.03).texture;}}
+// studio lights instead of env map (env map is too slow on software WebGL): soft fill + two specular kickers
+{const f=new THREE.PointLight(0x73eff7,1.4,40);f.position.set(5,-3,4);scene.add(f);const s2=new THREE.PointLight(0xffffff,1.6,40);s2.position.set(-2,5,7);scene.add(s2);const h=new THREE.HemisphereLight(0x9a8cff,0x140c2a,.6);scene.add(h);}
 const cell=new THREE.Group();scene.add(cell);
 // membrane
 const mGeo=new THREE.IcosahedronGeometry(2.2,5),base=mGeo.attributes.position.array.slice();
-const membrane=new THREE.Mesh(mGeo,new THREE.MeshStandardMaterial({color:0xff8a66,roughness:.35,metalness:.05,transparent:true,opacity:.28,side:THREE.DoubleSide}));
-const wire=new THREE.Mesh(mGeo,new THREE.MeshBasicMaterial({color:0xffc46b,wireframe:true,transparent:true,opacity:.18}));
+const membrane=new THREE.Mesh(mGeo,new THREE.MeshPhysicalMaterial({color:0xff8a66,roughness:.18,metalness:0,clearcoat:1,clearcoatRoughness:.12,iridescence:.45,iridescenceIOR:1.3,sheen:.25,sheenColor:new THREE.Color(0xffc46b),transparent:true,opacity:.34,side:THREE.DoubleSide,envMapIntensity:.7,depthWrite:false}));
+const wire=new THREE.Mesh(mGeo,new THREE.MeshBasicMaterial({color:0xffc46b,wireframe:true,transparent:true,opacity:.06}));
 cell.add(membrane,wire);
-const nucleus=new THREE.Mesh(new THREE.SphereGeometry(.75,48,48),new THREE.MeshStandardMaterial({color:0x7b5cff,emissive:0x3a1fa8,emissiveIntensity:.6,roughness:.4}));
-nucleus.position.set(.25,.15,0);cell.add(nucleus);
+const nucleus=new THREE.Mesh(new THREE.SphereGeometry(.75,96,96),new THREE.MeshPhysicalMaterial({color:0x7b5cff,emissive:0x3a1fa8,emissiveIntensity:.55,roughness:.25,clearcoat:1,clearcoatRoughness:.2,sheen:1,sheenColor:new THREE.Color(0xff9aff)}));
+const nucleolus=new THREE.Mesh(new THREE.SphereGeometry(.28,48,48),new THREE.MeshPhysicalMaterial({color:0xff6bd5,emissive:0xff3aa8,emissiveIntensity:.9,roughness:.3}));nucleolus.position.set(.42,.32,.35);
+nucleus.position.set(.25,.15,0);cell.add(nucleus);cell.add(nucleolus);
+// membrane receptors (instanced) + endoplasmic reticulum ribbons
+const NREC=150,rec=new THREE.InstancedMesh(new THREE.CapsuleGeometry(.022,.05,3,6),new THREE.MeshStandardMaterial({color:0x73eff7,emissive:0x1aa0b8,emissiveIntensity:.6,roughness:.3}),NREC);
+const recIdx=[];{let sd=11;const r=()=>{sd=(sd*16807)%2147483647;return sd/2147483647;};for(let i=0;i<NREC;i++)recIdx.push(Math.floor(r()*(base.length/3)));}
+cell.add(rec);
+for(let k=0;k<3;k++){const pts=[];for(let i=0;i<60;i++){const a=i/60*Math.PI*2;pts.push(new THREE.Vector3(Math.cos(a)*(1.05+k*.12)+.25,Math.sin(a*3+k)*.12+.15,Math.sin(a)*(1.05+k*.12)));}
+  const tube=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts,true),180,.022,8,true),new THREE.MeshPhysicalMaterial({color:0x9f8bff,emissive:0x5a3fd8,emissiveIntensity:.35,roughness:.3,transparent:true,opacity:.75}));
+  tube.rotation.x=.4+k*.5;cell.add(tube);}
 const mitos=[];
-for(let i=0;i<7;i++){const m=new THREE.Mesh(new THREE.CapsuleGeometry(.12,.42,6,14),new THREE.MeshStandardMaterial({color:0xffc46b,emissive:0xff7a1a,emissiveIntensity:.35,roughness:.5}));
+for(let i=0;i<7;i++){const m=new THREE.Mesh(new THREE.CapsuleGeometry(.12,.42,12,24),new THREE.MeshPhysicalMaterial({color:0xffc46b,emissive:0xff7a1a,emissiveIntensity:.4,roughness:.28,clearcoat:.8,sheen:.8,sheenColor:new THREE.Color(0xffe2a8)}));
   const a=i/7*Math.PI*2;m.position.set(Math.cos(a)*1.35,Math.sin(a*1.3)*.9,Math.sin(a)*1.1);m.rotation.set(a,a*2,a*.5);cell.add(m);mitos.push(m);}
-// particles: glucose (cyan) and ketones (coral)
+// particles: glucose (cyan) and ketones (coral) — soft round sprites (bokeh look)
+const SPRITE=(()=>{const c=document.createElement('canvas');c.width=c.height=64;const x=c.getContext('2d');const g=x.createRadialGradient(32,32,0,32,32,32);g.addColorStop(0,'rgba(255,255,255,1)');g.addColorStop(.35,'rgba(255,255,255,.6)');g.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=g;x.fillRect(0,0,64,64);return new THREE.CanvasTexture(c);})();
 function pts(n,color,size){const g=new THREE.BufferGeometry(),p=new Float32Array(n*3);let s=7;const r=()=>{s=(s*16807)%2147483647;return s/2147483647;};
   for(let i=0;i<n;i++){const a=r()*6.28,b=Math.acos(2*r()-1),d=2.6+r()*1.6;p[i*3]=d*Math.sin(b)*Math.cos(a);p[i*3+1]=d*Math.cos(b)*1.4;p[i*3+2]=d*Math.sin(b)*Math.sin(a);}
-  g.setAttribute('position',new THREE.BufferAttribute(p,3));return new THREE.Points(g,new THREE.PointsMaterial({color,size,transparent:true,opacity:1,sizeAttenuation:true}));}
+  g.setAttribute('position',new THREE.BufferAttribute(p,3));return new THREE.Points(g,new THREE.PointsMaterial({color,size:size*2.6,map:SPRITE,transparent:true,opacity:1,sizeAttenuation:true,depthWrite:false,blending:THREE.AdditiveBlending}));}
 const glucose=pts(260,0x73eff7,.07),ketones=pts(260,0xff7a59,.09);scene.add(glucose,ketones);
 // molecule (ball-and-stick), used when spec.scene3d === 'molecule' (hormones, metabolism)
 const mol=new THREE.Group();scene.add(mol);mol.visible=false;mol.scale.setScalar(.68);
 {const atoms=[[0,0,0],[1.2,.7,0],[2.4,0,0],[2.4,-1.4,0],[1.2,-2.1,0],[0,-1.4,0],[-1.2,.7,.3],[3.6,.7,-.2],[1.2,2.1,.2],[-2.3,0,.6]];
  const cols=[0x7b5cff,0xff7a59,0x73eff7,0xffc46b,0x7b5cff,0xff7a59,0xffffff,0x73eff7,0xffffff,0xffc46b];
- atoms.forEach((p,i)=>{const m=new THREE.Mesh(new THREE.SphereGeometry(i%3===0?.42:.32,32,32),new THREE.MeshStandardMaterial({color:cols[i],emissive:cols[i],emissiveIntensity:.25,roughness:.35}));m.position.set(p[0]-.6,p[1]+.7,p[2]);mol.add(m);});
+ atoms.forEach((p,i)=>{const m=new THREE.Mesh(new THREE.SphereGeometry(i%3===0?.42:.32,64,64),new THREE.MeshPhysicalMaterial({color:cols[i],emissive:cols[i],emissiveIntensity:.18,roughness:.15,clearcoat:1,clearcoatRoughness:.08,envMapIntensity:1.4}));m.position.set(p[0]-.6,p[1]+.7,p[2]);mol.add(m);});
  const bonds=[[0,1],[1,2],[2,3],[3,4],[4,5],[5,0],[0,6],[2,7],[1,8],[6,9]];
  bonds.forEach(([x,y])=>{const A=new THREE.Vector3(...atoms[x]).add(new THREE.Vector3(-.6,.7,0)),B=new THREE.Vector3(...atoms[y]).add(new THREE.Vector3(-.6,.7,0));
-  const L=A.distanceTo(B),c=new THREE.Mesh(new THREE.CylinderGeometry(.08,.08,L,12),new THREE.MeshStandardMaterial({color:0xdad6ff,roughness:.5}));
+  const L=A.distanceTo(B),c=new THREE.Mesh(new THREE.CylinderGeometry(.08,.08,L,12),new THREE.MeshPhysicalMaterial({color:0xdad6ff,roughness:.2,metalness:.3,clearcoat:1}));
   c.position.copy(A.clone().add(B).multiplyScalar(.5));c.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),B.clone().sub(A).normalize());mol.add(c);});}
 
 
@@ -86,7 +108,8 @@ function captions(T){const b=D.beats.find(b=>T>=b.start-0.05&&T<=b.end+0.25);if(
   // chunk words: max 3 words / 16 chars
   const ch=[];let cur=[];b.words.forEach(w=>{const len=cur.map(x=>x.w).join(' ').length;if(cur.length&&(cur.length>=3||len+w.w.length>16)){ch.push(cur);cur=[];}cur.push(w);if(/[,.:;?!]$/.test(w.w)&&cur.length>=1){ch.push(cur);cur=[];}});if(cur.length)ch.push(cur);
   let c=ch.find(c=>T<c[c.length-1].e+0.02)||ch[ch.length-1];
-  return `<div class="cap">${c.map(w=>`<span class="${T>=w.s&&T<w.e?'on':''}">${esc(w.w).replace(/(\d+)/g,'<span class="num" style="margin:0">$1</span>')}</span>`).join('')}</div>`;}
+  const ce=ease((T-c[0].s+0.06)/0.16);
+  return `<div class="cap" style="transform:translateY(${((1-ce)*26).toFixed(1)}px) scale(${(0.92+0.08*ce).toFixed(3)});opacity:${Math.min(1,ce*1.4).toFixed(2)}">${c.map(w=>`<span class="${T>=w.s&&T<w.e?'on':''}">${esc(w.w).replace(/(\d+)/g,'<span class="num" style="margin:0">$1</span>')}</span>`).join('')}</div>`;}
 
 function timeline(h,u){const p=Math.min(h/24,1)*u;let m='';[0,4,12,16,24].forEach(x=>m+=`<s style="left:${x/24*100}%">${x}h</s>`);
   return `<div class="tl"><i style="width:${p*100}%"></i><b style="left:${p*100}%">${Math.round(h*u)}h</b>${m}</div>`;}
@@ -151,15 +174,32 @@ window.renderAt=T=>{let i=D.beats.findIndex((b,k)=>T>=b.start-0.25&&(k===D.beats
   const b=D.beats[i],t=T-(b.start-0.25),vis=b.vis;
   // camera blend between previous and current visual
   const prev=i>0?CAM[D.beats[i-1].vis]||CAM.cell:CAM[vis]||CAM.cell,cur=CAM[vis]||CAM.cell,u=ease(t/0.8);
-  cam.position.set(lerp(prev[0],cur[0],u),lerp(prev[3],cur[3],u),lerp(prev[2],cur[2],u));cam.lookAt(0,lerp(prev[3],cur[3],u),0);
+  // cinematic camera: blended framing + slow dolly + subtle handheld drift
+  const dolly=1-0.04*Math.min(1,t/4);
+  cam.position.set(lerp(prev[0],cur[0],u)+Math.sin(T*.7)*.12+Math.sin(T*1.9)*.03,lerp(prev[3],cur[3],u)+Math.cos(T*.6)*.10,lerp(prev[2],cur[2],u)*dolly);
+  cam.lookAt(Math.sin(T*.5)*.05,lerp(prev[3],cur[3],u),0);
   mol.rotation.y=T*0.5;mol.rotation.x=Math.sin(T*.5)*.3;
-  cell.rotation.y=T*0.35;cell.rotation.x=Math.sin(T*.4)*.25;deform(T,.06);
+  cell.rotation.y=T*0.35;cell.rotation.x=Math.sin(T*.4)*.25;deform(T,.05);
+  {const a=mGeo.attributes.position.array,M=new THREE.Matrix4(),Q=new THREE.Quaternion(),UP=new THREE.Vector3(0,1,0),V=new THREE.Vector3(),S=new THREE.Vector3(1,1,1);
+   recIdx.forEach((vi,k)=>{V.set(a[vi*3],a[vi*3+1],a[vi*3+2]);const n=V.clone().normalize();Q.setFromUnitVectors(UP,n);V.addScaledVector(n,.05);M.compose(V,Q,S);rec.setMatrixAt(k,M);});rec.instanceMatrix.needsUpdate=true;}
   mitos.forEach((m,k)=>{m.rotation.z=T*.8+k;});
   let keto=['grasa','autofagia','desconfia'].includes(vis)?ease(t/1.5):(['aviso','cta'].includes(vis)?1:0);
   if(b.particles==='cetonas')keto=ease(t/1.5);if(b.particles==='glucosa')keto=0;
   glucose.material.opacity=1-keto;ketones.material.opacity=keto;glucose.rotation.y=-T*.15;ketones.rotation.y=T*.2;
   const grey=['autofagia','desconfia'].includes(vis)||b.grey===true;membrane.material.color.set(grey?0x9a9ab8:0xff8a66);
-  R.render(scene,cam);
-  let h=`<div class="handle">@LADOSISDECIENCIA</div>`+(VIS[vis]?VIS[vis](t,b):'')+captions(T);
+  const fi=Math.round(T*(window.FPS||24)),do3d=!window.HALF3D||fi%2===0||window.__last3d!==fi-1;window.__last3d=fi;
+  if(do3d)R.render(scene,cam);
+  // bloom: blurred, brightened copy of the 3D layer composited with screen blend
+  if(!window.NOBLOOM&&do3d){const bc=document.getElementById('bloom'),bx=bc.getContext('2d');bx.clearRect(0,0,270,480);bx.filter='blur(8px) brightness(1.15) saturate(1.3)';bx.drawImage(R.domElement,0,0,270,480);}
+  // rack focus: 3D goes soft while information graphics are on screen
+  const FOCUS={hook:0,gancho:0,cell:0,texto:0,autofagia:2,sello:2,desconfia:3,mito:3};const bl=(v=>FOCUS[v]??6);
+  const pb=i>0?bl(D.beats[i-1].vis):bl(vis),blur=lerp(pb,bl(vis),ease(t/0.7));
+  document.getElementById('gl').style.filter=`contrast(1.08) saturate(1.12) blur(${blur.toFixed(2)}px)`;
+  document.getElementById('bloom').style.filter=`blur(${(blur*0.5).toFixed(2)}px)`;
+  {let sd=Math.floor(T*24)*7919%9973;document.getElementById('grain').style.transform=`translate(${(sd%200)-100}px,${((sd*13)%200)-100}px)`;}
+  // kinetic entrance for each visual: rise + de-blur + fade
+  const ke=ease(t/0.55),kx=T>b.end+0.05&&i<D.beats.length-1?ease((T-(D.beats[i+1].start-0.45))/0.2):0;
+  const visHtml=VIS[vis]?`<div style="position:absolute;inset:0;opacity:${(ke*(1-kx)).toFixed(3)};transform:translateY(${((1-ke)*50).toFixed(1)}px) scale(${(0.97+0.03*ke).toFixed(4)});filter:blur(${((1-ke)*10).toFixed(1)}px)">${VIS[vis](t,b)}</div>`:'';
+  let h=`<div class="handle">@LADOSISDECIENCIA</div>`+visHtml+captions(T);
   document.getElementById('ui').innerHTML=h;};
 </script></body></html>
