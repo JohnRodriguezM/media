@@ -1,8 +1,21 @@
-# Carrusel diario — La Dosis de Ciencia (TikTok)
+# Contenido diario — La Dosis de Ciencia (TikTok)
 
 > **Nota para la tarea programada del video diario:** si tus instrucciones mencionan el ejemplo `andres-ep01.json`, escenas `place`/`tip`, `title` como primera escena o sprites 16×24 de `pixel.html`, eso corresponde al formato anterior. Desde el episodio 4 (2026-11-13) John pidió el estilo v2: sigue la sección "FORMATO VIGENTE" de abajo (motor indie, ejemplo `tiktok/video/andres-ep03-indie.json`; los personajes nuevos se agregan en `PEOPLE` de `tools/video/indie.html`). Todo lo demás de tus instrucciones (votos, registro, Zernio, cierre) sigue igual; agrega la etiqueta "estilo-indie" a los tags del post.
 
-## FORMATO VIGENTE (desde 2026-11-13, episodio 4): VIDEO "pixel indie" (estilo v2), 10:30 Bogotá
+## FORMATO VIGENTE (desde 2026-11-25): 2 VIDEOS NARRADOS al día (motion graphics + 3D), 10:30 y 19:00 Bogotá
+Objetivo: recuperar el canal (pasó de ~37.000 vistas/día en agosto a ~2.000 en noviembre tras la pausa). Lo que históricamente funciona aquí:
+videos de 30-45 s, gancho con número en el PRIMER segundo, ciencia clara. Formato aprobado por John el 2026-11-24 (ejemplo: `tiktok/narrado/hora-16.json`).
+- Motor: `tools/video/render_motion.py <spec.json> <out.mp4>` (voz Kokoro local "em_alex" ×1.08, subtítulos palabra por palabra, motion graphics + 3D Three.js, música suave original). ~5-8 min por video; usa timeout de 10 min. Los modelos de voz se descargan solos de GitHub la primera vez.
+- Franjas: **A 10:30 = Ayuno** (prioridad: serie "hora por hora" — 12, 18, 24, 36, 48 h — y temas de ayuno con gancho numérico). **B 19:00 = rota** Hormonas y metabolismo → Sueño y cerebro → Ejercicio y músculo → Intestino-cerebro (la serie que lleve más días sin salir en `tiktok/narrado/historial.json`). Los dos del día, temas distintos.
+- Si el video anterior prometió "PRÓXIMO: X" (campo `promete` del historial), el siguiente de esa serie debe ser X.
+- Spec: `{"voice":"em_alex","speed":1.08,"scene3d":"cell"|"molecule","beats":[...]}` (`cell` para ayuno/intestino/ejercicio; `molecule` para hormonas/sueño). Cada beat: `say` (texto que se lee; números ESCRITOS EN PALABRAS), `show` (subtítulo; números en dígitos; mismas palabras), `vis` + parámetros, `pause` opcional.
+- Visuales genéricos (`vis`): `gancho` {kicker, big (p. ej. "24h", cuenta hasta el número), sub, size}, `texto` {label}, `linea` {h, label, label2} (línea 0-24 h), `barras` {label, from, to (0-1), color, h}, `nivel` {label, from, to, h} (batería que se vacía), `dato` {label, value, unit}, `compara` {a:{title,text}, b:{title,text}}, `mito` {text} (se tacha), `sello` {mark, text, color} (p. ej. "ZONA GRIS"), `lista` {title, items[], foot, color, icon}, `cierre` {next}. Extras por beat: `particles` "glucosa"|"cetonas", `grey` true.
+- Guion: 7-10 beats, 80-110 palabras, 30-45 s. Beat 1 = gancho de ≤8 palabras con número ("Llevas 24 horas sin comer."). Penúltimo beat: aviso de seguridad cuando aplique (ayunos de 24 h o más: "con supervisión médica"). Último: `cierre` con CTA a la calculadora + "sígueme para <próximo tema>".
+- Revisión obligatoria: saca fotogramas a mitad de cada beat (tiempos en `<out>.timing.json`) y ábrelos con Read.
+- Publicación en Zernio como video: `media_items` [{type:"video", url raw del .mp4}], `content` = descripción (lista →/⚠️/❌, CTA calculadora, pregunta para comentarios, "Próximo video: X", 8-10 hashtags con #dosisdeciencia), `tiktok_settings` {privacy_level:"PUBLIC_TO_EVERYONE", allow_comment:true, allow_duet:true, allow_stitch:true, content_preview_confirmed:true, express_consent_given:true}.
+- Las historias ("El reto de Andrés", temporada 1 completa) y los formatos pixel quedan en pausa; sus secciones de abajo son referencia.
+
+## (En pausa) FORMATO ANTERIOR (desde 2026-11-13, episodio 4): VIDEO "pixel indie" (estilo v2), 10:30 Bogotá
 John aprobó el 2026-11-12 el estilo v2: pixel art más detallado (personajes con expresiones, luz, escenarios con profundidad),
 cámara con cortes, diálogos tipo RPG con "voces" de bips y arranque en plena acción (sin portada al inicio). Seguiremos iterándolo.
 Motor: `tools/video/indie.html` (spec con `"engine": "indie"`) + el mismo `tools/video/render_video.py`.
