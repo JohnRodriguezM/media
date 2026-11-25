@@ -1,0 +1,683 @@
+{
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "HORMONAS Y METABOLISMO",
+   "big": "3",
+   "sub": "SEÑALES QUE TU MÉDICO PUEDE VER",
+   "say": "Tres señales de resistencia a la insulina.",
+   "show": "3 señales de resistencia a la insulina.",
+   "pause": 0.2,
+   "start": 0.45,
+   "end": 2.934,
+   "words": [
+    {
+     "w": "3",
+     "s": 0.45,
+     "e": 0.763
+    },
+    {
+     "w": "señales",
+     "s": 0.763,
+     "e": 1.222
+    },
+    {
+     "w": "de",
+     "s": 1.222,
+     "e": 1.39
+    },
+    {
+     "w": "resistencia",
+     "s": 1.39,
+     "e": 1.994
+    },
+    {
+     "w": "a",
+     "s": 1.994,
+     "e": 2.162
+    },
+    {
+     "w": "la",
+     "s": 2.162,
+     "e": 2.329
+    },
+    {
+     "w": "insulina.",
+     "s": 2.329,
+     "e": 2.934
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "INSULINA = LA LLAVE",
+   "say": "La insulina es la llave que mete azúcar a tus células.",
+   "show": "La insulina es la llave que mete azúcar a tus células.",
+   "start": 3.134,
+   "end": 6.188,
+   "words": [
+    {
+     "w": "La",
+     "s": 3.134,
+     "e": 3.296
+    },
+    {
+     "w": "insulina",
+     "s": 3.296,
+     "e": 3.881
+    },
+    {
+     "w": "es",
+     "s": 3.881,
+     "e": 4.044
+    },
+    {
+     "w": "la",
+     "s": 4.044,
+     "e": 4.206
+    },
+    {
+     "w": "llave",
+     "s": 4.206,
+     "e": 4.509
+    },
+    {
+     "w": "que",
+     "s": 4.509,
+     "e": 4.672
+    },
+    {
+     "w": "mete",
+     "s": 4.672,
+     "e": 4.975
+    },
+    {
+     "w": "azúcar",
+     "s": 4.975,
+     "e": 5.419
+    },
+    {
+     "w": "a",
+     "s": 5.419,
+     "e": 5.582
+    },
+    {
+     "w": "tus",
+     "s": 5.582,
+     "e": 5.744
+    },
+    {
+     "w": "células.",
+     "s": 5.744,
+     "e": 6.188
+    }
+   ]
+  },
+  {
+   "vis": "barras",
+   "label": "MÁS INSULINA PARA LO MISMO",
+   "from": 0.35,
+   "to": 0.9,
+   "color": "#ffc46b",
+   "say": "Con resistencia, la llave falla y tu páncreas fabrica más insulina.",
+   "show": "Con resistencia, la llave falla y tu páncreas fabrica más insulina.",
+   "start": 6.468,
+   "end": 10.397,
+   "words": [
+    {
+     "w": "Con",
+     "s": 6.468,
+     "e": 6.659
+    },
+    {
+     "w": "resistencia,",
+     "s": 6.659,
+     "e": 7.349
+    },
+    {
+     "w": "la",
+     "s": 7.349,
+     "e": 7.54
+    },
+    {
+     "w": "llave",
+     "s": 7.54,
+     "e": 7.897
+    },
+    {
+     "w": "falla",
+     "s": 7.897,
+     "e": 8.254
+    },
+    {
+     "w": "y",
+     "s": 8.254,
+     "e": 8.445
+    },
+    {
+     "w": "tu",
+     "s": 8.445,
+     "e": 8.636
+    },
+    {
+     "w": "páncreas",
+     "s": 8.636,
+     "e": 8.994
+    },
+    {
+     "w": "fabrica",
+     "s": 8.994,
+     "e": 9.517
+    },
+    {
+     "w": "más",
+     "s": 9.517,
+     "e": 9.708
+    },
+    {
+     "w": "insulina.",
+     "s": 9.708,
+     "e": 10.397
+    }
+   ]
+  },
+  {
+   "vis": "dato",
+   "label": "SEÑAL 1 · CINTURA",
+   "value": "90 / 80",
+   "size": 190,
+   "unit": "CM · HOMBRES / MUJERES",
+   "say": "Señal uno: cintura mayor de noventa centímetros en hombres, u ochenta en mujeres.",
+   "show": "Señal 1: cintura mayor de 90 centímetros en hombres, u 80 en mujeres.",
+   "start": 10.677,
+   "end": 15.158,
+   "words": [
+    {
+     "w": "Señal",
+     "s": 10.677,
+     "e": 10.999
+    },
+    {
+     "w": "1:",
+     "s": 10.999,
+     "e": 11.321
+    },
+    {
+     "w": "cintura",
+     "s": 11.321,
+     "e": 11.792
+    },
+    {
+     "w": "mayor",
+     "s": 11.792,
+     "e": 12.113
+    },
+    {
+     "w": "de",
+     "s": 12.113,
+     "e": 12.286
+    },
+    {
+     "w": "90",
+     "s": 12.286,
+     "e": 12.757
+    },
+    {
+     "w": "centímetros",
+     "s": 12.757,
+     "e": 13.378
+    },
+    {
+     "w": "en",
+     "s": 13.378,
+     "e": 13.55
+    },
+    {
+     "w": "hombres,",
+     "s": 13.55,
+     "e": 13.871
+    },
+    {
+     "w": "u",
+     "s": 13.871,
+     "e": 14.043
+    },
+    {
+     "w": "80",
+     "s": 14.043,
+     "e": 14.515
+    },
+    {
+     "w": "en",
+     "s": 14.515,
+     "e": 14.687
+    },
+    {
+     "w": "mujeres.",
+     "s": 14.687,
+     "e": 15.158
+    }
+   ]
+  },
+  {
+   "vis": "compara",
+   "a": {
+    "title": "TRIGLICÉRIDOS",
+    "text": "Altos ↑"
+   },
+   "b": {
+    "title": "HDL (BUENO)",
+    "text": "Bajo ↓"
+   },
+   "say": "Señal dos: triglicéridos altos y colesterol bueno bajo.",
+   "show": "Señal 2: triglicéridos altos y colesterol bueno bajo.",
+   "start": 15.438,
+   "end": 18.577,
+   "words": [
+    {
+     "w": "Señal",
+     "s": 15.438,
+     "e": 15.756
+    },
+    {
+     "w": "2:",
+     "s": 15.756,
+     "e": 16.074
+    },
+    {
+     "w": "triglicéridos",
+     "s": 16.074,
+     "e": 16.837
+    },
+    {
+     "w": "altos",
+     "s": 16.837,
+     "e": 17.155
+    },
+    {
+     "w": "y",
+     "s": 17.155,
+     "e": 17.326
+    },
+    {
+     "w": "colesterol",
+     "s": 17.326,
+     "e": 17.94
+    },
+    {
+     "w": "bueno",
+     "s": 17.94,
+     "e": 18.258
+    },
+    {
+     "w": "bajo.",
+     "s": 18.258,
+     "e": 18.577
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "SEÑAL 3 · LA PIEL",
+   "say": "Señal tres: manchas oscuras en cuello o axilas.",
+   "show": "Señal 3: manchas oscuras en cuello o axilas.",
+   "start": 18.857,
+   "end": 21.783,
+   "words": [
+    {
+     "w": "Señal",
+     "s": 18.857,
+     "e": 19.222
+    },
+    {
+     "w": "3:",
+     "s": 19.222,
+     "e": 19.588
+    },
+    {
+     "w": "manchas",
+     "s": 19.588,
+     "e": 19.954
+    },
+    {
+     "w": "oscuras",
+     "s": 19.954,
+     "e": 20.49
+    },
+    {
+     "w": "en",
+     "s": 20.49,
+     "e": 20.686
+    },
+    {
+     "w": "cuello",
+     "s": 20.686,
+     "e": 21.051
+    },
+    {
+     "w": "o",
+     "s": 21.051,
+     "e": 21.247
+    },
+    {
+     "w": "axilas.",
+     "s": 21.247,
+     "e": 21.783
+    }
+   ]
+  },
+  {
+   "vis": "mito",
+   "text": "Sueño al comer = resistencia",
+   "say": "¿Sueño después de comer? Es común y, por sí solo, no diagnostica nada.",
+   "show": "¿Sueño después de comer? Es común y, por sí solo, no diagnostica nada.",
+   "start": 22.063,
+   "end": 25.801,
+   "words": [
+    {
+     "w": "¿Sueño",
+     "s": 22.063,
+     "e": 22.399
+    },
+    {
+     "w": "después",
+     "s": 22.399,
+     "e": 22.734
+    },
+    {
+     "w": "de",
+     "s": 22.734,
+     "e": 22.914
+    },
+    {
+     "w": "comer?",
+     "s": 22.914,
+     "e": 23.249
+    },
+    {
+     "w": "Es",
+     "s": 23.249,
+     "e": 23.429
+    },
+    {
+     "w": "común",
+     "s": 23.429,
+     "e": 23.764
+    },
+    {
+     "w": "y,",
+     "s": 23.764,
+     "e": 23.944
+    },
+    {
+     "w": "por",
+     "s": 23.944,
+     "e": 24.123
+    },
+    {
+     "w": "sí",
+     "s": 24.123,
+     "e": 24.303
+    },
+    {
+     "w": "solo,",
+     "s": 24.303,
+     "e": 24.638
+    },
+    {
+     "w": "no",
+     "s": 24.638,
+     "e": 24.818
+    },
+    {
+     "w": "diagnostica",
+     "s": 24.818,
+     "e": 25.465
+    },
+    {
+     "w": "nada.",
+     "s": 25.465,
+     "e": 25.801
+    }
+   ]
+  },
+  {
+   "vis": "lista",
+   "title": "PÍDELE A TU MÉDICO",
+   "items": [
+    "Glucosa en ayunas",
+    "Hemoglobina glicosilada",
+    "Triglicéridos y HDL"
+   ],
+   "icon": "→",
+   "color": "#73eff7",
+   "say": "Ninguna sola confirma nada: pide a tu médico glucosa en ayunas y hemoglobina glicosilada.",
+   "show": "Ninguna sola confirma nada: pide a tu médico glucosa en ayunas y hemoglobina glicosilada.",
+   "start": 26.081,
+   "end": 31.354,
+   "words": [
+    {
+     "w": "Ninguna",
+     "s": 26.081,
+     "e": 26.528
+    },
+    {
+     "w": "sola",
+     "s": 26.528,
+     "e": 26.834
+    },
+    {
+     "w": "confirma",
+     "s": 26.834,
+     "e": 27.282
+    },
+    {
+     "w": "nada:",
+     "s": 27.282,
+     "e": 27.587
+    },
+    {
+     "w": "pide",
+     "s": 27.587,
+     "e": 27.893
+    },
+    {
+     "w": "a",
+     "s": 27.893,
+     "e": 28.056
+    },
+    {
+     "w": "tu",
+     "s": 28.056,
+     "e": 28.22
+    },
+    {
+     "w": "médico",
+     "s": 28.22,
+     "e": 28.668
+    },
+    {
+     "w": "glucosa",
+     "s": 28.668,
+     "e": 29.115
+    },
+    {
+     "w": "en",
+     "s": 29.115,
+     "e": 29.279
+    },
+    {
+     "w": "ayunas",
+     "s": 29.279,
+     "e": 29.727
+    },
+    {
+     "w": "y",
+     "s": 29.727,
+     "e": 29.89
+    },
+    {
+     "w": "hemoglobina",
+     "s": 29.89,
+     "e": 30.622
+    },
+    {
+     "w": "glicosilada.",
+     "s": 30.622,
+     "e": 31.354
+    }
+   ]
+  },
+  {
+   "vis": "barras",
+   "label": "MOVERTE Y DORMIR AYUDAN",
+   "from": 0.9,
+   "to": 0.45,
+   "color": "#73eff7",
+   "say": "Moverte y dormir bien mejoran tu sensibilidad a la insulina.",
+   "show": "Moverte y dormir bien mejoran tu sensibilidad a la insulina.",
+   "start": 31.634,
+   "end": 35.048,
+   "words": [
+    {
+     "w": "Moverte",
+     "s": 31.634,
+     "e": 32.092
+    },
+    {
+     "w": "y",
+     "s": 32.092,
+     "e": 32.259
+    },
+    {
+     "w": "dormir",
+     "s": 32.259,
+     "e": 32.571
+    },
+    {
+     "w": "bien",
+     "s": 32.571,
+     "e": 32.738
+    },
+    {
+     "w": "mejoran",
+     "s": 32.738,
+     "e": 33.196
+    },
+    {
+     "w": "tu",
+     "s": 33.196,
+     "e": 33.363
+    },
+    {
+     "w": "sensibilidad",
+     "s": 33.363,
+     "e": 34.111
+    },
+    {
+     "w": "a",
+     "s": 34.111,
+     "e": 34.278
+    },
+    {
+     "w": "la",
+     "s": 34.278,
+     "e": 34.445
+    },
+    {
+     "w": "insulina.",
+     "s": 34.445,
+     "e": 35.048
+    }
+   ]
+  },
+  {
+   "vis": "cierre",
+   "next": "EL CORTISOL",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para el cortisol.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para el cortisol.",
+   "pause": 0.6,
+   "start": 35.328,
+   "end": 39.492,
+   "words": [
+    {
+     "w": "Calcula",
+     "s": 35.328,
+     "e": 35.777
+    },
+    {
+     "w": "tu",
+     "s": 35.777,
+     "e": 35.941
+    },
+    {
+     "w": "ventana",
+     "s": 35.941,
+     "e": 36.389
+    },
+    {
+     "w": "de",
+     "s": 36.389,
+     "e": 36.553
+    },
+    {
+     "w": "ayuno",
+     "s": 36.553,
+     "e": 37.001
+    },
+    {
+     "w": "en",
+     "s": 37.001,
+     "e": 37.165
+    },
+    {
+     "w": "el",
+     "s": 37.165,
+     "e": 37.328
+    },
+    {
+     "w": "link",
+     "s": 37.328,
+     "e": 37.492
+    },
+    {
+     "w": "de",
+     "s": 37.492,
+     "e": 37.656
+    },
+    {
+     "w": "mi",
+     "s": 37.656,
+     "e": 37.819
+    },
+    {
+     "w": "perfil.",
+     "s": 37.819,
+     "e": 38.126
+    },
+    {
+     "w": "Sígueme",
+     "s": 38.126,
+     "e": 38.574
+    },
+    {
+     "w": "para",
+     "s": 38.574,
+     "e": 38.88
+    },
+    {
+     "w": "el",
+     "s": 38.88,
+     "e": 39.044
+    },
+    {
+     "w": "cortisol.",
+     "s": 39.044,
+     "e": 39.492
+    }
+   ]
+  }
+ ],
+ "total": 40.892,
+ "scene3d": "molecule"
+}

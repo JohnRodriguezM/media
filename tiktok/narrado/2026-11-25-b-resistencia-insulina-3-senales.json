@@ -1,0 +1,95 @@
+{
+ "voice": "em_alex",
+ "speed": 1.08,
+ "scene3d": "molecule",
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "HORMONAS Y METABOLISMO",
+   "big": "3",
+   "sub": "SEÑALES QUE TU MÉDICO PUEDE VER",
+   "say": "Tres señales de resistencia a la insulina.",
+   "show": "3 señales de resistencia a la insulina.",
+   "pause": 0.2
+  },
+  {
+   "vis": "texto",
+   "label": "INSULINA = LA LLAVE",
+   "say": "La insulina es la llave que mete azúcar a tus células.",
+   "show": "La insulina es la llave que mete azúcar a tus células."
+  },
+  {
+   "vis": "barras",
+   "label": "MÁS INSULINA PARA LO MISMO",
+   "from": 0.35,
+   "to": 0.9,
+   "color": "#ffc46b",
+   "say": "Con resistencia, la llave falla y tu páncreas fabrica más insulina.",
+   "show": "Con resistencia, la llave falla y tu páncreas fabrica más insulina."
+  },
+  {
+   "vis": "dato",
+   "label": "SEÑAL 1 · CINTURA",
+   "value": "90 / 80",
+   "size": 190,
+   "unit": "CM · HOMBRES / MUJERES",
+   "say": "Señal uno: cintura mayor de noventa centímetros en hombres, u ochenta en mujeres.",
+   "show": "Señal 1: cintura mayor de 90 centímetros en hombres, u 80 en mujeres."
+  },
+  {
+   "vis": "compara",
+   "a": {
+    "title": "TRIGLICÉRIDOS",
+    "text": "Altos ↑"
+   },
+   "b": {
+    "title": "HDL (BUENO)",
+    "text": "Bajo ↓"
+   },
+   "say": "Señal dos: triglicéridos altos y colesterol bueno bajo.",
+   "show": "Señal 2: triglicéridos altos y colesterol bueno bajo."
+  },
+  {
+   "vis": "texto",
+   "label": "SEÑAL 3 · LA PIEL",
+   "say": "Señal tres: manchas oscuras en cuello o axilas.",
+   "show": "Señal 3: manchas oscuras en cuello o axilas."
+  },
+  {
+   "vis": "mito",
+   "text": "Sueño al comer = resistencia",
+   "say": "¿Sueño después de comer? Es común y, por sí solo, no diagnostica nada.",
+   "show": "¿Sueño después de comer? Es común y, por sí solo, no diagnostica nada."
+  },
+  {
+   "vis": "lista",
+   "title": "PÍDELE A TU MÉDICO",
+   "items": [
+    "Glucosa en ayunas",
+    "Hemoglobina glicosilada",
+    "Triglicéridos y HDL"
+   ],
+   "icon": "→",
+   "color": "#73eff7",
+   "say": "Ninguna sola confirma nada: pide a tu médico glucosa en ayunas y hemoglobina glicosilada.",
+   "show": "Ninguna sola confirma nada: pide a tu médico glucosa en ayunas y hemoglobina glicosilada."
+  },
+  {
+   "vis": "barras",
+   "label": "MOVERTE Y DORMIR AYUDAN",
+   "from": 0.9,
+   "to": 0.45,
+   "color": "#73eff7",
+   "say": "Moverte y dormir bien mejoran tu sensibilidad a la insulina.",
+   "show": "Moverte y dormir bien mejoran tu sensibilidad a la insulina."
+  },
+  {
+   "vis": "cierre",
+   "next": "EL CORTISOL",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para el cortisol.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para el cortisol.",
+   "pause": 0.6
+  }
+ ],
+ "description": "3 señales de resistencia a la insulina 👇\n\n→ La insulina es la \"llave\" que deja entrar el azúcar a tus células. Con resistencia, funciona peor y el páncreas fabrica más.\n→ Señal 1: cintura grande (más de 90 cm en hombres u 80 cm en mujeres, según criterios usados en Latinoamérica).\n→ Señal 2: triglicéridos altos y colesterol bueno (HDL) bajo en el examen de sangre.\n→ Señal 3: manchas oscuras y aterciopeladas en cuello o axilas (acantosis).\n❌ El sueño después de comer, por sí solo, no diagnostica nada.\n⚠️ Ninguna señal confirma nada sola: el diagnóstico lo hace tu médico, con exámenes como glucosa en ayunas y hemoglobina glicosilada.\n→ Moverte y dormir bien mejoran la sensibilidad a la insulina.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Cuál de estas señales no conocías? Cuéntame en comentarios.\n\nPróximo video: la verdad sobre el cortisol.\n\n#resistenciaalainsulina #insulina #metabolismo #hormonas #salud #prediabetes #medicina #ciencia #dosisdeciencia #ladosisdeciencia"
+}

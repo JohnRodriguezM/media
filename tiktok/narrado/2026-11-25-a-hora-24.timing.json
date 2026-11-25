@@ -1,0 +1,634 @@
+{
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "AYUNO · HORA POR HORA",
+   "big": "24h",
+   "sub": "QUÉ PASA EN TU CUERPO",
+   "say": "Llevas veinticuatro horas sin comer.",
+   "show": "Llevas 24 horas sin comer.",
+   "pause": 0.2,
+   "start": 0.45,
+   "end": 2.503,
+   "words": [
+    {
+     "w": "Llevas",
+     "s": 0.45,
+     "e": 0.861
+    },
+    {
+     "w": "24",
+     "s": 0.861,
+     "e": 1.462
+    },
+    {
+     "w": "horas",
+     "s": 1.462,
+     "e": 1.872
+    },
+    {
+     "w": "sin",
+     "s": 1.872,
+     "e": 2.092
+    },
+    {
+     "w": "comer.",
+     "s": 2.092,
+     "e": 2.502
+    }
+   ]
+  },
+  {
+   "vis": "nivel",
+   "label": "GLUCÓGENO DEL HÍGADO",
+   "from": 0.8,
+   "to": 0.15,
+   "h": 24,
+   "say": "Tu glucógeno, el azúcar de reserva del hígado, va cada vez más bajo.",
+   "show": "Tu glucógeno, el azúcar de reserva del hígado, va cada vez más bajo.",
+   "particles": "glucosa",
+   "start": 2.703,
+   "end": 6.63,
+   "words": [
+    {
+     "w": "Tu",
+     "s": 2.703,
+     "e": 2.877
+    },
+    {
+     "w": "glucógeno,",
+     "s": 2.877,
+     "e": 3.505
+    },
+    {
+     "w": "el",
+     "s": 3.505,
+     "e": 3.679
+    },
+    {
+     "w": "azúcar",
+     "s": 3.679,
+     "e": 4.156
+    },
+    {
+     "w": "de",
+     "s": 4.156,
+     "e": 4.33
+    },
+    {
+     "w": "reserva",
+     "s": 4.33,
+     "e": 4.806
+    },
+    {
+     "w": "del",
+     "s": 4.806,
+     "e": 4.981
+    },
+    {
+     "w": "hígado,",
+     "s": 4.981,
+     "e": 5.457
+    },
+    {
+     "w": "va",
+     "s": 5.457,
+     "e": 5.631
+    },
+    {
+     "w": "cada",
+     "s": 5.631,
+     "e": 5.957
+    },
+    {
+     "w": "vez",
+     "s": 5.957,
+     "e": 6.131
+    },
+    {
+     "w": "más",
+     "s": 6.131,
+     "e": 6.305
+    },
+    {
+     "w": "bajo.",
+     "s": 6.305,
+     "e": 6.63
+    }
+   ]
+  },
+  {
+   "vis": "dato",
+   "label": "TU GLUCOSA EN SANGRE",
+   "value": "ESTABLE",
+   "size": 170,
+   "unit": "EL HÍGADO LA FABRICA",
+   "say": "Pero tu glucosa sigue estable: el hígado la fabrica.",
+   "show": "Pero tu glucosa sigue estable: el hígado la fabrica.",
+   "start": 6.91,
+   "end": 9.666,
+   "words": [
+    {
+     "w": "Pero",
+     "s": 6.91,
+     "e": 7.202
+    },
+    {
+     "w": "tu",
+     "s": 7.202,
+     "e": 7.357
+    },
+    {
+     "w": "glucosa",
+     "s": 7.357,
+     "e": 7.784
+    },
+    {
+     "w": "sigue",
+     "s": 7.784,
+     "e": 8.075
+    },
+    {
+     "w": "estable:",
+     "s": 8.075,
+     "e": 8.502
+    },
+    {
+     "w": "el",
+     "s": 8.502,
+     "e": 8.657
+    },
+    {
+     "w": "hígado",
+     "s": 8.657,
+     "e": 9.084
+    },
+    {
+     "w": "la",
+     "s": 9.084,
+     "e": 9.24
+    },
+    {
+     "w": "fabrica.",
+     "s": 9.24,
+     "e": 9.666
+    }
+   ]
+  },
+  {
+   "vis": "linea",
+   "h": 24,
+   "label": "MÁS GRASA COMO ENERGÍA",
+   "label2": "CETONAS EN AUMENTO",
+   "particles": "cetonas",
+   "say": "Tu cuerpo usa más grasa como energía, y las cetonas siguen subiendo.",
+   "show": "Tu cuerpo usa más grasa como energía, y las cetonas siguen subiendo.",
+   "start": 9.946,
+   "end": 13.854,
+   "words": [
+    {
+     "w": "Tu",
+     "s": 9.946,
+     "e": 10.128
+    },
+    {
+     "w": "cuerpo",
+     "s": 10.128,
+     "e": 10.466
+    },
+    {
+     "w": "usa",
+     "s": 10.466,
+     "e": 10.805
+    },
+    {
+     "w": "más",
+     "s": 10.805,
+     "e": 10.986
+    },
+    {
+     "w": "grasa",
+     "s": 10.986,
+     "e": 11.325
+    },
+    {
+     "w": "como",
+     "s": 11.325,
+     "e": 11.664
+    },
+    {
+     "w": "energía,",
+     "s": 11.664,
+     "e": 12.16
+    },
+    {
+     "w": "y",
+     "s": 12.16,
+     "e": 12.341
+    },
+    {
+     "w": "las",
+     "s": 12.341,
+     "e": 12.523
+    },
+    {
+     "w": "cetonas",
+     "s": 12.523,
+     "e": 13.019
+    },
+    {
+     "w": "siguen",
+     "s": 13.019,
+     "e": 13.358
+    },
+    {
+     "w": "subiendo.",
+     "s": 13.358,
+     "e": 13.854
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "EL HAMBRE LLEGA EN OLEADAS",
+   "particles": "cetonas",
+   "say": "El hambre llega en oleadas, a tus horas de comer, y suele pasar.",
+   "show": "El hambre llega en oleadas, a tus horas de comer, y suele pasar.",
+   "start": 14.134,
+   "end": 17.466,
+   "words": [
+    {
+     "w": "El",
+     "s": 14.134,
+     "e": 14.301
+    },
+    {
+     "w": "hambre",
+     "s": 14.301,
+     "e": 14.613
+    },
+    {
+     "w": "llega",
+     "s": 14.613,
+     "e": 14.925
+    },
+    {
+     "w": "en",
+     "s": 14.925,
+     "e": 15.092
+    },
+    {
+     "w": "oleadas,",
+     "s": 15.092,
+     "e": 15.55
+    },
+    {
+     "w": "a",
+     "s": 15.55,
+     "e": 15.717
+    },
+    {
+     "w": "tus",
+     "s": 15.717,
+     "e": 15.884
+    },
+    {
+     "w": "horas",
+     "s": 15.884,
+     "e": 16.196
+    },
+    {
+     "w": "de",
+     "s": 16.196,
+     "e": 16.363
+    },
+    {
+     "w": "comer,",
+     "s": 16.363,
+     "e": 16.675
+    },
+    {
+     "w": "y",
+     "s": 16.675,
+     "e": 16.842
+    },
+    {
+     "w": "suele",
+     "s": 16.842,
+     "e": 17.154
+    },
+    {
+     "w": "pasar.",
+     "s": 17.154,
+     "e": 17.466
+    }
+   ]
+  },
+  {
+   "vis": "mito",
+   "text": "Tu metabolismo se apaga",
+   "say": "Y no: en un día de ayuno, tu metabolismo no se apaga.",
+   "show": "Y no: en un día de ayuno, tu metabolismo no se apaga.",
+   "start": 17.746,
+   "end": 20.673,
+   "words": [
+    {
+     "w": "Y",
+     "s": 17.746,
+     "e": 17.901
+    },
+    {
+     "w": "no:",
+     "s": 17.901,
+     "e": 18.055
+    },
+    {
+     "w": "en",
+     "s": 18.055,
+     "e": 18.209
+    },
+    {
+     "w": "un",
+     "s": 18.209,
+     "e": 18.364
+    },
+    {
+     "w": "día",
+     "s": 18.364,
+     "e": 18.518
+    },
+    {
+     "w": "de",
+     "s": 18.518,
+     "e": 18.673
+    },
+    {
+     "w": "ayuno,",
+     "s": 18.673,
+     "e": 19.095
+    },
+    {
+     "w": "tu",
+     "s": 19.095,
+     "e": 19.25
+    },
+    {
+     "w": "metabolismo",
+     "s": 19.25,
+     "e": 19.941
+    },
+    {
+     "w": "no",
+     "s": 19.941,
+     "e": 20.096
+    },
+    {
+     "w": "se",
+     "s": 20.096,
+     "e": 20.25
+    },
+    {
+     "w": "apaga.",
+     "s": 20.25,
+     "e": 20.673
+    }
+   ]
+  },
+  {
+   "vis": "sello",
+   "mark": "24h",
+   "text": "SUPERVISIÓN MÉDICA",
+   "color": "#ff7a59",
+   "say": "Pero veinticuatro horas no es para todos: solo con supervisión médica.",
+   "show": "Pero 24 horas no es para todos: solo con supervisión médica.",
+   "start": 20.953,
+   "end": 24.989,
+   "words": [
+    {
+     "w": "Pero",
+     "s": 20.953,
+     "e": 21.305
+    },
+    {
+     "w": "24",
+     "s": 21.305,
+     "e": 21.821
+    },
+    {
+     "w": "horas",
+     "s": 21.821,
+     "e": 22.173
+    },
+    {
+     "w": "no",
+     "s": 22.173,
+     "e": 22.361
+    },
+    {
+     "w": "es",
+     "s": 22.361,
+     "e": 22.549
+    },
+    {
+     "w": "para",
+     "s": 22.549,
+     "e": 22.901
+    },
+    {
+     "w": "todos:",
+     "s": 22.901,
+     "e": 23.253
+    },
+    {
+     "w": "solo",
+     "s": 23.253,
+     "e": 23.605
+    },
+    {
+     "w": "con",
+     "s": 23.605,
+     "e": 23.793
+    },
+    {
+     "w": "supervisión",
+     "s": 23.793,
+     "e": 24.473
+    },
+    {
+     "w": "médica.",
+     "s": 24.473,
+     "e": 24.989
+    }
+   ]
+  },
+  {
+   "vis": "lista",
+   "title": "NO LO HAGAS SI",
+   "items": [
+    "Diabetes con medicamentos",
+    "Embarazo o lactancia",
+    "Trastorno alimentario"
+   ],
+   "icon": "✕",
+   "color": "#ff6b57",
+   "say": "Evítalo si tienes diabetes con medicamentos, embarazo, lactancia o un trastorno alimentario.",
+   "show": "Evítalo si tienes diabetes con medicamentos, embarazo, lactancia o un trastorno alimentario.",
+   "start": 25.269,
+   "end": 30.691,
+   "words": [
+    {
+     "w": "Evítalo",
+     "s": 25.269,
+     "e": 25.915
+    },
+    {
+     "w": "si",
+     "s": 25.915,
+     "e": 26.094
+    },
+    {
+     "w": "tienes",
+     "s": 26.094,
+     "e": 26.429
+    },
+    {
+     "w": "diabetes",
+     "s": 26.429,
+     "e": 26.92
+    },
+    {
+     "w": "con",
+     "s": 26.92,
+     "e": 27.099
+    },
+    {
+     "w": "medicamentos,",
+     "s": 27.099,
+     "e": 27.902
+    },
+    {
+     "w": "embarazo,",
+     "s": 27.902,
+     "e": 28.549
+    },
+    {
+     "w": "lactancia",
+     "s": 28.549,
+     "e": 29.039
+    },
+    {
+     "w": "o",
+     "s": 29.039,
+     "e": 29.219
+    },
+    {
+     "w": "un",
+     "s": 29.219,
+     "e": 29.398
+    },
+    {
+     "w": "trastorno",
+     "s": 29.398,
+     "e": 29.889
+    },
+    {
+     "w": "alimentario.",
+     "s": 29.889,
+     "e": 30.691
+    }
+   ]
+  },
+  {
+   "vis": "cierre",
+   "next": "HORA 36",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la hora treinta y seis.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la hora 36.",
+   "pause": 0.6,
+   "start": 30.971,
+   "end": 35.775,
+   "words": [
+    {
+     "w": "Calcula",
+     "s": 30.971,
+     "e": 31.453
+    },
+    {
+     "w": "tu",
+     "s": 31.453,
+     "e": 31.629
+    },
+    {
+     "w": "ventana",
+     "s": 31.629,
+     "e": 32.111
+    },
+    {
+     "w": "de",
+     "s": 32.111,
+     "e": 32.287
+    },
+    {
+     "w": "ayuno",
+     "s": 32.287,
+     "e": 32.769
+    },
+    {
+     "w": "en",
+     "s": 32.769,
+     "e": 32.945
+    },
+    {
+     "w": "el",
+     "s": 32.945,
+     "e": 33.121
+    },
+    {
+     "w": "link",
+     "s": 33.121,
+     "e": 33.297
+    },
+    {
+     "w": "de",
+     "s": 33.297,
+     "e": 33.473
+    },
+    {
+     "w": "mi",
+     "s": 33.473,
+     "e": 33.649
+    },
+    {
+     "w": "perfil.",
+     "s": 33.649,
+     "e": 33.978
+    },
+    {
+     "w": "Sígueme",
+     "s": 33.978,
+     "e": 34.459
+    },
+    {
+     "w": "para",
+     "s": 34.459,
+     "e": 34.788
+    },
+    {
+     "w": "la",
+     "s": 34.788,
+     "e": 34.964
+    },
+    {
+     "w": "hora",
+     "s": 34.964,
+     "e": 35.293
+    },
+    {
+     "w": "36.",
+     "s": 35.293,
+     "e": 35.775
+    }
+   ]
+  }
+ ],
+ "total": 37.17520833333333
+}

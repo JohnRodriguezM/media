@@ -1,3 +1,29 @@
 [
-  {"fecha": "2026-11-24", "franja": "extra", "slug": "hora-16", "serie": "Ayuno", "tema": "Hora 16 de ayuno: insulina en reposo (~4 h), glucógeno hepático usado en buena parte (~12 h), más grasa y cetonas (~16 h), autofagia en humanos = zona gris, aviso diabetes/medicamentos/embarazo", "promete": "HORA 24", "zernio_post_id": "6b05cd8680c085442bae8dca"}
+  {
+    "fecha": "2026-11-24",
+    "franja": "extra",
+    "slug": "hora-16",
+    "serie": "Ayuno",
+    "tema": "Hora 16 de ayuno: insulina en reposo (~4 h), glucógeno hepático usado en buena parte (~12 h), más grasa y cetonas (~16 h), autofagia en humanos = zona gris, aviso diabetes/medicamentos/embarazo",
+    "promete": "HORA 24",
+    "zernio_post_id": "6b05cd8680c085442bae8dca"
+  },
+  {
+    "fecha": "2026-11-25",
+    "franja": "A",
+    "slug": "2026-11-25-a-hora-24",
+    "serie": "Ayuno",
+    "tema": "Hora 24 de ayuno: glucógeno hepático cada vez más bajo, glucosa estable (el hígado la fabrica), más grasa y cetonas, hambre en oleadas, mito del metabolismo que se apaga, solo con supervisión médica; no en diabetes con medicamentos, embarazo, lactancia o TCA",
+    "promete": "HORA 36",
+    "zernio_post_id": null
+  },
+  {
+    "fecha": "2026-11-25",
+    "franja": "B",
+    "slug": "2026-11-25-b-resistencia-insulina-3-senales",
+    "serie": "Hormonas y metabolismo",
+    "tema": "3 señales de resistencia a la insulina: cintura >90/80 cm, triglicéridos altos y HDL bajo, acantosis; sueño al comer no diagnostica; pedir glucosa en ayunas y HbA1c; moverse y dormir mejoran la sensibilidad",
+    "promete": "EL CORTISOL",
+    "zernio_post_id": null
+  }
 ]

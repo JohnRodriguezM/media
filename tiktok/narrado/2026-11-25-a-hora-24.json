@@ -1,0 +1,86 @@
+{
+ "voice": "em_alex",
+ "speed": 1.08,
+ "scene3d": "cell",
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "AYUNO · HORA POR HORA",
+   "big": "24h",
+   "sub": "QUÉ PASA EN TU CUERPO",
+   "say": "Llevas veinticuatro horas sin comer.",
+   "show": "Llevas 24 horas sin comer.",
+   "pause": 0.2
+  },
+  {
+   "vis": "nivel",
+   "label": "GLUCÓGENO DEL HÍGADO",
+   "from": 0.8,
+   "to": 0.15,
+   "h": 24,
+   "say": "Tu glucógeno, el azúcar de reserva del hígado, va cada vez más bajo.",
+   "show": "Tu glucógeno, el azúcar de reserva del hígado, va cada vez más bajo.",
+   "particles": "glucosa"
+  },
+  {
+   "vis": "dato",
+   "label": "TU GLUCOSA EN SANGRE",
+   "value": "ESTABLE",
+   "size": 170,
+   "unit": "EL HÍGADO LA FABRICA",
+   "say": "Pero tu glucosa sigue estable: el hígado la fabrica.",
+   "show": "Pero tu glucosa sigue estable: el hígado la fabrica."
+  },
+  {
+   "vis": "linea",
+   "h": 24,
+   "label": "MÁS GRASA COMO ENERGÍA",
+   "label2": "CETONAS EN AUMENTO",
+   "particles": "cetonas",
+   "say": "Tu cuerpo usa más grasa como energía, y las cetonas siguen subiendo.",
+   "show": "Tu cuerpo usa más grasa como energía, y las cetonas siguen subiendo."
+  },
+  {
+   "vis": "texto",
+   "label": "EL HAMBRE LLEGA EN OLEADAS",
+   "particles": "cetonas",
+   "say": "El hambre llega en oleadas, a tus horas de comer, y suele pasar.",
+   "show": "El hambre llega en oleadas, a tus horas de comer, y suele pasar."
+  },
+  {
+   "vis": "mito",
+   "text": "Tu metabolismo se apaga",
+   "say": "Y no: en un día de ayuno, tu metabolismo no se apaga.",
+   "show": "Y no: en un día de ayuno, tu metabolismo no se apaga."
+  },
+  {
+   "vis": "sello",
+   "mark": "24h",
+   "text": "SUPERVISIÓN MÉDICA",
+   "color": "#ff7a59",
+   "say": "Pero veinticuatro horas no es para todos: solo con supervisión médica.",
+   "show": "Pero 24 horas no es para todos: solo con supervisión médica."
+  },
+  {
+   "vis": "lista",
+   "title": "NO LO HAGAS SI",
+   "items": [
+    "Diabetes con medicamentos",
+    "Embarazo o lactancia",
+    "Trastorno alimentario"
+   ],
+   "icon": "✕",
+   "color": "#ff6b57",
+   "say": "Evítalo si tienes diabetes con medicamentos, embarazo, lactancia o un trastorno alimentario.",
+   "show": "Evítalo si tienes diabetes con medicamentos, embarazo, lactancia o un trastorno alimentario."
+  },
+  {
+   "vis": "cierre",
+   "next": "HORA 36",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la hora treinta y seis.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la hora 36.",
+   "pause": 0.6
+  }
+ ],
+ "description": "Hora 24 de ayuno: qué pasa en tu cuerpo 👇\n\n→ Tu reserva de azúcar del hígado (glucógeno) está cada vez más baja.\n→ Tu glucosa se mantiene estable: el hígado la fabrica a partir de otras fuentes.\n→ Usas más grasa como energía y las cetonas siguen subiendo.\n→ El hambre llega en oleadas, a tus horas habituales de comer, y suele pasar.\n❌ Mito: \"en un día de ayuno el metabolismo se apaga\". No pasa.\n⚠️ Un ayuno de 24 horas no es para todos: solo con supervisión médica. No lo hagas si tienes diabetes con medicamentos, embarazo, lactancia o antecedente de trastorno alimentario.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Has llegado alguna vez a las 24 horas? ¿Qué fue lo más difícil? Te leo en comentarios.\n\nPróximo video: HORA 36.\n\n#ayuno #ayunointermitente #hora24 #salud #metabolismo #cetonas #medicina #ciencia #dosisdeciencia #ladosisdeciencia"
+}

@@ -127,7 +127,7 @@ def main(spec_path, out_path, models, fps=24):
     tmp = Path(tempfile.mkdtemp())
     voice_wav = tmp / "voice.wav"
     beats, total = synth(spec, str(voice_wav), str(models))
-    data = {"beats": beats, "total": total}
+    data = {"beats": beats, "total": total, "scene3d": spec.get("scene3d", "cell")}
     Path(out_path).with_suffix(".timing.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     asyncio.run(frames(data, tmp, fps))
     bed = music_bed(total)
