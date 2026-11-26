@@ -1,0 +1,689 @@
+{
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "SUEÑO Y CEREBRO",
+   "big": "30",
+   "sub": "MIN TRAS DESPERTAR",
+   "size": 300,
+   "say": "Unos treinta minutos tras despertar: pico de cortisol.",
+   "show": "Unos 30 minutos tras despertar: pico de cortisol.",
+   "pause": 0.2,
+   "start": 0.45,
+   "end": 3.611,
+   "words": [
+    {
+     "w": "Unos",
+     "s": 0.45,
+     "e": 0.804
+    },
+    {
+     "w": "30",
+     "s": 0.804,
+     "e": 1.323
+    },
+    {
+     "w": "minutos",
+     "s": 1.323,
+     "e": 1.841
+    },
+    {
+     "w": "tras",
+     "s": 1.841,
+     "e": 2.031
+    },
+    {
+     "w": "despertar:",
+     "s": 2.031,
+     "e": 2.549
+    },
+    {
+     "w": "pico",
+     "s": 2.549,
+     "e": 2.903
+    },
+    {
+     "w": "de",
+     "s": 2.903,
+     "e": 3.093
+    },
+    {
+     "w": "cortisol.",
+     "s": 3.093,
+     "e": 3.611
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "TU DESPERTADOR NATURAL",
+   "say": "El cortisol no es malo: es tu despertador natural.",
+   "show": "El cortisol no es malo: es tu despertador natural.",
+   "start": 3.811,
+   "end": 6.626,
+   "words": [
+    {
+     "w": "El",
+     "s": 3.811,
+     "e": 3.988
+    },
+    {
+     "w": "cortisol",
+     "s": 3.988,
+     "e": 4.471
+    },
+    {
+     "w": "no",
+     "s": 4.471,
+     "e": 4.647
+    },
+    {
+     "w": "es",
+     "s": 4.647,
+     "e": 4.824
+    },
+    {
+     "w": "malo:",
+     "s": 4.824,
+     "e": 5.154
+    },
+    {
+     "w": "es",
+     "s": 5.154,
+     "e": 5.33
+    },
+    {
+     "w": "tu",
+     "s": 5.33,
+     "e": 5.506
+    },
+    {
+     "w": "despertador",
+     "s": 5.506,
+     "e": 6.143
+    },
+    {
+     "w": "natural.",
+     "s": 6.143,
+     "e": 6.626
+    }
+   ]
+  },
+  {
+   "vis": "barras",
+   "label": "MAÑANA ALTO · NOCHE BAJO",
+   "from": 0.9,
+   "to": 0.15,
+   "color": "#ffc46b",
+   "say": "Sube en la mañana y llega a su punto más bajo en las primeras horas de sueño.",
+   "show": "Sube en la mañana y llega a su punto más bajo en las primeras horas de sueño.",
+   "start": 6.906,
+   "end": 10.94,
+   "words": [
+    {
+     "w": "Sube",
+     "s": 6.906,
+     "e": 7.2
+    },
+    {
+     "w": "en",
+     "s": 7.2,
+     "e": 7.357
+    },
+    {
+     "w": "la",
+     "s": 7.357,
+     "e": 7.514
+    },
+    {
+     "w": "mañana",
+     "s": 7.514,
+     "e": 7.944
+    },
+    {
+     "w": "y",
+     "s": 7.944,
+     "e": 8.101
+    },
+    {
+     "w": "llega",
+     "s": 8.101,
+     "e": 8.394
+    },
+    {
+     "w": "a",
+     "s": 8.394,
+     "e": 8.551
+    },
+    {
+     "w": "su",
+     "s": 8.551,
+     "e": 8.708
+    },
+    {
+     "w": "punto",
+     "s": 8.708,
+     "e": 9.002
+    },
+    {
+     "w": "más",
+     "s": 9.002,
+     "e": 9.158
+    },
+    {
+     "w": "bajo",
+     "s": 9.158,
+     "e": 9.452
+    },
+    {
+     "w": "en",
+     "s": 9.452,
+     "e": 9.609
+    },
+    {
+     "w": "las",
+     "s": 9.609,
+     "e": 9.766
+    },
+    {
+     "w": "primeras",
+     "s": 9.766,
+     "e": 10.196
+    },
+    {
+     "w": "horas",
+     "s": 10.196,
+     "e": 10.489
+    },
+    {
+     "w": "de",
+     "s": 10.489,
+     "e": 10.646
+    },
+    {
+     "w": "sueño.",
+     "s": 10.646,
+     "e": 10.94
+    }
+   ]
+  },
+  {
+   "vis": "compara",
+   "a": {
+    "title": "DORMISTE BIEN",
+    "text": "Baja de noche"
+   },
+   "b": {
+    "title": "DORMISTE MAL",
+    "text": "Puede seguir alto"
+   },
+   "say": "Dormir mal puede mantener tu cortisol más alto en la noche.",
+   "show": "Dormir mal puede mantener tu cortisol más alto en la noche.",
+   "start": 11.22,
+   "end": 14.509,
+   "words": [
+    {
+     "w": "Dormir",
+     "s": 11.22,
+     "e": 11.562
+    },
+    {
+     "w": "mal",
+     "s": 11.562,
+     "e": 11.745
+    },
+    {
+     "w": "puede",
+     "s": 11.745,
+     "e": 12.088
+    },
+    {
+     "w": "mantener",
+     "s": 12.088,
+     "e": 12.59
+    },
+    {
+     "w": "tu",
+     "s": 12.59,
+     "e": 12.773
+    },
+    {
+     "w": "cortisol",
+     "s": 12.773,
+     "e": 13.275
+    },
+    {
+     "w": "más",
+     "s": 13.275,
+     "e": 13.458
+    },
+    {
+     "w": "alto",
+     "s": 13.458,
+     "e": 13.8
+    },
+    {
+     "w": "en",
+     "s": 13.8,
+     "e": 13.983
+    },
+    {
+     "w": "la",
+     "s": 13.983,
+     "e": 14.167
+    },
+    {
+     "w": "noche.",
+     "s": 14.167,
+     "e": 14.509
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "ESTRÉS ⇄ INSOMNIO",
+   "say": "El estrés crónico hace lo mismo, y el ciclo se repite.",
+   "show": "El estrés crónico hace lo mismo, y el ciclo se repite.",
+   "start": 14.789,
+   "end": 17.865,
+   "words": [
+    {
+     "w": "El",
+     "s": 14.789,
+     "e": 14.96
+    },
+    {
+     "w": "estrés",
+     "s": 14.96,
+     "e": 15.281
+    },
+    {
+     "w": "crónico",
+     "s": 15.281,
+     "e": 15.75
+    },
+    {
+     "w": "hace",
+     "s": 15.75,
+     "e": 16.07
+    },
+    {
+     "w": "lo",
+     "s": 16.07,
+     "e": 16.241
+    },
+    {
+     "w": "mismo,",
+     "s": 16.241,
+     "e": 16.562
+    },
+    {
+     "w": "y",
+     "s": 16.562,
+     "e": 16.733
+    },
+    {
+     "w": "el",
+     "s": 16.733,
+     "e": 16.904
+    },
+    {
+     "w": "ciclo",
+     "s": 16.904,
+     "e": 17.225
+    },
+    {
+     "w": "se",
+     "s": 17.225,
+     "e": 17.396
+    },
+    {
+     "w": "repite.",
+     "s": 17.396,
+     "e": 17.865
+    }
+   ]
+  },
+  {
+   "vis": "mito",
+   "text": "La fatiga adrenal",
+   "say": "¿Fatiga adrenal? No es un diagnóstico reconocido por los endocrinólogos.",
+   "show": "¿Fatiga adrenal? No es un diagnóstico reconocido por los endocrinólogos.",
+   "start": 18.145,
+   "end": 22.074,
+   "words": [
+    {
+     "w": "¿Fatiga",
+     "s": 18.145,
+     "e": 18.595
+    },
+    {
+     "w": "adrenal?",
+     "s": 18.595,
+     "e": 19.045
+    },
+    {
+     "w": "No",
+     "s": 19.045,
+     "e": 19.21
+    },
+    {
+     "w": "es",
+     "s": 19.21,
+     "e": 19.374
+    },
+    {
+     "w": "un",
+     "s": 19.374,
+     "e": 19.538
+    },
+    {
+     "w": "diagnóstico",
+     "s": 19.538,
+     "e": 20.131
+    },
+    {
+     "w": "reconocido",
+     "s": 20.131,
+     "e": 20.867
+    },
+    {
+     "w": "por",
+     "s": 20.867,
+     "e": 21.031
+    },
+    {
+     "w": "los",
+     "s": 21.031,
+     "e": 21.196
+    },
+    {
+     "w": "endocrinólogos.",
+     "s": 21.196,
+     "e": 22.074
+    }
+   ]
+  },
+  {
+   "vis": "lista",
+   "title": "AYUDA A TU RITMO",
+   "items": [
+    "Luz natural temprano",
+    "Horario fijo de sueño",
+    "Menos pantallas de noche"
+   ],
+   "icon": "→",
+   "color": "#73eff7",
+   "say": "Lo que sí ayuda: luz natural en la mañana, horario fijo y menos pantallas de noche.",
+   "show": "Lo que sí ayuda: luz natural en la mañana, horario fijo y menos pantallas de noche.",
+   "start": 22.354,
+   "end": 27.009,
+   "words": [
+    {
+     "w": "Lo",
+     "s": 22.354,
+     "e": 22.525
+    },
+    {
+     "w": "que",
+     "s": 22.525,
+     "e": 22.695
+    },
+    {
+     "w": "sí",
+     "s": 22.695,
+     "e": 22.866
+    },
+    {
+     "w": "ayuda:",
+     "s": 22.866,
+     "e": 23.333
+    },
+    {
+     "w": "luz",
+     "s": 23.333,
+     "e": 23.503
+    },
+    {
+     "w": "natural",
+     "s": 23.503,
+     "e": 23.97
+    },
+    {
+     "w": "en",
+     "s": 23.97,
+     "e": 24.141
+    },
+    {
+     "w": "la",
+     "s": 24.141,
+     "e": 24.311
+    },
+    {
+     "w": "mañana,",
+     "s": 24.311,
+     "e": 24.778
+    },
+    {
+     "w": "horario",
+     "s": 24.778,
+     "e": 25.245
+    },
+    {
+     "w": "fijo",
+     "s": 25.245,
+     "e": 25.564
+    },
+    {
+     "w": "y",
+     "s": 25.564,
+     "e": 25.734
+    },
+    {
+     "w": "menos",
+     "s": 25.734,
+     "e": 26.053
+    },
+    {
+     "w": "pantallas",
+     "s": 26.053,
+     "e": 26.52
+    },
+    {
+     "w": "de",
+     "s": 26.52,
+     "e": 26.691
+    },
+    {
+     "w": "noche.",
+     "s": 26.691,
+     "e": 27.009
+    }
+   ]
+  },
+  {
+   "vis": "sello",
+   "text": "CONSULTA A TU MÉDICO",
+   "color": "#73eff7",
+   "say": "Si el cansancio no mejora, consúltalo con tu médico: no te autodiagnostiques.",
+   "show": "Si el cansancio no mejora, consúltalo con tu médico: no te autodiagnostiques.",
+   "start": 27.289,
+   "end": 31.624,
+   "words": [
+    {
+     "w": "Si",
+     "s": 27.289,
+     "e": 27.469
+    },
+    {
+     "w": "el",
+     "s": 27.469,
+     "e": 27.648
+    },
+    {
+     "w": "cansancio",
+     "s": 27.648,
+     "e": 28.139
+    },
+    {
+     "w": "no",
+     "s": 28.139,
+     "e": 28.318
+    },
+    {
+     "w": "mejora,",
+     "s": 28.318,
+     "e": 28.809
+    },
+    {
+     "w": "consúltalo",
+     "s": 28.809,
+     "e": 29.456
+    },
+    {
+     "w": "con",
+     "s": 29.456,
+     "e": 29.636
+    },
+    {
+     "w": "tu",
+     "s": 29.636,
+     "e": 29.815
+    },
+    {
+     "w": "médico:",
+     "s": 29.815,
+     "e": 30.306
+    },
+    {
+     "w": "no",
+     "s": 30.306,
+     "e": 30.485
+    },
+    {
+     "w": "te",
+     "s": 30.485,
+     "e": 30.665
+    },
+    {
+     "w": "autodiagnostiques.",
+     "s": 30.665,
+     "e": 31.624
+    }
+   ]
+  },
+  {
+   "vis": "cierre",
+   "next": "DORMIR 5 HORAS",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para ver qué pasa si duermes cinco horas.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para ver qué pasa si duermes 5 horas.",
+   "pause": 0.6,
+   "start": 31.904,
+   "end": 37.412,
+   "words": [
+    {
+     "w": "Calcula",
+     "s": 31.904,
+     "e": 32.373
+    },
+    {
+     "w": "tu",
+     "s": 32.373,
+     "e": 32.544
+    },
+    {
+     "w": "ventana",
+     "s": 32.544,
+     "e": 33.013
+    },
+    {
+     "w": "de",
+     "s": 33.013,
+     "e": 33.184
+    },
+    {
+     "w": "ayuno",
+     "s": 33.184,
+     "e": 33.653
+    },
+    {
+     "w": "en",
+     "s": 33.653,
+     "e": 33.824
+    },
+    {
+     "w": "el",
+     "s": 33.824,
+     "e": 33.995
+    },
+    {
+     "w": "link",
+     "s": 33.995,
+     "e": 34.166
+    },
+    {
+     "w": "de",
+     "s": 34.166,
+     "e": 34.338
+    },
+    {
+     "w": "mi",
+     "s": 34.338,
+     "e": 34.509
+    },
+    {
+     "w": "perfil.",
+     "s": 34.509,
+     "e": 34.829
+    },
+    {
+     "w": "Sígueme",
+     "s": 34.829,
+     "e": 35.298
+    },
+    {
+     "w": "para",
+     "s": 35.298,
+     "e": 35.618
+    },
+    {
+     "w": "ver",
+     "s": 35.618,
+     "e": 35.789
+    },
+    {
+     "w": "qué",
+     "s": 35.789,
+     "e": 35.96
+    },
+    {
+     "w": "pasa",
+     "s": 35.96,
+     "e": 36.28
+    },
+    {
+     "w": "si",
+     "s": 36.28,
+     "e": 36.451
+    },
+    {
+     "w": "duermes",
+     "s": 36.451,
+     "e": 36.772
+    },
+    {
+     "w": "5",
+     "s": 36.772,
+     "e": 37.092
+    },
+    {
+     "w": "horas.",
+     "s": 37.092,
+     "e": 37.412
+    }
+   ]
+  }
+ ],
+ "total": 38.811625,
+ "scene3d": "molecule"
+}

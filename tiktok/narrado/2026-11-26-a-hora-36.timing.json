@@ -1,0 +1,622 @@
+{
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "AYUNO · HORA POR HORA",
+   "big": "36h",
+   "sub": "QUÉ PASA EN TU CUERPO",
+   "say": "Llevas treinta y seis horas sin comer.",
+   "show": "Llevas 36 horas sin comer.",
+   "pause": 0.2,
+   "start": 0.45,
+   "end": 2.736,
+   "words": [
+    {
+     "w": "Llevas",
+     "s": 0.45,
+     "e": 0.907
+    },
+    {
+     "w": "36",
+     "s": 0.907,
+     "e": 1.577
+    },
+    {
+     "w": "horas",
+     "s": 1.577,
+     "e": 2.034
+    },
+    {
+     "w": "sin",
+     "s": 2.034,
+     "e": 2.279
+    },
+    {
+     "w": "comer.",
+     "s": 2.279,
+     "e": 2.736
+    }
+   ]
+  },
+  {
+   "vis": "nivel",
+   "label": "GLUCÓGENO DEL HÍGADO",
+   "from": 0.2,
+   "to": 0.05,
+   "h": 24,
+   "particles": "glucosa",
+   "say": "Tu reserva de azúcar en el hígado está casi agotada.",
+   "show": "Tu reserva de azúcar en el hígado está casi agotada.",
+   "start": 2.936,
+   "end": 5.97,
+   "words": [
+    {
+     "w": "Tu",
+     "s": 2.936,
+     "e": 3.091
+    },
+    {
+     "w": "reserva",
+     "s": 3.091,
+     "e": 3.516
+    },
+    {
+     "w": "de",
+     "s": 3.516,
+     "e": 3.671
+    },
+    {
+     "w": "azúcar",
+     "s": 3.671,
+     "e": 4.096
+    },
+    {
+     "w": "en",
+     "s": 4.096,
+     "e": 4.251
+    },
+    {
+     "w": "el",
+     "s": 4.251,
+     "e": 4.406
+    },
+    {
+     "w": "hígado",
+     "s": 4.406,
+     "e": 4.831
+    },
+    {
+     "w": "está",
+     "s": 4.831,
+     "e": 5.121
+    },
+    {
+     "w": "casi",
+     "s": 5.121,
+     "e": 5.411
+    },
+    {
+     "w": "agotada.",
+     "s": 5.411,
+     "e": 5.97
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "EL HÍGADO FABRICA GLUCOSA",
+   "say": "Aun así, tu glucosa se sostiene: el hígado la fabrica.",
+   "show": "Aun así, tu glucosa se sostiene: el hígado la fabrica.",
+   "start": 6.25,
+   "end": 9.177,
+   "words": [
+    {
+     "w": "Aun",
+     "s": 6.25,
+     "e": 6.414
+    },
+    {
+     "w": "así,",
+     "s": 6.414,
+     "e": 6.721
+    },
+    {
+     "w": "tu",
+     "s": 6.721,
+     "e": 6.885
+    },
+    {
+     "w": "glucosa",
+     "s": 6.885,
+     "e": 7.335
+    },
+    {
+     "w": "se",
+     "s": 7.335,
+     "e": 7.499
+    },
+    {
+     "w": "sostiene:",
+     "s": 7.499,
+     "e": 7.949
+    },
+    {
+     "w": "el",
+     "s": 7.949,
+     "e": 8.113
+    },
+    {
+     "w": "hígado",
+     "s": 8.113,
+     "e": 8.563
+    },
+    {
+     "w": "la",
+     "s": 8.563,
+     "e": 8.727
+    },
+    {
+     "w": "fabrica.",
+     "s": 8.727,
+     "e": 9.177
+    }
+   ]
+  },
+  {
+   "vis": "barras",
+   "label": "CETONAS EN AUMENTO",
+   "from": 0.4,
+   "to": 0.8,
+   "color": "#ffc46b",
+   "particles": "cetonas",
+   "say": "Las cetonas suben, y tu cerebro usa una parte como energía.",
+   "show": "Las cetonas suben, y tu cerebro usa una parte como energía.",
+   "start": 9.457,
+   "end": 12.81,
+   "words": [
+    {
+     "w": "Las",
+     "s": 9.457,
+     "e": 9.62
+    },
+    {
+     "w": "cetonas",
+     "s": 9.62,
+     "e": 10.067
+    },
+    {
+     "w": "suben,",
+     "s": 10.067,
+     "e": 10.371
+    },
+    {
+     "w": "y",
+     "s": 10.371,
+     "e": 10.534
+    },
+    {
+     "w": "tu",
+     "s": 10.534,
+     "e": 10.698
+    },
+    {
+     "w": "cerebro",
+     "s": 10.698,
+     "e": 11.144
+    },
+    {
+     "w": "usa",
+     "s": 11.144,
+     "e": 11.449
+    },
+    {
+     "w": "una",
+     "s": 11.449,
+     "e": 11.754
+    },
+    {
+     "w": "parte",
+     "s": 11.754,
+     "e": 12.059
+    },
+    {
+     "w": "como",
+     "s": 12.059,
+     "e": 12.364
+    },
+    {
+     "w": "energía.",
+     "s": 12.364,
+     "e": 12.81
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "PIERDES AGUA Y SAL",
+   "say": "También pierdes agua y sal: puede haber mareo o dolor de cabeza.",
+   "show": "También pierdes agua y sal: puede haber mareo o dolor de cabeza.",
+   "start": 13.09,
+   "end": 16.655,
+   "words": [
+    {
+     "w": "También",
+     "s": 13.09,
+     "e": 13.426
+    },
+    {
+     "w": "pierdes",
+     "s": 13.426,
+     "e": 13.762
+    },
+    {
+     "w": "agua",
+     "s": 13.762,
+     "e": 14.099
+    },
+    {
+     "w": "y",
+     "s": 14.099,
+     "e": 14.278
+    },
+    {
+     "w": "sal:",
+     "s": 14.278,
+     "e": 14.458
+    },
+    {
+     "w": "puede",
+     "s": 14.458,
+     "e": 14.794
+    },
+    {
+     "w": "haber",
+     "s": 14.794,
+     "e": 15.13
+    },
+    {
+     "w": "mareo",
+     "s": 15.13,
+     "e": 15.466
+    },
+    {
+     "w": "o",
+     "s": 15.466,
+     "e": 15.646
+    },
+    {
+     "w": "dolor",
+     "s": 15.646,
+     "e": 15.982
+    },
+    {
+     "w": "de",
+     "s": 15.982,
+     "e": 16.162
+    },
+    {
+     "w": "cabeza.",
+     "s": 16.162,
+     "e": 16.655
+    }
+   ]
+  },
+  {
+   "vis": "mito",
+   "text": "El ayuno te desintoxica",
+   "say": "¿Desintoxicarte? Tu hígado y tus riñones ya lo hacen a diario.",
+   "show": "¿Desintoxicarte? Tu hígado y tus riñones ya lo hacen a diario.",
+   "start": 16.935,
+   "end": 20.416,
+   "words": [
+    {
+     "w": "¿Desintoxicarte?",
+     "s": 16.935,
+     "e": 17.84
+    },
+    {
+     "w": "Tu",
+     "s": 17.84,
+     "e": 18.009
+    },
+    {
+     "w": "hígado",
+     "s": 18.009,
+     "e": 18.473
+    },
+    {
+     "w": "y",
+     "s": 18.473,
+     "e": 18.642
+    },
+    {
+     "w": "tus",
+     "s": 18.642,
+     "e": 18.811
+    },
+    {
+     "w": "riñones",
+     "s": 18.811,
+     "e": 19.275
+    },
+    {
+     "w": "ya",
+     "s": 19.275,
+     "e": 19.444
+    },
+    {
+     "w": "lo",
+     "s": 19.444,
+     "e": 19.614
+    },
+    {
+     "w": "hacen",
+     "s": 19.614,
+     "e": 19.93
+    },
+    {
+     "w": "a",
+     "s": 19.93,
+     "e": 20.1
+    },
+    {
+     "w": "diario.",
+     "s": 20.1,
+     "e": 20.416
+    }
+   ]
+  },
+  {
+   "vis": "sello",
+   "mark": "36h",
+   "text": "SUPERVISIÓN MÉDICA",
+   "color": "#ff7a59",
+   "say": "Treinta y seis horas es un ayuno prolongado: solo si tu médico lo indica y te supervisa.",
+   "show": "36 horas es un ayuno prolongado: solo si tu médico lo indica y te supervisa.",
+   "start": 20.696,
+   "end": 25.905,
+   "words": [
+    {
+     "w": "36",
+     "s": 20.696,
+     "e": 21.19
+    },
+    {
+     "w": "horas",
+     "s": 21.19,
+     "e": 21.526
+    },
+    {
+     "w": "es",
+     "s": 21.526,
+     "e": 21.707
+    },
+    {
+     "w": "un",
+     "s": 21.707,
+     "e": 21.887
+    },
+    {
+     "w": "ayuno",
+     "s": 21.887,
+     "e": 22.38
+    },
+    {
+     "w": "prolongado:",
+     "s": 22.38,
+     "e": 23.03
+    },
+    {
+     "w": "solo",
+     "s": 23.03,
+     "e": 23.367
+    },
+    {
+     "w": "si",
+     "s": 23.367,
+     "e": 23.547
+    },
+    {
+     "w": "tu",
+     "s": 23.547,
+     "e": 23.728
+    },
+    {
+     "w": "médico",
+     "s": 23.728,
+     "e": 24.221
+    },
+    {
+     "w": "lo",
+     "s": 24.221,
+     "e": 24.401
+    },
+    {
+     "w": "indica",
+     "s": 24.401,
+     "e": 24.895
+    },
+    {
+     "w": "y",
+     "s": 24.895,
+     "e": 25.075
+    },
+    {
+     "w": "te",
+     "s": 25.075,
+     "e": 25.255
+    },
+    {
+     "w": "supervisa.",
+     "s": 25.255,
+     "e": 25.905
+    }
+   ]
+  },
+  {
+   "vis": "lista",
+   "title": "NO LO HAGAS SI",
+   "items": [
+    "Diabetes con medicamentos",
+    "Embarazo o lactancia",
+    "Trastorno alimentario"
+   ],
+   "icon": "✕",
+   "color": "#ff6b57",
+   "say": "Nunca si tienes diabetes con medicamentos, embarazo, lactancia o trastorno alimentario.",
+   "show": "Nunca si tienes diabetes con medicamentos, embarazo, lactancia o trastorno alimentario.",
+   "start": 26.185,
+   "end": 31.244,
+   "words": [
+    {
+     "w": "Nunca",
+     "s": 26.185,
+     "e": 26.529
+    },
+    {
+     "w": "si",
+     "s": 26.529,
+     "e": 26.713
+    },
+    {
+     "w": "tienes",
+     "s": 26.713,
+     "e": 27.056
+    },
+    {
+     "w": "diabetes",
+     "s": 27.056,
+     "e": 27.56
+    },
+    {
+     "w": "con",
+     "s": 27.56,
+     "e": 27.744
+    },
+    {
+     "w": "medicamentos,",
+     "s": 27.744,
+     "e": 28.567
+    },
+    {
+     "w": "embarazo,",
+     "s": 28.567,
+     "e": 29.23
+    },
+    {
+     "w": "lactancia",
+     "s": 29.23,
+     "e": 29.734
+    },
+    {
+     "w": "o",
+     "s": 29.734,
+     "e": 29.918
+    },
+    {
+     "w": "trastorno",
+     "s": 29.918,
+     "e": 30.421
+    },
+    {
+     "w": "alimentario.",
+     "s": 30.421,
+     "e": 31.244
+    }
+   ]
+  },
+  {
+   "vis": "cierre",
+   "next": "HORA 48",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la hora cuarenta y ocho.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la hora 48.",
+   "pause": 0.6,
+   "start": 31.524,
+   "end": 36.389,
+   "words": [
+    {
+     "w": "Calcula",
+     "s": 31.524,
+     "e": 32.012
+    },
+    {
+     "w": "tu",
+     "s": 32.012,
+     "e": 32.191
+    },
+    {
+     "w": "ventana",
+     "s": 32.191,
+     "e": 32.679
+    },
+    {
+     "w": "de",
+     "s": 32.679,
+     "e": 32.857
+    },
+    {
+     "w": "ayuno",
+     "s": 32.857,
+     "e": 33.345
+    },
+    {
+     "w": "en",
+     "s": 33.345,
+     "e": 33.523
+    },
+    {
+     "w": "el",
+     "s": 33.523,
+     "e": 33.701
+    },
+    {
+     "w": "link",
+     "s": 33.701,
+     "e": 33.879
+    },
+    {
+     "w": "de",
+     "s": 33.879,
+     "e": 34.057
+    },
+    {
+     "w": "mi",
+     "s": 34.057,
+     "e": 34.236
+    },
+    {
+     "w": "perfil.",
+     "s": 34.236,
+     "e": 34.569
+    },
+    {
+     "w": "Sígueme",
+     "s": 34.569,
+     "e": 35.057
+    },
+    {
+     "w": "para",
+     "s": 35.057,
+     "e": 35.39
+    },
+    {
+     "w": "la",
+     "s": 35.39,
+     "e": 35.568
+    },
+    {
+     "w": "hora",
+     "s": 35.568,
+     "e": 35.901
+    },
+    {
+     "w": "48.",
+     "s": 35.901,
+     "e": 36.389
+    }
+   ]
+  }
+ ],
+ "total": 37.788875,
+ "scene3d": "cell"
+}

@@ -1,0 +1,86 @@
+{
+ "voice": "em_alex",
+ "speed": 1.08,
+ "scene3d": "molecule",
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "SUEÑO Y CEREBRO",
+   "big": "30",
+   "sub": "MIN TRAS DESPERTAR",
+   "size": 300,
+   "say": "Unos treinta minutos tras despertar: pico de cortisol.",
+   "show": "Unos 30 minutos tras despertar: pico de cortisol.",
+   "pause": 0.2
+  },
+  {
+   "vis": "texto",
+   "label": "TU DESPERTADOR NATURAL",
+   "say": "El cortisol no es malo: es tu despertador natural.",
+   "show": "El cortisol no es malo: es tu despertador natural."
+  },
+  {
+   "vis": "barras",
+   "label": "MAÑANA ALTO · NOCHE BAJO",
+   "from": 0.9,
+   "to": 0.15,
+   "color": "#ffc46b",
+   "say": "Sube en la mañana y llega a su punto más bajo en las primeras horas de sueño.",
+   "show": "Sube en la mañana y llega a su punto más bajo en las primeras horas de sueño."
+  },
+  {
+   "vis": "compara",
+   "a": {
+    "title": "DORMISTE BIEN",
+    "text": "Baja de noche"
+   },
+   "b": {
+    "title": "DORMISTE MAL",
+    "text": "Puede seguir alto"
+   },
+   "say": "Dormir mal puede mantener tu cortisol más alto en la noche.",
+   "show": "Dormir mal puede mantener tu cortisol más alto en la noche."
+  },
+  {
+   "vis": "texto",
+   "label": "ESTRÉS ⇄ INSOMNIO",
+   "say": "El estrés crónico hace lo mismo, y el ciclo se repite.",
+   "show": "El estrés crónico hace lo mismo, y el ciclo se repite."
+  },
+  {
+   "vis": "mito",
+   "text": "La fatiga adrenal",
+   "say": "¿Fatiga adrenal? No es un diagnóstico reconocido por los endocrinólogos.",
+   "show": "¿Fatiga adrenal? No es un diagnóstico reconocido por los endocrinólogos."
+  },
+  {
+   "vis": "lista",
+   "title": "AYUDA A TU RITMO",
+   "items": [
+    "Luz natural temprano",
+    "Horario fijo de sueño",
+    "Menos pantallas de noche"
+   ],
+   "icon": "→",
+   "color": "#73eff7",
+   "say": "Lo que sí ayuda: luz natural en la mañana, horario fijo y menos pantallas de noche.",
+   "show": "Lo que sí ayuda: luz natural en la mañana, horario fijo y menos pantallas de noche."
+  },
+  {
+   "vis": "sello",
+   "text": "CONSULTA A TU MÉDICO",
+   "color": "#73eff7",
+   "say": "Si el cansancio no mejora, consúltalo con tu médico: no te autodiagnostiques.",
+   "show": "Si el cansancio no mejora, consúltalo con tu médico: no te autodiagnostiques."
+  },
+  {
+   "vis": "cierre",
+   "next": "DORMIR 5 HORAS",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para ver qué pasa si duermes cinco horas.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para ver qué pasa si duermes 5 horas.",
+   "pause": 0.6
+  }
+ ],
+ "description": "El cortisol y tu sueño 👇\n\n→ Tu cortisol llega a su pico unos 30 minutos después de despertar.\n→ No es una hormona \"mala\": es tu despertador natural y te da energía para arrancar el día.\n→ Sube en la mañana, baja durante el día y está en su punto más bajo en las primeras horas de sueño.\n⚠️ Dormir mal puede mantener tu cortisol más alto en la noche, y el estrés crónico hace lo mismo: cuesta más dormir y el ciclo se repite.\n❌ \"Fatiga adrenal\" no es un diagnóstico reconocido por los endocrinólogos.\n→ Lo que sí ayuda a tu ritmo: luz natural en la mañana, horario fijo de sueño y menos pantallas de noche.\n⚠️ Si el cansancio no mejora, consúltalo con tu médico. No te autodiagnostiques.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿A qué hora te despiertas con más energía? Te leo en comentarios.\n\nPróximo video: qué pasa si duermes 5 horas.\n\n#cortisol #sueño #estres #hormonas #insomnio #salud #medicina #ciencia #dosisdeciencia #ladosisdeciencia",
+ "description_ig": "El cortisol y tu sueño 👇\n\n→ Tu cortisol llega a su pico unos 30 minutos después de despertar.\n→ No es una hormona \"mala\": es tu despertador natural y te da energía para arrancar el día.\n→ Sube en la mañana, baja durante el día y está en su punto más bajo en las primeras horas de sueño.\n⚠️ Dormir mal puede mantener tu cortisol más alto en la noche, y el estrés crónico hace lo mismo: cuesta más dormir y el ciclo se repite.\n❌ \"Fatiga adrenal\" no es un diagnóstico reconocido por los endocrinólogos.\n→ Lo que sí ayuda a tu ritmo: luz natural en la mañana, horario fijo de sueño y menos pantallas de noche.\n⚠️ Si el cansancio no mejora, consúltalo con tu médico. No te autodiagnostiques.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿A qué hora te despiertas con más energía? Te leo en comentarios.\n\nPróximo video: qué pasa si duermes 5 horas.\n\n#cortisol #sueño #hormonas #salud #dosisdeciencia"
+}

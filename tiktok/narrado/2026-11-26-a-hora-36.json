@@ -1,0 +1,84 @@
+{
+ "voice": "em_alex",
+ "speed": 1.08,
+ "scene3d": "cell",
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "AYUNO · HORA POR HORA",
+   "big": "36h",
+   "sub": "QUÉ PASA EN TU CUERPO",
+   "say": "Llevas treinta y seis horas sin comer.",
+   "show": "Llevas 36 horas sin comer.",
+   "pause": 0.2
+  },
+  {
+   "vis": "nivel",
+   "label": "GLUCÓGENO DEL HÍGADO",
+   "from": 0.2,
+   "to": 0.05,
+   "h": 24,
+   "particles": "glucosa",
+   "say": "Tu reserva de azúcar en el hígado está casi agotada.",
+   "show": "Tu reserva de azúcar en el hígado está casi agotada."
+  },
+  {
+   "vis": "texto",
+   "label": "EL HÍGADO FABRICA GLUCOSA",
+   "say": "Aun así, tu glucosa se sostiene: el hígado la fabrica.",
+   "show": "Aun así, tu glucosa se sostiene: el hígado la fabrica."
+  },
+  {
+   "vis": "barras",
+   "label": "CETONAS EN AUMENTO",
+   "from": 0.4,
+   "to": 0.8,
+   "color": "#ffc46b",
+   "particles": "cetonas",
+   "say": "Las cetonas suben, y tu cerebro usa una parte como energía.",
+   "show": "Las cetonas suben, y tu cerebro usa una parte como energía."
+  },
+  {
+   "vis": "texto",
+   "label": "PIERDES AGUA Y SAL",
+   "say": "También pierdes agua y sal: puede haber mareo o dolor de cabeza.",
+   "show": "También pierdes agua y sal: puede haber mareo o dolor de cabeza."
+  },
+  {
+   "vis": "mito",
+   "text": "El ayuno te desintoxica",
+   "say": "¿Desintoxicarte? Tu hígado y tus riñones ya lo hacen a diario.",
+   "show": "¿Desintoxicarte? Tu hígado y tus riñones ya lo hacen a diario."
+  },
+  {
+   "vis": "sello",
+   "mark": "36h",
+   "text": "SUPERVISIÓN MÉDICA",
+   "color": "#ff7a59",
+   "say": "Treinta y seis horas es un ayuno prolongado: solo si tu médico lo indica y te supervisa.",
+   "show": "36 horas es un ayuno prolongado: solo si tu médico lo indica y te supervisa."
+  },
+  {
+   "vis": "lista",
+   "title": "NO LO HAGAS SI",
+   "items": [
+    "Diabetes con medicamentos",
+    "Embarazo o lactancia",
+    "Trastorno alimentario"
+   ],
+   "icon": "✕",
+   "color": "#ff6b57",
+   "say": "Nunca si tienes diabetes con medicamentos, embarazo, lactancia o trastorno alimentario.",
+   "show": "Nunca si tienes diabetes con medicamentos, embarazo, lactancia o trastorno alimentario."
+  },
+  {
+   "vis": "cierre",
+   "next": "HORA 48",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la hora cuarenta y ocho.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la hora 48.",
+   "pause": 0.6
+  }
+ ],
+ "description": "Hora 36 de ayuno: qué pasa en tu cuerpo 👇\n\n→ Tu reserva de azúcar del hígado (glucógeno) está casi agotada.\n→ Tu glucosa se sostiene: el hígado la fabrica a partir de otras fuentes.\n→ Las cetonas siguen subiendo y el cerebro empieza a usar una parte como energía.\n→ Pierdes agua y sal: pueden aparecer mareo o dolor de cabeza.\n❌ Mito: \"el ayuno te desintoxica\". Tu hígado y tus riñones lo hacen todos los días, comas o no.\n⚠️ 36 horas es un ayuno prolongado: solo si tu médico lo indica y te supervisa. Nunca si tienes diabetes con medicamentos, embarazo, lactancia o antecedente de trastorno alimentario.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Creías que el ayuno \"desintoxicaba\"? Te leo en comentarios.\n\nPróximo video: HORA 48.\n\n#ayuno #ayunointermitente #hora36 #ayunoprolongado #salud #metabolismo #cetonas #medicina #dosisdeciencia #ladosisdeciencia",
+ "description_ig": "Hora 36 de ayuno: qué pasa en tu cuerpo 👇\n\n→ Tu reserva de azúcar del hígado (glucógeno) está casi agotada.\n→ Tu glucosa se sostiene: el hígado la fabrica a partir de otras fuentes.\n→ Las cetonas siguen subiendo y el cerebro empieza a usar una parte como energía.\n→ Pierdes agua y sal: pueden aparecer mareo o dolor de cabeza.\n❌ Mito: \"el ayuno te desintoxica\". Tu hígado y tus riñones lo hacen todos los días, comas o no.\n⚠️ 36 horas es un ayuno prolongado: solo si tu médico lo indica y te supervisa. Nunca si tienes diabetes con medicamentos, embarazo, lactancia o antecedente de trastorno alimentario.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Creías que el ayuno \"desintoxicaba\"? Te leo en comentarios.\n\nPróximo video: HORA 48.\n\n#ayuno #ayunointermitente #salud #metabolismo #dosisdeciencia"
+}
