@@ -1,0 +1,631 @@
+{
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "AYUNO · HORA POR HORA",
+   "big": "48h",
+   "sub": "QUÉ PASA EN TU CUERPO",
+   "say": "Llevas cuarenta y ocho horas sin comer.",
+   "show": "Llevas 48 horas sin comer.",
+   "pause": 0.2,
+   "start": 0.45,
+   "end": 2.759,
+   "words": [
+    {
+     "w": "Llevas",
+     "s": 0.45,
+     "e": 0.912
+    },
+    {
+     "w": "48",
+     "s": 0.912,
+     "e": 1.588
+    },
+    {
+     "w": "horas",
+     "s": 1.588,
+     "e": 2.05
+    },
+    {
+     "w": "sin",
+     "s": 2.05,
+     "e": 2.297
+    },
+    {
+     "w": "comer.",
+     "s": 2.297,
+     "e": 2.759
+    }
+   ]
+  },
+  {
+   "vis": "nivel",
+   "label": "GLUCÓGENO DEL HÍGADO",
+   "from": 0.08,
+   "to": 0.0,
+   "h": 48,
+   "particles": "glucosa",
+   "say": "Tu reserva de azúcar en el hígado ya está prácticamente vacía.",
+   "show": "Tu reserva de azúcar en el hígado ya está prácticamente vacía.",
+   "start": 2.959,
+   "end": 6.568,
+   "words": [
+    {
+     "w": "Tu",
+     "s": 2.959,
+     "e": 3.127
+    },
+    {
+     "w": "reserva",
+     "s": 3.127,
+     "e": 3.588
+    },
+    {
+     "w": "de",
+     "s": 3.588,
+     "e": 3.757
+    },
+    {
+     "w": "azúcar",
+     "s": 3.757,
+     "e": 4.218
+    },
+    {
+     "w": "en",
+     "s": 4.218,
+     "e": 4.386
+    },
+    {
+     "w": "el",
+     "s": 4.386,
+     "e": 4.554
+    },
+    {
+     "w": "hígado",
+     "s": 4.554,
+     "e": 5.016
+    },
+    {
+     "w": "ya",
+     "s": 5.016,
+     "e": 5.184
+    },
+    {
+     "w": "está",
+     "s": 5.184,
+     "e": 5.499
+    },
+    {
+     "w": "prácticamente",
+     "s": 5.499,
+     "e": 6.253
+    },
+    {
+     "w": "vacía.",
+     "s": 6.253,
+     "e": 6.568
+    }
+   ]
+  },
+  {
+   "vis": "compara",
+   "a": {
+    "title": "GRASA",
+    "text": "Combustible principal"
+   },
+   "b": {
+    "title": "PROTEÍNA",
+    "text": "Una parte, para glucosa"
+   },
+   "say": "Tu cuerpo quema sobre todo grasa, y usa algo de proteína para fabricar glucosa.",
+   "show": "Tu cuerpo quema sobre todo grasa, y usa algo de proteína para fabricar glucosa.",
+   "start": 6.848,
+   "end": 11.437,
+   "words": [
+    {
+     "w": "Tu",
+     "s": 6.848,
+     "e": 7.023
+    },
+    {
+     "w": "cuerpo",
+     "s": 7.023,
+     "e": 7.351
+    },
+    {
+     "w": "quema",
+     "s": 7.351,
+     "e": 7.679
+    },
+    {
+     "w": "sobre",
+     "s": 7.679,
+     "e": 8.007
+    },
+    {
+     "w": "todo",
+     "s": 8.007,
+     "e": 8.334
+    },
+    {
+     "w": "grasa,",
+     "s": 8.334,
+     "e": 8.662
+    },
+    {
+     "w": "y",
+     "s": 8.662,
+     "e": 8.838
+    },
+    {
+     "w": "usa",
+     "s": 8.838,
+     "e": 9.165
+    },
+    {
+     "w": "algo",
+     "s": 9.165,
+     "e": 9.493
+    },
+    {
+     "w": "de",
+     "s": 9.493,
+     "e": 9.669
+    },
+    {
+     "w": "proteína",
+     "s": 9.669,
+     "e": 10.149
+    },
+    {
+     "w": "para",
+     "s": 10.149,
+     "e": 10.477
+    },
+    {
+     "w": "fabricar",
+     "s": 10.477,
+     "e": 10.957
+    },
+    {
+     "w": "glucosa.",
+     "s": 10.957,
+     "e": 11.437
+    }
+   ]
+  },
+  {
+   "vis": "barras",
+   "label": "CETONAS EN AUMENTO",
+   "from": 0.8,
+   "to": 1.0,
+   "color": "#ffc46b",
+   "particles": "cetonas",
+   "say": "Las cetonas siguen subiendo, y tu cerebro las usa cada vez más.",
+   "show": "Las cetonas siguen subiendo, y tu cerebro las usa cada vez más.",
+   "start": 11.717,
+   "end": 15.279,
+   "words": [
+    {
+     "w": "Las",
+     "s": 11.717,
+     "e": 11.897
+    },
+    {
+     "w": "cetonas",
+     "s": 11.897,
+     "e": 12.389
+    },
+    {
+     "w": "siguen",
+     "s": 12.389,
+     "e": 12.725
+    },
+    {
+     "w": "subiendo,",
+     "s": 12.725,
+     "e": 13.217
+    },
+    {
+     "w": "y",
+     "s": 13.217,
+     "e": 13.397
+    },
+    {
+     "w": "tu",
+     "s": 13.397,
+     "e": 13.577
+    },
+    {
+     "w": "cerebro",
+     "s": 13.577,
+     "e": 14.069
+    },
+    {
+     "w": "las",
+     "s": 14.069,
+     "e": 14.248
+    },
+    {
+     "w": "usa",
+     "s": 14.248,
+     "e": 14.584
+    },
+    {
+     "w": "cada",
+     "s": 14.584,
+     "e": 14.92
+    },
+    {
+     "w": "vez",
+     "s": 14.92,
+     "e": 15.1
+    },
+    {
+     "w": "más.",
+     "s": 15.1,
+     "e": 15.279
+    }
+   ]
+  },
+  {
+   "vis": "dato",
+   "label": "HORMONA DE CRECIMIENTO",
+   "value": "↑",
+   "unit": "SUBE",
+   "say": "La hormona de crecimiento sube, y ayuda a movilizar grasa.",
+   "show": "La hormona de crecimiento sube, y ayuda a movilizar grasa.",
+   "start": 15.559,
+   "end": 18.742,
+   "words": [
+    {
+     "w": "La",
+     "s": 15.559,
+     "e": 15.715
+    },
+    {
+     "w": "hormona",
+     "s": 15.715,
+     "e": 16.142
+    },
+    {
+     "w": "de",
+     "s": 16.142,
+     "e": 16.298
+    },
+    {
+     "w": "crecimiento",
+     "s": 16.298,
+     "e": 16.86
+    },
+    {
+     "w": "sube,",
+     "s": 16.86,
+     "e": 17.151
+    },
+    {
+     "w": "y",
+     "s": 17.151,
+     "e": 17.307
+    },
+    {
+     "w": "ayuda",
+     "s": 17.307,
+     "e": 17.733
+    },
+    {
+     "w": "a",
+     "s": 17.733,
+     "e": 17.889
+    },
+    {
+     "w": "movilizar",
+     "s": 17.889,
+     "e": 18.451
+    },
+    {
+     "w": "grasa.",
+     "s": 18.451,
+     "e": 18.742
+    }
+   ]
+  },
+  {
+   "vis": "mito",
+   "text": "Todo lo que bajas es grasa",
+   "say": "¿Bajaste de peso? Buena parte es agua, no grasa.",
+   "show": "¿Bajaste de peso? Buena parte es agua, no grasa.",
+   "start": 19.022,
+   "end": 21.757,
+   "words": [
+    {
+     "w": "¿Bajaste",
+     "s": 19.022,
+     "e": 19.519
+    },
+    {
+     "w": "de",
+     "s": 19.519,
+     "e": 19.7
+    },
+    {
+     "w": "peso?",
+     "s": 19.7,
+     "e": 20.039
+    },
+    {
+     "w": "Buena",
+     "s": 20.039,
+     "e": 20.378
+    },
+    {
+     "w": "parte",
+     "s": 20.378,
+     "e": 20.717
+    },
+    {
+     "w": "es",
+     "s": 20.717,
+     "e": 20.898
+    },
+    {
+     "w": "agua,",
+     "s": 20.898,
+     "e": 21.237
+    },
+    {
+     "w": "no",
+     "s": 21.237,
+     "e": 21.418
+    },
+    {
+     "w": "grasa.",
+     "s": 21.418,
+     "e": 21.757
+    }
+   ]
+  },
+  {
+   "vis": "sello",
+   "mark": "48h",
+   "text": "SUPERVISIÓN MÉDICA",
+   "color": "#ff7a59",
+   "say": "Cuarenta y ocho horas es un ayuno prolongado: solo con indicación y supervisión médica.",
+   "show": "48 horas es un ayuno prolongado: solo con indicación y supervisión médica.",
+   "start": 22.037,
+   "end": 27.351,
+   "words": [
+    {
+     "w": "48",
+     "s": 22.037,
+     "e": 22.58
+    },
+    {
+     "w": "horas",
+     "s": 22.58,
+     "e": 22.951
+    },
+    {
+     "w": "es",
+     "s": 22.951,
+     "e": 23.15
+    },
+    {
+     "w": "un",
+     "s": 23.15,
+     "e": 23.348
+    },
+    {
+     "w": "ayuno",
+     "s": 23.348,
+     "e": 23.892
+    },
+    {
+     "w": "prolongado:",
+     "s": 23.892,
+     "e": 24.607
+    },
+    {
+     "w": "solo",
+     "s": 24.607,
+     "e": 24.978
+    },
+    {
+     "w": "con",
+     "s": 24.978,
+     "e": 25.177
+    },
+    {
+     "w": "indicación",
+     "s": 25.177,
+     "e": 25.893
+    },
+    {
+     "w": "y",
+     "s": 25.893,
+     "e": 26.091
+    },
+    {
+     "w": "supervisión",
+     "s": 26.091,
+     "e": 26.807
+    },
+    {
+     "w": "médica.",
+     "s": 26.807,
+     "e": 27.351
+    }
+   ]
+  },
+  {
+   "vis": "lista",
+   "title": "NO LO HAGAS SI",
+   "items": [
+    "Diabetes con medicamentos",
+    "Embarazo o lactancia",
+    "Trastorno alimentario"
+   ],
+   "icon": "✕",
+   "color": "#ff6b57",
+   "say": "Nunca con diabetes en tratamiento, embarazo, lactancia o trastorno alimentario.",
+   "show": "Nunca con diabetes en tratamiento, embarazo, lactancia o trastorno alimentario.",
+   "start": 27.631,
+   "end": 32.365,
+   "words": [
+    {
+     "w": "Nunca",
+     "s": 27.631,
+     "e": 27.988
+    },
+    {
+     "w": "con",
+     "s": 27.988,
+     "e": 28.179
+    },
+    {
+     "w": "diabetes",
+     "s": 28.179,
+     "e": 28.702
+    },
+    {
+     "w": "en",
+     "s": 28.702,
+     "e": 28.893
+    },
+    {
+     "w": "tratamiento,",
+     "s": 28.893,
+     "e": 29.582
+    },
+    {
+     "w": "embarazo,",
+     "s": 29.582,
+     "e": 30.272
+    },
+    {
+     "w": "lactancia",
+     "s": 30.272,
+     "e": 30.795
+    },
+    {
+     "w": "o",
+     "s": 30.795,
+     "e": 30.986
+    },
+    {
+     "w": "trastorno",
+     "s": 30.986,
+     "e": 31.509
+    },
+    {
+     "w": "alimentario.",
+     "s": 31.509,
+     "e": 32.365
+    }
+   ]
+  },
+  {
+   "vis": "cierre",
+   "next": "CÓMO ROMPERLO",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para aprender a romper el ayuno.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para aprender a romper el ayuno.",
+   "pause": 0.6,
+   "start": 32.645,
+   "end": 37.705,
+   "words": [
+    {
+     "w": "Calcula",
+     "s": 32.645,
+     "e": 33.091
+    },
+    {
+     "w": "tu",
+     "s": 33.091,
+     "e": 33.254
+    },
+    {
+     "w": "ventana",
+     "s": 33.254,
+     "e": 33.701
+    },
+    {
+     "w": "de",
+     "s": 33.701,
+     "e": 33.864
+    },
+    {
+     "w": "ayuno",
+     "s": 33.864,
+     "e": 34.31
+    },
+    {
+     "w": "en",
+     "s": 34.31,
+     "e": 34.473
+    },
+    {
+     "w": "el",
+     "s": 34.473,
+     "e": 34.636
+    },
+    {
+     "w": "link",
+     "s": 34.636,
+     "e": 34.799
+    },
+    {
+     "w": "de",
+     "s": 34.799,
+     "e": 34.962
+    },
+    {
+     "w": "mi",
+     "s": 34.962,
+     "e": 35.125
+    },
+    {
+     "w": "perfil.",
+     "s": 35.125,
+     "e": 35.43
+    },
+    {
+     "w": "Sígueme",
+     "s": 35.43,
+     "e": 35.877
+    },
+    {
+     "w": "para",
+     "s": 35.877,
+     "e": 36.181
+    },
+    {
+     "w": "aprender",
+     "s": 36.181,
+     "e": 36.628
+    },
+    {
+     "w": "a",
+     "s": 36.628,
+     "e": 36.791
+    },
+    {
+     "w": "romper",
+     "s": 36.791,
+     "e": 37.095
+    },
+    {
+     "w": "el",
+     "s": 37.095,
+     "e": 37.258
+    },
+    {
+     "w": "ayuno.",
+     "s": 37.258,
+     "e": 37.705
+    }
+   ]
+  }
+ ],
+ "total": 39.104958333333336,
+ "scene3d": "cell"
+}

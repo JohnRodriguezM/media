@@ -1,0 +1,27 @@
+{
+ "voice": "em_alex",
+ "speed": 1.08,
+ "scene3d": "cell",
+ "beats": [
+  {"vis":"gancho","kicker":"AYUNO · HORA POR HORA","big":"48h","sub":"QUÉ PASA EN TU CUERPO",
+   "say":"Llevas cuarenta y ocho horas sin comer.","show":"Llevas 48 horas sin comer.","pause":0.2},
+  {"vis":"nivel","label":"GLUCÓGENO DEL HÍGADO","from":0.08,"to":0.0,"h":48,"particles":"glucosa",
+   "say":"Tu reserva de azúcar en el hígado ya está prácticamente vacía.","show":"Tu reserva de azúcar en el hígado ya está prácticamente vacía."},
+  {"vis":"compara","a":{"title":"GRASA","text":"Combustible principal"},"b":{"title":"PROTEÍNA","text":"Una parte, para glucosa"},
+   "say":"Tu cuerpo quema sobre todo grasa, y usa algo de proteína para fabricar glucosa.","show":"Tu cuerpo quema sobre todo grasa, y usa algo de proteína para fabricar glucosa."},
+  {"vis":"barras","label":"CETONAS EN AUMENTO","from":0.8,"to":1.0,"color":"#ffc46b","particles":"cetonas",
+   "say":"Las cetonas siguen subiendo, y tu cerebro las usa cada vez más.","show":"Las cetonas siguen subiendo, y tu cerebro las usa cada vez más."},
+  {"vis":"dato","label":"HORMONA DE CRECIMIENTO","value":"↑","unit":"SUBE",
+   "say":"La hormona de crecimiento sube, y ayuda a movilizar grasa.","show":"La hormona de crecimiento sube, y ayuda a movilizar grasa."},
+  {"vis":"mito","text":"Todo lo que bajas es grasa",
+   "say":"¿Bajaste de peso? Buena parte es agua, no grasa.","show":"¿Bajaste de peso? Buena parte es agua, no grasa."},
+  {"vis":"sello","mark":"48h","text":"SUPERVISIÓN MÉDICA","color":"#ff7a59",
+   "say":"Cuarenta y ocho horas es un ayuno prolongado: solo con indicación y supervisión médica.","show":"48 horas es un ayuno prolongado: solo con indicación y supervisión médica."},
+  {"vis":"lista","title":"NO LO HAGAS SI","items":["Diabetes con medicamentos","Embarazo o lactancia","Trastorno alimentario"],"icon":"✕","color":"#ff6b57",
+   "say":"Nunca con diabetes en tratamiento, embarazo, lactancia o trastorno alimentario.","show":"Nunca con diabetes en tratamiento, embarazo, lactancia o trastorno alimentario."},
+  {"vis":"cierre","next":"CÓMO ROMPERLO",
+   "say":"Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para aprender a romper el ayuno.","show":"Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para aprender a romper el ayuno.","pause":0.6}
+ ],
+ "description": "Hora 48 de ayuno: qué pasa en tu cuerpo 👇\n\n→ Tu reserva de azúcar del hígado (glucógeno) ya está prácticamente vacía.\n→ Tu cuerpo quema sobre todo grasa, y usa algo de proteína para fabricar la glucosa que necesitas.\n→ Las cetonas siguen subiendo y el cerebro las usa cada vez más como energía.\n→ La hormona de crecimiento sube y ayuda a movilizar grasa.\n❌ Mito: \"todo lo que bajas es grasa\". En un ayuno corto, buena parte del peso que baja es agua.\n⚠️ 48 horas es un ayuno prolongado: solo con indicación y supervisión médica. Nunca si tienes diabetes en tratamiento, embarazo, lactancia o antecedente de trastorno alimentario.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Sabías que gran parte del peso que se baja al inicio es agua? Te leo en comentarios.\n\nPróximo video: CÓMO ROMPER EL AYUNO.\n\n#ayuno #ayunointermitente #hora48 #ayunoprolongado #salud #metabolismo #cetonas #medicina #dosisdeciencia #ladosisdeciencia",
+ "description_ig": "Hora 48 de ayuno: qué pasa en tu cuerpo 👇\n\n→ Tu reserva de azúcar del hígado (glucógeno) ya está prácticamente vacía.\n→ Tu cuerpo quema sobre todo grasa, y usa algo de proteína para fabricar la glucosa que necesitas.\n→ Las cetonas siguen subiendo y el cerebro las usa cada vez más como energía.\n→ La hormona de crecimiento sube y ayuda a movilizar grasa.\n❌ Mito: \"todo lo que bajas es grasa\". En un ayuno corto, buena parte del peso que baja es agua.\n⚠️ 48 horas es un ayuno prolongado: solo con indicación y supervisión médica. Nunca si tienes diabetes en tratamiento, embarazo, lactancia o antecedente de trastorno alimentario.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Sabías que gran parte del peso que se baja al inicio es agua? Te leo en comentarios.\n\nPróximo video: CÓMO ROMPER EL AYUNO.\n\n#ayuno #ayunointermitente #salud #metabolismo #dosisdeciencia"
+}

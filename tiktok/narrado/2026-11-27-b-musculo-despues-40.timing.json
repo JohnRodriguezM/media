@@ -1,0 +1,610 @@
+{
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "EJERCICIO Y MÚSCULO",
+   "big": "40",
+   "sub": "TU MÚSCULO Y LA EDAD",
+   "say": "Desde los cuarenta, pierdes músculo sin darte cuenta.",
+   "show": "Desde los 40, pierdes músculo sin darte cuenta.",
+   "pause": 0.2,
+   "start": 0.45,
+   "end": 3.377,
+   "words": [
+    {
+     "w": "Desde",
+     "s": 0.45,
+     "e": 0.816
+    },
+    {
+     "w": "los",
+     "s": 0.816,
+     "e": 1.012
+    },
+    {
+     "w": "40,",
+     "s": 1.012,
+     "e": 1.548
+    },
+    {
+     "w": "pierdes",
+     "s": 1.548,
+     "e": 1.913
+    },
+    {
+     "w": "músculo",
+     "s": 1.913,
+     "e": 2.449
+    },
+    {
+     "w": "sin",
+     "s": 2.449,
+     "e": 2.645
+    },
+    {
+     "w": "darte",
+     "s": 2.645,
+     "e": 3.011
+    },
+    {
+     "w": "cuenta.",
+     "s": 3.011,
+     "e": 3.377
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "SARCOPENIA",
+   "say": "Se llama sarcopenia: perder músculo y fuerza con la edad.",
+   "show": "Se llama sarcopenia: perder músculo y fuerza con la edad.",
+   "start": 3.577,
+   "end": 6.835,
+   "words": [
+    {
+     "w": "Se",
+     "s": 3.577,
+     "e": 3.759
+    },
+    {
+     "w": "llama",
+     "s": 3.759,
+     "e": 4.101
+    },
+    {
+     "w": "sarcopenia:",
+     "s": 4.101,
+     "e": 4.761
+    },
+    {
+     "w": "perder",
+     "s": 4.761,
+     "e": 5.103
+    },
+    {
+     "w": "músculo",
+     "s": 5.103,
+     "e": 5.603
+    },
+    {
+     "w": "y",
+     "s": 5.603,
+     "e": 5.786
+    },
+    {
+     "w": "fuerza",
+     "s": 5.786,
+     "e": 6.128
+    },
+    {
+     "w": "con",
+     "s": 6.128,
+     "e": 6.311
+    },
+    {
+     "w": "la",
+     "s": 6.311,
+     "e": 6.493
+    },
+    {
+     "w": "edad.",
+     "s": 6.493,
+     "e": 6.835
+    }
+   ]
+  },
+  {
+   "vis": "barras",
+   "label": "LA FUERZA CAE MÁS RÁPIDO",
+   "from": 0.9,
+   "to": 0.55,
+   "color": "#ff7a59",
+   "say": "Y la fuerza cae más rápido que el tamaño del músculo.",
+   "show": "Y la fuerza cae más rápido que el tamaño del músculo.",
+   "start": 7.115,
+   "end": 9.914,
+   "words": [
+    {
+     "w": "Y",
+     "s": 7.115,
+     "e": 7.279
+    },
+    {
+     "w": "la",
+     "s": 7.279,
+     "e": 7.443
+    },
+    {
+     "w": "fuerza",
+     "s": 7.443,
+     "e": 7.749
+    },
+    {
+     "w": "cae",
+     "s": 7.749,
+     "e": 7.913
+    },
+    {
+     "w": "más",
+     "s": 7.913,
+     "e": 8.076
+    },
+    {
+     "w": "rápido",
+     "s": 8.076,
+     "e": 8.525
+    },
+    {
+     "w": "que",
+     "s": 8.525,
+     "e": 8.689
+    },
+    {
+     "w": "el",
+     "s": 8.689,
+     "e": 8.853
+    },
+    {
+     "w": "tamaño",
+     "s": 8.853,
+     "e": 9.301
+    },
+    {
+     "w": "del",
+     "s": 9.301,
+     "e": 9.465
+    },
+    {
+     "w": "músculo.",
+     "s": 9.465,
+     "e": 9.914
+    }
+   ]
+  },
+  {
+   "vis": "lista",
+   "title": "EL MÚSCULO TE AYUDA A",
+   "items": [
+    "Levantarte de la silla",
+    "Evitar caídas",
+    "Controlar la glucosa"
+   ],
+   "icon": "✓",
+   "color": "#5fe3a1",
+   "say": "Te ayuda a levantarte, evitar caídas y controlar la glucosa.",
+   "show": "Te ayuda a levantarte, evitar caídas y controlar la glucosa.",
+   "start": 10.194,
+   "end": 13.782,
+   "words": [
+    {
+     "w": "Te",
+     "s": 10.194,
+     "e": 10.369
+    },
+    {
+     "w": "ayuda",
+     "s": 10.369,
+     "e": 10.85
+    },
+    {
+     "w": "a",
+     "s": 10.85,
+     "e": 11.026
+    },
+    {
+     "w": "levantarte,",
+     "s": 11.026,
+     "e": 11.659
+    },
+    {
+     "w": "evitar",
+     "s": 11.659,
+     "e": 12.14
+    },
+    {
+     "w": "caídas",
+     "s": 12.14,
+     "e": 12.469
+    },
+    {
+     "w": "y",
+     "s": 12.469,
+     "e": 12.644
+    },
+    {
+     "w": "controlar",
+     "s": 12.644,
+     "e": 13.125
+    },
+    {
+     "w": "la",
+     "s": 13.125,
+     "e": 13.301
+    },
+    {
+     "w": "glucosa.",
+     "s": 13.301,
+     "e": 13.782
+    }
+   ]
+  },
+  {
+   "vis": "mito",
+   "text": "Las pesas son para jóvenes",
+   "say": "¿Las pesas son para jóvenes? Falso: la fuerza mejora incluso después de los ochenta.",
+   "show": "¿Las pesas son para jóvenes? Falso: la fuerza mejora incluso después de los 80.",
+   "start": 14.062,
+   "end": 18.716,
+   "words": [
+    {
+     "w": "¿Las",
+     "s": 14.062,
+     "e": 14.245
+    },
+    {
+     "w": "pesas",
+     "s": 14.245,
+     "e": 14.589
+    },
+    {
+     "w": "son",
+     "s": 14.589,
+     "e": 14.773
+    },
+    {
+     "w": "para",
+     "s": 14.773,
+     "e": 15.117
+    },
+    {
+     "w": "jóvenes?",
+     "s": 15.117,
+     "e": 15.621
+    },
+    {
+     "w": "Falso:",
+     "s": 15.621,
+     "e": 15.965
+    },
+    {
+     "w": "la",
+     "s": 15.965,
+     "e": 16.149
+    },
+    {
+     "w": "fuerza",
+     "s": 16.149,
+     "e": 16.493
+    },
+    {
+     "w": "mejora",
+     "s": 16.493,
+     "e": 16.997
+    },
+    {
+     "w": "incluso",
+     "s": 16.997,
+     "e": 17.501
+    },
+    {
+     "w": "después",
+     "s": 17.501,
+     "e": 17.844
+    },
+    {
+     "w": "de",
+     "s": 17.844,
+     "e": 18.028
+    },
+    {
+     "w": "los",
+     "s": 18.028,
+     "e": 18.212
+    },
+    {
+     "w": "80.",
+     "s": 18.212,
+     "e": 18.716
+    }
+   ]
+  },
+  {
+   "vis": "dato",
+   "label": "EJERCICIOS DE FUERZA",
+   "value": "2",
+   "unit": "DÍAS O MÁS POR SEMANA",
+   "say": "Lo recomendado: ejercicios de fuerza dos días o más por semana.",
+   "show": "Lo recomendado: ejercicios de fuerza 2 días o más por semana.",
+   "start": 18.996,
+   "end": 22.71,
+   "words": [
+    {
+     "w": "Lo",
+     "s": 18.996,
+     "e": 19.177
+    },
+    {
+     "w": "recomendado:",
+     "s": 19.177,
+     "e": 19.985
+    },
+    {
+     "w": "ejercicios",
+     "s": 19.985,
+     "e": 20.637
+    },
+    {
+     "w": "de",
+     "s": 20.637,
+     "e": 20.818
+    },
+    {
+     "w": "fuerza",
+     "s": 20.818,
+     "e": 21.155
+    },
+    {
+     "w": "2",
+     "s": 21.155,
+     "e": 21.493
+    },
+    {
+     "w": "días",
+     "s": 21.493,
+     "e": 21.673
+    },
+    {
+     "w": "o",
+     "s": 21.673,
+     "e": 21.854
+    },
+    {
+     "w": "más",
+     "s": 21.854,
+     "e": 22.035
+    },
+    {
+     "w": "por",
+     "s": 22.035,
+     "e": 22.215
+    },
+    {
+     "w": "semana.",
+     "s": 22.215,
+     "e": 22.71
+    }
+   ]
+  },
+  {
+   "vis": "sello",
+   "mark": "?",
+   "text": "ZONA GRIS",
+   "color": "#9aa4b8",
+   "grey": true,
+   "say": "¿Cuánta proteína? Zona gris: pregúntale a tu médico.",
+   "show": "¿Cuánta proteína? Zona gris: pregúntale a tu médico.",
+   "start": 22.99,
+   "end": 25.829,
+   "words": [
+    {
+     "w": "¿Cuánta",
+     "s": 22.99,
+     "e": 23.325
+    },
+    {
+     "w": "proteína?",
+     "s": 23.325,
+     "e": 23.817
+    },
+    {
+     "w": "Zona",
+     "s": 23.817,
+     "e": 24.152
+    },
+    {
+     "w": "gris:",
+     "s": 24.152,
+     "e": 24.332
+    },
+    {
+     "w": "pregúntale",
+     "s": 24.332,
+     "e": 24.979
+    },
+    {
+     "w": "a",
+     "s": 24.979,
+     "e": 25.158
+    },
+    {
+     "w": "tu",
+     "s": 25.158,
+     "e": 25.338
+    },
+    {
+     "w": "médico.",
+     "s": 25.338,
+     "e": 25.829
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "EMPIEZA SUAVE",
+   "say": "Con enfermedad del corazón o dolor, consulta antes y empieza suave.",
+   "show": "Con enfermedad del corazón o dolor, consulta antes y empieza suave.",
+   "start": 26.109,
+   "end": 29.973,
+   "words": [
+    {
+     "w": "Con",
+     "s": 26.109,
+     "e": 26.29
+    },
+    {
+     "w": "enfermedad",
+     "s": 26.29,
+     "e": 26.94
+    },
+    {
+     "w": "del",
+     "s": 26.94,
+     "e": 27.12
+    },
+    {
+     "w": "corazón",
+     "s": 27.12,
+     "e": 27.614
+    },
+    {
+     "w": "o",
+     "s": 27.614,
+     "e": 27.794
+    },
+    {
+     "w": "dolor,",
+     "s": 27.794,
+     "e": 28.131
+    },
+    {
+     "w": "consulta",
+     "s": 28.131,
+     "e": 28.625
+    },
+    {
+     "w": "antes",
+     "s": 28.625,
+     "e": 28.962
+    },
+    {
+     "w": "y",
+     "s": 28.962,
+     "e": 29.142
+    },
+    {
+     "w": "empieza",
+     "s": 29.142,
+     "e": 29.636
+    },
+    {
+     "w": "suave.",
+     "s": 29.636,
+     "e": 29.973
+    }
+   ]
+  },
+  {
+   "vis": "cierre",
+   "next": "ZONA 2",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la zona dos.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la zona 2.",
+   "pause": 0.6,
+   "start": 30.253,
+   "end": 34.459,
+   "words": [
+    {
+     "w": "Calcula",
+     "s": 30.253,
+     "e": 30.689
+    },
+    {
+     "w": "tu",
+     "s": 30.689,
+     "e": 30.848
+    },
+    {
+     "w": "ventana",
+     "s": 30.848,
+     "e": 31.284
+    },
+    {
+     "w": "de",
+     "s": 31.284,
+     "e": 31.443
+    },
+    {
+     "w": "ayuno",
+     "s": 31.443,
+     "e": 31.879
+    },
+    {
+     "w": "en",
+     "s": 31.879,
+     "e": 32.038
+    },
+    {
+     "w": "el",
+     "s": 32.038,
+     "e": 32.197
+    },
+    {
+     "w": "link",
+     "s": 32.197,
+     "e": 32.356
+    },
+    {
+     "w": "de",
+     "s": 32.356,
+     "e": 32.515
+    },
+    {
+     "w": "mi",
+     "s": 32.515,
+     "e": 32.674
+    },
+    {
+     "w": "perfil.",
+     "s": 32.674,
+     "e": 32.972
+    },
+    {
+     "w": "Sígueme",
+     "s": 32.972,
+     "e": 33.408
+    },
+    {
+     "w": "para",
+     "s": 33.408,
+     "e": 33.705
+    },
+    {
+     "w": "la",
+     "s": 33.705,
+     "e": 33.864
+    },
+    {
+     "w": "zona",
+     "s": 33.864,
+     "e": 34.162
+    },
+    {
+     "w": "2.",
+     "s": 34.162,
+     "e": 34.459
+    }
+   ]
+  }
+ ],
+ "total": 35.85933333333333,
+ "scene3d": "cell"
+}

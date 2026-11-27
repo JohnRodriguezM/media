@@ -1,0 +1,27 @@
+{
+ "voice": "em_alex",
+ "speed": 1.08,
+ "scene3d": "cell",
+ "beats": [
+  {"vis":"gancho","kicker":"EJERCICIO Y MÚSCULO","big":"40","sub":"TU MÚSCULO Y LA EDAD",
+   "say":"Desde los cuarenta, pierdes músculo sin darte cuenta.","show":"Desde los 40, pierdes músculo sin darte cuenta.","pause":0.2},
+  {"vis":"texto","label":"SARCOPENIA",
+   "say":"Se llama sarcopenia: perder músculo y fuerza con la edad.","show":"Se llama sarcopenia: perder músculo y fuerza con la edad."},
+  {"vis":"barras","label":"LA FUERZA CAE MÁS RÁPIDO","from":0.9,"to":0.55,"color":"#ff7a59",
+   "say":"Y la fuerza cae más rápido que el tamaño del músculo.","show":"Y la fuerza cae más rápido que el tamaño del músculo."},
+  {"vis":"lista","title":"EL MÚSCULO TE AYUDA A","items":["Levantarte de la silla","Evitar caídas","Controlar la glucosa"],"icon":"✓","color":"#5fe3a1",
+   "say":"Te ayuda a levantarte, evitar caídas y controlar la glucosa.","show":"Te ayuda a levantarte, evitar caídas y controlar la glucosa."},
+  {"vis":"mito","text":"Las pesas son para jóvenes",
+   "say":"¿Las pesas son para jóvenes? Falso: la fuerza mejora incluso después de los ochenta.","show":"¿Las pesas son para jóvenes? Falso: la fuerza mejora incluso después de los 80."},
+  {"vis":"dato","label":"EJERCICIOS DE FUERZA","value":"2","unit":"DÍAS O MÁS POR SEMANA",
+   "say":"Lo recomendado: ejercicios de fuerza dos días o más por semana.","show":"Lo recomendado: ejercicios de fuerza 2 días o más por semana."},
+  {"vis":"sello","mark":"?","text":"ZONA GRIS","color":"#9aa4b8","grey":true,
+   "say":"¿Cuánta proteína? Zona gris: pregúntale a tu médico.","show":"¿Cuánta proteína? Zona gris: pregúntale a tu médico."},
+  {"vis":"texto","label":"EMPIEZA SUAVE",
+   "say":"Con enfermedad del corazón o dolor, consulta antes y empieza suave.","show":"Con enfermedad del corazón o dolor, consulta antes y empieza suave."},
+  {"vis":"cierre","next":"ZONA 2",
+   "say":"Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la zona dos.","show":"Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para la zona 2.","pause":0.6}
+ ],
+ "description": "Después de los 40, tu músculo empieza a irse (y casi nadie lo nota) 👇\n\n→ Se llama sarcopenia: la pérdida de masa y fuerza muscular con la edad.\n→ La fuerza suele caer más rápido que el tamaño del músculo.\n→ El músculo te ayuda a levantarte de la silla, a evitar caídas y a controlar la glucosa.\n❌ Mito: \"las pesas son para jóvenes\". La fuerza puede mejorar a cualquier edad, incluso después de los 80.\n→ Lo recomendado: ejercicios de fuerza 2 días o más por semana (con pesas, bandas o tu propio peso).\n⚠️ ¿Cuánta proteína necesitas? Es zona gris: depende de tu edad y tu salud (por ejemplo, de tus riñones). Pregúntale a tu médico.\n⚠️ Si tienes una enfermedad del corazón, dolor o llevas tiempo sin moverte, consulta antes y empieza suave.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Cuántos días a la semana haces ejercicios de fuerza? Te leo en comentarios.\n\nPróximo video: ZONA 2.\n\n#ejercicio #musculo #sarcopenia #fuerza #despuesdelos40 #salud #envejecimiento #medicina #dosisdeciencia #ladosisdeciencia",
+ "description_ig": "Después de los 40, tu músculo empieza a irse (y casi nadie lo nota) 👇\n\n→ Se llama sarcopenia: la pérdida de masa y fuerza muscular con la edad.\n→ La fuerza suele caer más rápido que el tamaño del músculo.\n→ El músculo te ayuda a levantarte de la silla, a evitar caídas y a controlar la glucosa.\n❌ Mito: \"las pesas son para jóvenes\". La fuerza puede mejorar a cualquier edad, incluso después de los 80.\n→ Lo recomendado: ejercicios de fuerza 2 días o más por semana (con pesas, bandas o tu propio peso).\n⚠️ ¿Cuánta proteína necesitas? Es zona gris: depende de tu edad y tu salud (por ejemplo, de tus riñones). Pregúntale a tu médico.\n⚠️ Si tienes una enfermedad del corazón, dolor o llevas tiempo sin moverte, consulta antes y empieza suave.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Cuántos días a la semana haces ejercicios de fuerza? Te leo en comentarios.\n\nPróximo video: ZONA 2.\n\n#ejercicio #musculo #fuerza #salud #dosisdeciencia"
+}
