@@ -1,0 +1,89 @@
+{
+ "voice": "em_alex",
+ "speed": 1.08,
+ "scene3d": "cell",
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "AYUNO · CÓMO ROMPERLO",
+   "big": "3",
+   "sub": "REGLAS PARA HACERLO BIEN",
+   "size": 340,
+   "say": "Tres reglas para romper bien tu ayuno.",
+   "show": "3 reglas para romper bien tu ayuno.",
+   "pause": 0.2
+  },
+  {
+   "vis": "texto",
+   "label": "AYUNO CORTO = COMIDA NORMAL",
+   "say": "Tras dieciséis horas, no necesitas nada especial: come normal.",
+   "show": "Tras 16 horas, no necesitas nada especial: come normal."
+  },
+  {
+   "vis": "compara",
+   "a": {
+    "title": "PRIMERO",
+    "text": "Proteína y verduras"
+   },
+   "b": {
+    "title": "DESPUÉS",
+    "text": "Harinas y dulces"
+   },
+   "say": "Regla uno: empieza con proteína y verduras; las harinas, después.",
+   "show": "Regla 1: empieza con proteína y verduras; las harinas, después."
+  },
+  {
+   "vis": "barras",
+   "label": "PICO DE AZÚCAR MÁS SUAVE",
+   "from": 0.9,
+   "to": 0.55,
+   "color": "#ffc46b",
+   "particles": "glucosa",
+   "say": "Ese orden puede suavizar el pico de azúcar después de comer.",
+   "show": "Ese orden puede suavizar el pico de azúcar después de comer."
+  },
+  {
+   "vis": "dato",
+   "label": "REGLA",
+   "value": "2",
+   "unit": "COME DESPACIO",
+   "say": "Regla dos: come despacio. La sensación de llenura tarda en llegar.",
+   "show": "Regla 2: come despacio. La sensación de llenura tarda en llegar."
+  },
+  {
+   "vis": "mito",
+   "text": "Ya ayunaste: come lo que quieras",
+   "say": "Regla tres: no lo rompas con un atracón porque te lo ganaste.",
+   "show": "Regla 3: no lo rompas con un atracón porque te lo ganaste."
+  },
+  {
+   "vis": "sello",
+   "text": "SUPERVISIÓN MÉDICA",
+   "color": "#ff7a59",
+   "say": "Tras ayunos de varios días, vuelve a comer poco a poco y con supervisión médica.",
+   "show": "Tras ayunos de varios días, vuelve a comer poco a poco y con supervisión médica."
+  },
+  {
+   "vis": "lista",
+   "title": "CONSULTA ANTES SI",
+   "items": [
+    "Diabetes con medicamentos",
+    "Embarazo o lactancia",
+    "Trastorno alimentario"
+   ],
+   "icon": "!",
+   "color": "#ff6b57",
+   "say": "Con diabetes en tratamiento, embarazo o trastorno alimentario, consulta antes a tu médico.",
+   "show": "Con diabetes en tratamiento, embarazo o trastorno alimentario, consulta antes a tu médico."
+  },
+  {
+   "vis": "cierre",
+   "next": "¿EL CAFÉ LO ROMPE?",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para saber si el café rompe el ayuno.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para saber si el café rompe el ayuno.",
+   "pause": 0.6
+  }
+ ],
+ "description": "Cómo romper el ayuno: 3 reglas 👇\n\n→ Si ayunaste unas 16 horas, no necesitas nada especial: una comida normal basta.\n→ Regla 1: empieza con proteína y verduras, y deja las harinas y los dulces para después. Ese orden puede suavizar el pico de azúcar después de comer.\n→ Regla 2: come despacio. La sensación de llenura tarda en llegar.\n❌ Regla 3: no lo rompas con un atracón \"porque te lo ganaste\".\n⚠️ Tras ayunos de varios días, volver a comer debe ser gradual y con supervisión médica.\n⚠️ Si tienes diabetes en tratamiento, estás embarazada o lactando, o tienes antecedente de trastorno alimentario, consulta a tu médico antes de ayunar.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Con qué sueles romper tu ayuno? Te leo en comentarios.\n\nPróximo video: ¿EL CAFÉ ROMPE EL AYUNO?\n\n#ayuno #ayunointermitente #romperelayuno #glucosa #nutricion #salud #metabolismo #medicina #dosisdeciencia #ladosisdeciencia",
+ "description_ig": "Cómo romper el ayuno: 3 reglas 👇\n\n→ Si ayunaste unas 16 horas, no necesitas nada especial: una comida normal basta.\n→ Regla 1: empieza con proteína y verduras, y deja las harinas y los dulces para después. Ese orden puede suavizar el pico de azúcar después de comer.\n→ Regla 2: come despacio. La sensación de llenura tarda en llegar.\n❌ Regla 3: no lo rompas con un atracón \"porque te lo ganaste\".\n⚠️ Tras ayunos de varios días, volver a comer debe ser gradual y con supervisión médica.\n⚠️ Si tienes diabetes en tratamiento, estás embarazada o lactando, o tienes antecedente de trastorno alimentario, consulta a tu médico antes de ayunar.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Con qué sueles romper tu ayuno? Te leo en comentarios.\n\nPróximo video: ¿EL CAFÉ ROMPE EL AYUNO?\n\n#ayuno #ayunointermitente #salud #metabolismo #dosisdeciencia"
+}

@@ -1,0 +1,662 @@
+{
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "AYUNO · CÓMO ROMPERLO",
+   "big": "3",
+   "sub": "REGLAS PARA HACERLO BIEN",
+   "size": 340,
+   "say": "Tres reglas para romper bien tu ayuno.",
+   "show": "3 reglas para romper bien tu ayuno.",
+   "pause": 0.2,
+   "start": 0.45,
+   "end": 2.75,
+   "words": [
+    {
+     "w": "3",
+     "s": 0.45,
+     "e": 0.802
+    },
+    {
+     "w": "reglas",
+     "s": 0.802,
+     "e": 1.154
+    },
+    {
+     "w": "para",
+     "s": 1.154,
+     "e": 1.506
+    },
+    {
+     "w": "romper",
+     "s": 1.506,
+     "e": 1.858
+    },
+    {
+     "w": "bien",
+     "s": 1.858,
+     "e": 2.046
+    },
+    {
+     "w": "tu",
+     "s": 2.046,
+     "e": 2.235
+    },
+    {
+     "w": "ayuno.",
+     "s": 2.235,
+     "e": 2.75
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "AYUNO CORTO = COMIDA NORMAL",
+   "say": "Tras dieciséis horas, no necesitas nada especial: come normal.",
+   "show": "Tras 16 horas, no necesitas nada especial: come normal.",
+   "start": 2.95,
+   "end": 6.453,
+   "words": [
+    {
+     "w": "Tras",
+     "s": 2.95,
+     "e": 3.139
+    },
+    {
+     "w": "16",
+     "s": 3.139,
+     "e": 3.656
+    },
+    {
+     "w": "horas,",
+     "s": 3.656,
+     "e": 4.008
+    },
+    {
+     "w": "no",
+     "s": 4.008,
+     "e": 4.197
+    },
+    {
+     "w": "necesitas",
+     "s": 4.197,
+     "e": 4.878
+    },
+    {
+     "w": "nada",
+     "s": 4.878,
+     "e": 5.231
+    },
+    {
+     "w": "especial:",
+     "s": 5.231,
+     "e": 5.747
+    },
+    {
+     "w": "come",
+     "s": 5.747,
+     "e": 6.1
+    },
+    {
+     "w": "normal.",
+     "s": 6.1,
+     "e": 6.453
+    }
+   ]
+  },
+  {
+   "vis": "compara",
+   "a": {
+    "title": "PRIMERO",
+    "text": "Proteína y verduras"
+   },
+   "b": {
+    "title": "DESPUÉS",
+    "text": "Harinas y dulces"
+   },
+   "say": "Regla uno: empieza con proteína y verduras; las harinas, después.",
+   "show": "Regla 1: empieza con proteína y verduras; las harinas, después.",
+   "start": 6.733,
+   "end": 10.341,
+   "words": [
+    {
+     "w": "Regla",
+     "s": 6.733,
+     "e": 7.078
+    },
+    {
+     "w": "1:",
+     "s": 7.078,
+     "e": 7.422
+    },
+    {
+     "w": "empieza",
+     "s": 7.422,
+     "e": 7.928
+    },
+    {
+     "w": "con",
+     "s": 7.928,
+     "e": 8.112
+    },
+    {
+     "w": "proteína",
+     "s": 8.112,
+     "e": 8.617
+    },
+    {
+     "w": "y",
+     "s": 8.617,
+     "e": 8.802
+    },
+    {
+     "w": "verduras;",
+     "s": 8.802,
+     "e": 9.307
+    },
+    {
+     "w": "las",
+     "s": 9.307,
+     "e": 9.491
+    },
+    {
+     "w": "harinas,",
+     "s": 9.491,
+     "e": 9.997
+    },
+    {
+     "w": "después.",
+     "s": 9.997,
+     "e": 10.341
+    }
+   ]
+  },
+  {
+   "vis": "barras",
+   "label": "PICO DE AZÚCAR MÁS SUAVE",
+   "from": 0.9,
+   "to": 0.55,
+   "color": "#ffc46b",
+   "particles": "glucosa",
+   "say": "Ese orden puede suavizar el pico de azúcar después de comer.",
+   "show": "Ese orden puede suavizar el pico de azúcar después de comer.",
+   "start": 10.621,
+   "end": 14.035,
+   "words": [
+    {
+     "w": "Ese",
+     "s": 10.621,
+     "e": 10.945
+    },
+    {
+     "w": "orden",
+     "s": 10.945,
+     "e": 11.269
+    },
+    {
+     "w": "puede",
+     "s": 11.269,
+     "e": 11.594
+    },
+    {
+     "w": "suavizar",
+     "s": 11.594,
+     "e": 12.068
+    },
+    {
+     "w": "el",
+     "s": 12.068,
+     "e": 12.242
+    },
+    {
+     "w": "pico",
+     "s": 12.242,
+     "e": 12.566
+    },
+    {
+     "w": "de",
+     "s": 12.566,
+     "e": 12.739
+    },
+    {
+     "w": "azúcar",
+     "s": 12.739,
+     "e": 13.214
+    },
+    {
+     "w": "después",
+     "s": 13.214,
+     "e": 13.538
+    },
+    {
+     "w": "de",
+     "s": 13.538,
+     "e": 13.711
+    },
+    {
+     "w": "comer.",
+     "s": 13.711,
+     "e": 14.035
+    }
+   ]
+  },
+  {
+   "vis": "dato",
+   "label": "REGLA",
+   "value": "2",
+   "unit": "COME DESPACIO",
+   "say": "Regla dos: come despacio. La sensación de llenura tarda en llegar.",
+   "show": "Regla 2: come despacio. La sensación de llenura tarda en llegar.",
+   "start": 14.315,
+   "end": 18.05,
+   "words": [
+    {
+     "w": "Regla",
+     "s": 14.315,
+     "e": 14.655
+    },
+    {
+     "w": "2:",
+     "s": 14.655,
+     "e": 14.994
+    },
+    {
+     "w": "come",
+     "s": 14.994,
+     "e": 15.334
+    },
+    {
+     "w": "despacio.",
+     "s": 15.334,
+     "e": 15.831
+    },
+    {
+     "w": "La",
+     "s": 15.831,
+     "e": 16.013
+    },
+    {
+     "w": "sensación",
+     "s": 16.013,
+     "e": 16.51
+    },
+    {
+     "w": "de",
+     "s": 16.51,
+     "e": 16.692
+    },
+    {
+     "w": "llenura",
+     "s": 16.692,
+     "e": 17.19
+    },
+    {
+     "w": "tarda",
+     "s": 17.19,
+     "e": 17.529
+    },
+    {
+     "w": "en",
+     "s": 17.529,
+     "e": 17.711
+    },
+    {
+     "w": "llegar.",
+     "s": 17.711,
+     "e": 18.05
+    }
+   ]
+  },
+  {
+   "vis": "mito",
+   "text": "Ya ayunaste: come lo que quieras",
+   "say": "Regla tres: no lo rompas con un atracón porque te lo ganaste.",
+   "show": "Regla 3: no lo rompas con un atracón porque te lo ganaste.",
+   "start": 18.33,
+   "end": 21.662,
+   "words": [
+    {
+     "w": "Regla",
+     "s": 18.33,
+     "e": 18.659
+    },
+    {
+     "w": "3:",
+     "s": 18.659,
+     "e": 18.987
+    },
+    {
+     "w": "no",
+     "s": 18.987,
+     "e": 19.163
+    },
+    {
+     "w": "lo",
+     "s": 19.163,
+     "e": 19.339
+    },
+    {
+     "w": "rompas",
+     "s": 19.339,
+     "e": 19.668
+    },
+    {
+     "w": "con",
+     "s": 19.668,
+     "e": 19.843
+    },
+    {
+     "w": "un",
+     "s": 19.843,
+     "e": 20.019
+    },
+    {
+     "w": "atracón",
+     "s": 20.019,
+     "e": 20.501
+    },
+    {
+     "w": "porque",
+     "s": 20.501,
+     "e": 20.829
+    },
+    {
+     "w": "te",
+     "s": 20.829,
+     "e": 21.005
+    },
+    {
+     "w": "lo",
+     "s": 21.005,
+     "e": 21.181
+    },
+    {
+     "w": "ganaste.",
+     "s": 21.181,
+     "e": 21.662
+    }
+   ]
+  },
+  {
+   "vis": "sello",
+   "text": "SUPERVISIÓN MÉDICA",
+   "color": "#ff7a59",
+   "say": "Tras ayunos de varios días, vuelve a comer poco a poco y con supervisión médica.",
+   "show": "Tras ayunos de varios días, vuelve a comer poco a poco y con supervisión médica.",
+   "start": 21.942,
+   "end": 26.405,
+   "words": [
+    {
+     "w": "Tras",
+     "s": 21.942,
+     "e": 22.118
+    },
+    {
+     "w": "ayunos",
+     "s": 22.118,
+     "e": 22.598
+    },
+    {
+     "w": "de",
+     "s": 22.598,
+     "e": 22.774
+    },
+    {
+     "w": "varios",
+     "s": 22.774,
+     "e": 23.102
+    },
+    {
+     "w": "días,",
+     "s": 23.102,
+     "e": 23.277
+    },
+    {
+     "w": "vuelve",
+     "s": 23.277,
+     "e": 23.605
+    },
+    {
+     "w": "a",
+     "s": 23.605,
+     "e": 23.781
+    },
+    {
+     "w": "comer",
+     "s": 23.781,
+     "e": 24.109
+    },
+    {
+     "w": "poco",
+     "s": 24.109,
+     "e": 24.437
+    },
+    {
+     "w": "a",
+     "s": 24.437,
+     "e": 24.612
+    },
+    {
+     "w": "poco",
+     "s": 24.612,
+     "e": 24.94
+    },
+    {
+     "w": "y",
+     "s": 24.94,
+     "e": 25.115
+    },
+    {
+     "w": "con",
+     "s": 25.115,
+     "e": 25.291
+    },
+    {
+     "w": "supervisión",
+     "s": 25.291,
+     "e": 25.924
+    },
+    {
+     "w": "médica.",
+     "s": 25.924,
+     "e": 26.405
+    }
+   ]
+  },
+  {
+   "vis": "lista",
+   "title": "CONSULTA ANTES SI",
+   "items": [
+    "Diabetes con medicamentos",
+    "Embarazo o lactancia",
+    "Trastorno alimentario"
+   ],
+   "icon": "!",
+   "color": "#ff6b57",
+   "say": "Con diabetes en tratamiento, embarazo o trastorno alimentario, consulta antes a tu médico.",
+   "show": "Con diabetes en tratamiento, embarazo o trastorno alimentario, consulta antes a tu médico.",
+   "start": 26.685,
+   "end": 32.022,
+   "words": [
+    {
+     "w": "Con",
+     "s": 26.685,
+     "e": 26.865
+    },
+    {
+     "w": "diabetes",
+     "s": 26.865,
+     "e": 27.361
+    },
+    {
+     "w": "en",
+     "s": 27.361,
+     "e": 27.541
+    },
+    {
+     "w": "tratamiento,",
+     "s": 27.541,
+     "e": 28.194
+    },
+    {
+     "w": "embarazo",
+     "s": 28.194,
+     "e": 28.846
+    },
+    {
+     "w": "o",
+     "s": 28.846,
+     "e": 29.027
+    },
+    {
+     "w": "trastorno",
+     "s": 29.027,
+     "e": 29.522
+    },
+    {
+     "w": "alimentario,",
+     "s": 29.522,
+     "e": 30.332
+    },
+    {
+     "w": "consulta",
+     "s": 30.332,
+     "e": 30.827
+    },
+    {
+     "w": "antes",
+     "s": 30.827,
+     "e": 31.165
+    },
+    {
+     "w": "a",
+     "s": 31.165,
+     "e": 31.346
+    },
+    {
+     "w": "tu",
+     "s": 31.346,
+     "e": 31.527
+    },
+    {
+     "w": "médico.",
+     "s": 31.527,
+     "e": 32.022
+    }
+   ]
+  },
+  {
+   "vis": "cierre",
+   "next": "¿EL CAFÉ LO ROMPE?",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para saber si el café rompe el ayuno.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para saber si el café rompe el ayuno.",
+   "pause": 0.6,
+   "start": 32.302,
+   "end": 37.575,
+   "words": [
+    {
+     "w": "Calcula",
+     "s": 32.302,
+     "e": 32.739
+    },
+    {
+     "w": "tu",
+     "s": 32.739,
+     "e": 32.899
+    },
+    {
+     "w": "ventana",
+     "s": 32.899,
+     "e": 33.336
+    },
+    {
+     "w": "de",
+     "s": 33.336,
+     "e": 33.495
+    },
+    {
+     "w": "ayuno",
+     "s": 33.495,
+     "e": 33.932
+    },
+    {
+     "w": "en",
+     "s": 33.932,
+     "e": 34.092
+    },
+    {
+     "w": "el",
+     "s": 34.092,
+     "e": 34.252
+    },
+    {
+     "w": "link",
+     "s": 34.252,
+     "e": 34.411
+    },
+    {
+     "w": "de",
+     "s": 34.411,
+     "e": 34.571
+    },
+    {
+     "w": "mi",
+     "s": 34.571,
+     "e": 34.73
+    },
+    {
+     "w": "perfil.",
+     "s": 34.73,
+     "e": 35.029
+    },
+    {
+     "w": "Sígueme",
+     "s": 35.029,
+     "e": 35.466
+    },
+    {
+     "w": "para",
+     "s": 35.466,
+     "e": 35.764
+    },
+    {
+     "w": "saber",
+     "s": 35.764,
+     "e": 36.063
+    },
+    {
+     "w": "si",
+     "s": 36.063,
+     "e": 36.222
+    },
+    {
+     "w": "el",
+     "s": 36.222,
+     "e": 36.382
+    },
+    {
+     "w": "café",
+     "s": 36.382,
+     "e": 36.68
+    },
+    {
+     "w": "rompe",
+     "s": 36.68,
+     "e": 36.978
+    },
+    {
+     "w": "el",
+     "s": 36.978,
+     "e": 37.138
+    },
+    {
+     "w": "ayuno.",
+     "s": 37.138,
+     "e": 37.575
+    }
+   ]
+  }
+ ],
+ "total": 38.975208333333335,
+ "scene3d": "cell"
+}

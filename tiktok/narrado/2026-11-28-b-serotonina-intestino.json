@@ -1,0 +1,91 @@
+{
+ "voice": "em_alex",
+ "speed": 1.08,
+ "scene3d": "cell",
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "INTESTINO-CEREBRO",
+   "big": "90%",
+   "sub": "DE TU SEROTONINA ESTÁ AQUÍ",
+   "size": 300,
+   "say": "Casi noventa por ciento de tu serotonina, en el intestino.",
+   "show": "Casi 90% de tu serotonina, en el intestino.",
+   "pause": 0.2
+  },
+  {
+   "vis": "texto",
+   "label": "CÉLULAS DEL INTESTINO",
+   "say": "La fabrican células especiales de la pared intestinal.",
+   "show": "La fabrican células especiales de la pared intestinal."
+  },
+  {
+   "vis": "lista",
+   "title": "SU TRABAJO AHÍ",
+   "items": [
+    "Mueve la digestión",
+    "Regula secreciones",
+    "Envía señales"
+   ],
+   "icon": "✓",
+   "color": "#7fd4a8",
+   "say": "Ahí su trabajo es mover el intestino y regular la digestión.",
+   "show": "Ahí su trabajo es mover el intestino y regular la digestión."
+  },
+  {
+   "vis": "mito",
+   "text": "Serotonina intestinal = felicidad",
+   "say": "Pero esa serotonina no cruza al cerebro: no te pone feliz directamente.",
+   "show": "Pero esa serotonina no cruza al cerebro: no te pone feliz directamente."
+  },
+  {
+   "vis": "compara",
+   "a": {
+    "title": "NERVIO VAGO",
+    "text": "Lleva señales"
+   },
+   "b": {
+    "title": "MICROBIOTA",
+    "text": "Participa"
+   },
+   "say": "Aun así, intestino y cerebro sí se comunican, por el nervio vago y otras vías.",
+   "show": "Aun así, intestino y cerebro sí se comunican, por el nervio vago y otras vías."
+  },
+  {
+   "vis": "sello",
+   "mark": "?",
+   "text": "ZONA GRIS",
+   "color": "#ffc46b",
+   "say": "¿Tu microbiota cambia tu ánimo? En humanos, todavía es zona gris.",
+   "show": "¿Tu microbiota cambia tu ánimo? En humanos, todavía es zona gris."
+  },
+  {
+   "vis": "lista",
+   "title": "LO QUE SÍ AYUDA",
+   "items": [
+    "Fibra: verduras, legumbres",
+    "Menos ultraprocesados",
+    "Moverte a diario"
+   ],
+   "icon": "✓",
+   "color": "#7fd4a8",
+   "say": "Lo que sí cuida tu intestino: fibra, menos ultraprocesados y moverte.",
+   "show": "Lo que sí cuida tu intestino: fibra, menos ultraprocesados y moverte."
+  },
+  {
+   "vis": "texto",
+   "label": "ÁNIMO BAJO → TU MÉDICO",
+   "say": "Si tu ánimo está bajo por semanas, consulta a tu médico.",
+   "show": "Si tu ánimo está bajo por semanas, consulta a tu médico."
+  },
+  {
+   "vis": "cierre",
+   "next": "EL NERVIO VAGO",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para conocer el nervio vago.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para conocer el nervio vago.",
+   "pause": 0.6
+  }
+ ],
+ "description": "El 90% de tu serotonina está en el intestino 👇\n\n→ Casi el 90% de la serotonina del cuerpo la fabrican células especiales de la pared intestinal.\n→ Ahí su trabajo es mover el intestino, regular la digestión y enviar señales.\n❌ Mito: \"la serotonina del intestino te pone feliz\". Esa serotonina no cruza al cerebro.\n→ Aun así, intestino y cerebro sí se comunican, por el nervio vago y otras vías.\n⚠️ ¿La microbiota cambia el ánimo? En humanos la evidencia todavía es zona gris.\n→ Lo que sí cuida tu intestino: fibra (verduras, legumbres), menos ultraprocesados y moverte a diario.\n⚠️ Si tu ánimo está bajo por semanas, consulta a tu médico: no se trata solo con dieta.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Sabías que la mayor parte de tu serotonina está en el intestino? Te leo en comentarios.\n\nPróximo video: EL NERVIO VAGO.\n\n#intestino #serotonina #microbiota #ejeintestinocerebro #salud #digestion #fibra #medicina #dosisdeciencia #ladosisdeciencia",
+ "description_ig": "El 90% de tu serotonina está en el intestino 👇\n\n→ Casi el 90% de la serotonina del cuerpo la fabrican células especiales de la pared intestinal.\n→ Ahí su trabajo es mover el intestino, regular la digestión y enviar señales.\n❌ Mito: \"la serotonina del intestino te pone feliz\". Esa serotonina no cruza al cerebro.\n→ Aun así, intestino y cerebro sí se comunican, por el nervio vago y otras vías.\n⚠️ ¿La microbiota cambia el ánimo? En humanos la evidencia todavía es zona gris.\n→ Lo que sí cuida tu intestino: fibra (verduras, legumbres), menos ultraprocesados y moverte a diario.\n⚠️ Si tu ánimo está bajo por semanas, consulta a tu médico: no se trata solo con dieta.\n\nCalcula gratis tu ventana de ayuno ideal: link en el perfil.\n\n¿Sabías que la mayor parte de tu serotonina está en el intestino? Te leo en comentarios.\n\nPróximo video: EL NERVIO VAGO.\n\n#intestino #serotonina #microbiota #salud #dosisdeciencia"
+}

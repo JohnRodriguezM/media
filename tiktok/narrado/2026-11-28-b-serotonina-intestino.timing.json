@@ -1,0 +1,644 @@
+{
+ "beats": [
+  {
+   "vis": "gancho",
+   "kicker": "INTESTINO-CEREBRO",
+   "big": "90%",
+   "sub": "DE TU SEROTONINA ESTÁ AQUÍ",
+   "size": 300,
+   "say": "Casi noventa por ciento de tu serotonina, en el intestino.",
+   "show": "Casi 90% de tu serotonina, en el intestino.",
+   "pause": 0.2,
+   "start": 0.45,
+   "end": 3.76,
+   "words": [
+    {
+     "w": "Casi",
+     "s": 0.45,
+     "e": 0.821
+    },
+    {
+     "w": "90%",
+     "s": 0.821,
+     "e": 1.364
+    },
+    {
+     "w": "de",
+     "s": 1.364,
+     "e": 1.562
+    },
+    {
+     "w": "tu",
+     "s": 1.562,
+     "e": 1.76
+    },
+    {
+     "w": "serotonina,",
+     "s": 1.76,
+     "e": 2.648
+    },
+    {
+     "w": "en",
+     "s": 2.648,
+     "e": 2.847
+    },
+    {
+     "w": "el",
+     "s": 2.847,
+     "e": 3.045
+    },
+    {
+     "w": "intestino.",
+     "s": 3.045,
+     "e": 3.76
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "CÉLULAS DEL INTESTINO",
+   "say": "La fabrican células especiales de la pared intestinal.",
+   "show": "La fabrican células especiales de la pared intestinal.",
+   "start": 3.96,
+   "end": 7.058,
+   "words": [
+    {
+     "w": "La",
+     "s": 3.96,
+     "e": 4.137
+    },
+    {
+     "w": "fabrican",
+     "s": 4.137,
+     "e": 4.62
+    },
+    {
+     "w": "células",
+     "s": 4.62,
+     "e": 5.103
+    },
+    {
+     "w": "especiales",
+     "s": 5.103,
+     "e": 5.739
+    },
+    {
+     "w": "de",
+     "s": 5.739,
+     "e": 5.915
+    },
+    {
+     "w": "la",
+     "s": 5.915,
+     "e": 6.092
+    },
+    {
+     "w": "pared",
+     "s": 6.092,
+     "e": 6.421
+    },
+    {
+     "w": "intestinal.",
+     "s": 6.421,
+     "e": 7.058
+    }
+   ]
+  },
+  {
+   "vis": "lista",
+   "title": "SU TRABAJO AHÍ",
+   "items": [
+    "Mueve la digestión",
+    "Regula secreciones",
+    "Envía señales"
+   ],
+   "icon": "✓",
+   "color": "#7fd4a8",
+   "say": "Ahí su trabajo es mover el intestino y regular la digestión.",
+   "show": "Ahí su trabajo es mover el intestino y regular la digestión.",
+   "start": 7.338,
+   "end": 10.819,
+   "words": [
+    {
+     "w": "Ahí",
+     "s": 7.338,
+     "e": 7.654
+    },
+    {
+     "w": "su",
+     "s": 7.654,
+     "e": 7.823
+    },
+    {
+     "w": "trabajo",
+     "s": 7.823,
+     "e": 8.287
+    },
+    {
+     "w": "es",
+     "s": 8.287,
+     "e": 8.456
+    },
+    {
+     "w": "mover",
+     "s": 8.456,
+     "e": 8.773
+    },
+    {
+     "w": "el",
+     "s": 8.773,
+     "e": 8.942
+    },
+    {
+     "w": "intestino",
+     "s": 8.942,
+     "e": 9.553
+    },
+    {
+     "w": "y",
+     "s": 9.553,
+     "e": 9.722
+    },
+    {
+     "w": "regular",
+     "s": 9.722,
+     "e": 10.186
+    },
+    {
+     "w": "la",
+     "s": 10.186,
+     "e": 10.355
+    },
+    {
+     "w": "digestión.",
+     "s": 10.355,
+     "e": 10.819
+    }
+   ]
+  },
+  {
+   "vis": "mito",
+   "text": "Serotonina intestinal = felicidad",
+   "say": "Pero esa serotonina no cruza al cerebro: no te pone feliz directamente.",
+   "show": "Pero esa serotonina no cruza al cerebro: no te pone feliz directamente.",
+   "start": 11.099,
+   "end": 15.348,
+   "words": [
+    {
+     "w": "Pero",
+     "s": 11.099,
+     "e": 11.416
+    },
+    {
+     "w": "esa",
+     "s": 11.416,
+     "e": 11.734
+    },
+    {
+     "w": "serotonina",
+     "s": 11.734,
+     "e": 12.493
+    },
+    {
+     "w": "no",
+     "s": 12.493,
+     "e": 12.663
+    },
+    {
+     "w": "cruza",
+     "s": 12.663,
+     "e": 12.98
+    },
+    {
+     "w": "al",
+     "s": 12.98,
+     "e": 13.15
+    },
+    {
+     "w": "cerebro:",
+     "s": 13.15,
+     "e": 13.615
+    },
+    {
+     "w": "no",
+     "s": 13.615,
+     "e": 13.784
+    },
+    {
+     "w": "te",
+     "s": 13.784,
+     "e": 13.954
+    },
+    {
+     "w": "pone",
+     "s": 13.954,
+     "e": 14.271
+    },
+    {
+     "w": "feliz",
+     "s": 14.271,
+     "e": 14.589
+    },
+    {
+     "w": "directamente.",
+     "s": 14.589,
+     "e": 15.348
+    }
+   ]
+  },
+  {
+   "vis": "compara",
+   "a": {
+    "title": "NERVIO VAGO",
+    "text": "Lleva señales"
+   },
+   "b": {
+    "title": "MICROBIOTA",
+    "text": "Participa"
+   },
+   "say": "Aun así, intestino y cerebro sí se comunican, por el nervio vago y otras vías.",
+   "show": "Aun así, intestino y cerebro sí se comunican, por el nervio vago y otras vías.",
+   "start": 15.628,
+   "end": 20.176,
+   "words": [
+    {
+     "w": "Aun",
+     "s": 15.628,
+     "e": 15.807
+    },
+    {
+     "w": "así,",
+     "s": 15.807,
+     "e": 16.142
+    },
+    {
+     "w": "intestino",
+     "s": 16.142,
+     "e": 16.787
+    },
+    {
+     "w": "y",
+     "s": 16.787,
+     "e": 16.966
+    },
+    {
+     "w": "cerebro",
+     "s": 16.966,
+     "e": 17.455
+    },
+    {
+     "w": "sí",
+     "s": 17.455,
+     "e": 17.634
+    },
+    {
+     "w": "se",
+     "s": 17.634,
+     "e": 17.813
+    },
+    {
+     "w": "comunican,",
+     "s": 17.813,
+     "e": 18.458
+    },
+    {
+     "w": "por",
+     "s": 18.458,
+     "e": 18.637
+    },
+    {
+     "w": "el",
+     "s": 18.637,
+     "e": 18.816
+    },
+    {
+     "w": "nervio",
+     "s": 18.816,
+     "e": 19.15
+    },
+    {
+     "w": "vago",
+     "s": 19.15,
+     "e": 19.485
+    },
+    {
+     "w": "y",
+     "s": 19.485,
+     "e": 19.663
+    },
+    {
+     "w": "otras",
+     "s": 19.663,
+     "e": 19.998
+    },
+    {
+     "w": "vías.",
+     "s": 19.998,
+     "e": 20.176
+    }
+   ]
+  },
+  {
+   "vis": "sello",
+   "mark": "?",
+   "text": "ZONA GRIS",
+   "color": "#ffc46b",
+   "say": "¿Tu microbiota cambia tu ánimo? En humanos, todavía es zona gris.",
+   "show": "¿Tu microbiota cambia tu ánimo? En humanos, todavía es zona gris.",
+   "start": 20.456,
+   "end": 23.997,
+   "words": [
+    {
+     "w": "¿Tu",
+     "s": 20.456,
+     "e": 20.629
+    },
+    {
+     "w": "microbiota",
+     "s": 20.629,
+     "e": 21.25
+    },
+    {
+     "w": "cambia",
+     "s": 21.25,
+     "e": 21.572
+    },
+    {
+     "w": "tu",
+     "s": 21.572,
+     "e": 21.744
+    },
+    {
+     "w": "ánimo?",
+     "s": 21.744,
+     "e": 22.216
+    },
+    {
+     "w": "En",
+     "s": 22.216,
+     "e": 22.388
+    },
+    {
+     "w": "humanos,",
+     "s": 22.388,
+     "e": 22.859
+    },
+    {
+     "w": "todavía",
+     "s": 22.859,
+     "e": 23.331
+    },
+    {
+     "w": "es",
+     "s": 23.331,
+     "e": 23.503
+    },
+    {
+     "w": "zona",
+     "s": 23.503,
+     "e": 23.825
+    },
+    {
+     "w": "gris.",
+     "s": 23.825,
+     "e": 23.997
+    }
+   ]
+  },
+  {
+   "vis": "lista",
+   "title": "LO QUE SÍ AYUDA",
+   "items": [
+    "Fibra: verduras, legumbres",
+    "Menos ultraprocesados",
+    "Moverte a diario"
+   ],
+   "icon": "✓",
+   "color": "#7fd4a8",
+   "say": "Lo que sí cuida tu intestino: fibra, menos ultraprocesados y moverte.",
+   "show": "Lo que sí cuida tu intestino: fibra, menos ultraprocesados y moverte.",
+   "start": 24.277,
+   "end": 28.417,
+   "words": [
+    {
+     "w": "Lo",
+     "s": 24.277,
+     "e": 24.463
+    },
+    {
+     "w": "que",
+     "s": 24.463,
+     "e": 24.648
+    },
+    {
+     "w": "sí",
+     "s": 24.648,
+     "e": 24.834
+    },
+    {
+     "w": "cuida",
+     "s": 24.834,
+     "e": 25.181
+    },
+    {
+     "w": "tu",
+     "s": 25.181,
+     "e": 25.366
+    },
+    {
+     "w": "intestino:",
+     "s": 25.366,
+     "e": 26.036
+    },
+    {
+     "w": "fibra,",
+     "s": 26.036,
+     "e": 26.383
+    },
+    {
+     "w": "menos",
+     "s": 26.383,
+     "e": 26.73
+    },
+    {
+     "w": "ultraprocesados",
+     "s": 26.73,
+     "e": 27.723
+    },
+    {
+     "w": "y",
+     "s": 27.723,
+     "e": 27.908
+    },
+    {
+     "w": "moverte.",
+     "s": 27.908,
+     "e": 28.417
+    }
+   ]
+  },
+  {
+   "vis": "texto",
+   "label": "ÁNIMO BAJO → TU MÉDICO",
+   "say": "Si tu ánimo está bajo por semanas, consulta a tu médico.",
+   "show": "Si tu ánimo está bajo por semanas, consulta a tu médico.",
+   "start": 28.697,
+   "end": 31.708,
+   "words": [
+    {
+     "w": "Si",
+     "s": 28.697,
+     "e": 28.849
+    },
+    {
+     "w": "tu",
+     "s": 28.849,
+     "e": 29.002
+    },
+    {
+     "w": "ánimo",
+     "s": 29.002,
+     "e": 29.421
+    },
+    {
+     "w": "está",
+     "s": 29.421,
+     "e": 29.707
+    },
+    {
+     "w": "bajo",
+     "s": 29.707,
+     "e": 29.993
+    },
+    {
+     "w": "por",
+     "s": 29.993,
+     "e": 30.146
+    },
+    {
+     "w": "semanas,",
+     "s": 30.146,
+     "e": 30.565
+    },
+    {
+     "w": "consulta",
+     "s": 30.565,
+     "e": 30.984
+    },
+    {
+     "w": "a",
+     "s": 30.984,
+     "e": 31.136
+    },
+    {
+     "w": "tu",
+     "s": 31.136,
+     "e": 31.289
+    },
+    {
+     "w": "médico.",
+     "s": 31.289,
+     "e": 31.708
+    }
+   ]
+  },
+  {
+   "vis": "cierre",
+   "next": "EL NERVIO VAGO",
+   "say": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para conocer el nervio vago.",
+   "show": "Calcula tu ventana de ayuno en el link de mi perfil. Sígueme para conocer el nervio vago.",
+   "pause": 0.6,
+   "start": 31.988,
+   "end": 36.792,
+   "words": [
+    {
+     "w": "Calcula",
+     "s": 31.988,
+     "e": 32.439
+    },
+    {
+     "w": "tu",
+     "s": 32.439,
+     "e": 32.604
+    },
+    {
+     "w": "ventana",
+     "s": 32.604,
+     "e": 33.055
+    },
+    {
+     "w": "de",
+     "s": 33.055,
+     "e": 33.22
+    },
+    {
+     "w": "ayuno",
+     "s": 33.22,
+     "e": 33.671
+    },
+    {
+     "w": "en",
+     "s": 33.671,
+     "e": 33.835
+    },
+    {
+     "w": "el",
+     "s": 33.835,
+     "e": 34.0
+    },
+    {
+     "w": "link",
+     "s": 34.0,
+     "e": 34.165
+    },
+    {
+     "w": "de",
+     "s": 34.165,
+     "e": 34.329
+    },
+    {
+     "w": "mi",
+     "s": 34.329,
+     "e": 34.494
+    },
+    {
+     "w": "perfil.",
+     "s": 34.494,
+     "e": 34.802
+    },
+    {
+     "w": "Sígueme",
+     "s": 34.802,
+     "e": 35.253
+    },
+    {
+     "w": "para",
+     "s": 35.253,
+     "e": 35.561
+    },
+    {
+     "w": "conocer",
+     "s": 35.561,
+     "e": 36.012
+    },
+    {
+     "w": "el",
+     "s": 36.012,
+     "e": 36.177
+    },
+    {
+     "w": "nervio",
+     "s": 36.177,
+     "e": 36.484
+    },
+    {
+     "w": "vago.",
+     "s": 36.484,
+     "e": 36.792
+    }
+   ]
+  }
+ ],
+ "total": 38.19229166666667,
+ "scene3d": "cell"
+}
